@@ -48,6 +48,12 @@ body {
 			height: 70px;
 			margin-left: -4px; /* overlap size */
 		}
+			.navlist li a:hover {
+				color: #ffc904;
+			}
+			.navlist li:last-child a:hover {
+				color: #FFF;
+			}
 			#techrangers {
 				background: url(../images/logo.png) no-repeat;
 				font-size: 36px;
@@ -400,6 +406,9 @@ body {
 			footer a {
 				color: #ffc904;
 			}
+				footer a:hover {
+					color: #FFF;
+				}
 			#socmed {
 
 			}
@@ -424,9 +433,18 @@ body {
 						#facebook {
 							background: url(../images/g_facebook.png) no-repeat;
 						}
+							#facebook:hover {
+								background: url(../images/w_facebook.png) no-repeat;
+							}
 						#gplus {
-							background: url(../images/w_gplus.png) no-repeat;
+							background: url(../images/g_gplus.png) no-repeat;
 						}
+							#gplus:hover {
+								background: url(../images/w_gplus.png) no-repeat;
+							}
 						#twitter {
-							background: url(../images/w_twitter.png) no-repeat;
+							background: url(../images/g_twitter.png) no-repeat;
 						}
+							#twitter:hover {
+								background: url(../images/w_twitter.png) no-repeat;
+							}
