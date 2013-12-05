@@ -14,8 +14,11 @@ body {
 	}
 	a {
 		font-family: Arial, Helvetica, sans-serif;
-		color: #3f80e6;
+		color: #4e84d4;
 	}
+		a:hover {
+			color: #395f99;
+		}
 
 	header {
 		background: url(../images/header-bg.jpg) repeat;
@@ -211,19 +214,28 @@ body {
 		}
 			#homeaside h2 {
 				text-align: center;
-				margin-top: 30px;
 				margin-bottom: 0;
-				border-top: 2px solid;
+				margin-top: 30px;
+				border-top: 2px solid #777;
+				border-bottom: 2px solid #777;
 				font-family: 'Carrois Gothic SC', sans-serif;
 				font-size: 28px;
-				color: #25548e;
+				padding: 10px;
+				color: #FFF;
+				background-color: #548de3;
+				width: 116%;
+				margin-left: -20px;
+				box-shadow: 0 5px 5px -2px #818181;
 			}
 				#homeaside h2:first-child {
-					border: none;
+					/* border: none; */
 				}
 			#homeaside a {
-				color: #143884;
+				color: #395f99;
 			}
+				#homeaside a:hover {
+					color: #4e84d4;
+				}
 			#homeaside ol li {
 				margin-top: 25px;
 			}
@@ -269,6 +281,9 @@ body {
 					color: #4371b5;
 					margin-left: 15px;
 				}
+					#techtimepage h2 a:hover {
+						color: #4e84d4;
+					}
 					.eventdate {
 						float: right;
 						font-style: italic;
@@ -338,6 +353,9 @@ body {
 						display: block;
 						text-align: center;
 					}
+						.scitem h1 a:hover {
+							color: #4e84d4;
+						}
 					.scitem img {
 						height: 200px;
 						width: 300px;
@@ -376,6 +394,9 @@ body {
 						display: block;
 						text-align: center;
 					}
+						.tutitem h1 a:hover {
+							color: #4e84d4;
+						}
 					.tutitem img {
 						height: 200px;
 						width: 300px;
