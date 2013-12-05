@@ -1,6 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -42,13 +53,16 @@ body {
 		.navlist li a {
 			color: #FFF;
 			text-decoration: none;
-			font-family: 'Carrois Gothic SC', sans-serif;
-			font-size: 24px;
-			padding: 23px 10px 10px 45px;
+			font-family: 'League Gothic', sans-serif;
+			font-size: 38px;
+			padding: 9px 19px 0px 0px;
 			background: #25548e;
 			position: relative;
 			display: block;
-			height: 70px;
+			height: 74px;
+			padding-left: 47px;
+			padding-top: 21px;
+			margin: 0px;
 			margin-left: -4px; /* overlap size */
 		}
 			.navlist li a:hover {
@@ -61,10 +75,12 @@ body {
 				background: url(../images/logo.png) no-repeat;
 				font-size: 36px;
 				margin-top: 25px;
-				line-height: 22px;
 				font-weight: bold;
-				padding: 23px 0px 0px 20px;
+				padding: 23px 80px 0px 20px;
 			}
+				#techrangers:hover {
+					background: url(../images/logo2.png) no-repeat;
+				}
 				#logohide {
 					visibility: hidden;
 				}
@@ -73,12 +89,12 @@ body {
 			display: block;
 			width: 0;
 			height: 0;
-			border-top: 34px solid transparent;
-			border-bottom: 34px solid transparent;
-			border-left: 25px solid #25548e;  /* how far out the triangle goes, fallback color */
+			border-top: 36px solid transparent;
+			border-bottom: 36px solid transparent;
+			border-left: 25px solid #25548e;
 			position: absolute;
 			top: 50%;
-			margin-top: -34px; /* arrow height */
+			margin-top: -36px; /* arrow height */
 			left: 100%;
 			z-index: 2;
 		}
@@ -149,20 +165,21 @@ body {
 			border-top: 2px solid #777777;
 			border-bottom: 2px solid #777777;
 			margin-top: 20px;
+			padding: 5px;
 			padding-left: 50px;
 			box-shadow: 0 5px 5px -2px #AAAAAA;
 		}
 			div h2 {
 				/* font-family: 'Carrois Gothic SC', sans-serif; */
-				font-family: 'Oswald', sans-serif;
+				font-family: 'League Gothic', sans-serif;
 				font-weight: normal;
-				font-size: 28px;
+				font-size: 40px;
 				color: #FFFFFF;
-				line-height: 10px;
+				margin: 0;
 			}
 		section h1 {
 			/* font-family: 'Carrois Gothic SC', sans-serif; */
-			font-family: 'Oswald', sans-serif;
+			font-family: 'League Gothic', sans-serif;
 			font-weight: normal;
 			color: #25548e;
 		}
@@ -223,9 +240,9 @@ body {
 				border-top: 2px solid #777;
 				border-bottom: 2px solid #777;
 				/* font-family: 'Carrois Gothic SC', sans-serif; */
-				font-family: 'Oswald', sans-serif;
+				font-family: 'League Gothic', sans-serif;
 				font-weight: normal;
-				font-size: 28px;
+				font-size: 40px;
 				padding: 10px;
 				color: #FFF;
 				background-color: #548de3;
@@ -257,7 +274,7 @@ body {
 				font-size: 24px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 24px;
+				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
@@ -277,14 +294,14 @@ body {
 				font-size: 24px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 24px;
+				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
 				#techtimepage h2 a {
-					font-family: 'Oswald', sans-serif;
+					font-family: 'League Gothic', sans-serif;
 					font-weight: normal;
-					font-size: 20px;
+					font-size: 30px;
 					color: #4371b5;
 					margin-left: 15px;
 				}
@@ -309,21 +326,20 @@ body {
 		}
 			#joinuspage h1 {
 				margin-top: 10px;
-				font-size: 24px;
+				font-size: 35px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 24px;
+				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
 				#joinuspage section h2 {
-					font-family: 'Oswald', sans-serif;
+					font-family: 'League Gothic', sans-serif;
 					font-weight: normal;
-					font-size: 20px;
+					font-size: 30px;
 					color: #4371b5;
 					margin-left: 15px;
-					margin-top: 25px;
-					margin-bottom: 25px;
+					margin: 0;
 				}
 				#joinuspage p {
 					margin-left: 30px;
@@ -355,9 +371,9 @@ body {
 					background: none;
 				}
 					.scitem h1 a {
-						font-family: 'Oswald', sans-serif;
+						font-family: 'League Gothic', sans-serif;
 						font-weight: normal;
-						font-size: 24px;
+						font-size: 35px;
 						color: #4371b5;
 						display: block;
 						text-align: center;
@@ -397,9 +413,9 @@ body {
 					padding: 5px 45px 45px 45px;
 				}
 					.tutitem h1 a {
-						font-family: 'Oswald', sans-serif;
+						font-family: 'League Gothic', sans-serif;
 						font-weight: normal;
-						font-size: 24px;
+						font-size: 35px;
 						color: #4371b5;
 						display: block;
 						text-align: center;
