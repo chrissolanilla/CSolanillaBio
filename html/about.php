@@ -16,24 +16,9 @@
 </head>
 
 <body>
-	<!-- insert UCF header/nav bar -->
-
 	<header role="banner">
-    	<!-- insert PHP here -->
-        <!-- <h1 id="banner" title="Techrangers"><a href="home.html"></a></h1> -->
-        
-        <nav role="navigation">
-        	<ul class="navlist">
-            	<li><a href="home.php" id="techrangers"><span id="logohide">Techrangers</span></a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="showcase.php">Showcase</a></li>
-                <li><a href="techtime.php">Tech Time</a></li>
-                <li><a href="tutorials.php">Tutorials</a></li>
-                <li><a href="joinus.php">Join Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+    	<?php include('header.html'); ?>
+    </header>   
     
     <main role="main" id="aboutmain">
     	<!-- main content -->
@@ -153,18 +138,8 @@
          </section>
     </main>
     
-    
     <footer role="contentinfo">
-    	<!-- insert PHP here -->
-        <p>Copyright &copy; 2013, <a href="#">Techrangers</a><sup>TM</sup> <a href="#">Center for Distributed Learning</a></p>
-        
-        <div id="socmed">
-        	<ul>
-            	<li><a href="#" id="twitter"><span>Twitter</span></a></li>
-                <li><a href="#" id="gplus"><span>Google Plus</span></a></li>
-                <li><a href="#" id="facebook"><span>Facebook</span></a></li>
-            </ul>
-       	</div>
+    	<?php include('header.html'); ?>
     </footer>
 
 </body>

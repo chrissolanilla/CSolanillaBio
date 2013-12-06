@@ -16,26 +16,9 @@
 </head>
 
 <body>
-	<!-- insert UCF header/nav bar -->
-
 	<header role="banner">
-    	<!-- insert PHP here -->
-        <!-- <h1 id="banner" title="Techrangers"><a href="home.html"></a></h1> -->
-        
-        <?php include('header.html') ?>
-        
-        <!-- <nav role="navigation">
-        	<ul class="navlist">
-            	<li><a href="home.html" id="techrangers"><span id="logohide">Techrangers</span></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="showcase.html">Showcase</a></li>
-                <li><a href="techtime.html">Tech Time</a></li>
-                <li><a href="tutorials.html">Tutorials</a></li>
-                <li><a href="joinus.html">Join Us</a></li>
-            </ul>
-        </nav> -->
-    </header>
-    
+        <?php include('header.html'); ?>
+    </header>   
     
     <main role="main" id="homemain">
     	<!-- main content -->
@@ -50,7 +33,7 @@
                      <p>Tech Time! February X, 2014</p>
                 
                 <h2>Tutorials</h2>
-                    <p>Are you as eager to learn as we are? Check out some of our <a href="tutorials.html">tutorials</a>.</p>
+                    <p>Are you as eager to learn as we are? Check out some of our <a href="tutorials.php">tutorials</a>.</p>
                     
                     <ol>
                         <li><a href="#">Fuel Crash Course - Part 1</a></li>
@@ -62,7 +45,7 @@
             </aside>
         
             <p class="homep">The Techrangers is a team of students at the <a href="#">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers act as student advocates and leaders by holding community workshops, participating in panels, and presenting at conventions.</p>
-            <p class="homep">Feel free to <a href="#">contact us</a>, <a href="#">read about us</a>, <a href="tutorials.html">learn from us</a>, and possibly <a href="joinus.html">join us</a>!</p> 
+            <p class="homep">Feel free to <a href="#">contact us</a>, <a href="#">read about us</a>, <a href="tutorials.php">learn from us</a>, and possibly <a href="joinus.php">join us</a>!</p> 
             <!-- link for Contact us? -->
             
             <div id="photogrid">
@@ -83,18 +66,8 @@
         </section>
     </main>
     
-    
     <footer role="contentinfo">
-    	<!-- insert PHP here -->
-        <p>Copyright &copy; 2013, <a href="#">Techrangers</a><sup>TM</sup> <a href="#">Center for Distributed Learning</a></p>
-        
-        <div id="socmed">
-        	<ul>
-            	<li><a href="#" id="twitter"><span>Twitter</span></a></li>
-                <li><a href="#" id="gplus"><span>Google Plus</span></a></li>
-                <li><a href="#" id="facebook"><span>Facebook</span></a></li>
-            </ul>
-       	</div>
+    	<?php include('footer.html'); ?>
     </footer>
 
 </body>
