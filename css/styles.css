@@ -21,10 +21,10 @@ body {
 	margin: 0;
 }
 	p, ol, ul {
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	}
-	a {
-		font-family: Arial, Helvetica, sans-serif;
+	main a {
+		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 		color: #4e84d4;
 	}
 		a:hover {
