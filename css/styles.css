@@ -34,7 +34,7 @@ body {
 	header {
 		background: url(../images/header-bg.jpg) repeat;
 		width: 1000px;
-		height: 120px;
+		height: 130px;
 		margin: auto;
 		position: relative;
 	}
@@ -54,14 +54,15 @@ body {
 			color: #FFF;
 			text-decoration: none;
 			font-family: 'League Gothic', sans-serif;
-			font-size: 38px;
-			padding: 9px 19px 0px 0px;
+			font-size: 35px;
+			padding: 9px 22px 0px 0px;
 			background: #25548e;
 			position: relative;
 			display: block;
-			height: 74px;
+			height: 80px;
 			padding-left: 47px;
-			padding-top: 21px;
+			padding-top: 23px;
+			padding-bottom: 20px;
 			margin: 0px;
 			margin-left: -4px; /* overlap size */
 		}
@@ -72,14 +73,14 @@ body {
 				color: #FFF;
 			}
 			#techrangers {
-				background: url(../images/logo.png) no-repeat;
+				background: #25548e url(../images/logo.png) no-repeat 10px;
 				font-size: 36px;
 				margin-top: 25px;
 				font-weight: bold;
-				padding: 23px 80px 0px 20px;
+				padding: 23px 90px 0px 35px;
 			}
 				#techrangers:hover {
-					background: url(../images/logo2.png) no-repeat;
+					background: #25548e url(../images/logo2.png) no-repeat 10px;
 				}
 				#logohide {
 					visibility: hidden;
@@ -89,12 +90,12 @@ body {
 			display: block;
 			width: 0;
 			height: 0;
-			border-top: 36px solid transparent;
-			border-bottom: 36px solid transparent;
+			border-top: 40px solid transparent;
+			border-bottom: 40px solid transparent;
 			border-left: 25px solid #25548e;
 			position: absolute;
 			top: 50%;
-			margin-top: -36px; /* arrow height */
+			margin-top: -40px; /* arrow height */
 			left: 100%;
 			z-index: 2;
 		}
@@ -298,6 +299,10 @@ body {
 				border-top: 2px solid;
 				max-width: 57%;
 			}
+				#techtimepage section h2 {
+					margin-bottom: -10px;
+					margin-top: 5px;
+				}
 				#techtimepage h2 a {
 					font-family: 'League Gothic', sans-serif;
 					font-weight: normal;
@@ -311,7 +316,7 @@ body {
 					.eventdate {
 						float: right;
 						font-style: italic;
-						margin-top: -45px;
+						margin-top: -23px;
 					}
 					#techtimepage .ttitem p {
 						margin-left: 30px;
