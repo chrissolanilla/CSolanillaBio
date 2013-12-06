@@ -17,7 +17,7 @@
 }
 
 body {
-	background: #777777;
+	background: #AAAAAA;
 	margin: 0;
 }
 	p, ol, ul {
@@ -32,9 +32,8 @@ body {
 		}
 
 	header {
-		background: url(../images/header-bg.jpg) repeat;
+		/* background: url(../images/header-bg.jpg) repeat; */
 		width: 1000px;
-		height: 130px;
 		margin: auto;
 		position: relative;
 	}
@@ -42,7 +41,6 @@ body {
 			list-style-type: none;
 			overflow: hidden;
 			width: 1000px;
-			box-shadow: 0 5px 5px -2px #666666;
 			padding: 0;
 			margin: 0;
 		}
@@ -75,7 +73,6 @@ body {
 			#techrangers {
 				background: #25548e url(../images/logo.png) no-repeat 10px;
 				font-size: 36px;
-				margin-top: 25px;
 				font-weight: bold;
 				padding: 23px 90px 0px 35px;
 			}
@@ -153,22 +150,24 @@ body {
 		position: relative;
 		padding-top: 10px;
 		padding-bottom: 30px;
-		border-top: 2px solid #777777;
-		border-bottom: 2px solid #777777;
 		box-shadow: 0 5px 5px -2px #333;
 		z-index: 5;
+		margin-top: 50px;
+		
+		/* border-top: 2px solid #777777;
+		border-bottom: 2px solid #777777; */
 	}
 		#title {
 			background: #25548e;
 			height: 60px;
 			width: 1000px;
 			box-sizing: border-box;
-			border-top: 2px solid #777777;
-			border-bottom: 2px solid #777777;
 			margin-top: 20px;
 			padding: 5px;
 			padding-left: 50px;
 			box-shadow: 0 5px 5px -2px #AAAAAA;
+			/* border-top: 2px solid #777777;
+			border-bottom: 2px solid #777777; */
 		}
 			div h2 {
 				/* font-family: 'Carrois Gothic SC', sans-serif; */
@@ -192,14 +191,14 @@ body {
 		#homepage {
 			/* width: 640px; */ /* used when Tutorials aside was position: absolute */
 			padding-top: 10px;
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 		}
 		#photogrid {
 		}
 			.trpic {
-				height: 210px;
-				width: 100px;
+				height: 220px;
+				width: 130px;
 				display: inline-block;
 				overflow: auto;
 				margin: 10px;
@@ -226,21 +225,20 @@ body {
 			margin-top: -10px;
 			margin-left: 50px;
 			margin-bottom: 50px;
+			box-shadow: 0 5px 5px -2px #AAAAAA;
+			/* border-right: 2px solid #777777;
+			border-left: 2px solid #777777;
+			border-bottom: 2px solid #777777; */
+			
 			/* position: absolute;
 			right: 60px;
 			top: 0; */
-			border-right: 2px solid #777777;
-			border-left: 2px solid #777777;
-			border-bottom: 2px solid #777777;
-			box-shadow: 0 5px 5px -2px #AAAAAA;
 		}
 			#homeaside h2 {
 				text-align: center;
+				height: 60px;
 				margin-bottom: 0;
 				margin-top: 30px;
-				border-top: 2px solid #777;
-				border-bottom: 2px solid #777;
-				/* font-family: 'Carrois Gothic SC', sans-serif; */
 				font-family: 'League Gothic', sans-serif;
 				font-weight: normal;
 				font-size: 40px;
@@ -250,6 +248,11 @@ body {
 				width: 116%;
 				margin-left: -20px;
 				box-shadow: 0 5px 5px -2px #818181;
+				
+				/* font-family: 'Carrois Gothic SC', sans-serif; */
+				
+				/* border-top: 2px solid #777;
+				border-bottom: 2px solid #777; */
 			}
 				#homeaside h2:first-child {
 					/* border: none; */
@@ -266,8 +269,8 @@ body {
 			
 		/* About stuff ------------------------------------- */
 		#aboutpage {
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
 			#aboutmain h1 {
@@ -286,8 +289,8 @@ body {
 			
 		/* Tech Time stuff ------------------------------------- */
 		#techtimepage {
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
 			#techtimepage h1 {
@@ -325,8 +328,8 @@ body {
 					
 		/* Join Us stuff ------------------------------------- */
 		#joinuspage {
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
 			#joinuspage h1 {
@@ -354,8 +357,8 @@ body {
 				
 		/* Showcase stuff ------------------------------------- */
 		#showcasepage {
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
 			#showcase {
@@ -399,8 +402,8 @@ body {
 		
 		/* Tutorials stuff ------------------------------------- */	
 		#tutorialsmain section {
-			padding-left: 75px;
-			padding-right: 75px;
+			padding-left: 50px;
+			padding-right: 50px;
 			padding-top: 10px;
 		}
 			#tutorialsmain #tutorials {
@@ -444,10 +447,11 @@ body {
 		footer {
 			background: url(../images/footer-bg.jpg) repeat;
 			width: 1000px;
-			height: 75px;
+			height: 85px;
 			margin: auto;
+			margin-bottom: 25px;
 			position: relative;
-			padding: 10px;
+			padding: 15px;
 			padding-left: 25px;
 			padding-right: 25px;
 		}
