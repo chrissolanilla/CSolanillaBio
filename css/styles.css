@@ -16,13 +16,13 @@
 	box-sizing: border-box;
 }
 body {
-	background: #AAAAAA;
+	background: #AAA;
 	margin: 0;
 }
 	p, ol, ul {
 		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	}
-	main a {
+	main a { /* 'main a' because 'a' will affect UCF nav bars */
 		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 		color: #4e84d4;
 	}
@@ -31,7 +31,6 @@ body {
 		}
 
 	header {
-		/* background: url(../images/header-bg.jpg) repeat; */
 		margin: auto;
 		position: relative;
 		background: #25548e;
@@ -141,6 +140,7 @@ body {
 		
 		.navlist li:last-child a:after {
 			/* border:none; */
+			/* if last link has an arrow or not */
 		}
 		
 	
@@ -167,20 +167,19 @@ body {
 			margin-top: 20px;
 			padding: 5px;
 			padding-left: 50px;
-			box-shadow: 0 5px 5px -2px #AAAAAA;
+			box-shadow: 0 5px 5px -2px #AAA;
+			
 			/* border-top: 2px solid #777777;
 			border-bottom: 2px solid #777777; */
 		}
 			div h2 {
-				/* font-family: 'Carrois Gothic SC', sans-serif; */
 				font-family: 'League Gothic', sans-serif;
 				font-weight: normal;
 				font-size: 40px;
-				color: #FFFFFF;
+				color: #FFF;
 				margin: 0;
 			}
 		section h1 {
-			/* font-family: 'Carrois Gothic SC', sans-serif; */
 			font-family: 'League Gothic', sans-serif;
 			font-weight: normal;
 			color: #25548e;
@@ -211,14 +210,14 @@ body {
 					width: 100px;
 					display: block;
 					margin: 0 auto;
-					box-shadow: 0 5px 5px -2px #AAAAAA;
+					box-shadow: 0 5px 5px -2px #AAA;
 				}
 				.trpic p {
 					display: block;
 					text-align: center;
 				}
 		#homeaside {
-			background: #CCCCCC;
+			background: #CCC;
 			width: 300px;
 			float: right;
 			padding: 20px;
@@ -227,10 +226,10 @@ body {
 			margin-top: -10px;
 			margin-left: 50px;
 			margin-bottom: 50px;
-			box-shadow: 0 5px 5px -2px #AAAAAA;
-			/* border-right: 2px solid #777777;
-			border-left: 2px solid #777777;
-			border-bottom: 2px solid #777777; */
+			box-shadow: 0 5px 5px -2px #AAA;
+			/* border-right: 2px solid #777;
+			border-left: 2px solid #777;
+			border-bottom: 2px solid #777; */
 			
 			/* position: absolute;
 			right: 60px;
@@ -250,8 +249,6 @@ body {
 				width: 116%;
 				margin-left: -20px;
 				box-shadow: 0 5px 5px -2px #818181;
-				
-				/* font-family: 'Carrois Gothic SC', sans-serif; */
 				
 				/* border-top: 2px solid #777;
 				border-bottom: 2px solid #777; */
@@ -371,7 +368,7 @@ body {
 				.scitem {		
 					min-width: 400px;
 					max-width: 800px;
-					background: #DDDDDD;
+					background: #DDD;
 					display: block;
 					margin: 0 auto;
 					margin-bottom: 20px;
@@ -396,7 +393,7 @@ body {
 						width: 300px;
 						margin: 0 auto;
 						display: block;
-						box-shadow: 0 5px 5px -2px #AAAAAA;
+						box-shadow: 0 5px 5px -2px #AAA;
 					}
 					.scintro {
 						margin-top: 10px;
@@ -438,7 +435,7 @@ body {
 						width: 300px;
 						margin: 0 auto;
 						display: block;
-						box-shadow: 0 5px 5px -2px #AAAAAA;
+						box-shadow: 0 5px 5px -2px #AAA;
 					}
 					.author {
 						font-style: italic;
