@@ -72,14 +72,14 @@ body {
 				color: #FFF;
 			}
 			#techrangers {
-				background: #25548e url(../images/logo_sheet.png) no-repeat 10px;
+				background: #25548e url(../images/logo_sheet2.png) no-repeat 10px;
 				background-position: 0px 0px;
 				font-size: 36px;
 				font-weight: bold;
 				padding: 23px 90px 0px 35px;
 			}
 				#techrangers:hover {
-					background: #25548e url(../images/logo_sheet.png) no-repeat 10px;
+					background: #25548e url(../images/logo_sheet2.png) no-repeat 10px;
 					background-position: 0px -84px;
 				}
 				#logohide {
@@ -488,26 +488,32 @@ body {
 						margin-left: 15px;
 					}
 						#facebook {
-							background: url(../images/logo_sheet.png) no-repeat;
+							background: url(../images/logo_sheet2.png) no-repeat;
 							background-position: 0px -168px;
+							border-radius: 50px;
 						}
 							#facebook:hover {
-								background: url(../images/logo_sheet.png) no-repeat;
+								background: url(../images/logo_sheet2.png) no-repeat;
 								background-position: -51px -168px;
+								border-radius: 50px;
 							}
 						#gplus {
-							background: url(../images/logo_sheet.png) no-repeat;
+							background: url(../images/logo_sheet2.png) no-repeat;
 							background-position: 0px -228px;
+							border-radius: 50px;
 						}
 							#gplus:hover {
-								background: url(../images/logo_sheet.png) no-repeat;
+								background: url(../images/logo_sheet2.png) no-repeat;
 								background-position: -51px -228px;
+								border-radius: 50px;
 							}
 						#twitter {
-							background: url(../images/logo_sheet.png) no-repeat;
+							background: url(../images/logo_sheet2.png) no-repeat;
 							background-position: 0px -288px;
+							border-radius: 50px;
 						}
 							#twitter:hover {
-								background: url(../images/logo_sheet.png) no-repeat;
+								background: url(../images/logo_sheet2.png) no-repeat;
 								background-position: -51px -288px;
+								border-radius: 50px;
 							}
