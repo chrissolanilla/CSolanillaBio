@@ -60,7 +60,7 @@ body {
 			display: block;
 			height: 80px;
 			padding-left: 47px;
-			padding-top: 23px;
+			padding-top: 19px;
 			padding-bottom: 20px;
 			margin: 0px;
 			margin-left: -4px; /* overlap size */
@@ -76,7 +76,7 @@ body {
 				background-position: 0px 0px;
 				font-size: 36px;
 				font-weight: bold;
-				padding: 23px 90px 0px 35px;
+				padding: 19px 90px 0px 35px;
 			}
 				#techrangers:hover {
 					background: #25548e url(../images/logo_sheet2.png) no-repeat 10px;
@@ -156,10 +156,7 @@ body {
 		padding-bottom: 30px;
 		box-shadow: 0 5px 5px -2px #333;
 		z-index: 5;
-		margin-top: 35px;
-		
-		/* border-top: 2px solid #777777;
-		border-bottom: 2px solid #777777; */
+		margin-top: 30px;
 	}
 		#title {
 			background: #25548e;
@@ -170,9 +167,6 @@ body {
 			padding: 5px;
 			padding-left: 50px;
 			box-shadow: 0 5px 5px -2px #AAA;
-			
-			/* border-top: 2px solid #777777;
-			border-bottom: 2px solid #777777; */
 		}
 			div h2 {
 				font-family: 'League Gothic', sans-serif;
@@ -450,7 +444,7 @@ body {
 			width: 1000px;
 			height: 85px;
 			margin: auto;
-			margin-bottom: 25px;
+			margin-bottom: 20px;
 			position: relative;
 			padding: 15px;
 			padding-left: 25px;
