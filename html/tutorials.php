@@ -7,18 +7,18 @@
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
 </head>
 
 <body>
+
 	<header role="banner">
-    	<?php include('header.html'); ?>
+        <?php include('header.html'); ?>
     </header>
+    
     
     <main role="main" id="tutorialsmain">
     	<!-- main content -->
@@ -27,6 +27,7 @@
         </div>
         
         <section> 
+            
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
             <section id="tutorials">
@@ -53,9 +54,10 @@
             </section>
         </section>
     </main>
+ 
     
     <footer role="contentinfo">
-    	<?php include('header.html'); ?>
+    	<?php include('footer.html'); ?>
     </footer>
 
 </body>

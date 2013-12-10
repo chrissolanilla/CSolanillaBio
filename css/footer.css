@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+					
+	footer {
+		background: url(../images/footer-bg.jpg) repeat;
+		width: 1000px;
+		height: 85px;
+		margin: auto;
+		margin-bottom: 20px;
+		position: relative;
+		padding: 15px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+		footer p {
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			color: #FFF;
+			float: left;
+		}
+		footer a {
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			color: #ffc904;
+		}
+			footer a:hover {
+				color: #FFF;
+			}
+		#socmed {
+
+		}
+			#socmed ul {
+				margin: 0;
+				margin-top: 2px;
+			}
+			#socmed ul li {
+				list-style-type: none;
+				display: inline;
+			}
+				#socmed span {
+					visibility: hidden;
+				}
+				#socmed a {
+					height: 50px;
+					width: 50px;
+					display: inline-block;
+					float: right;
+					margin-left: 15px;
+				}
+					#facebook {
+						background: url(../images/logo_sheet2.png) no-repeat;
+						background-position: 0px -168px;
+						border-radius: 50px;
+					}
+						#facebook:hover {
+							background: url(../images/logo_sheet2.png) no-repeat;
+							background-position: -51px -168px;
+							border-radius: 50px;
+						}
+					#gplus {
+						background: url(../images/logo_sheet2.png) no-repeat;
+						background-position: 0px -228px;
+						border-radius: 50px;
+					}
+						#gplus:hover {
+							background: url(../images/logo_sheet2.png) no-repeat;
+							background-position: -51px -228px;
+							border-radius: 50px;
+						}
+					#twitter {
+						background: url(../images/logo_sheet2.png) no-repeat;
+						background-position: 0px -288px;
+						border-radius: 50px;
+					}
+						#twitter:hover {
+							background: url(../images/logo_sheet2.png) no-repeat;
+							background-position: -51px -288px;
+							border-radius: 50px;
+						}

@@ -7,18 +7,18 @@
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
 </head>
 
 <body>
+
 	<header role="banner">
-    	<?php include('header.html'); ?>
-    </header>   
+        <?php include('header.html'); ?>
+    </header>
+    
     
     <main role="main" id="aboutmain">
     	<!-- main content -->
@@ -27,22 +27,8 @@
         </div>
         
         <section id="aboutpage">
-            <aside id="homeaside">
-                <!-- Tutorials section -->
-                <h2>Upcoming Events</h2>
-                     <p>Tech Time! February X, 2014</p>
-                
-                <h2>Tutorials</h2>
-                    <p>Are you as eager to learn as we are? Check out some of our <a href="tutorials.php">tutorials</a>.</p>
-                    
-                    <ol>
-                        <li><a href="#">Fuel Crash Course - Part 1</a></li>
-                        <li><a href="#">Fuel Crash Course - Part 2</a></li>
-                        <li><a href="#">Fuel Crash Course - Part 3</a></li>
-                        <li><a href="#">User Interface Moderator Training</a></li>
-                        <li><a href="#">Using Git</a></li>
-                    </ol>
-            </aside>
+            <!-- sidebar.html -->
+            <?php include('sidebar.html'); ?>
                 
             <section class="aboutitem">
                 <h1>Who We Are</h1>
@@ -138,8 +124,9 @@
          </section>
     </main>
     
+    
     <footer role="contentinfo">
-    	<?php include('header.html'); ?>
+    	<?php include('footer.html'); ?>
     </footer>
 
 </body>

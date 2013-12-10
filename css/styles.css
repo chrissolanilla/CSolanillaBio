@@ -30,122 +30,6 @@ body {
 			color: #395f99;
 		}
 
-	header {
-		margin: auto;
-		position: relative;
-		background: #25548e;
-	}
-	nav {
-		margin: 0 auto;
-		width: 1040px;
-	}
-		.navlist {
-			list-style-type: none;
-			overflow: hidden;
-			padding: 0;
-			margin: 0;
-		}
-		.navlist li {
-			display: inline-block;
-			list-style-type: none;
-		}
-		.navlist li a {
-			color: #FFF;
-			text-decoration: none;
-			font-family: 'League Gothic', sans-serif;
-			font-size: 35px;
-			padding: 9px 22px 0px 0px;
-			background: #25548e;
-			position: relative;
-			display: block;
-			height: 80px;
-			padding-left: 47px;
-			padding-top: 19px;
-			padding-bottom: 20px;
-			margin: 0px;
-			margin-left: -4px; /* overlap size */
-		}
-			.navlist li a:hover {
-				color: #ffc904;
-			}
-			.navlist li:last-child a:hover {
-				color: #FFF;
-			}
-			#techrangers {
-				background: #25548e url(../images/logo_sheet2.png) no-repeat 10px;
-				background-position: 0px 0px;
-				font-size: 36px;
-				font-weight: bold;
-				padding: 19px 90px 0px 35px;
-			}
-				#techrangers:hover {
-					background: #25548e url(../images/logo_sheet2.png) no-repeat 10px;
-					background-position: 0px -84px;
-				}
-				#logohide {
-					visibility: hidden;
-				}
-		.navlist li a:after {
-			content: " ";
-			display: block;
-			width: 0;
-			height: 0;
-			border-top: 40px solid transparent;
-			border-bottom: 40px solid transparent;
-			border-left: 25px solid #25548e;
-			position: absolute;
-			top: 50%;
-			margin-top: -40px; /* arrow height */
-			left: 100%;
-			z-index: 2;
-		}
-		.navlist li:first-child a {
-			padding-left: 10px;
-		}
-		
-		.navlist li:nth-child(2) a {
-			background: #395f99;
-		}
-		.navlist li:nth-child(2) a:after {
-			border-left-color: #395f99;
-		}
-		
-		.navlist li:nth-child(3) a {
-			background: #4371b5;
-		}
-		.navlist li:nth-child(3) a:after {
-			border-left-color: #4371b5;
-		}
-		
-		.navlist li:nth-child(4) a {
-			background: #4e84d4;
-		}
-		.navlist li:nth-child(4) a:after {
-			border-left-color: #4e84d4;
-		}
-		
-		.navlist li:nth-child(5) a {
-			background: #548de3;
-		}
-		.navlist li:nth-child(5) a:after {
-			border-left-color: #548de3;
-		} 
-		
-		.navlist li:nth-child(6) a {
-			background: #ffc904;
-			color: #000;			
-			padding-right: 25px;
-		}
-		.navlist li:nth-child(6) a:after {
-			border-left-color: #ffc904;
-		} 
-		
-		.navlist li:last-child a:after {
-			/* border:none; */
-			/* if last link has an arrow or not */
-		}
-		
-	
 	main {
 		background: #ebebec;
 		width: 1000px;
@@ -212,55 +96,7 @@ body {
 					display: block;
 					text-align: center;
 				}
-		#homeaside {
-			background: #CCC;
-			width: 300px;
-			float: right;
-			padding: 20px;
-			padding-top: 0px;
-			margin: 20px;
-			margin-top: -10px;
-			margin-left: 50px;
-			margin-bottom: 50px;
-			box-shadow: 0 5px 5px -2px #AAA;
-			/* border-right: 2px solid #777;
-			border-left: 2px solid #777;
-			border-bottom: 2px solid #777; */
-			
-			/* position: absolute;
-			right: 60px;
-			top: 0; */
-		}
-			#homeaside h2 {
-				text-align: center;
-				height: 60px;
-				margin-bottom: 0;
-				margin-top: 30px;
-				font-family: 'League Gothic', sans-serif;
-				font-weight: normal;
-				font-size: 40px;
-				padding: 10px;
-				color: #FFF;
-				background-color: #548de3;
-				width: 116%;
-				margin-left: -20px;
-				box-shadow: 0 5px 5px -2px #818181;
-				
-				/* border-top: 2px solid #777;
-				border-bottom: 2px solid #777; */
-			}
-				#homeaside h2:first-child {
-					/* border: none; */
-				}
-			#homeaside a {
-				color: #395f99;
-			}
-				#homeaside a:hover {
-					color: #4e84d4;
-				}
-			#homeaside ol li {
-				margin-top: 25px;
-			}
+		
 			
 		/* About stuff ------------------------------------- */
 		#aboutpage {
@@ -278,8 +114,6 @@ body {
 				max-width: 57%;
 			}
 				.aboutitem p {
-					margin-left: 30px;
-					margin-right: 30px;
 				}
 			
 		/* Tech Time stuff ------------------------------------- */
@@ -306,7 +140,6 @@ body {
 					font-weight: normal;
 					font-size: 30px;
 					color: #4371b5;
-					margin-left: 15px;
 				}
 					#techtimepage h2 a:hover {
 						color: #4e84d4;
@@ -314,7 +147,7 @@ body {
 					.eventdate {
 						float: right;
 						font-style: italic;
-						margin-top: -23px;
+						margin-top: -25px;
 					}
 					#techtimepage .ttitem p {
 						margin-left: 30px;
@@ -344,9 +177,7 @@ body {
 					margin-left: 15px;
 					margin: 0;
 				}
-				#joinuspage p {
-					margin-left: 30px;
-					margin-right: 30px;
+				#joinuspage section p {
 				}
 				
 				
@@ -438,76 +269,3 @@ body {
 						float: right;
 						margin: -5px 0 15px 0;
 					}
-					
-		footer {
-			background: url(../images/footer-bg.jpg) repeat;
-			width: 1000px;
-			height: 85px;
-			margin: auto;
-			margin-bottom: 20px;
-			position: relative;
-			padding: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-		}
-			footer p {
-				color: #FFF;
-				float: left;
-			}
-			footer a {
-				color: #ffc904;
-			}
-				footer a:hover {
-					color: #FFF;
-				}
-			#socmed {
-
-			}
-				#socmed ul {
-					margin: 0;
-					margin-top: 2px;
-				}
-				#socmed ul li {
-					list-style-type: none;
-					display: inline;
-				}
-					#socmed span {
-						visibility: hidden;
-					}
-					#socmed a {
-						height: 50px;
-						width: 50px;
-						display: inline-block;
-						float: right;
-						margin-left: 15px;
-					}
-						#facebook {
-							background: url(../images/logo_sheet2.png) no-repeat;
-							background-position: 0px -168px;
-							border-radius: 50px;
-						}
-							#facebook:hover {
-								background: url(../images/logo_sheet2.png) no-repeat;
-								background-position: -51px -168px;
-								border-radius: 50px;
-							}
-						#gplus {
-							background: url(../images/logo_sheet2.png) no-repeat;
-							background-position: 0px -228px;
-							border-radius: 50px;
-						}
-							#gplus:hover {
-								background: url(../images/logo_sheet2.png) no-repeat;
-								background-position: -51px -228px;
-								border-radius: 50px;
-							}
-						#twitter {
-							background: url(../images/logo_sheet2.png) no-repeat;
-							background-position: 0px -288px;
-							border-radius: 50px;
-						}
-							#twitter:hover {
-								background: url(../images/logo_sheet2.png) no-repeat;
-								background-position: -51px -288px;
-								border-radius: 50px;
-							}
