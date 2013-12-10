@@ -15,10 +15,7 @@
 
 <body>
 
-	<header role="banner">
-        <?php include('header.html'); ?>
-    </header>
-    
+   <?php include('header.html'); ?> <!-- header.html -->
     
     <main role="main" id="joinusmain">
     	<!-- main content -->
@@ -27,8 +24,8 @@
         </div>
         
         <section id="joinuspage">
-        	<!-- sidebar.html -->
-            <?php include('sidebar.html'); ?>
+        	
+            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             
             <section>
                 <h1>How Do I Apply to be a Techranger?</h1>
@@ -120,10 +117,7 @@
           </section>
     </main>
     
-    
-    <footer role="contentinfo">
-    	<?php include('footer.html'); ?>
-    </footer>
+    <?php include('footer.html'); ?> <!-- footer.html -->
 
 </body>
 </html>

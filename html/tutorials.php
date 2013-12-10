@@ -15,10 +15,7 @@
 
 <body>
 
-	<header role="banner">
-        <?php include('header.html'); ?>
-    </header>
-    
+    <?php include('header.html'); ?> <!-- header.html -->
     
     <main role="main" id="tutorialsmain">
     	<!-- main content -->
@@ -55,10 +52,7 @@
         </section>
     </main>
  
-    
-    <footer role="contentinfo">
-    	<?php include('footer.html'); ?>
-    </footer>
+    <?php include('footer.html'); ?> <!-- footer.html -->
 
 </body>
 </html>

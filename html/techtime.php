@@ -15,10 +15,7 @@
 
 <body>
 
-	<header role="banner">
-        <?php include('header.html'); ?>
-    </header>
-    
+    <?php include('header.html'); ?> <!-- header.html -->  
     
     <main role="main" id="techtimemain">
     	<!-- main content -->
@@ -27,8 +24,8 @@
         </div>
         
         <section id="techtimepage">
-        	<!-- sidebar.html -->
-            <?php include('sidebar.html'); ?>
+        	
+            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             
             <section>
                 <h1>What is Tech Time?</h1>
@@ -50,10 +47,7 @@
         </section>
     </main>
     
-    
-    <footer role="contentinfo">
-    	<?php include('footer.html'); ?>
-    </footer>
+    <?php include('footer.html'); ?> <!-- footer.html -->
 
 </body>
 </html>

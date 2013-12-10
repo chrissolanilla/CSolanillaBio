@@ -14,11 +14,8 @@
 </head>
 
 <body>
-
-	<header role="banner">   
-        <?php include('header.html'); ?>
-    </header>
-    
+  
+    <?php include('header.html'); ?> <!-- header.html -->
     
     <main role="main" id="showcasemain">
         <!-- main content -->
@@ -28,8 +25,8 @@
         </div>
     
         <section id="showcasepage">
-        	<!-- sidebar.html -->
-            <?php include('sidebar.html'); ?>
+        	
+            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             
             <p class="scintro">The Techrangers strive to develop and collaborate with the UCF community on new tools and projects that will allow our team, the <a href="#">Center for Distributed Learning</a> and the University as a whole to complete various tasks more efficiently &amp; represent the content accurately. Here is our portfolio of some of the initiatives that the Techranger team is currently working on or has worked on in the past. <strong>The following listing is in no particular order.</strong></p>
             
@@ -61,10 +58,7 @@
         </section>
     </main>
     
-    
-    <footer role="contentinfo">
-    	<?php include('footer.html'); ?>
-    </footer>
+    <?php include('footer.html'); ?> <!-- footer.html -->
 
 </body>
 </html>

@@ -15,9 +15,7 @@
 
 <body>
 
-	<!-- header.html -->
-    <?php include('header.html'); ?>
-    
+    <?php include('header.html'); ?> <!-- header.html -->
     
     <main role="main" id="homemain">
     	<!-- main content -->
@@ -26,8 +24,8 @@
         </div>
         
         <section id="homepage">
-        	<!-- sidebar.html -->
-            <?php include('sidebar.html'); ?>
+        	
+            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
             <p class="homep">The Techrangers is a team of students at the <a href="#">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers act as student advocates and leaders by holding community workshops, participating in panels, and presenting at conventions.</p>
             <p class="homep">Feel free to <a href="#">contact us</a>, <a href="#">read about us</a>, <a href="tutorials.php">learn from us</a>, and possibly <a href="joinus.php">join us</a>!</p> 
@@ -51,10 +49,7 @@
         </section>
     </main>
     
-    
-    <footer role="contentinfo">
-    	<?php include('footer.html'); ?>
-    </footer>
+	<?php include('footer.html'); ?> <!-- footer.html -->
 
 </body>
 </html>
