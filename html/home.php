@@ -32,19 +32,19 @@
             <!-- link for Contact us? -->
             
             <div id="photogrid">
-                <div class="trpic"><img src="#" alt="trname" /><p>Sherry Bauerschmidt Hofmeister</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Elizabeth Williams</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Sevena Skeels</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Elise Heron</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Corrinne Schultze</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Matthew Emond</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Munawar Bijani</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Gina Piscitelli</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Jesse Slavens</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Daniel Brinkman</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Eric Colon</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Jacob Bates</p></div>
-                <div class="trpic"><img src="#" alt="trname" /><p>Philip Carter</p></div>
+                <div class="trpic"><div class="tr_sherry"></div><p>Sherry Bauerschmidt Hofmeister</p></div>
+                <div class="trpic"><div class="tr_liz"></div><p>Elizabeth Williams</p></div>
+                <div class="trpic"><div class="tr_sevena"></div><p>Sevena Skeels</p></div>
+                <div class="trpic"><div class="tr_elise"></div><p>Elise Heron</p></div>
+                <div class="trpic"><div class="tr_corrinne"></div><p>Corrinne Schultze</p></div>
+                <div class="trpic"><div class="tr_matt"></div><p>Matthew Emond</p></div>
+                <div class="trpic"><div class="tr_munawar"></div><p>Munawar Bijani</p></div>
+                <div class="trpic"><div class="tr_gina"></div><p>Gina Piscitelli</p></div>
+                <div class="trpic"><div class="tr_jesse"></div><p>Jesse Slavens</p></div>
+                <div class="trpic"><div class="tr_dan"></div><p>Daniel Brinkman</p></div>
+                <div class="trpic"><div class="tr_eric"></div><p>Eric Colon</p></div>
+                <div class="trpic"><div class="tr_jacob"></div><p>Jacob Bates</p></div>
+                <div class="trpic"><div class="tr_phil"></div><p>Philip Carter</p></div>
             </div>
         </section>
     </main>

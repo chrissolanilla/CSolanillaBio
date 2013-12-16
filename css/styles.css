@@ -34,11 +34,9 @@ body {
 		background: #ebebec;
 		width: 1000px;
 		margin: auto;
-		box-sizing: border-box;
 		position: relative;
 		padding-top: 10px;
 		padding-bottom: 30px;
-		box-shadow: 0 5px 5px -2px #333;
 		z-index: 5;
 		margin-top: 30px;
 	}
@@ -46,7 +44,6 @@ body {
 			background: #25548e;
 			height: 60px;
 			width: 1000px;
-			box-sizing: border-box;
 			margin-top: 20px;
 			padding: 5px;
 			padding-left: 50px;
@@ -96,6 +93,96 @@ body {
 					display: block;
 					text-align: center;
 				}
+					.tr_sherry {
+						background: url(../images/tr_sherry.jpg) no-repeat 50% 20%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+					}
+					.tr_liz {
+						background: url(../images/tr_liz.jpg) no-repeat 50% 20%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_sevena {
+						background: url(../images/tr_sevena.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_elise {
+						background: url(../images/tr_elise.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_corrinne {
+						background: url(../images/tr_corrinne.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_matt {
+						background: url(../images/tr_matt.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_munawar {
+						background: url(../images/tr_munawar.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_gina {
+						background: url(../images/tr_gina.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_jesse {
+						background: url(../images/tr_jesse.jpg) no-repeat 100% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 175%;
+					}
+					.tr_dan {
+						background: url(../images/tr_dan.jpg) no-repeat 55% 15%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 150%;
+					}
+					.tr_eric {
+						background: url(../images/tr_eric.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
+					.tr_jacob {
+						background: url(../images/tr_jacob.jpg) no-repeat 50% 15%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 150%;
+					}
+					.tr_phil {
+						background: url(../images/tr_phil.jpg) no-repeat 50% 5%;
+						height: 100px;
+						width: 100px;
+						margin: 0 auto;
+						background-size: 100%;
+					}
 		
 			
 		/* About stuff ------------------------------------- */
@@ -105,11 +192,9 @@ body {
 			padding-top: 10px;
 		}
 			#aboutmain h1 {
-				margin-top: 10px;
-				font-size: 24px;
+				font-size: 35px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
@@ -123,11 +208,9 @@ body {
 			padding-top: 10px;
 		}
 			#techtimepage h1 {
-				margin-top: 10px;
-				font-size: 24px;
+				font-size: 35px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
@@ -161,11 +244,9 @@ body {
 			padding-top: 10px;
 		}
 			#joinuspage h1 {
-				margin-top: 10px;
 				font-size: 35px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
@@ -229,22 +310,26 @@ body {
 		/* Tutorials stuff ------------------------------------- */	
 		#tutorialsmain section {
 			padding-left: 50px;
-			padding-right: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
-			#tutorialsmain #tutorials {
+			#tutorials {
 				margin: 0;
 				padding: 0;
-				overflow: auto;
+				/* overflow: auto; */ 
 			}
-				#tutorialsmain .tutitem {
+				.tutitem {
 					min-width: 400px;
 					max-width: 800px;
-					background: #DDDDDD;
+					background: #DDD;
 					display: block;
 					margin: 0 auto;
 					margin-bottom: 20px;
-					padding: 5px 45px 45px 45px;
+					padding: 10px;
+					padding-bottom: 50px;
+				}
+				#tutorials .tutitem:first-child {
+					background: none;
 				}
 					.tutitem h1 a {
 						font-family: 'League Gothic', sans-serif;

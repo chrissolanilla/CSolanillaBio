@@ -12,10 +12,6 @@
     font-style: normal;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 	header {
 		margin: auto;
 		position: relative;
@@ -58,14 +54,14 @@
 				color: #FFF;
 			}
 			#techrangers {
-				background: #25548e url(../images/logo_sheet2.png) no-repeat 10px;
+				background: #25548e url(../images/logo_sheet.png) no-repeat 10px;
 				background-position: 0px 0px;
 				font-size: 36px;
 				font-weight: bold;
 				padding: 19px 90px 0px 35px;
 			}
 				#techrangers:hover {
-					background: #25548e url(../images/logo_sheet2.png) no-repeat 10px;
+					background: #25548e url(../images/logo_sheet.png) no-repeat 10px;
 					background-position: 0px -84px;
 				}
 				#logohide {
