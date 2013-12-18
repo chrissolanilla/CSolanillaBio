@@ -94,90 +94,90 @@ body {
 					text-align: center;
 				}
 					.tr_sherry {
-						background: url(../images/tr_sherry.jpg) no-repeat 50% 20%;
+						background: url(../images/bios/sherry.jpg) no-repeat 50% 20%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 					}
 					.tr_liz {
-						background: url(../images/tr_liz.jpg) no-repeat 50% 20%;
+						background: url(../images/bios/liz.jpg) no-repeat 50% 20%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_sevena {
-						background: url(../images/tr_sevena.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/sevena.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_elise {
-						background: url(../images/tr_elise.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/elise.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_corrinne {
-						background: url(../images/tr_corrinne.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/corrinne.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_matt {
-						background: url(../images/tr_matt.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/matt.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_munawar {
-						background: url(../images/tr_munawar.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/munawar.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_gina {
-						background: url(../images/tr_gina.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/gina.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_jesse {
-						background: url(../images/tr_jesse.jpg) no-repeat 100% 5%;
+						background: url(../images/bios/jesse.jpg) no-repeat 100% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 175%;
 					}
 					.tr_dan {
-						background: url(../images/tr_dan.jpg) no-repeat 55% 15%;
+						background: url(../images/bios/dan.jpg) no-repeat 55% 15%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 150%;
 					}
 					.tr_eric {
-						background: url(../images/tr_eric.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/eric.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 100%;
 					}
 					.tr_jacob {
-						background: url(../images/tr_jacob.jpg) no-repeat 50% 15%;
+						background: url(../images/bios/jacob.jpg) no-repeat 50% 15%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
 						background-size: 150%;
 					}
 					.tr_phil {
-						background: url(../images/tr_phil.jpg) no-repeat 50% 5%;
+						background: url(../images/bios/phil.jpg) no-repeat 50% 5%;
 						height: 100px;
 						width: 100px;
 						margin: 0 auto;
@@ -216,7 +216,7 @@ body {
 			}
 				#techtimepage section h2 {
 					margin-bottom: -10px;
-					margin-top: 5px;
+					margin-top: 25px;
 				}
 				#techtimepage h2 a {
 					font-family: 'League Gothic', sans-serif;
@@ -263,11 +263,18 @@ body {
 				
 				
 		/* Showcase stuff ------------------------------------- */
-		#showcasepage {
+		#showcasemain section {
 			padding-left: 50px;
-			padding-right: 35px;
+			padding-right: 50px;
 			padding-top: 10px;
 		}
+			#sch1 {
+				font-size: 35px;
+				margin-top: 25px;
+				margin-bottom: 0;
+				border-top: 2px solid;
+				max-width: 57%;
+			}
 			#showcase {
 				margin: 0;
 				padding: 0;
@@ -285,17 +292,15 @@ body {
 				#showcase .scitem:first-child {
 					background: none;
 				}
-					.scitem h1 a {
+					.scitem h1 {
 						font-family: 'League Gothic', sans-serif;
 						font-weight: normal;
 						font-size: 35px;
 						color: #4371b5;
 						display: block;
 						text-align: center;
+						line-height: 0px;
 					}
-						.scitem h1 a:hover {
-							color: #4e84d4;
-						}
 					.scitem img {
 						height: 200px;
 						width: 300px;
@@ -310,7 +315,7 @@ body {
 		/* Tutorials stuff ------------------------------------- */	
 		#tutorialsmain section {
 			padding-left: 50px;
-			padding-right: 35px;
+			padding-right: 50px;
 			padding-top: 10px;
 		}
 			#tutorials {

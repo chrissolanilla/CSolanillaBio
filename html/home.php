@@ -27,8 +27,11 @@
         	
             <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-            <p class="homep">The Techrangers is a team of students at the <a href="#">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers act as student advocates and leaders by holding community workshops, participating in panels, and presenting at conventions.</p>
-            <p class="homep">Feel free to <a href="#">contact us</a>, <a href="#">read about us</a>, <a href="tutorials.php">learn from us</a>, and possibly <a href="joinus.php">join us</a>!</p> 
+            <p class="homep">The Techrangers&reg; is a team of students at the <a href="http://cdl.ucf.edu/">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers® act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
+            
+            <p class="homep">Feel free to <a href="mailto:techrangers@ucf.edu">contact us</a>, <a href="about.php">read about us</a>, <a href="https://plus.google.com/100247024936649114253">network with us</a>, <a href="techtime.php">learn from us</a> and <a href="joinus.php">possibly join us</a>!</p> 
+            
+            <p class="homep"><strong>For technical support</strong>, please contact Online@UCF Support at (407) 823-0407 or <a href="http://learn.ucf.edu/support/get-help/">http://learn.ucf.edu/support/get-help</a>. There are as well many self help online course resources on the <a href="http://learn.ucf.edu/">Learning Online Website</a>.</p>
             <!-- link for Contact us? -->
             
             <div id="photogrid">
