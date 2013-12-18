@@ -72,6 +72,14 @@ body {
 			padding-left: 50px;
 			padding-right: 35px;
 		}
+			#homepage h2 {
+				font-family: 'League Gothic', sans-serif;
+				font-weight: normal;
+				font-size: 30px;
+				color: #4371b5;
+				margin-left: 15px;
+				margin: 0;
+			}
 		#photogrid {
 		}
 			.trpic {
@@ -183,6 +191,32 @@ body {
 						margin: 0 auto;
 						background-size: 100%;
 					}
+					
+					
+					/* Bio page stuff --------------------------------------- */
+					#biopage {
+						padding-left: 50px;
+						padding-right: 35px;
+						padding-top: 10px;
+					}
+						.bioh1 {
+							font-size: 35px;
+							margin-top: 25px;
+							margin-bottom: 0;
+							border-top: 2px solid;
+							max-width: 57%;
+						}
+							#biopage section h2 {
+								font-family: 'League Gothic', sans-serif;
+								font-weight: normal;
+								font-size: 30px;
+								color: #4371b5;
+								margin-left: 15px;
+								margin: 0;
+							}
+							
+					/* Past bios stuff -------------------------------------- */
+					
 		
 			
 		/* About stuff ------------------------------------- */
