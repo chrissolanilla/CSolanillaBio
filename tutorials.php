@@ -27,7 +27,9 @@
         
         	<?php include('sidebar.html'); ?> <!-- sidebar.html -->
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Here at the Techrangers, we believe that you don't really know something until you are able to teach it. That is why, as part of our training, backend developers are given an opportunity to make a tutorial explaining a programming concept. The tutorials provide experience in development processes, technical writing, and project management.</p>
+
+			<p>These tutorials have been compiled here as a resource for our team and you.</p>
             
             <section id="tutorials">
                 <section class="tutitem"> 
