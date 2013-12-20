@@ -15,171 +15,48 @@
 * {
 	box-sizing: border-box;
 }
-
 body {
-	background: #777777;
+	background: #AAA;
 	margin: 0;
 }
 	p, ol, ul {
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	}
-	a {
-		font-family: Arial, Helvetica, sans-serif;
+	main a { /* 'main a' because 'a' will affect UCF nav bars */
+		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 		color: #4e84d4;
 	}
 		a:hover {
 			color: #395f99;
 		}
 
-	header {
-		background: url(../images/header-bg.jpg) repeat;
-		width: 1000px;
-		height: 130px;
-		margin: auto;
-		position: relative;
-	}
-		.navlist {
-			list-style-type: none;
-			overflow: hidden;
-			width: 1000px;
-			box-shadow: 0 5px 5px -2px #666666;
-			padding: 0;
-			margin: 0;
-		}
-		.navlist li {
-			display: inline-block;
-			list-style-type: none;
-		}
-		.navlist li a {
-			color: #FFF;
-			text-decoration: none;
-			font-family: 'League Gothic', sans-serif;
-			font-size: 35px;
-			padding: 9px 22px 0px 0px;
-			background: #25548e;
-			position: relative;
-			display: block;
-			height: 80px;
-			padding-left: 47px;
-			padding-top: 23px;
-			padding-bottom: 20px;
-			margin: 0px;
-			margin-left: -4px; /* overlap size */
-		}
-			.navlist li a:hover {
-				color: #ffc904;
-			}
-			.navlist li:last-child a:hover {
-				color: #FFF;
-			}
-			#techrangers {
-				background: #25548e url(../images/logo.png) no-repeat 10px;
-				font-size: 36px;
-				margin-top: 25px;
-				font-weight: bold;
-				padding: 23px 90px 0px 35px;
-			}
-				#techrangers:hover {
-					background: #25548e url(../images/logo2.png) no-repeat 10px;
-				}
-				#logohide {
-					visibility: hidden;
-				}
-		.navlist li a:after {
-			content: " ";
-			display: block;
-			width: 0;
-			height: 0;
-			border-top: 40px solid transparent;
-			border-bottom: 40px solid transparent;
-			border-left: 25px solid #25548e;
-			position: absolute;
-			top: 50%;
-			margin-top: -40px; /* arrow height */
-			left: 100%;
-			z-index: 2;
-		}
-		.navlist li:first-child a {
-			padding-left: 10px;
-		}
-		
-		.navlist li:nth-child(2) a {
-			background: #395f99;
-		}
-		.navlist li:nth-child(2) a:after {
-			border-left-color: #395f99;
-		}
-		
-		.navlist li:nth-child(3) a {
-			background: #4371b5;
-		}
-		.navlist li:nth-child(3) a:after {
-			border-left-color: #4371b5;
-		}
-		
-		.navlist li:nth-child(4) a {
-			background: #4e84d4;
-		}
-		.navlist li:nth-child(4) a:after {
-			border-left-color: #4e84d4;
-		}
-		
-		.navlist li:nth-child(5) a {
-			background: #548de3;
-		}
-		.navlist li:nth-child(5) a:after {
-			border-left-color: #548de3;
-		} 
-		
-		.navlist li:nth-child(6) a {
-			background: #ffc904;
-			color: #000;			
-			padding-right: 25px;
-		}
-		.navlist li:nth-child(6) a:after {
-			border-left-color: #ffc904;
-		} 
-		
-		.navlist li:last-child a:after {
-			border:none;
-		}
-		
-	
 	main {
 		background: #ebebec;
 		width: 1000px;
 		margin: auto;
-		box-sizing: border-box;
 		position: relative;
 		padding-top: 10px;
 		padding-bottom: 30px;
-		border-top: 2px solid #777777;
-		border-bottom: 2px solid #777777;
-		box-shadow: 0 5px 5px -2px #333;
 		z-index: 5;
+		margin-top: 30px;
 	}
 		#title {
 			background: #25548e;
 			height: 60px;
 			width: 1000px;
-			box-sizing: border-box;
-			border-top: 2px solid #777777;
-			border-bottom: 2px solid #777777;
 			margin-top: 20px;
 			padding: 5px;
 			padding-left: 50px;
-			box-shadow: 0 5px 5px -2px #AAAAAA;
+			box-shadow: 0 5px 5px -2px #AAA;
 		}
 			div h2 {
-				/* font-family: 'Carrois Gothic SC', sans-serif; */
 				font-family: 'League Gothic', sans-serif;
 				font-weight: normal;
 				font-size: 40px;
-				color: #FFFFFF;
+				color: #FFF;
 				margin: 0;
 			}
 		section h1 {
-			/* font-family: 'Carrois Gothic SC', sans-serif; */
 			font-family: 'League Gothic', sans-serif;
 			font-weight: normal;
 			color: #25548e;
@@ -192,14 +69,22 @@ body {
 		#homepage {
 			/* width: 640px; */ /* used when Tutorials aside was position: absolute */
 			padding-top: 10px;
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 		}
+			#homepage h2 {
+				font-family: 'League Gothic', sans-serif;
+				font-weight: normal;
+				font-size: 30px;
+				color: #4371b5;
+				margin-left: 15px;
+				margin: 0;
+			}
 		#photogrid {
 		}
 			.trpic {
-				height: 210px;
-				width: 100px;
+				height: 220px;
+				width: 130px;
 				display: inline-block;
 				overflow: auto;
 				margin: 10px;
@@ -210,105 +95,78 @@ body {
 					width: 100px;
 					display: block;
 					margin: 0 auto;
-					box-shadow: 0 5px 5px -2px #AAAAAA;
+					box-shadow: 0 5px 5px -2px #AAA;
 				}
 				.trpic p {
 					display: block;
 					text-align: center;
 				}
-		#homeaside {
-			background: #CCCCCC;
-			width: 300px;
-			float: right;
-			padding: 20px;
-			padding-top: 0px;
-			margin: 20px;
-			margin-top: -10px;
-			margin-left: 50px;
-			margin-bottom: 50px;
-			/* position: absolute;
-			right: 60px;
-			top: 0; */
-			border-right: 2px solid #777777;
-			border-left: 2px solid #777777;
-			border-bottom: 2px solid #777777;
-			box-shadow: 0 5px 5px -2px #AAAAAA;
-		}
-			#homeaside h2 {
-				text-align: center;
-				margin-bottom: 0;
-				margin-top: 30px;
-				border-top: 2px solid #777;
-				border-bottom: 2px solid #777;
-				/* font-family: 'Carrois Gothic SC', sans-serif; */
-				font-family: 'League Gothic', sans-serif;
-				font-weight: normal;
-				font-size: 40px;
-				padding: 10px;
-				color: #FFF;
-				background-color: #548de3;
-				width: 116%;
-				margin-left: -20px;
-				box-shadow: 0 5px 5px -2px #818181;
-			}
-				#homeaside h2:first-child {
-					/* border: none; */
-				}
-			#homeaside a {
-				color: #395f99;
-			}
-				#homeaside a:hover {
-					color: #4e84d4;
-				}
-			#homeaside ol li {
-				margin-top: 25px;
-			}
+					
+					
+					/* Bio page stuff --------------------------------------- */
+					#biopage {
+						padding-left: 50px;
+						padding-right: 35px;
+						padding-top: 10px;
+					}
+						.bioh1 {
+							font-size: 35px;
+							margin-top: 25px;
+							margin-bottom: 0;
+							border-top: 2px solid;
+							max-width: 57%;
+						}
+							#biopage section h2 {
+								font-family: 'League Gothic', sans-serif;
+								font-weight: normal;
+								font-size: 30px;
+								color: #4371b5;
+								margin-left: 15px;
+								margin: 0;
+							}
+							
+					/* Past bios stuff -------------------------------------- */
+					
+		
 			
 		/* About stuff ------------------------------------- */
 		#aboutpage {
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
 			#aboutmain h1 {
-				margin-top: 10px;
-				font-size: 24px;
+				font-size: 35px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
 				.aboutitem p {
-					margin-left: 30px;
-					margin-right: 30px;
 				}
 			
 		/* Tech Time stuff ------------------------------------- */
 		#techtimepage {
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
 			#techtimepage h1 {
-				margin-top: 10px;
-				font-size: 24px;
+				font-size: 35px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
 				#techtimepage section h2 {
 					margin-bottom: -10px;
-					margin-top: 5px;
+					margin-top: 25px;
 				}
 				#techtimepage h2 a {
 					font-family: 'League Gothic', sans-serif;
 					font-weight: normal;
 					font-size: 30px;
 					color: #4371b5;
-					margin-left: 15px;
 				}
 					#techtimepage h2 a:hover {
 						color: #4e84d4;
@@ -316,7 +174,7 @@ body {
 					.eventdate {
 						float: right;
 						font-style: italic;
-						margin-top: -23px;
+						margin-top: -25px;
 					}
 					#techtimepage .ttitem p {
 						margin-left: 30px;
@@ -325,16 +183,14 @@ body {
 					
 		/* Join Us stuff ------------------------------------- */
 		#joinuspage {
-			padding-left: 75px;
-			padding-right: 50px;
+			padding-left: 50px;
+			padding-right: 35px;
 			padding-top: 10px;
 		}
 			#joinuspage h1 {
-				margin-top: 10px;
 				font-size: 35px;
 				margin-top: 25px;
 				margin-bottom: 0;
-				font-size: 35px;
 				border-top: 2px solid;
 				max-width: 57%;
 			}
@@ -346,18 +202,23 @@ body {
 					margin-left: 15px;
 					margin: 0;
 				}
-				#joinuspage p {
-					margin-left: 30px;
-					margin-right: 30px;
+				#joinuspage section p {
 				}
 				
 				
 		/* Showcase stuff ------------------------------------- */
-		#showcasepage {
-			padding-left: 75px;
+		#showcasemain section {
+			padding-left: 50px;
 			padding-right: 50px;
 			padding-top: 10px;
 		}
+			#sch1 {
+				font-size: 35px;
+				margin-top: 25px;
+				margin-bottom: 0;
+				border-top: 2px solid;
+				max-width: 57%;
+			}
 			#showcase {
 				margin: 0;
 				padding: 0;
@@ -366,7 +227,7 @@ body {
 				.scitem {		
 					min-width: 400px;
 					max-width: 800px;
-					background: #DDDDDD;
+					background: #DDD;
 					display: block;
 					margin: 0 auto;
 					margin-bottom: 20px;
@@ -375,23 +236,21 @@ body {
 				#showcase .scitem:first-child {
 					background: none;
 				}
-					.scitem h1 a {
+					.scitem h1 {
 						font-family: 'League Gothic', sans-serif;
 						font-weight: normal;
 						font-size: 35px;
 						color: #4371b5;
 						display: block;
 						text-align: center;
+						line-height: 0px;
 					}
-						.scitem h1 a:hover {
-							color: #4e84d4;
-						}
 					.scitem img {
 						height: 200px;
 						width: 300px;
 						margin: 0 auto;
 						display: block;
-						box-shadow: 0 5px 5px -2px #AAAAAA;
+						box-shadow: 0 5px 5px -2px #AAA;
 					}
 					.scintro {
 						margin-top: 10px;
@@ -399,23 +258,27 @@ body {
 		
 		/* Tutorials stuff ------------------------------------- */	
 		#tutorialsmain section {
-			padding-left: 75px;
-			padding-right: 75px;
+			padding-left: 50px;
+			padding-right: 50px;
 			padding-top: 10px;
 		}
-			#tutorialsmain #tutorials {
+			#tutorials {
 				margin: 0;
 				padding: 0;
-				overflow: auto;
+				/* overflow: auto; */ 
 			}
-				#tutorialsmain .tutitem {
+				.tutitem {
 					min-width: 400px;
 					max-width: 800px;
-					background: #DDDDDD;
+					background: #DDD;
 					display: block;
 					margin: 0 auto;
 					margin-bottom: 20px;
-					padding: 5px 45px 45px 45px;
+					padding: 10px;
+					padding-bottom: 50px;
+				}
+				#tutorials .tutitem:first-child {
+					background: none;
 				}
 					.tutitem h1 a {
 						font-family: 'League Gothic', sans-serif;
@@ -433,70 +296,10 @@ body {
 						width: 300px;
 						margin: 0 auto;
 						display: block;
-						box-shadow: 0 5px 5px -2px #AAAAAA;
+						box-shadow: 0 5px 5px -2px #AAA;
 					}
 					.author {
 						font-style: italic;
 						float: right;
 						margin: -5px 0 15px 0;
 					}
-					
-		footer {
-			background: url(../images/footer-bg.jpg) repeat;
-			width: 1000px;
-			height: 75px;
-			margin: auto;
-			position: relative;
-			padding: 10px;
-			padding-left: 25px;
-			padding-right: 25px;
-		}
-			footer p {
-				color: #FFF;
-				float: left;
-			}
-			footer a {
-				color: #ffc904;
-			}
-				footer a:hover {
-					color: #FFF;
-				}
-			#socmed {
-
-			}
-				#socmed ul {
-					margin: 0;
-					margin-top: 2px;
-				}
-				#socmed ul li {
-					list-style-type: none;
-					display: inline;
-				}
-					#socmed span {
-						visibility: hidden;
-					}
-					#socmed a {
-						height: 50px;
-						width: 50px;
-						display: inline-block;
-						float: right;
-						margin-left: 15px;
-					}
-						#facebook {
-							background: url(../images/g_facebook.png) no-repeat;
-						}
-							#facebook:hover {
-								background: url(../images/w_facebook.png) no-repeat;
-							}
-						#gplus {
-							background: url(../images/g_gplus.png) no-repeat;
-						}
-							#gplus:hover {
-								background: url(../images/w_gplus.png) no-repeat;
-							}
-						#twitter {
-							background: url(../images/g_twitter.png) no-repeat;
-						}
-							#twitter:hover {
-								background: url(../images/w_twitter.png) no-repeat;
-							}

@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	header {
+		margin: auto;
+		position: relative;
+		background: #25548e;
+	}
+	nav {
+		margin: 0 auto;
+		width: 1040px;
+	}
+		.navlist {
+			list-style-type: none;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+		}
+		.navlist li {
+			display: inline-block;
+			list-style-type: none;
+		}
+		.navlist li a {
+			color: #FFF;
+			text-decoration: none;
+			font-family: 'League Gothic', sans-serif;
+			font-size: 35px;
+			padding: 9px 22px 0px 0px;
+			background: #25548e;
+			position: relative;
+			display: block;
+			height: 80px;
+			padding-left: 47px;
+			padding-top: 19px;
+			padding-bottom: 20px;
+			margin: 0px;
+			margin-left: -4px; /* overlap size */
+		}
+			.navlist li a:hover {
+				color: #ffc904;
+			}
+			.navlist li:last-child a:hover {
+				color: #FFF;
+			}
+			#techrangers {
+				background: #25548e url(../images/logo_sheet.png) no-repeat 10px;
+				background-position: 0px 0px;
+				font-size: 36px;
+				font-weight: bold;
+				padding: 19px 90px 0px 35px;
+			}
+				#techrangers:hover {
+					background: #25548e url(../images/logo_sheet.png) no-repeat 10px;
+					background-position: 0px -84px;
+				}
+				#logohide {
+					visibility: hidden;
+				}
+		.navlist li a:after {
+			content: " ";
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 40px solid transparent;
+			border-bottom: 40px solid transparent;
+			border-left: 25px solid #25548e;
+			position: absolute;
+			top: 50%;
+			margin-top: -40px; /* arrow height */
+			left: 100%;
+			z-index: 2;
+		}
+		.navlist li:first-child a {
+			padding-left: 10px;
+		}
+		
+		.navlist li:nth-child(2) a {
+			background: #395f99;
+		}
+		.navlist li:nth-child(2) a:after {
+			border-left-color: #395f99;
+		}
+		
+		.navlist li:nth-child(3) a {
+			background: #4371b5;
+		}
+		.navlist li:nth-child(3) a:after {
+			border-left-color: #4371b5;
+		}
+		
+		.navlist li:nth-child(4) a {
+			background: #4e84d4;
+		}
+		.navlist li:nth-child(4) a:after {
+			border-left-color: #4e84d4;
+		}
+		
+		.navlist li:nth-child(5) a {
+			background: #548de3;
+		}
+		.navlist li:nth-child(5) a:after {
+			border-left-color: #548de3;
+		} 
+		
+		.navlist li:nth-child(6) a {
+			background: #ffc904;
+			color: #000;			
+			padding-right: 25px;
+		}
+		.navlist li:nth-child(6) a:after {
+			border-left-color: #ffc904;
+		} 
+		
+		.navlist li:last-child a:after {
+			/* border:none; */
+			/* if last link has an arrow or not */
+		}
