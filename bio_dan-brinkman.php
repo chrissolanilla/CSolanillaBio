@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Dan Brinkman</h1>
         
-            	<img src="#" alt="Daniel Brinkman" />
+            	<img src="images/bios/dan.jpg" alt="Daniel Brinkman" />
             	
                 <h2>Degree:</h2>
                 	<p>Computer Science</p>

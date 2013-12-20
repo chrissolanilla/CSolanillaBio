@@ -34,11 +34,9 @@ body {
 		background: #ebebec;
 		width: 1000px;
 		margin: auto;
-		position: relative;
-		padding-top: 10px;
-		padding-bottom: 30px;
-		z-index: 5;
 		margin-top: 30px;
+		position: relative;
+		padding-top: 10px 0 30px 0;
 	}
 		#title {
 			background: #25548e;
@@ -63,14 +61,8 @@ body {
 		}
 			
 		/* Home stuff --------------------------------------- */
-		#homemain {
-			width: 1000px;
-		}
 		#homepage {
-			/* width: 640px; */ /* used when Tutorials aside was position: absolute */
-			padding-top: 10px;
-			padding-left: 50px;
-			padding-right: 35px;
+			padding: 10px 50px 0 35px;
 		}
 			#homepage h2 {
 				font-family: 'League Gothic', sans-serif;
@@ -105,9 +97,7 @@ body {
 					
 					/* Bio page stuff --------------------------------------- */
 					#biopage {
-						padding-left: 50px;
-						padding-right: 35px;
-						padding-top: 10px;
+						padding: 10px 35px 0 50px;
 					}
 						.bioh1 {
 							font-size: 35px;
@@ -124,6 +114,10 @@ body {
 								margin-left: 15px;
 								margin: 0;
 							}
+							#biopage img {
+								margin: 0 auto;
+								display: block;
+							}
 							
 					/* Past bios stuff -------------------------------------- */
 					
@@ -131,9 +125,7 @@ body {
 			
 		/* About stuff ------------------------------------- */
 		#aboutpage {
-			padding-left: 50px;
-			padding-right: 35px;
-			padding-top: 10px;
+			padding: 10px 50px 0 35px;
 		}
 			#aboutmain h1 {
 				font-size: 35px;
@@ -147,9 +139,7 @@ body {
 			
 		/* Tech Time stuff ------------------------------------- */
 		#techtimepage {
-			padding-left: 50px;
-			padding-right: 35px;
-			padding-top: 10px;
+			padding: 10px 50px 0 35px;
 		}
 			#techtimepage h1 {
 				font-size: 35px;
@@ -183,9 +173,7 @@ body {
 					
 		/* Join Us stuff ------------------------------------- */
 		#joinuspage {
-			padding-left: 50px;
-			padding-right: 35px;
-			padding-top: 10px;
+			padding: 10px 50px 0 35px;
 		}
 			#joinuspage h1 {
 				font-size: 35px;
@@ -207,10 +195,8 @@ body {
 				
 				
 		/* Showcase stuff ------------------------------------- */
-		#showcasemain section {
-			padding-left: 50px;
-			padding-right: 50px;
-			padding-top: 10px;
+		#showcasepage {
+			padding: 10px 50px 0 35px;
 		}
 			#sch1 {
 				font-size: 35px;
@@ -258,9 +244,7 @@ body {
 		
 		/* Tutorials stuff ------------------------------------- */	
 		#tutorialsmain section {
-			padding-left: 50px;
-			padding-right: 50px;
-			padding-top: 10px;
+			padding: 10px 50px 0 50px;
 		}
 			#tutorials {
 				margin: 0;

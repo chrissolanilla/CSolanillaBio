@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Philip Carter</h1>
         
-            	<img src="#" alt="Philip Carter" />
+            	<img src="images/bios/phil.jpg" alt="Philip Carter" />
             	
                 <h2>Degree:</h2>
                 	<p>xxxxx</p>

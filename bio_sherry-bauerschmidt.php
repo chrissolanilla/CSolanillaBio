@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Sherry Bauerschmidt Hofmeister</h1>
         
-            	<img src="#" alt="Sherry Bauerschmidt Hofmeister" />
+            	<img src="images/bios/sherry.jpg" alt="Sherry Bauerschmidt Hofmeister" />
             	
                 <h2>Degree:</h2>
                 	<p>Digital Media B.A.</p>
