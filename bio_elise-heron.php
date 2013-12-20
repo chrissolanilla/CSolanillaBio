@@ -48,7 +48,7 @@
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>Hello! I am currently a sophomore Computer Science student here at the University of Central Florida. In my spare time I like to swim, play video games, and knit.</p>
+                	<p>Hello! I am currently a junior Computer Science student here at the University of Central Florida. In my spare time I like to swim, play video games, and knit.</p>
         	</section>
         
         </section>
