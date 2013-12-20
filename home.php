@@ -35,19 +35,19 @@
             <p class="homep"><strong>For technical support</strong>, please contact Online@UCF Support at (407) 823-0407 or <a href="http://learn.ucf.edu/support/get-help/">http://learn.ucf.edu/support/get-help</a>. There are as well many self help online course resources on the <a href="http://learn.ucf.edu/">Learning Online Website</a>.</p>
             
             <div id="photogrid">
-                <div class="trpic"><div class="tr_sherry"></div><p>Sherry Bauerschmidt Hofmeister</p></div>
-                <div class="trpic"><div class="tr_liz"></div><p>Elizabeth Williams</p></div>
-                <div class="trpic"><div class="tr_sevena"></div><p>Sevena Skeels</p></div>
-                <div class="trpic"><div class="tr_elise"></div><p>Elise Heron</p></div>
-                <div class="trpic"><div class="tr_corrinne"></div><p><a href="bio_corrinne-schultze.php">Corrinne Schultze</a></p></div>
-                <div class="trpic"><div class="tr_matt"></div><p>Matthew Emond</p></div>
-                <div class="trpic"><div class="tr_munawar"></div><p>Munawar Bijani</p></div>
-                <div class="trpic"><div class="tr_gina"></div><p>Gina Piscitelli</p></div>
-                <div class="trpic"><div class="tr_jesse"></div><p>Jesse Slavens</p></div>
-                <div class="trpic"><div class="tr_dan"></div><p><a href="bio_dan-brinkman.php">Daniel Brinkman</a></p></div>
-                <div class="trpic"><div class="tr_eric"></div><p>Eric Colon</p></div>
-                <div class="trpic"><div class="tr_jacob"></div><p>Jacob Bates</p></div>
-                <div class="trpic"><div class="tr_phil"></div><p>Philip Carter</p></div>
+                <div class="trpic"><img src="images/thumbnails/sherry.jpg" /><p><a href="bio_sherry-bauerschmidt.php">Sherry Bauerschmidt Hofmeister</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/liz.jpg" /><p><a href="bio_elizabeth-williams.php">Elizabeth Williams</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/sevena.jpg" /><p><a href="bio_sevena-skeels.php">Sevena Skeels</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/elise.jpg" /><p><a href="bio_elise-heron.php">Elise Heron</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/corrinne.jpg" /><p><a href="bio_corrinne-schultze.php">Corrinne Schultze</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/matt.jpg" /><p><a href="bio_matthew-emond.php">Matthew Emond</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/munawar.jpg" /><p><a href="bio_munawar-bijani.php">Munawar Bijani</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/gina.jpg" /><p><a href="bio_gina-piscitelli.php">Gina Piscitelli</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/jesse.jpg" /><p><a href="bio_jesse-slavens.php">Jesse Slavens</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/dan.jpg" /><p><a href="bio_dan-brinkman.php">Daniel Brinkman</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/eric.jpg" /><p><a href="bio_eric-colon.php">Eric Colon</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/jacob.jpg" /><p><a href="bio_jacob-bates.php">Jacob Bates</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/phil.jpg" /><p><a href="bio_philip-carter.php">Philip Carter</a></p></div>
             </div>
             
             <h2>Past Techrangers</h2>

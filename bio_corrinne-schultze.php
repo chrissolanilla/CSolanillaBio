@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Corrinne Schultze</h1>
         
-            	<img src="#" alt="Corrinne Schultze" />
+            	<img src="images/bios/corrinne.jpg" alt="Corrinne Schultze" />
             	
                 <h2>Degree:</h2>
                 	<p>Digital Media - Web Design B.A.</p>
