@@ -36,7 +36,7 @@ body {
 		margin: auto;
 		margin-top: 30px;
 		position: relative;
-		padding-top: 10px 0 30px 0;
+		padding: 10px 0 30px 0;
 	}
 		#title {
 			background: #25548e;
