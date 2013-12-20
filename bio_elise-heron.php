@@ -44,7 +44,7 @@
                     
                 <h2>Learning:</h2>
                 	<ul>
-                    	<li>Javascript</li>
+                    	<li>JQuery</li>
                     </ul>
                 
                 <h2>Biography:</h2>
