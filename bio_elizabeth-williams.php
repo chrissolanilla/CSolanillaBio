@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Elizabeth Williams</h1>
         
-            	<img src="#" alt="Elizabeth Williams" />
+            	<img src="images/bios/liz.jpg" alt="Elizabeth Williams" />
             	
                 <h2>Degree:</h2>
                 	<p>Digital Media B.A.</p>

@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Eric Colon</h1>
         
-            	<img src="#" alt="Eric Colon" />
+            	<img src="images/bios/eric.jpg" alt="Eric Colon" />
             	
                 <h2>Degree:</h2>
                 	<p>xxxxx</p>

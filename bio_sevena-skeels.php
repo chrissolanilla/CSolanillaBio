@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Sevena Skeels</h1>
         
-            	<img src="#" alt="Sevena Skeels" />
+            	<img src="images/bios/sevena.jpg" alt="Sevena Skeels" />
             	
                 <h2>Degree:</h2>
                 	<p>Computer Science</p>

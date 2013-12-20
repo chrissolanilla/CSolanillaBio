@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Jacob Bates</h1>
         
-            	<img src="#" alt="Jacob Bates" />
+            	<img src="images/bios/jacob.jpg" alt="Jacob Bates" />
             	
                 <h2>Degree:</h2>
                 	<p>Computer Engineering B.S.</p>

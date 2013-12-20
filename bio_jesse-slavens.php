@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Jesse Slavens</h1>
         
-            	<img src="#" alt="Jesse Slavens" />
+            	<img src="images/bios/jesse.jpg" alt="Jesse Slavens" />
             	
                 <h2>Degree:</h2>
                 	<p>Digital Media B.A.</p>

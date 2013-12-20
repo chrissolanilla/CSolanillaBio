@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Matthew Emond</h1>
         
-            	<img src="#" alt="Matthew Emond" />
+            	<img src="images/bios/matt.jpg" alt="Matthew Emond" />
             	
                 <h2>Degree:</h2>
                 	<p>Computer Science</p>

@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Munawar Bijani</h1>
         
-            	<img src="#" alt="Munawar Bijani" />
+            	<img src="images/bios/munawar.jpg" alt="Munawar Bijani" />
             	
                 <h2>Degree:</h2>
                 	<p>xxxxx</p>

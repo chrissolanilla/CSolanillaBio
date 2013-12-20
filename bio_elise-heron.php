@@ -30,7 +30,7 @@
             <section>
             <h1 class="bioh1">Elise Heron</h1>
         
-            	<img src="#" alt="Elise Heron" />
+            	<img src="images/bios/elise.jpg" alt="Elise Heron" />
             	
                 <h2>Degree:</h2>
                 	<p>Computer Science</p>
