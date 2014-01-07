@@ -33,20 +33,25 @@
             	<img src="images/bios/eric.jpg" alt="Eric Colon" />
             	
                 <h2>Degree:</h2>
-                	<p>xxxxx</p>
+                	<p>Computer Engineering</p>
                 
                 <h2>Expertise:</h2>
                 	<ul>
-                    	<li>xxxxx</li>
+                    	<li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
                     </ul>
                     
                 <h2>Learning:</h2>
                 	<ul>
-                    	<li>xxxxx</li>
+                    	<li>PHP</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>xxxxx</p>
+                	<p>I'm a human being ooga booga.</p>
         	</section>
         
         </section>
