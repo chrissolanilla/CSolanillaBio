@@ -37,7 +37,7 @@
                 
                 <h2>Expertise:</h2>
                 	<ul>
-                    	<li>xxxxx</li>
+                    	<li>HAY</li>
                     </ul>
                     
                 <h2>Learning:</h2>
