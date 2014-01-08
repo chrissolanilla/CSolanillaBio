@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+strong {
+	font-weight: bold;
+}
+
 @font-face {
     font-family: 'League Gothic';
     src: url('../fonts/leaguegothic-regular-webfont.eot');
@@ -53,6 +57,7 @@ body {
 				font-size: 40px;
 				color: #FFF;
 				margin: 0;
+				margin-top: 0.4rem; /*Temporary */
 			}
 		section h1 {
 			font-family: 'League Gothic', sans-serif;

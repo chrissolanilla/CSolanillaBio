@@ -16,6 +16,7 @@
 		margin: auto;
 		position: relative;
 		background: #25548e;
+		height: 80px;
 	}
 	nav {
 		margin: 0 auto;
@@ -30,6 +31,7 @@
 		.navlist li {
 			display: inline-block;
 			list-style-type: none;
+			height: 80px;
 		}
 		.navlist li a {
 			color: #FFF;
