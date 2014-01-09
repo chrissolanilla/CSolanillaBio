@@ -23,9 +23,9 @@
             <h2>Meet the Techrangers</h2> 
         </div>
         
+        <?php include('sidebar.html'); ?> <!-- sidebar.html -->
+        
         <section id="biopage">
-        	
-            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             
             <section>
             <h1 class="bioh1">Jesse Slavens</h1>
