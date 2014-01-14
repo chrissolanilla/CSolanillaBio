@@ -6,7 +6,7 @@
 
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/reset.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -23,11 +23,10 @@
             <h2>Meet the Techrangers</h2> 
         </div>
         
+        <?php include('sidebar.html'); ?> <!-- sidebar.html -->
+        
         <section id="homepage">
-        	
-            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
-            
-            
+
             <p class="homep">The Techrangers&reg; is a team of students at the <a href="http://cdl.ucf.edu/">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers&reg; act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
             
             <p class="homep">Feel free to <a href="mailto:techrangers@ucf.edu">contact us</a>, <a href="about.php">read about us</a>, <a href="https://plus.google.com/100247024936649114253">network with us</a>, <a href="techtime.php">learn from us</a> and <a href="joinus.php">possibly join us</a>!</p> 

@@ -6,7 +6,7 @@
 
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/reset.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -23,10 +23,10 @@
             <h2>Tech Time</h2>
         </div>
         
+        <?php include('sidebar.html'); ?> <!-- sidebar.html -->
+        
         <section id="techtimepage">
-        	
-            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
-            
+
             <section>
                 <h1>What is Tech Time?</h1>
                 <p>Tech Time events are presented by the Techranger team of the <a href="http://cdl.ucf.edu/">Center for Distributed Learning</a>. They are presented to demonstrate the "nuts and bolts" functions of various computer-related applications. These sessions target intermediate to advanced web designers interested in furthering their web design skills. These are hands-on, in-depth sessions held in the Center for Distributed Learning offices for Students, Faculty, Staff, and Campus Webmasters. Seating is limited so you must RSVP if interested.</p>

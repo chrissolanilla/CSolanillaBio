@@ -6,7 +6,7 @@
 
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/reset.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -23,30 +23,30 @@
             <h2>Meet the Techrangers</h2> 
         </div>
         
+        <?php include('sidebar.html'); ?> <!-- sidebar.html -->
+        
         <section id="biopage">
-        	
-            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
-            
+        
             <section>
             <h1 class="bioh1">Philip Carter</h1>
         
             	<img src="images/bios/phil.jpg" alt="Philip Carter" />
             	
                 <h2>Degree:</h2>
-                	<p>xxxxx</p>
+                	<p>Digital Media - Web Development</p>
                 
                 <h2>Expertise:</h2>
                 	<ul>
-                    	<li>xxxxx</li>
+                    	<li>Full stack development</li>
                     </ul>
                     
                 <h2>Learning:</h2>
                 	<ul>
-                    	<li>xxxxx</li>
+                    	<li>Python and Django</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>xxxxx</p>
+                	<p>Served five years in the US Air Force as a Satellite Communications Technician, after which, I moved back to Orlando to pursue a degree from UCF. Graduated and began work as an Interface Engineer with a local startup. Landed a job a year later with UCF as a Web Applications Developer for the Center for Distributed Learning. I’m primarily interested in human computer interaction and spend most of my free time playing with various computer systems.</p>
         	</section>
         
         </section>

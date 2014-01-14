@@ -47,31 +47,31 @@
 				}
 					#facebook {
 						background: url(../images/logo_sheet.png) no-repeat;
-						background-position: 0px -168px;
-						border-radius: 50px;
+						background-position: 0px -192px;
+						border-radius: 50%;
 					}
 						#facebook:hover {
 							background: url(../images/logo_sheet.png) no-repeat;
-							background-position: -51px -168px;
-							border-radius: 50px;
+							background-position: -53px -192px;
+							border-radius: 50%;
 						}
 					#gplus {
 						background: url(../images/logo_sheet.png) no-repeat;
-						background-position: 0px -228px;
-						border-radius: 50px;
+						background-position: 0px -252px;
+						border-radius: 50%;
 					}
 						#gplus:hover {
 							background: url(../images/logo_sheet.png) no-repeat;
-							background-position: -51px -228px;
-							border-radius: 50px;
+							background-position: -53px -252px;
+							border-radius: 50%;
 						}
 					#twitter {
 						background: url(../images/logo_sheet.png) no-repeat;
-						background-position: 0px -288px;
-						border-radius: 50px;
+						background-position: 0px -312px;
+						border-radius: 50%;
 					}
 						#twitter:hover {
 							background: url(../images/logo_sheet.png) no-repeat;
-							background-position: -51px -288px;
-							border-radius: 50px;
+							background-position: -53px -312px;
+							border-radius: 50%;
 						}

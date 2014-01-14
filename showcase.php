@@ -6,7 +6,7 @@
 
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/reset.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -19,15 +19,14 @@
     
     <main role="main" id="showcasemain">
         <!-- main content -->
-    
     	<div id="title">
             <h2>Showcase</h2>
         </div>
     
+    	<?php include('sidebar.html'); ?> <!-- sidebar.html -->
+        
         <section id="showcasepage">
         	
-            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
-            
             <h1 id="sch1">Team Portfolio</h1>
             <p class="scintro">The Techrangers strive to develop and collaborate with the UCF community on new tools and projects that will allow our team, the <a href="#">Center for Distributed Learning</a> and the University as a whole to complete various tasks more efficiently &amp; represent the content accurately. Here is our portfolio of some of the initiatives that the Techranger team is currently working on or has worked on in the past. <strong>The following listing is in no particular order.</strong></p>
             
