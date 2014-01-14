@@ -22,8 +22,6 @@
         <div id="title">
             <h2>Join Us</h2>
         </div>
-        
-        <section id="joinuspage">
         	
             <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             
@@ -114,7 +112,6 @@
                                 </li>
                             </ul>
               </section>
-          </section>
     </main>
     
     <?php include('footer.html'); ?> <!-- footer.html -->
