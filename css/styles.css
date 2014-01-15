@@ -18,6 +18,9 @@ strong {
 
 * {
 	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing: border-box;
 }
 body {
 	background: #AAA;
@@ -49,6 +52,7 @@ body {
 			margin-top: 20px;
 			padding: 5px;
 			padding-left: 50px;
+			-webkit-box-shadow: 0 5px 5px -2px #AAA;
 			box-shadow: 0 5px 5px -2px #AAA;
 		}
 			div h2 {
@@ -92,6 +96,7 @@ body {
 					width: 100px;
 					display: block;
 					margin: 0 auto;
+					-webkit-box-shadow: 0 5px 5px -2px #AAA;
 					box-shadow: 0 5px 5px -2px #AAA;
 				}
 				.trpic p {
@@ -242,6 +247,7 @@ body {
 						width: 300px;
 						margin: 0 auto;
 						display: block;
+						-webkit-box-shadow: 0 5px 5px -2px #AAA;
 						box-shadow: 0 5px 5px -2px #AAA;
 					}
 					.scintro {
@@ -287,6 +293,7 @@ body {
 						width: 300px;
 						margin: 0 auto;
 						display: block;
+						-webkit-box-shadow: 0 5px 5px -2px #AAA;
 						box-shadow: 0 5px 5px -2px #AAA;
 					}
 					.author {
