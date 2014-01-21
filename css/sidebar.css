@@ -9,6 +9,7 @@ p {
 ol {
 	list-style-type: decimal;
 	margin: 1em 0em 1em 0em;
+	padding-left: 60px;
 	-webkit-padding-start: 60px;
 	-moz-padding-start: 60px;
 }
@@ -34,8 +35,7 @@ ol {
 		background: #CCC;
 		width: 300px;
 		float: right;
-		/*padding: 20px;*/
-		padding-top: 0px;
+		padding-bottom: 10px;
 		margin: 0px 50px 50px 50px;
 		box-shadow: 0 5px 5px -2px #AAA;
 		/* border-right: 2px solid #777;

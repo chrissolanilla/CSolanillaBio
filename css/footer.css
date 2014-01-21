@@ -44,6 +44,7 @@
 					display: inline-block;
 					float: right;
 					margin-left: 15px;
+					text-decoration: none;
 				}
 					#facebook {
 						background: url(../images/logo_sheet.png) no-repeat;
