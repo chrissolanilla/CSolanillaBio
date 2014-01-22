@@ -32,13 +32,14 @@
 			display: inline-block;
 			list-style-type: none;
 			height: 80px;
+			vertical-align: middle;
 		}
 		.navlist li a {
 			color: #FFF;
 			text-decoration: none;
 			font-family: 'League Gothic', sans-serif;
 			font-size: 35px;
-			padding: 27px 22px 20px 47px;
+			padding: 19px 22px 20px 47px;
 			background: #25548e;
 			position: relative;
 			display: block;
