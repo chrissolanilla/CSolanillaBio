@@ -25,7 +25,7 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section role="region" id="aboutpage">
+        <section role="region" class="pagecontent" id="aboutpage">
    
             <section role="region" class="aboutitem">
                 <h1>Who We Are</h1>

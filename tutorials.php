@@ -25,7 +25,7 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section role="region"> 
+        <section role="region" class="pagecontent"> 
         
             <p>Here at the Techrangers, we believe that you don't really know something until you are able to teach it. That is why, as part of our training, backend developers are given an opportunity to make a tutorial explaining a programming concept. The tutorials provide experience in development processes, technical writing, and project management.</p>
 

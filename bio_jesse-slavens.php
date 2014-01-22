@@ -25,7 +25,7 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section role="region" id="biopage">
+        <section role="region" class="pagecontent" id="biopage">
             
             <section role="region">
             <h1 class="bioh1">Jesse Slavens</h1>

@@ -23,7 +23,7 @@
             <h2>Past Techrangers</h2> 
         </div>
         
-        <section role="region" id="homepage">
+        <section role="region" class="pagecontent" id="homepage">
         	
             <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             

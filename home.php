@@ -28,7 +28,7 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section role="region" id="homepage">
+        <section role="region" class="pagecontent" id="homepage">
 
             <p class="homep">The Techrangers&reg; is a team of students at the <a href="http://cdl.ucf.edu/">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers&reg; act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
             

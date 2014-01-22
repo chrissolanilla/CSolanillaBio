@@ -25,7 +25,7 @@
     
     	<?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section role="region" id="showcasepage">
+        <section role="region" class="pagecontent" id="showcasepage">
         	
             <h1 id="sch1">Team Portfolio</h1>
             <p class="scintro">The Techrangers strive to develop and collaborate with the UCF community on new tools and projects that will allow our team, the <a href="#">Center for Distributed Learning</a> and the University as a whole to complete various tasks more efficiently &amp; represent the content accurately. Here is our portfolio of some of the initiatives that the Techranger team is currently working on or has worked on in the past. <strong>The following listing is in no particular order.</strong></p>

@@ -25,7 +25,7 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section role="region" id="techtimepage">
+        <section role="region" class="pagecontent" id="techtimepage">
 
             <section role="region">
                 <h1>What is Tech Time?</h1>

@@ -29,13 +29,6 @@ body {
 	p, ol, ul {
 		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	}
-	main a { /* 'main a' because 'a' will affect UCF nav bars */
-		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-		color: #4e84d4;
-	}
-		a:hover {
-			color: #395f99;
-		}
 
 	main {
 		background: #ebebec;
@@ -46,6 +39,37 @@ body {
 		padding: 10px 0 30px 0;
 		display: block;
 	}
+		main a { /* 'main a' because 'a' will affect UCF nav bars */
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			color: #4e84d4;
+		}
+			a:hover {
+				color: #395f99;
+			}
+
+			.pagecontent {
+				padding: 25px 50px 15px 50px;
+			}
+				.pagecontent h1 {
+					font-family: 'League Gothic', sans-serif;
+					font-weight: normal;
+					font-size: 35px;
+					color: #25548e;
+					margin-top: 25px;
+					margin-bottom: 0;
+					border-top: 2px solid;
+					max-width: 61%;
+				}
+				.pagecontent h2 {
+					font-family: 'League Gothic', sans-serif;
+					font-weight: normal;
+					font-size: 30px;
+					color: #4371b5;
+					margin: 0;
+					margin-top: 30px;
+				}
+
+	
 		#title {
 			background: #25548e url(../images/trbot.png) no-repeat;
 			background-position: 808px 2px;
@@ -64,23 +88,12 @@ body {
 				margin: 0;
 				margin-top: 0.4rem; /*Temporary */
 			}
-		section h1 {
-			font-family: 'League Gothic', sans-serif;
-			font-weight: normal;
-			color: #25548e;
-		}
+			
 			
 		/* Home stuff --------------------------------------- */
 		#homepage {
-			padding: 25px 50px 15px 50px;
 		}
 			#homepage h2 {
-				font-family: 'League Gothic', sans-serif;
-				font-weight: normal;
-				font-size: 30px;
-				color: #4371b5;
-				margin-left: 15px;
-				margin: 0;
 			}
 		#photogrid {
 		}
@@ -108,22 +121,10 @@ body {
 					
 					/* Bio page stuff --------------------------------------- */
 					#biopage {
-						padding: 25px 50px 15px 50px;
 					}
 						.bioh1 {
-							font-size: 35px;
-							margin-top: 25px;
-							margin-bottom: 0;
-							border-top: 2px solid;
-							max-width: 61%;
 						}
 							#biopage section h2 {
-								font-family: 'League Gothic', sans-serif;
-								font-weight: normal;
-								font-size: 30px;
-								color: #4371b5;
-								margin-left: 15px;
-								margin: 0;
 							}
 							#biopage img {
 								margin: 0 auto;
@@ -136,28 +137,20 @@ body {
 			
 		/* About stuff ------------------------------------- */
 		#aboutpage {
-			padding: 25px 50px 15px 50px;
 		}
 			#aboutmain h1 {
-				font-size: 35px;
-				margin-top: 25px;
-				margin-bottom: 0;
-				border-top: 2px solid;
-				max-width: 61%;
 			}
 				.aboutitem p {
+				}
+				#aboutpage ul {
+					list-style-type: square;
+					margin-left: 25px;
 				}
 			
 		/* Tech Time stuff ------------------------------------- */
 		#techtimepage {
-			padding: 25px 50px 15px 50px;
 		}
 			#techtimepage h1 {
-				font-size: 35px;
-				margin-top: 25px;
-				margin-bottom: 0;
-				border-top: 2px solid;
-				max-width: 61%;
 			}
 				#techtimepage section h2 {
 					margin-bottom: -10px;
@@ -184,37 +177,23 @@ body {
 					
 		/* Join Us stuff ------------------------------------- */
 		#joinusmain section {
-			padding: 25px 50px 15px 50px;
 		}
 			#joinusmain h1 {
-				font-size: 35px;
-				margin-top: 25px;
-				margin-bottom: 0;
-				border-top: 2px solid;
-				max-width: 61%;
 			}
 				#joinusmain section h2 {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 30px;
-					color: #4371b5;
-					margin-left: 15px;
-					margin: 0;
 				}
 				#joinuspage section p {
+				}
+				#joinuspage ul {
+					list-style-type: square;
+					margin-left: 25px;
 				}
 				
 				
 		/* Showcase stuff ------------------------------------- */
 		#showcasemain section {
-			padding: 25px 50px 15px 50px;
 		}
 			#sch1 {
-				font-size: 35px;
-				margin-top: 25px;
-				margin-bottom: 0;
-				border-top: 2px solid;
-				max-width: 61%;
 			}
 			#showcase {
 				margin: 0;
@@ -235,9 +214,8 @@ body {
 					background: none;
 				}
 					.scitem h1 {
-						font-family: 'League Gothic', sans-serif;
-						font-weight: normal;
-						font-size: 35px;
+						max-width: 100%;
+						border: none;
 						color: #4371b5;
 						display: block;
 						text-align: center;
@@ -257,7 +235,6 @@ body {
 		
 		/* Tutorials stuff ------------------------------------- */	
 		#tutorialsmain section {
-			padding: 25px 50px 45px 50px;
 		}
 			#tutorials {
 				margin: 0;
@@ -277,15 +254,18 @@ body {
 				#tutorials .tutitem:first-child {
 					background: none;
 				}
-					.tutitem h1 a {
-						font-family: 'League Gothic', sans-serif;
-						font-weight: normal;
-						font-size: 35px;
-						color: #4371b5;
+					.tutitem h1 {
+						max-width: 100%;
+						border: none;
 						display: block;
 						text-align: center;
 						margin-bottom: 10px;
 					}
+						.tutitem h1 a {
+							font-family: 'League Gothic', sans-serif;
+							color: #4371b5;
+							display: block;
+						}
 						.tutitem h1 a:hover {
 							color: #4e84d4;
 						}

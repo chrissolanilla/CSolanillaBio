@@ -23,8 +23,10 @@
             <h2>Join Us</h2>
         </div>
         	
-            <?php include('sidebar.html'); ?> <!-- sidebar.html -->
-            
+        <?php include('sidebar.html'); ?> <!-- sidebar.html -->
+        
+        <section class="pagecontent" id="joinuspage">
+
             <section role="region">
                 <h1>How Do I Apply to be a Techranger?</h1>
                     <p>If you would like to join the Techrangers' team, please do the following:</p>
@@ -112,6 +114,7 @@
                                 </li>
                             </ul>
               </section>
+        </section>
     </main>
     
     <?php include('footer.html'); ?> <!-- footer.html -->
