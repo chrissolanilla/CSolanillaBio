@@ -25,9 +25,9 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section id="biopage">
+        <section role="region" id="biopage">
             
-            <section>
+            <section role="region">
             <h1 class="bioh1">Sherry Bauerschmidt Hofmeister</h1>
         
             	<img src="images/bios/sherry.jpg" alt="Sherry Bauerschmidt Hofmeister" />

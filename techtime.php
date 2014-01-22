@@ -25,15 +25,15 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section id="techtimepage">
+        <section role="region" id="techtimepage">
 
-            <section>
+            <section role="region">
                 <h1>What is Tech Time?</h1>
                 <p>Tech Time events are presented by the Techranger team of the <a href="http://cdl.ucf.edu/">Center for Distributed Learning</a>. They are presented to demonstrate the "nuts and bolts" functions of various computer-related applications. These sessions target intermediate to advanced web designers interested in furthering their web design skills. These are hands-on, in-depth sessions held in the Center for Distributed Learning offices for Students, Faculty, Staff, and Campus Webmasters. Seating is limited so you must RSVP if interested.</p>
                 <p><a href="mailto:techrangers@ucf.edu">Contact us</a> if you are interested at having the Techrangers present for your on-campus event or class.  Stay tuned for future events!</p>
             </section>
             
-            <section class="ttitem">
+            <section role="region" class="ttitem">
                 <h1>Past Events</h1>
                     <h2><a href="http://techrangers.cdl.ucf.edu/introduction-to-css/">Introduction to CSS</a></h2>
                         <p class="eventdate">October 10<sup>th</sup>, 2013</p> <!-- <time> tag? -->

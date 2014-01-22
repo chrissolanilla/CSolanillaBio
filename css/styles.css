@@ -47,11 +47,12 @@ body {
 		display: block;
 	}
 		#title {
-			background: #25548e;
+			background: #25548e url(../images/trbot.png) no-repeat;
+			background-position: 808px 2px;
 			height: 60px;
 			width: 1000px;
 			margin-top: 20px;
-			padding: 5px 5px 5px 50px;
+			padding: 1px 5px 5px 50px;
 			-webkit-box-shadow: 0 5px 5px -2px #AAA;
 			box-shadow: 0 5px 5px -2px #AAA;
 		}

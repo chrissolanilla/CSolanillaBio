@@ -25,9 +25,9 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section id="biopage">
+        <section role="region" id="biopage">
         
-            <section>
+            <section role="region">
             <h1 class="bioh1">Philip Carter</h1>
         
             	<img src="images/bios/phil.jpg" alt="Philip Carter" />

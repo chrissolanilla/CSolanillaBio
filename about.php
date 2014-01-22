@@ -25,21 +25,21 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section id="aboutpage">
+        <section role="region" id="aboutpage">
    
-            <section class="aboutitem">
+            <section role="region" class="aboutitem">
                 <h1>Who We Are</h1>
                     <p>The Techrangers&reg; is a team of students of varied backgrounds and majors at the <a href="http://cdl.ucf.edu/">Center for Distributed Learning</a> who provide course development for faculty and web/application development for the University of Central Florida (UCF).  The Techrangers&reg; act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
                     
                     <p>To learn more about who makes up this team, read our bios. If you are interested in joining our team, visit the "<a href="joinus.php">Join</a>" section. Or, take a gander at our <a href="http://techrangers.cdws.ucf.edu/files/2008/10/TR-Team-Flyer-color-sm.pdf">team flyer</a>.</p>
             </section>
             
-            <section class="aboutitem">        
+            <section role="region" class="aboutitem">        
                 <h1>Our Mission</h1>
                     <p>The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age.</p>
             </section>
             
-            <section class="aboutitem">        
+            <section role="region" class="aboutitem">        
                 <h1>Our Goals</h1>
                     <ul>
                         <li>Learn, collaborate and educate each other in a supportive team environment.</li>
@@ -51,7 +51,7 @@
                     </ul>
             </section>
             
-            <section class="aboutitem">        
+            <section role="region" class="aboutitem">        
                 <h1>The Ideal Techranger Should...</h1>
                     <ul>
                         <li>Possess the desire and capacity to learn and apply new things.</li>
@@ -67,7 +67,7 @@
                     </ul>
             </section>
             
-            <section class="aboutitem">        
+            <section role="region" class="aboutitem">        
                 <h1>Techranger Duties</h1>
                     <p>Techrangers are expected to perform various tasks, including:</p>
                         <ul>

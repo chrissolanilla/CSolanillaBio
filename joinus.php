@@ -25,7 +25,7 @@
         	
             <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             
-            <section>
+            <section role="region">
                 <h1>How Do I Apply to be a Techranger?</h1>
                     <p>If you would like to join the Techrangers' team, please do the following:</p>
                     <ul>
@@ -37,12 +37,12 @@
                     <p>Questions? <a href="mailto:techrangers@ucf.edu">Email us</a>.</p>
             </section>
             
-            <section>
+            <section role="region">
                 <h1>Who are the Techrangers and what do they do?</h1>
                     <p>Read the <a href="about.php">"About Us"</a> section for our mission, goals and a list of the Techrangers' duties.</p>
             </section>
             
-            <section>
+            <section role="region">
                 <h1>What are the benefits of being a Techranger?</h1>
                     <ul>
                         <li>Flexible Hours</li>
@@ -55,7 +55,7 @@
                     </ul>
             </section>
             
-            <section>
+            <section role="region">
                 <h1>What skills do I need to be a Techranger?</h1>
                     <p>All Techrangers should possess the following qualities and skills:</p>
                         <h2>Core Skills</h2>

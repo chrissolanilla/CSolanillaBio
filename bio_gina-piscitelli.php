@@ -25,9 +25,9 @@
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->
         
-        <section id="biopage">
+        <section role="region" id="biopage">
         	
-            <section>
+            <section role="region">
             <h1 class="bioh1">Gina Piscitelli</h1>
         
             	<img src="images/bios/gina.jpg" alt="Gina Piscitelli" />
