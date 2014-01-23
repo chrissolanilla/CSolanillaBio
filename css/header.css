@@ -54,8 +54,6 @@
 				color: #FFF;
 			}
 			#techrangers {
-				/* background: #25548e url(../images/logo_sheet.png) no-repeat 10px; 
-				background-position: 0px 0px; */
 				font-size: 60px;
 				padding: 4px 35px 0px 25px;
 				color: #fff;
@@ -79,54 +77,63 @@
 					left: -1px;
 					letter-spacing: -9px;
 					-webkit-transform: rotate(-2deg);
+					transform: rotate(-2deg);
 				}
 				#char4 {
 					font-size: 53px;
 					left: -1px;
 					letter-spacing: -10px;
 					-webkit-transform: rotate(-1deg);
+					transform: rotate(-1deg);
 				}
 				#char5 {
 					font-size: 55px;
 					left: -1px;
 					letter-spacing: -8px;
 					-webkit-transform: rotate(1deg);
+					transform: rotate(1deg);
 				}
 				#char6 {
 					font-size: 54px;
 					left: -1px;
 					letter-spacing: -10px;
 					-webkit-transform: rotate(1deg);
+					transform: rotate(1deg);
 				}
 				#char7 {
 					font-size: 54px;
 					left: -1px;
 					letter-spacing: -9px;
 					-webkit-transform: rotate(-2deg);
+					transform: rotate(-2deg);
 				}
 				#char8 {
 					font-size: 54px;
 					left: -1px;
 					letter-spacing: -9px;
 					-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
 				}
 				#char9 {
 					font-size: 53px;
 					left: -1px;
 					letter-spacing: -9px;
 					-webkit-transform: rotate(-1deg);
+					transform: rotate(-1deg);
 				}
 				#char10 {
 					font-size: 54px;
 					left: -1px;
 					letter-spacing: -10px;
 					-webkit-transform: rotate(1deg);
+					transform: rotate(1deg);
 				}
 				#char11 {
 					font-size: 54px;
 					left: -1px;
 					letter-spacing: -5px;
 					-webkit-transform: rotate(-2deg);
+					transform: rotate(-2deg);
 				}
 				
 

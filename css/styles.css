@@ -33,8 +33,7 @@ body {
 	main {
 		background: #ebebec;
 		width: 1000px;
-		margin: auto;
-		margin-top: 30px;
+		margin: 30px auto 0 auto;
 		position: relative;
 		padding: 10px 0 30px 0;
 		display: block;
@@ -55,8 +54,7 @@ body {
 					font-weight: normal;
 					font-size: 35px;
 					color: #25548e;
-					margin-top: 25px;
-					margin-bottom: 0;
+					margin: 25px 0 0 0;;
 					border-top: 2px solid;
 					max-width: 61%;
 				}
@@ -65,8 +63,7 @@ body {
 					font-weight: normal;
 					font-size: 30px;
 					color: #4371b5;
-					margin: 0;
-					margin-top: 30px;
+					margin: 30px 0 0 0;
 				}
 
 	
@@ -153,8 +150,7 @@ body {
 			#techtimepage h1 {
 			}
 				#techtimepage section h2 {
-					margin-bottom: -10px;
-					margin-top: 30px;
+					margin: 30px 0 -10px 0;
 				}
 				#techtimepage h2 a {
 					font-family: 'League Gothic', sans-serif;
@@ -205,10 +201,8 @@ body {
 					max-width: 800px;
 					background: #DDD;
 					display: block;
-					margin: 0 auto;
-					margin-bottom: 30px;
-					padding: 10px;
-					padding-bottom: 50px;
+					margin: 0 auto 30px auto;
+					padding: 10px 10px 30px 10px;
 				}
 				#showcase .scitem:first-child {
 					background: none;
@@ -246,10 +240,8 @@ body {
 					max-width: 800px;
 					background: #DDD;
 					display: block;
-					margin: 0 auto;
-					margin-bottom: 30px;
-					padding: 10px;
-					padding-bottom: 50px;
+					margin: 0 auto 30px auto;
+					padding: 10px 10px 50px 10px;
 				}
 				#tutorials .tutitem:first-child {
 					background: none;

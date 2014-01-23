@@ -5,12 +5,9 @@
 		background: url(../images/footer-bg.jpg) repeat;
 		width: 1000px;
 		height: 85px;
-		margin: auto;
-		margin-bottom: 20px;
+		margin: 0 auto 20px auto;
 		position: relative;
-		padding: 15px;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding: 15px 50px 15px 50px;
 	}
 		footer p {
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
