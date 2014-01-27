@@ -99,8 +99,8 @@ body {
 		#photogrid {
 		}
 			.trpic {
-				height: 220px;
 				width: 130px;
+				vertical-align: top;
 				display: inline-block;
 				overflow: auto;
 				margin: 10px;
