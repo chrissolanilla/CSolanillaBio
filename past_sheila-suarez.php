@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Keegan Berry - Techrangers</title>
+<title>Sheila Suarez de Flores - Techrangers</title>
 
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
@@ -28,33 +28,32 @@
         <section role="region" class="pagecontent" id="biopage">
         
             <section role="region">
-            <h1 class="bioh1">Keegan Berry</h1>
+            <h1 class="bioh1">Sheila Suarez de Flores</h1>
         
-            	<img src="images/bios/keegan.jpg" alt="Keegan Berry" />
+            	<img src="images/bios/sheila.jpg" alt="Sheila Suarez de Flores" />
             	
                 <h2>Degree:</h2>
-                	<p>Digital Media</p>
+                	<p>Digital Media B.A. (minor: Computer Science)</p>
 
                 <h2>Website:</h2>
-                    <p><a href="http://keeganberry.com/" target="_blank">http://keeganberry.com/</a></p>
+                    <p><a href="http://www.sdeflores.com/" target="_blank">http://www.sdeflores.com/</a></p> 
                 
                 <h2>Expertise:</h2>
                 	<ul>
-                        <li>(X)HTML</li>
+                        <li>XHTML</li>
                         <li>CSS</li>
-                        <li>Javascript and jQuery</li>
-                        <li>Photoshop</li>
+                        <li>Javascript/jQuery</li>
+                        <li>PHP</li>
+                        <li>Section 508 &amp; W3C standards compliance</li>
                     </ul>
                     
-                <h2>Not Exactly an Expert with:</h2>
+                <h2>Learning:</h2>
                 	<ul>
-                        <li>PHP</li>
-                        <li>Actionscript, Flash, and Flex</li>
+                        <li>Django/Python</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>I'm a graduate from the University of Central Florida who graduated with a BA in Digital Media. I like the idea of the Digital Media program, because it suggests a good mix of design and development. My other hobbies/interests include cooking, doodling, riding my bike around, as well as some other things.</p>
-                    <p><img src="images/rooster.png" /></p>
+                	<p>I am a Digital Media BA Graduate from UCF, with a minor in Computer Science. Currently I am the semi omnipotent Team Lead of the Techrangers. Besides web development, <a href="http://shoutswing.com/" target="_blank">I swing dance a lot</a> and am heavily involved in <a href="http://swingknights.org/" target="_blank">The Swing Knights at UCF</a>. I love to travel, write, <a href="https://www.facebook.com/groups/16117212518/" target="_blank">read</a> and have strong opinions on movies. I hate being kicked out of comedy troupes.</p>
         	</section>
         
         </section>

@@ -33,7 +33,7 @@
             	<img src="images/bios/matt.jpg" alt="Matthew Emond" />
             	
                 <h2>Degree:</h2>
-                	<p>Computer Science</p>
+                	<p>Information Technology</p>
                 
                 <h2>Expertise:</h2>
                 	<ul>
@@ -46,12 +46,12 @@
                 <h2>Learning:</h2>
                 	<ul>
                     	<li>Javascript</li>
-                        <li>PHP</li>
+                        <li>Python</li>
                         <li>mySQL</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>Hi, I'm Matt Emond! I am currently a student at UCF majoring in Computer Science and am also an active member of the UCF Robotics Club. Currently I am most familiar with XHTML and CSS, and a fair bit of C from my programming classes. I am also an Adobe Certified Associate in Photoshop CS4 &amp; CS5, Dreamweaver CS4 &amp; CS5, and Flash CS4. My focus for the coming years is putting to use my current skills, and learning new ones! Specifically, I am interested in learning about PHP, MySQL, and JavaScript.</p>
+                	<p>Hi, I'm Matt Emond! I am currently a student at UCF majoring in Information Technology and am also an active member of the UCF Robotics Club. Currently I am most familiar with XHTML and CSS, and a fair bit of C from my programming classes. I am also an Adobe Certified Associate in Photoshop CS4 &amp; CS5, Dreamweaver CS4 &amp; CS5, and Flash CS4. My focus for the coming years is putting to use my current skills, and learning new ones! Specifically, I am interested in learning about PHP, MySQL, and JavaScript.</p>
         	</section>
         
         </section>

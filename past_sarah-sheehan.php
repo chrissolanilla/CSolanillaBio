@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Keegan Berry - Techrangers</title>
+<title>Sarah Sheehan - Techrangers</title>
 
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
@@ -28,33 +28,28 @@
         <section role="region" class="pagecontent" id="biopage">
         
             <section role="region">
-            <h1 class="bioh1">Keegan Berry</h1>
+            <h1 class="bioh1">Sarah Sheehan</h1>
         
-            	<img src="images/bios/keegan.jpg" alt="Keegan Berry" />
+            	<img src="images/bios/sarah.jpg" alt="Sarah Sheehan" />
             	
                 <h2>Degree:</h2>
-                	<p>Digital Media</p>
-
-                <h2>Website:</h2>
-                    <p><a href="http://keeganberry.com/" target="_blank">http://keeganberry.com/</a></p>
+                	<p>Digital Media B.A.</p>
                 
                 <h2>Expertise:</h2>
                 	<ul>
-                        <li>(X)HTML</li>
+                        <li>XHTML</li>
                         <li>CSS</li>
-                        <li>Javascript and jQuery</li>
-                        <li>Photoshop</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
                     </ul>
                     
-                <h2>Not Exactly an Expert with:</h2>
+                <h2>Learning:</h2>
                 	<ul>
-                        <li>PHP</li>
-                        <li>Actionscript, Flash, and Flex</li>
+                        <li>Javascript</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>I'm a graduate from the University of Central Florida who graduated with a BA in Digital Media. I like the idea of the Digital Media program, because it suggests a good mix of design and development. My other hobbies/interests include cooking, doodling, riding my bike around, as well as some other things.</p>
-                    <p><img src="images/rooster.png" /></p>
+                	<p>My name is Sarah and I have a degree in Digital Media with a minor in Computer Science. I love web design but have recently gained an interest in programming as well.</p>
         	</section>
         
         </section>

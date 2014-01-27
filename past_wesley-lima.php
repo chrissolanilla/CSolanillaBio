@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Keegan Berry - Techrangers</title>
+<title>Wesley Lima - Techrangers</title>
 
 <script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
 <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
@@ -28,33 +28,31 @@
         <section role="region" class="pagecontent" id="biopage">
         
             <section role="region">
-            <h1 class="bioh1">Keegan Berry</h1>
+            <h1 class="bioh1">Wesley Lima</h1>
         
-            	<img src="images/bios/keegan.jpg" alt="Keegan Berry" />
+            	<img src="images/bios/wesley.jpg" alt="Wesley Lima" />
             	
                 <h2>Degree:</h2>
-                	<p>Digital Media</p>
+                	<p>Electrical Engineering</p>
 
                 <h2>Website:</h2>
-                    <p><a href="http://keeganberry.com/" target="_blank">http://keeganberry.com/</a></p>
+                    <p><a href="http://www.wesleylima.com/" targe="_blank">http://www.wesleylima.com/</a></p>
                 
                 <h2>Expertise:</h2>
                 	<ul>
-                        <li>(X)HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript and jQuery</li>
-                        <li>Photoshop</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>XHTML</li>
                     </ul>
                     
-                <h2>Not Exactly an Expert with:</h2>
+                <h2>Learning:</h2>
                 	<ul>
+                        <li>Django</li>
                         <li>PHP</li>
-                        <li>Actionscript, Flash, and Flex</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>I'm a graduate from the University of Central Florida who graduated with a BA in Digital Media. I like the idea of the Digital Media program, because it suggests a good mix of design and development. My other hobbies/interests include cooking, doodling, riding my bike around, as well as some other things.</p>
-                    <p><img src="images/rooster.png" /></p>
+                	<p>When Wesley goes swimming, he does not get wet. The pool gets Wesley'd.</p>
         	</section>
         
         </section>

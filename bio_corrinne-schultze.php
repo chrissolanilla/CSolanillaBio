@@ -34,6 +34,9 @@
             	
                 <h2>Degree:</h2>
                 	<p>Digital Media - Web Design B.A.</p>
+
+                <h2>Website:</h2>
+                    <p><a href="http://cschultze.github.io/" target="_blank">http://cschultze.github.io/</a></p>
                 
                 <h2>Expertise:</h2>
                 	<ul>
