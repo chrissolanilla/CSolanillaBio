@@ -45,7 +45,6 @@
                 <div class="trpic"><img src="images/thumbnails/matt.jpg" /><p><a href="bio_matthew-emond.php">Matthew Emond</a></p></div>
                 <div class="trpic"><img src="images/thumbnails/munawar.jpg" /><p><a href="bio_munawar-bijani.php">Munawar Bijani</a></p></div>
                 <div class="trpic"><img src="images/thumbnails/gina.jpg" /><p><a href="bio_gina-piscitelli.php">Gina Piscitelli</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/jesse.jpg" /><p><a href="bio_jesse-slavens.php">Jesse Slavens</a></p></div>
                 <div class="trpic"><img src="images/thumbnails/dan.jpg" /><p><a href="bio_dan-brinkman.php">Daniel Brinkman</a></p></div>
                 <div class="trpic"><img src="images/thumbnails/eric.jpg" /><p><a href="bio_eric-colon.php">Eric Colon</a></p></div>
                 <div class="trpic"><img src="images/thumbnails/jacob.jpg" /><p><a href="bio_jacob-bates.php">Jacob Bates</a></p></div>

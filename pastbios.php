@@ -31,24 +31,25 @@
             <p class="homep">Note that this is not a complete list.</p>
             
             <div id="photogrid">
-                <div class="trpic"><div class="tr_charles"></div><p>Charles Bortz</p></div>
-                <div class="trpic"><div class="tr_chrisb"></div><p>Chris Beck</p></div>
-                <div class="trpic"><div class="tr_christopher"></div><p>Christopher McLean</p></div>
-                <div class="trpic"><div class="tr_corey"></div><p>Corey Maynard</p></div>
-                <div class="trpic"><div class="tr_douglas"></div><p>Douglas Beck</p></div>
-                <div class="trpic"><div class="tr_geoff"></div><p>Geoff Quinby</p></div>
-                <div class="trpic"><div class="tr_ginan"></div><p>Ginan Jobarah</p></div>
-                <div class="trpic"><div class="tr_joe"></div><p>Joe Moceri</p></div>
-                <div class="trpic"><div class="tr_justin"></div><p>Justin Taylor</p></div>
-                <div class="trpic"><div class="tr_keegan"></div><p>Keegan Berry</p></div>
-                <div class="trpic"><div class="tr_kevin"></div><p>Kevin Baugh</p></div>
-                <div class="trpic"><div class="tr_max"></div><p>Max Burstein</p></div>
-                <div class="trpic"><div class="tr_rachel"></div><p>Rachel Davis</p></div>
-                <div class="trpic"><div class="tr_robert"></div><p>Robert Cooper</p></div>
-                <div class="trpic"><div class="tr_sarah"></div><p>Sarah Sheehan</p></div>
-                <div class="trpic"><div class="tr_sheila"></div><p>Sheila Suarez de Flores</p></div>
-                <div class="trpic"><div class="tr_tatiana"></div><p>Tatiana Abromitis</p></div>
-                <div class="trpic"><div class="tr_wesley"></div><p>Wesley Lima</p></div>
+                <div class="trpic"><img src="images/thumbnails/jesse.jpg" /><p><a href="past_jesse-slavens.php">Jesse Slavens</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/charles.jpg" /><p><a href="past_charles-bortz.php">Charles Bortz</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/chris.jpg" /><p><a href="past_.php">Chris Beck</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/christopher.jpg" /><p><a href="past_.php">Christopher McLean</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/corey.jpg" /><p><a href="past_.php">Corey Maynard</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/douglas.jpg" /><p><a href="past_.php">Douglas Beck</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/geoff.jpg" /><p><a href="past_.php">Geoff Quinby</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/ginan.jpg" /><p><a href="past_.php">Ginan Jobarah</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/joe.jpg" /><p><a href="past_.php">Joe Moceri</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/justin.jpg" /><p><a href="past_.php">Justin Taylor</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/keegan.jpg" /><p><a href="past_.php">Keegan Berry</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/kevin.jpg" /><p><a href="past_.php">Kevin Baugh</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/max.jpg" /><p><a href="past_.php">Max Burstein</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/rachel.jpg" /><p><a href="past_.php">Rachel Davis</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/robert.jpg" /><p><a href="past_.php">Robert Cooper</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/sarah.jpg" /><p><a href="past_.php">Sarah Sheehan</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/sheila.jpg" /><p><a href="past_.php">Sheila Suarez de Flores</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/tatiana.jpg" /><p><a href="past_.php">Tatiana Abromitis</a></p></div>
+                <div class="trpic"><img src="images/thumbnails/wesley.jpg" /><p><a href="past_.php">Wesley Lima</a></p></div>
             </div>
             
         </section>

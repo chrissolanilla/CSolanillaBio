@@ -29,6 +29,10 @@ body {
 	p, ol, ul {
 		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	}
+		ul {
+			list-style-type: square;
+			margin-left: 25px;
+		}
 
 	main {
 		background: #ebebec;
