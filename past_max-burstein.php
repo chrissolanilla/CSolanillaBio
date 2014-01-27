@@ -55,7 +55,7 @@
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>My name is Max Burstein and I'm a graduate from UCF.  I began using computers around the age of 5 and since then have been really interested in their inner workings. I love building large, scalable applications and have lately been working with Python/Django alot. Planning to do some work with Node JS in the future as I feel the platform has a lot to offer for realtime web development.</p>
+                	<p>My name is Max Burstein and I'm a graduate from UCF.  I began using computers around the age of 5 and since then have been really interested in their inner workings. I love building large, scalable applications and have lately been working with Python/Django a lot. Planning to do some work with Node JS in the future as I feel the platform has a lot to offer for realtime web development.</p>
         	</section>
         
         </section>
