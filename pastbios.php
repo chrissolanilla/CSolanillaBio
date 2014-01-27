@@ -31,25 +31,25 @@
             <p class="homep">Note that this is not a complete list.</p>
             
             <div id="photogrid">
-                <div class="trpic"><img src="images/thumbnails/jesse.jpg" /><p><a href="past_jesse-slavens.php">Jesse Slavens</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/charles.jpg" /><p><a href="past_charles-bortz.php">Charles Bortz</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/chris.jpg" /><p><a href="past_chris-beck.php">Chris Beck</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/christopher.jpg" /><p><a href="past_christopher-mclean.php">Christopher McLean</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/corey.jpg" /><p><a href="past_corey-maynard.php">Corey Maynard</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/douglas.jpg" /><p><a href="past_douglas-beck.php">Douglas Beck</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/geoff.jpg" /><p><a href="past_geoff-quinby.php">Geoff Quinby</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/ginan.jpg" /><p><a href="past_ginan-jobarah.php">Ginan Jobarah</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/joe.jpg" /><p><a href="past_joe-moceri.php">Joe Moceri</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/justin.jpg" /><p><a href="past_justin-taylor.php">Justin Taylor</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/keegan.jpg" /><p><a href="past_keegan-berry.php">Keegan Berry</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/kevin.jpg" /><p><a href="past_kevin-baugh.php">Kevin Baugh</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/max.jpg" /><p><a href="past_max-burstein.php">Max Burstein</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/rachel.jpg" /><p><a href="past_rachel-davis.php">Rachel Davis</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/robert.jpg" /><p><a href="past_robert-cooper.php">Robert Cooper</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/sarah.jpg" /><p><a href="past_sarah-sheehan.php">Sarah Sheehan</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/sheila.jpg" /><p><a href="past_sheila-suarez.php">Sheila Suarez de Flores</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/tatiana.jpg" /><p><a href="past_tatiana-abromitis.php">Tatiana Abromitis</a></p></div>
-                <div class="trpic"><img src="images/thumbnails/wesley.jpg" /><p><a href="past_wesley-lima.php">Wesley Lima</a></p></div>
+                <div class="trpic"><a href="past_jesse-slavens.php"><img src="images/thumbnails/jesse.jpg" /><p>Jesse Slavens</p></a></div>
+                <div class="trpic"><a href="past_charles-bortz.php"><img src="images/thumbnails/charles.jpg" /><p>Charles Bortz</p></a></div>
+                <div class="trpic"><a href="past_chris-beck.php"><img src="images/thumbnails/chris.jpg" /><p>Chris Beck</p></a></div>
+                <div class="trpic"><a href="past_christopher-mclean.php"><img src="images/thumbnails/christopher.jpg" /><p>Christopher McLean</p></a></div>
+                <div class="trpic"><a href="past_corey-maynard.php"><img src="images/thumbnails/corey.jpg" /><p>Corey Maynard</p></a></div>
+                <div class="trpic"><a href="past_douglas-beck.php"><img src="images/thumbnails/douglas.jpg" /><p>Douglas Beck</p></a></div>
+                <div class="trpic"><a href="past_geoff-quinby.php"><img src="images/thumbnails/geoff.jpg" /><p>Geoff Quinby</p></a></div>
+                <div class="trpic"><a href="past_ginan-jobarah.php"><img src="images/thumbnails/ginan.jpg" /><p>Ginan Jobarah</p></a></div>
+                <div class="trpic"><a href="past_joe-moceri.php"><img src="images/thumbnails/joe.jpg" /><p>Joe Moceri</p></a></div>
+                <div class="trpic"><a href="past_justin-taylor.php"><img src="images/thumbnails/justin.jpg" /><p>Justin Taylor</p></a></div>
+                <div class="trpic"><a href="past_keegan-berry.php"><img src="images/thumbnails/keegan.jpg" /><p>Keegan Berry</p></a></div>
+                <div class="trpic"><a href="past_kevin-baugh.php"><img src="images/thumbnails/kevin.jpg" /><p>Kevin Baugh</p></a></div>
+                <div class="trpic"><a href="past_max-burstein.php"><img src="images/thumbnails/max.jpg" /><p>Max Burstein</p></a></div>
+                <div class="trpic"><a href="past_rachel-davis.php"><img src="images/thumbnails/rachel.jpg" /><p>Rachel Davis</p></a></div>
+                <div class="trpic"><a href="past_robert-cooper.php"><img src="images/thumbnails/robert.jpg" /><p>Robert Cooper</p></a></div>
+                <div class="trpic"><a href="past_sarah-sheehan.php"><img src="images/thumbnails/sarah.jpg" /><p>Sarah Sheehan</p></a></div>
+                <div class="trpic"><a href="past_sheila-suarez.php"><img src="images/thumbnails/sheila.jpg" /><p>Sheila Suarez de Flores</p></a></div>
+                <div class="trpic"><a href="past_tatiana-abromitis.php"><img src="images/thumbnails/tatiana.jpg" /><p>Tatiana Abromitis</p></a></div>
+                <div class="trpic"><a href="past_wesley-lima.php"><img src="images/thumbnails/wesley.jpg" /><p>Wesley Lima</p></a></div>
             </div>
             
         </section>

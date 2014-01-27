@@ -54,7 +54,7 @@
                 
                 <h2>Biography:</h2>
                 	<p>I'm a graduate from the University of Central Florida who graduated with a BA in Digital Media. I like the idea of the Digital Media program, because it suggests a good mix of design and development. My other hobbies/interests include cooking, doodling, riding my bike around, as well as some other things.</p>
-                    <p><img src="images/rooster.png" /></p>
+                    <p class="rooster"></p>
         	</section>
         
         </section>

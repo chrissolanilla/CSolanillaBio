@@ -72,7 +72,7 @@ body {
 
 	
 		#title {
-			background: #25548e url(../images/trbot.png) no-repeat;
+			background: #25548e url(../images/logo_sheet.png) no-repeat;
 			background-position: 808px 2px;
 			height: 60px;
 			width: 1000px;
@@ -130,6 +130,14 @@ body {
 							#biopage img {
 								margin: 0 auto;
 								display: block;
+							}
+
+							/* For Keegan's sriracha easter egg */
+							.rooster {
+								background: url(../images/logo_sheet.png) no-repeat;
+								height: 29px;
+								width: 12px;
+								background-position: 0px -128px;
 							}
 							
 					/* Past bios stuff -------------------------------------- */
