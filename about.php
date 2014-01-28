@@ -31,7 +31,7 @@
                 <h1>Who We Are</h1>
                     <p>The Techrangers&reg; is a team of students of varied backgrounds and majors at the <a href="http://cdl.ucf.edu/">Center for Distributed Learning</a> who provide course development for faculty and web/application development for the University of Central Florida (UCF).  The Techrangers&reg; act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
                     
-                    <p>To learn more about who makes up this team, read our bios. If you are interested in joining our team, visit the "<a href="joinus.php">Join</a>" section. Or, take a gander at our <a href="http://techrangers.cdws.ucf.edu/files/2008/10/TR-Team-Flyer-color-sm.pdf">team flyer</a>.</p>
+                    <p>To learn more about who makes up this team, read our bios. If you are interested in joining our team, visit the "<a href="joinus.php">Join</a>" section. Or, take a gander at our <a href="images/flyer.pdf" target="_blank">team flyer</a>.</p>
             </section>
             
             <section role="region" class="aboutitem">        
