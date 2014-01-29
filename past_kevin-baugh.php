@@ -58,7 +58,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I graduated from UCF with a Digital Media degree. I make films in my spare time, and mess around with all things digital.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>

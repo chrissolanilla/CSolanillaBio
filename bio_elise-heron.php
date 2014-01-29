@@ -49,7 +49,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>Hello! I am currently a junior Computer Science student here at the University of Central Florida. In my spare time I like to swim, play video games, and knit.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated November 12<sup>th</sup>, 2013</p>
+            </section>
         
         </section>
     </main>

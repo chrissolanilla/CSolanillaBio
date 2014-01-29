@@ -56,7 +56,9 @@
                 <h2>Biography:</h2>
                 	<p>I was born in West Palm Beach right here in Florida. My first experience on the computer was playing educational games on it at a very young age, I then moved on to different programs installed on it after I had gotten bored with the games. One of the programs I started using was Macromedia Dreamweaver. I had no idea what I was doing at the time but I could switch from Design to Code and see what made things happened, I found HTML incredibly interesting at the time.</p>
                     <p>My first programming class was course in Pascal in the 8<sup>th</sup> grade and I've tried to take every programming class I had the opportunity to from then. I attended Valencia for two years and then transferred here to UCF. My goal is to graduate from UCF with a degree in Computer Science and from there get a job programming interesting applications.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated April 18<sup>th</sup>, 2012</p>
+            </section>
         
         </section>
     </main>

@@ -54,7 +54,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I row. And Eat. And sleep. And row some more.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated September 17<sup>th</sup>, 2010</p>
+            </section>
         
         </section>
     </main>

@@ -50,7 +50,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I'm a UCF graduate with a degree in Digital Media.  When I'm not working, I like to play and listen to music, bike, play videogames, and hang out with my friends.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>

@@ -45,7 +45,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I enjoy problem-solving with programming and puzzles, classical music, and Philosophy. I am very introverted, but not reclusive. I enjoy thoughtful conversations and I ask lots of questions.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated September 17<sup>th</sup>, 2010</p>
+            </section>
         
         </section>
     </main>

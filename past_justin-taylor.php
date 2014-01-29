@@ -51,7 +51,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>Currently, I am going to UCF for a degree in Digital Media. In the oncoming semester I will be doing an independent study with one of the professor developing an app for the Iphone and Ipad. Outside the digital realm I Love art. Drawings are my favorite, especially the sketchy unfinished ones.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated April 29<sup>th</sup>, 2011</p>
+            </section>
         
         </section>
     </main>

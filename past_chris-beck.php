@@ -49,7 +49,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>My name is Chris and I'm a web junkie. I'm new to the Techranger team and I can't wait to start working on all the fun projects they have started.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 26<sup>th</sup>, 2011</p>
+            </section>
         
         </section>
     </main>

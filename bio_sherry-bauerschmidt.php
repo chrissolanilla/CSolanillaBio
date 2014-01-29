@@ -48,7 +48,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I'm a Digital Media graduate at UCF. I've been designing web pages since I was ten, and hope to continue to do so long into the future. I'm optimistic, full of smiles, and almost always in a good mood. I enjoy playing DDR, watching action/comedy movies, attending NHL games, and rollerblading.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated September 19<sup>th</sup>, 2012</p>
+            </section>
         
         </section>
     </main>

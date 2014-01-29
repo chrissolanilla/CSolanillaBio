@@ -35,8 +35,11 @@
                 <h2>Degree:</h2>
                 	<p>Digital Media - Web Design B.A.</p>
 
-                <h2>Website:</h2>
-                    <p><a href="http://cschultze.github.io/" target="_blank">http://cschultze.github.io/</a></p>
+                <h2>Websites:</h2>
+                    <ul>
+                        <li><a href="http://cschultze.github.io/" target="_blank">http://cschultze.github.io/</a></li>
+                        <li><a href="http://www.galacticlacquer.com/" target="_blank">http://www.galacticlacquer.com/</a></li>
+                    </ul>
                 
                 <h2>Expertise:</h2>
                 	<ul>
@@ -53,6 +56,8 @@
                 
                 <h2>Biography:</h2>
                 	<p>I graduated from the University of Central Florida with a bachelor's degree in Digital Media in 2013. My focus is on web design and front end development. While I love implementing the ideas of others, I hope to also get better at design and also learn more back end development. I like to draw, bake, play video games, and do nail art for my blog, Galactic Lacquer, in my spare time.</p>
+
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
         	</section>
         
         </section>

@@ -46,7 +46,9 @@
                 
                 <h2>Passions:</h2>
                 	<p>Scuba Diving</p>
-        	</section>
+        	
+                <p class="updated">Page last updated September 17<sup>th</sup>, 2010</p>
+            </section>
         
         </section>
     </main>

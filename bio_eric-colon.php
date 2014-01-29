@@ -52,7 +52,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I'm a human being ooga booga.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>

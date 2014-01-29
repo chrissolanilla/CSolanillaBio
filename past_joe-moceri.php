@@ -56,7 +56,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I am a student at the University of Central Florida studying Digital Media - Game Design. Technology is my passion, and it extends farther out than just design for video games and the web. I have close ties to my family, and I've worked on cars in all sorts of ways both with them and guided by them; Things such as audio systems, engine work, exhaust etc. I've spent a great deal of time working with them in a family business environment and have adopted a mentality of even though I don't know how to do something, I am confident in my ability to get it done. I believe the only way to improve in any area is as simple as spending time with it; Therefore, my focus is set on design and development with various technologies.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated August 17<sup>th</sup>, 2012</p>
+            </section>
         
         </section>
     </main>

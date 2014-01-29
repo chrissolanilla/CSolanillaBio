@@ -51,7 +51,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I love practically everything web. Normally, I am more of a design buff, but programming is slowly making it's way to the forefront of my life and I'm not complaining.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated September 17<sup>th</sup>, 2010</p>
+            </section>
         
         </section>
     </main>

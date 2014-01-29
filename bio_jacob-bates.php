@@ -55,7 +55,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I started my career with CDL's own New Media team developing custom Flash pieces and PHP-based web applications. After graduating in 2006, I spent a few years in private industry doing web development, marketing, and multimedia development. I have returned to UCF to become the Techrangers Team Lead. I enjoy photography, marksmanship, playing video games, and being a know-it-all.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated September 12<sup>th</sup>, 2012</p>
+            </section>
         
         </section>
     </main>

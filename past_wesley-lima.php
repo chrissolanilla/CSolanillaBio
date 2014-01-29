@@ -53,7 +53,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>When Wesley goes swimming, he does not get wet. The pool gets Wesley'd.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated September 17<sup>th</sup>, 2010</p>
+            </section>
         
         </section>
     </main>

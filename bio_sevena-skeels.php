@@ -51,7 +51,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I am a UCF undergrad working towards a Computer Science degree. I love both designing and coding as they equally offer intriguing challenges and creative outlets. I began making websites as a hobby in middle school and have continued to hone my skills throughout the years with freelance work and personal projects. After I graduate, I plan to live in Japan for a while.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>

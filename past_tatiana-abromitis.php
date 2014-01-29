@@ -63,7 +63,9 @@
                     <p>After my first year I transferred to the development team with a determination to improve the current process of communication between our customer, the account executives, the creative team, and the web scripting team. Internally there were three teams to satisfy with these programs aimed at mitigating miscommunications and reduction of emails. The program was developed using Symfony 1.2, an open source framework. During this period I also gained exposure to Magento - eCommerce software that we used to setup and develop two websites www.mountcastleinternational.com and www.bullbalcony.com as well as Joomla along with Virtuemart to develop the www.superkmart.com website.</p>
 
                     <p>Now I'm looking forward to learning Python and Django while working with the Techrangers and help on the process of web course development.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated August 30<sup>th</sup>, 2011</p>
+            </section>
         
         </section>
     </main>

@@ -47,7 +47,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>Served five years in the US Air Force as a Satellite Communications Technician, after which, I moved back to Orlando to pursue a degree from UCF. Graduated and began work as an Interface Engineer with a local startup. Landed a job a year later with UCF as a Web Applications Developer for the Center for Distributed Learning. I’m primarily interested in human computer interaction and spend most of my free time playing with various computer systems.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>

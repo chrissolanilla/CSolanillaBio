@@ -54,7 +54,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I've been a codemonkey since middle school. Ever since making my first "virus" in QBASIC and a VB program that drew Vegeta from Dragon Ball Z on the screen, I've been hooked on talking to computers. Now, armed with a wrench and div tags, I'm on a mission to fix the Internets. All of them.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated July 5<sup>th</sup>, 2011</p>
+            </section>
         
         </section>
     </main>

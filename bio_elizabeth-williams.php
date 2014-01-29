@@ -50,7 +50,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>Hi! I'm Liz, an eager Techranger at CDL with a Digital Media degree. I like cooking, art, and learning new things.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>

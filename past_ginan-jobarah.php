@@ -54,7 +54,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>My name is Ginan and my major is in Social Science. I am also pursuing a minor in Technical Writing &amp; Editing. My goal after graduation is to earn my Master of Arts in English, Technical Communication at the University of Central Florida.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>

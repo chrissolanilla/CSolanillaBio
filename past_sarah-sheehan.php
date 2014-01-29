@@ -50,7 +50,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>My name is Sarah and I have a degree in Digital Media with a minor in Computer Science. I love web design but have recently gained an interest in programming as well.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated October 12<sup>th</sup>, 2011</p>
+            </section>
         
         </section>
     </main>

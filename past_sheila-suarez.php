@@ -54,7 +54,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>I am a Digital Media BA Graduate from UCF, with a minor in Computer Science. Currently I am the semi omnipotent Team Lead of the Techrangers. Besides web development, <a href="http://shoutswing.com/" target="_blank">I swing dance a lot</a> and am heavily involved in <a href="http://swingknights.org/" target="_blank">The Swing Knights at UCF</a>. I love to travel, write, <a href="https://www.facebook.com/groups/16117212518/" target="_blank">read</a> and have strong opinions on movies. I hate being kicked out of comedy troupes.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated April 29<sup>th</sup>, 2011</p>
+            </section>
         
         </section>
     </main>

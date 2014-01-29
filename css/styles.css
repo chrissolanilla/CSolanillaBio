@@ -131,6 +131,11 @@ body {
 								margin: 0 auto;
 								display: block;
 							}
+							.updated {
+								float: right;
+								font-style: italic;
+								margin: 0;
+							}
 
 							/* For Keegan's sriracha easter egg */
 							.rooster {

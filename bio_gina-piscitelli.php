@@ -50,7 +50,9 @@
                 
                 <h2>Biography:</h2>
                 	<p>Born and raised in Southwest Florida, I've known nothing but scorching hot weather my entire life. Although I was brought up in the sunshine state, I often sought shelter inside...where the air conditioning was. Becoming a hermit and having an overactive imagination is what eventually led me into having hobbies such as teaching myself HTML and CSS, Photoshop and the likes. This quickly growing interest has since become my education (and soon to be) career path.</p>
-        	</section>
+        	
+                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+            </section>
         
         </section>
     </main>
