@@ -46,18 +46,25 @@
                 	<ul>
                         <li>HTML</li>
                         <li>CSS</li>
-                    </ul>
-                    
-                <h2>Learning:</h2>
-                	<ul>
                         <li>jQuery</li>
                         <li>Javascript</li>
                         <li>PHP</li>
                         <li>MySQL</li>
+                        <li>Git</li>
+                        <li>FuelPHP</li>
+                    </ul>
+                    
+                <h2>Learning:</h2>
+                	<ul>
+                        <li>Symphony2</li>
+                        <li>Ruby</li>
+                        <li>Chef Server</li>
+                        <li>Database Administration</li>
+                        <li>Project Management</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>I graduated from UCF with a Digital Media degree. I make films in my spare time, and mess around with all things digital.</p>
+                	<p>I have this thing from UCF that's supposed to mean I'm good at computer stuff. I've got one that says I'm supposed to be good at films too. I'm pretty sure they're just lying to me though.</p>
         	
                 <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
             </section>
