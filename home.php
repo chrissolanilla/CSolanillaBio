@@ -23,7 +23,7 @@
     <main role="main" id="homemain">
     	<!-- main content -->
         <div id="title">
-            <h2>Meet the Techrangers</h2> 
+            <h1>Meet the Techrangers</h1> 
         </div>
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->

@@ -20,7 +20,7 @@
     <main role="main" id="showcasemain">
         <!-- main content -->
     	<div id="title">
-            <h2>Showcase</h2>
+            <h1>Showcase</h1>
         </div>
     
     	<?php include('sidebar.html'); ?> <!-- sidebar.html -->
@@ -66,7 +66,7 @@
                 <section role="region" class="scitem">
                 	<h1>Report Be Done</h1>
                 	<img src="images/showcase/rbd.jpg" alt="Report Be Done" />
-                    <p>Report Be Done (RBD) is a scheduling, logging & reporting application developed by the Techrangers and Advanced Systems teams at CDL as part of the Dredbeard application suite. OPS employees at CDL may use this to print their time cards as well as keep track of their logging percentages. The logging section allows any CDL employee to categorize time spent on miscellaneous tasks. It as well aggregates the user's logs from RedBeard, To Be Done and <a href="http://basecamphq.com/">Basecamp</a>. In addition, there is a reporting section, where reports may be generated regarding resources spent and other enterprise system usage.</p>
+                    <p>Report Be Done (RBD) is a scheduling, logging &amp; reporting application developed by the Techrangers and Advanced Systems teams at CDL as part of the Dredbeard application suite. OPS employees at CDL may use this to print their time cards as well as keep track of their logging percentages. The logging section allows any CDL employee to categorize time spent on miscellaneous tasks. It as well aggregates the user's logs from RedBeard, To Be Done and <a href="http://basecamphq.com/">Basecamp</a>. In addition, there is a reporting section, where reports may be generated regarding resources spent and other enterprise system usage.</p>
                     <p><a href="http://techrangers.cdl.ucf.edu/?p=1061">Read More</a></p>
                 </section>
                 
@@ -82,7 +82,7 @@
                 <section role="region" class="scitem">
                 	<h1>RedBeard</h1>
                 	<img src="images/showcase/redbeard.jpg" alt="RedBeard" />
-                    <p>RedBeard is a client and course management system developed by the Techrangers and Advanced Systems teams at CDL as part of the Dredbeard application suite. It aggregates course, student, faculty & staff information from supported enterprise systems, allowing CDL course development and support teams to log time and add notes. It has greatly improved CDL's course development and client data tracking, allowing for easier and more accurate report generation within the department.</p>
+                    <p>RedBeard is a client and course management system developed by the Techrangers and Advanced Systems teams at CDL as part of the Dredbeard application suite. It aggregates course, student, faculty &amp; staff information from supported enterprise systems, allowing CDL course development and support teams to log time and add notes. It has greatly improved CDL's course development and client data tracking, allowing for easier and more accurate report generation within the department.</p>
                     <p><a href="http://techrangers.cdl.ucf.edu/?p=1052">Read More</a></p>
                 </section>
             </section>

@@ -20,7 +20,7 @@
     <main role="main" id="techtimemain">
     	<!-- main content -->
         <div id="title">
-            <h2>Tech Time</h2>
+            <h1>Tech Time</h1>
         </div>
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->

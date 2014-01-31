@@ -20,7 +20,7 @@
     <main role="main" id="aboutmain">
     	<!-- main content -->
         <div id="title">
-            <h2>About Us</h2>
+            <h1>About Us</h1>
         </div>
         
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->

@@ -20,7 +20,7 @@
     <main role="main" id="homemain">
     	<!-- main content -->
         <div id="title">
-            <h2>Past Techrangers</h2> 
+            <h1>Past Techrangers</h1> 
         </div>
         
         <section role="region" class="pagecontent" id="homepage">

@@ -20,7 +20,7 @@
     <main role="main" id="joinusmain">
     	<!-- main content -->
         <div id="title">
-            <h2>Join Us</h2>
+            <h1>Join Us</h1>
         </div>
         	
         <?php include('sidebar.html'); ?> <!-- sidebar.html -->

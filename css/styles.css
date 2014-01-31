@@ -81,13 +81,13 @@ body {
 			-webkit-box-shadow: 0 5px 5px -2px #AAA;
 			box-shadow: 0 5px 5px -2px #AAA;
 		}
-			div h2 {
+			div h1 {
 				font-family: 'League Gothic', sans-serif;
 				font-weight: normal;
 				font-size: 40px;
 				color: #FFF;
 				margin: 0;
-				margin-top: 0.4rem; /*Temporary */
+				margin-top: 0.4rem; /* Temporary */
 			}
 			
 			
