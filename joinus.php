@@ -34,7 +34,7 @@
                         <li>Update your online portfolio to showcase any relevant projects</li>
                         <li>Create a resume (HTML strongly preferred)</li>
                     </ul>
-                    <p><a href="https://jobs.cdl.ucf.edu/positions/">Click here to apply</a></p>
+                    <p><a href="https://jobs.cdl.ucf.edu/positions/" target="_blank">Click here to apply</a></p>
                     <p>Applications will be accepted until all positions are filled. The top applicants will be invited to a group interview. Hired Techrangers will need to be available to begin work immediately for a one year minimum. All Techrangers are required to work between 15 to 20 hours a week, and must be currently enrolled as students at UCF.</p>
                     <p>Questions? <a href="mailto:techrangers@ucf.edu">Email us</a>.</p>
             </section>
