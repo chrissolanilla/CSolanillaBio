@@ -206,47 +206,251 @@ from models import Poll, Choice, Votes, PollForm, ChoiceForm</pre>
         
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-            </section>
+                        <p>This is going to break our website when we try to run it until we write our views and URLs for adding and viewing polls, but that’s okay! We’ll get to that soon enough.</p>
 
-            <section role="region">        
+                    <h2 id="addingpolls">Adding Polls</h2>
+                        <p>Alrighty, it’s time to set the page we’re going to use to create polls. Let’s start with the view:</p>
+                        <pre>def add_poll(request):
+        #calls the PollForm we created and displays it on the page
+        if request.method == 'POST':
+            form = PollForm(request.POST)
+            if form.is_valid():
+                form.save() 
+                return HttpResponseRedirect('../.')
+        else:
+            form = PollForm()
+        return render_to_response ('add_poll.html', {'form': form}, context_instance = RequestContext(request),)</pre>
+
+                        <p>Everything here is pretty straight-forward. By default, the page loads up the PollForm. On submit, it checks and sees if the form is valid and saves the information if it is and redirects them to the add_choices page. If it isn’t, the form gets reloaded.</p>
+
+                        <p>Now it’s time to add the URL for this view. Open up urls.py and write this code under the url for the index:</p>
+                        <pre>url(r'^add_poll/$', 'poll_tutorial.polls.views.add_poll', name = 'add_poll'),</pre>
+                        <p>To wrap up this view, we need to complete the template for it. Create a new HTML file and add the following code:</p>
+
+                        <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title>Add a Poll&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;p&gt;Add a Poll&lt;/p&gt;
+    &lt;form name="addPoll" action "/add_choices/" method="post"&gt; {% csrf_token %}
+        &lt;fieldset&gt;     
+                    &lt;label id="questionID" for="id_question"&gt;Question:&lt;/label&gt; {{form.question}}
+            &lt;input id="submit" type="submit" value="Submit" /&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+        
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                        <p>This template is also pretty straight forward. We have a form with an input field which we call from Django (which, if you look, is the question field in the Poll table). When the form is submitted, Django saves whatever was in the input field into our database.</p>
+
+                    <h2 id="addingchoices">Adding Choices</h2>
+                        <p>Since we can now create polls we’re going to need the option to add choices to it. Open up views.py and add the following code:</p>
+                        <pre>def add_choice(request, poll_id):
+        poll = Poll.objects.get(id = poll_id)
+        if request.method =='POST':
+            form = ChoiceForm(request.POST)
+            if form.is_valid():
+                # uses false commit to save the poll as the current poll ID, sets the initial vote to 0, and saves all choices the user
+                # has put in the form
+                add_poll = form.save(commit = False)
+                add_poll.poll = poll
+                add_poll.vote = 0
+                add_poll.save()         
+                form.save()
+            return HttpResponseRedirect('../')
+        else: 
+            form = ChoiceForm()
+        return render_to_response ('add_choices.html', {'form': form, 'poll_id': poll_id,}, 
+                                context_instance = RequestContext(request),)</pre>
+
+                        <p>Here’s what we’re doing in this view:
+                            <ul>
+                                <li>The first thing we’re doing is pulling the current poll ID from the URL. This allows us to save the poll ID to a variable and input that variable into the database.</li>
+                                <li>Next, we attempt to save the information in the form to the database.
+                                    <ul>
+                                        <li>If the form is valid, we’re going to use a false commit to save multiple values into the database. We’re saving the poll ID number into the database as well as initializing the vote count to 0.</li>
+                                        <li>If the form is not valid (as seen in the else statement), the page gets reloaded and the form is wiped clean.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        <p>If the form is valid and the data is accepted, the user is redirected to the page where the poll’s information is displayed.</p>
+                        <p>Now that we have out view set up, let’s add the following to urls.py:</p>
+                        <pre>url(r'^polls/(?P&lt;poll_id&gt;\d+)/add_choices/$', 'poll_tutorial.polls.views.add_choice', name = 'add_choice'),</pre>
+
+                        <p>This url is a little different from the previous two. The difference here is (?P&lt;poll_id&gt;\d+), which allows us to add (and extract) the poll ID to the url.</p>
+
+                        <p>To wrap this view up, we need to create the template for it. This template is going to look exactly like the add_polls template we created earlier:</p>
+                        <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title>Add a Poll&lt;/title&gt;
+&lt;/head&gt;&gt;
+&lt;body&gt;
+    &lt;p&gt;Add Choices&lt;/p&gt;
+    &lt;form id="choice" name="" action="" method="post"&gt; {% csrf_token %}
+        &lt;fieldset&gt;
+            &lt;label for="id_choice"&gt;Choice: &lt;/label&gt;{{form.choice}}
+        
+            &lt;input id="submit" type="submit" value="Submit" /&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+                        <h2 id="viewactivepolls">Viewing a List of All Active Polls</h2>
+                            <p>Great! We’ve created a poll and added choices to it! But now we need a page to display the poll we just created, as well as any other poll we might create in the future. Let’s open up views.py and add the following:</p>
+                            <pre>def view_polls(request):
+        poll_query = Poll.objects.all().order_by('date')
+        return render_to_response('polls.html',{'poll_query': poll_query, })</pre>
+                            <p>This view is very simple – all it does is makes a query that grabs all the polls in the database and displays them by date created. Now let’s make the url for it:</p>
+                            <pre>url(r'^polls/$', 'poll_tutorial.polls.views.view_polls', name = 'polls'),</pre>
+
+                            <p>Finally, let’s create the template for it:</p>
+                            <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title&gt;Vote!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Here's a list of polls&lt;/p&gt;
+    {% if poll_query %}
+    &lt;ul&gt;
+        {% for poll in poll_query %}
+            &lt;li&gt;&lt;a href='{{poll.id}}/'>{{poll.question}}&lt;/a&gt;&lt;/li&gt;
+        {% endfor %}
+    &lt;/ul&gt;
+    {% else %}
+        &lt;p&gt;There are no polls available.&lt;/p&gt;   
+    {% endif %}
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+                            <P>Here’s a quick rundown of what’s going on in this template:</p>
+                                <ul>
+                                    <li>Essentially what we’re doing is checking if there are any polls in the database.
+                                        <ul>
+                                            <li>If there are polls in the database, an unordered list is created and lists all the polls in the database as a link (we’ll be using these links later)</li>
+                                            <li>If there are no polls in the database, a paragraph stating “there are no polls available” is displayed.<li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                        <h2 id="viewsinglepoll">Viewing a Single Poll</h2> 
+                            <p>Remember those links we created on the polls page in the last section? Now we’re going to use internet sworcery to make them do stuff! Open up views.py and add the following:</p>
+                            <pre>def view_single_poll(request, poll_id): 
+        poll = Poll.objects.get(id=poll_id)
+        choices = poll.choice_set.all().order_by('id')
+        return render_to_response('poll_info.html', {'poll': poll, 'choices':choices,}, context_instance = RequestContext(request),)</pre>
+                            <p>This view (coupled with the template) creates a page where the title, choices, and results (eventually) will be displayed for a single poll. Now let’s add the URL for it:</p>
+                            <pre>url(r'^polls/(?P&lt;poll_id&gt;\d+)/$','poll_tutorial.polls.views.view_single_poll'),</pre>
+
+                            <p>And finally, let’s create the template:</p>
+                            <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title&gt;Add a Poll&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;&lt;a href="add_choices/">Add choices&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="vote/">Click here to vote&lt;/a&gt;&lt;/p&gt;
+    {% for choice in choices %}
+        &lt;p class="resultsList"&gt;{{choice.choice}} - {{choice.votes_set.count}}&lt;/p&gt;
+    {% endfor %}
+        
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+                            <p>Here’s a quick rundown of what’s going on in this template:</p>
+                                <ul>
+                                    <li>At the top of the page, we have two links – one linking to the add choices page we created earlier and other that will lead us to a page where we can vote on the poll.</li>
+                                    <li>Under the links is a for loop that goes through the choices for the poll and displays them along with the number of votes for that choice.</li>
+                                </ul>
+
+                        <h2 id="addingvotes">Adding Votes to the Database</h2>
+                            <p>Okay, now that we have our polls and choices set up, we need to set up a way to vote. Open up views.py and add the following view:</p>
+                            <pre>def add_vote(request, poll_id):
+        poll = Poll.objects.get(id=poll_id) 
+        choice = Choice.objects.filter(poll=poll_id).order_by('id')
+        if request.method == 'POST':
+            vote = request.POST.get('choice')
+            if vote:
+                vote = Choice.objects.get(id=vote)  
+                #saves the poll id, user id, and choice to the Votes table
+                v = Votes(poll=poll, choiceVote = vote)
+                v.save()
+                #redirects the user to the results page after they submit their vote
+                return HttpResponseRedirect('../')
+        return render_to_response('votes.html',{'choice': choice, 'poll': poll, 'vcount': vcount,}, context_instance=RequestContext(request))</pre>
+
+                            <p>Here’s what this view does:</p>
+                                <ul>
+                                    <li>First, it grabs the poll ID from the URL</li>
+                                    <li>Next, we use a query to get all the choices in the poll and display them by ID (which is the same as date created in this case)</li>
+                                    <li>On form submit, django saves whatever choice in checked in the form to the variable “vote”</li>
+                                    <li>If the user chose a vote, django then saves the poll ID and the choice ID into the database, and then returns the user to the previous page (poll_info.html)</li>
+                                </ul>
+                            <p>URL time! Throw this bad boy into urls.py:</p>
+                            <pre>url(r'^polls/(?P&lt;poll_id&gt;\d+)/vote/$', 'poll_tutorial.polls.views.add_vote', name = 'vote'),</pre>
+                            <p>Let’s wrap this baby up, template style!</p>
+
+                            <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title&gt;Vote!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;{{poll.question}}&lt;/p&gt;
+    {% if choice %}
+    &lt;form method="post" action="" id="voteForm"&gt;{% csrf_token %}
+        &lt;fieldset&gt;
+            {% for choice in choice %}
+                &lt;p&gt;&lt;input type="radio" name="choice" id="choice" value="{{choice.id}}" /&gt;
+                &lt;label for="choice{{forloop.counter&gt;{{choice.choice}}&lt;/label&gt;&lt;/p&gt;
+            {%endfor%}
                 
-                    
-            </section>
+            &lt;input type="submit" id="submit" value="Submit" /&gt;
+        &lt;/fieldset&gt;
+            
+    &lt;/form&gt;
+    {% else %}
+    &lt;p class="noChoice">No votes have been added to this poll yet!&lt;/p&gt;
+    {% endif %}
 
-            <section role="region">        
-                <h1 id="addingpolls">Adding Polls</h1>
-                    
-            </section>
 
-            <section role="region">        
-                <h1 id="addingchoices">Adding Choices</h1>
-                    
-            </section>
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
-            <section role="region">        
-                <h1 id="viewactivepolls">Viewing a List of All Active Polls</h1>
-                    
-            </section>
+                            <p>In layman’s terms:</p>
+                                <ul>
+                                    <li>First we check if there are any choices in the database for this particular poll.</li>
+                                    <li>If the poll does have choices, we display the form.</li>
+                                    <li>We use a for loop to loop through and display every choice for this poll as an option with a radio button next to it.</li>
+                                    <li>If there are no choices in the database, an error message (shown in the if statement) is displayed on the screen.</li>
+                                </ul>
 
-            <section role="region">        
-                <h1 id="viewsinglepoll">Viewing a Single Poll</h1>
-                    
-            </section>
+                        <h2 id="displayresults">Displaying the Results</h2> 
+                            <p>Final stretch! We’ve already set up the template for the results (in poll_info.html), so all we have to write is the view:</p>
+                            <pre>def view_results(request, poll_id):
+        # displays the choices and the number of votes they have - diaplaying the number of votes is done in the view_results template
+        poll = Poll.objects.get(id=poll_id)
+        choices = poll.choice_set.all()
+        return render_to_response('poll_info.html', vars())</pre>
 
-            <section role="region">        
-                <h1 id="addingvotes">Adding Votes to the Database</h1>
-                    
-            </section>
-
-            <section role="region">        
-                <h1 id="displayresults">Displaying the Results</h1>
-                    
-            </section>
-
-            <section role="region">        
-                <h1 id="testing">Testing Out Your Site</h1>
-                    
-            </section>
+                        <h2 id="testing">Testing Out Your Site</h2>
+                            <p>And there we have it! Now start your command line, navigate to your project folder, and enter the following command:</p>
+                            <pre>python manage.py runserver</pre>
+                            <p>Your command prompt should now print an address that you can copy and paste in your browser. Vola! A working poll manager!</p>
+            </section>  
          </section>
     </main>
     

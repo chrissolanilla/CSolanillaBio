@@ -318,4 +318,5 @@ body {
 					font-family: monospace;
 					background: #DDD;
 					padding: 25px;
+					overflow: auto;
 				}
