@@ -40,21 +40,21 @@
                 </section>
                 
                 <section role="region" class="tutitem">
-                	<h1><a href="http://techrangers.cdl.ucf.edu/techrangers-training" target="_blank">Techrangers Training</a></h1>
+                	<h1><a href="techrangers-training.php" target="_blank">Techrangers Training</a></h1>
                     <img src="images/tutorials/techrangers_training.jpg" alt="Techrangers Training" />
                     <p>This tutorial is designed to introduce you to the Fuel PHP framework by walking you through the creation of a simple messaging app.</p>
                     <p class="author">Created By the Techrangers: on November 9<sup>th</sup>, 2012</p>
                 </section>
                 
                 <section role="region" class="tutitem"> 
-                	<h1><a href="http://techrangers.cdl.ucf.edu/oauth-python-tutorial" target="_blank">OAuth Python Tutorial</a></h1>
+                	<h1><a href="oauth-python-tutorial.php" target="_blank">OAuth Python Tutorial</a></h1>
                     <img src="images/tutorials/oauth_python.jpg" alt="OAuth Python Tutorial" />
                     <p>This tutorial explains how to use OAuth 1.0 with Python and the Django framework.</p>
                     <p class="author">Created By: Munawar Bijani on May 2<sup>nd</sup>, 2012</p>
                 </section>
                 
                 <section role="region" class="tutitem"> 
-                	<h1><a href="http://techrangers.cdl.ucf.edu/a-simple-poll-manager-with-django" target="_blank">A Simple Poll Manager With Django</a></h1>
+                	<h1><a href="a-simple-poll-manager-with-django.php" target="_blank">A Simple Poll Manager With Django</a></h1>
                     <img src="images/tutorials/poll_manager_django.jpg" alt="A Simple Poll Manager With Django" />
                     <p>In this tutorial I'll be showing you how to make a simple poll manager using Django, a Python framework.</p>
                     <p class="author">Created By: Jesse Slavens on April 30<sup>th</sup>, 2012</p>
