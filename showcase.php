@@ -67,6 +67,7 @@
                 	<h1>Report Be Done</h1>
                 	<img src="images/showcase/rbd.jpg" alt="Report Be Done" />
                     <p>Report Be Done (RBD) is a scheduling, logging &amp; reporting application developed by the Techrangers and Advanced Systems teams at CDL as part of the Dredbeard application suite. OPS employees at CDL may use this to print their time cards as well as keep track of their logging percentages. The logging section allows any CDL employee to categorize time spent on miscellaneous tasks. It as well aggregates the user's logs from RedBeard, To Be Done and <a href="http://basecamphq.com/" target="_blank">Basecamp</a>. In addition, there is a reporting section, where reports may be generated regarding resources spent and other enterprise system usage.</p>
+                    <p>Report Be Done is now in its second iteration, it’s first form being a simplified support and course development report creator and a scheduling portion in To Be Done. It also forms the third leg of a triad application suite called Dredbeard: RedBeard for client/course management, To Be Done for workflow facilitation and Report Be Done for aggregating all time spent/logged, creating reports &amp; accommodating OPS scheduling needs.</p>
                     <p><a href="http://techrangers.cdl.ucf.edu/?p=1061" target="_blank">Read More</a></p>
                 </section>
                 
