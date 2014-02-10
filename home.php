@@ -41,7 +41,6 @@
                 <div class="trpic"><a href="bio_elizabeth-williams.php"><img src="images/thumbnails/liz.jpg" /><p>Elizabeth Williams</p></a></div>
                 <div class="trpic"><a href="bio_sevena-skeels.php"><img src="images/thumbnails/sevena.jpg" /><p>Sevena Skeels</p></a></div>
                 <div class="trpic"><a href="bio_elise-heron.php"><img src="images/thumbnails/elise.jpg" /><p>Elise Heron</p></a></div>
-                <div class="trpic"><a href="bio_corrinne-schultze.php"><img src="images/thumbnails/corrinne.jpg" /><p>Corrinne Schultze</p></a></div>
                 <div class="trpic"><a href="bio_matthew-emond.php"><img src="images/thumbnails/matt.jpg" /><p>Matthew Emond</p></a></div>
                 <div class="trpic"><a href="bio_munawar-bijani.php"><img src="images/thumbnails/munawar.jpg" /><p>Munawar Bijani</p></a></div>
                 <div class="trpic"><a href="bio_gina-piscitelli.php"><img src="images/thumbnails/gina.jpg" /><p>Gina Piscitelli</p></a></div>
