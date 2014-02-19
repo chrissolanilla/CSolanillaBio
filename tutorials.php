@@ -61,7 +61,7 @@
                 </section>
                 
                 <section role="region" class="tutitem"> 
-                	<h1><a href="http://techrangers.cdl.ucf.edu/fuel-crash-course" target="_blank">Fuel Crash Course</a></h1>
+                	<h1><a href="http://ucf.github.io/fuelphp-crash-course/" target="_blank">Fuel Crash Course</a></h1>
                     <img src="images/tutorials/fuelphp_crash.jpg" alt="Fuel Crash Course" />
                     <p>This tutorial is designed to introduce you to the Fuel PHP framework by walking you through the creation of a simple messaging app.</p>
                     <p class="author">Created By: Kevin Baugh &amp; Keegan Berry on October 14<sup>th</sup>, 2011</p>
