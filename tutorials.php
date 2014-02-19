@@ -33,7 +33,7 @@
             
             <section role="region" id="tutorials">
                 <section role="region" class="tutitem"> 
-                	<h1><a href="http://techrangers.cdl.ucf.edu/introduction-to-canvas-html5" target="_blank">Introduction to HTML5 and Canvas</a></h1>
+                	<h1><a href="http://ucfcdl.github.io/html5-tutorial/" target="_blank">Introduction to HTML5 and Canvas</a></h1>
                     <img src="images/tutorials/intro_html5_canvas.jpg" alt="Introduction to HTML5 and Canvas" />
                     <p>This tutorial is designed to introduce you to working with the HTML5 canvas tag and JavaScript by walking you through the creation of controls for a top down driving game.</p>
                     <p class="author">Created By: Christopher McLean on April 17<sup>th</sup>, 2013</p>
