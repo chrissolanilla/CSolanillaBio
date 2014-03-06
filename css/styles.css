@@ -320,3 +320,12 @@ body {
 					padding: 25px;
 					overflow: auto;
 				}
+
+/* Helper classes for smart developers ;) ------------------------------------- */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after { clear: both; }
+.no-margin { margin: 0; }
