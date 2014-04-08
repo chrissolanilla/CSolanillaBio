@@ -365,8 +365,13 @@ table > tbody > tr > td {
 	vertical-align: top;
 }
 
+table td p { margin: 0 0 1em; }
+table td p:last-child { margin: 0; }
+
 
 /* Helper classes for smart developers ;) ------------------------------------- */
+
+.center { text-align: center; }
 .clearfix:before,
 .clearfix:after {
 	content: " ";

@@ -38,17 +38,17 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>5:00</td>
+                            <td class="center">5:00</td>
                             <td>REGISTRATION</td>
                             <td>REGISTRATION</td>
                         </tr>
                         <tr>
-                            <td>5:50</td>
+                            <td class="center">5:50</td>
                             <td>Welcome &amp; Introduction</td>
                             <td>--------------------------------------</td>
                         </tr>
                         <tr>
-                            <td>6:00</td>
+                            <td class="center">6:00</td>
                             <td>
                                 <p>Jacob Bates</p>
                                 <p><em>Getting Started with Arduino</em></p>
@@ -63,7 +63,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>6:30</td>
+                            <td class="center">6:30</td>
                             <td>
                                 <p>Phil Carter</p>
                                 <p><em>Selenium</em></p>
@@ -77,7 +77,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>7:00 </td>
+                            <td class="center">7:00 </td>
                             <td>
                                 <p>Kevin Baugh</p>
                                 <p><em>Vagrant</em></p>
@@ -93,7 +93,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>7:30</td>
+                            <td class="center">7:30</td>
                             <td>
                                 <p>Zach Berry</p>
                                 <p><em>Code This, Not That (JS)</em></p>
@@ -109,7 +109,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>8:00</td>
+                            <td class="center">8:00</td>
                             <td>
                                 <p>Mark Krupinski</p>
                                 <p><em>Social Media</em></p>
@@ -120,7 +120,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>8:30</td>
+                            <td class="center">8:30</td>
                             <td>
                                 <p>Keegan Berry</p>
                                 <p><em>Gettin' specific with CSS</em></p>
@@ -134,17 +134,17 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>9:00</td>
+                            <td class="center">9:00</td>
                             <td><strong>(Cancelled)</strong> FamiLAB</td>
                             <td>Blackstone Launch Pad</td>
                         </tr>
                         <tr>
-                            <td>9:30</td>
+                            <td class="center">9:30</td>
                             <td>Networking </td>
                             <td>--------------------------------------</td>
                         </tr>
                         <tr>
-                            <td>10:00</td>
+                            <td class="center">10:00</td>
                             <td>CLOSED</td>
                             <td>CLOSED</td>
                         </tr>

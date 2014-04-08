@@ -42,64 +42,64 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>5:00</td>
+                            <td class="center">5:00</td>
                             <td><strong>REGISTRATION</strong></td>
                         </tr>
                         <tr>
-                            <td>6:00</td>
+                            <td class="center">6:00</td>
                             <td>
                                 <p>Blackstone Launchpad</p>
                                 <p><em>Blackstone Launchpad Presentation</em></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>6:30</td>
+                            <td class="center">6:30</td>
                             <td>
                                 <p>Corey Peterson</p>
                                 <p><em>Debugging in the Browser 101</em></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>7:00</td>
+                            <td class="center">7:00</td>
                             <td>
                                 <p>Lance Vick</p>
                                 <p><em>Cyborg Implants</em></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>7:30</td>
+                            <td class="center">7:30</td>
                             <td>
                                 <p>Jonathan Warner</p>
                                 <p><em>NodeJS</em></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>8:00</td>
+                            <td class="center">8:00</td>
                             <td>
                                 <p>Chris McLean</p>
                                 <p><em>Behavior-Driven Development</em></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>8:30</td>
+                            <td class="center">8:30</td>
                             <td><strong>EXPO BREAK</strong></td>
                         </tr>
                         <tr>
-                            <td>9:00</td>
+                            <td class="center">9:00</td>
                             <td>
                                 <p>Jordan Werthman</p>
                                 <p><em>Google Student Ambassador</em></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>9:30</td>
+                            <td class="center">9:30</td>
                             <td>
                                 <p>Elizabeth Williams</p>
                                 <p><em>Databending</em></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>10:00</td>
+                            <td class="center">10:00</td>
                             <td><strong>CLOSED</strong></td>
                         </tr>
                     </tbody>
