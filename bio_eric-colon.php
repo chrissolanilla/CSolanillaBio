@@ -51,9 +51,9 @@
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>I'm a human being ooga booga.</p>
+                	<p>I'm a UCF Junior currently studying Computer Engineering. I taught myself everything I know about web development and graphic design from the age of 15.</p>
         	
-                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+                <p class="updated">Page last updated April 8<sup>th</sup>, 2014</p>
             </section>
         
         </section>
