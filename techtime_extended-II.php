@@ -14,7 +14,7 @@
         <main role="main" id="biomain" class="clearfix">
             <!-- main content -->
             <div id="title">
-                <h1>Extended Tech Time I</h1> 
+                <h1>Extended Tech Time II</h1> 
             </div>
             <?php include('sidebar.html'); ?> <!-- sidebar.html -->
             <section role="region" class="pagecontent" id="biopage">
