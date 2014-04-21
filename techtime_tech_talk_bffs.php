@@ -24,13 +24,15 @@
 				<p>With a variety of talks planned, we're sure to have something to interest everyone!</p>
 				<p>Our current talk lineup, which will be updated as more speakers confirm, is as follows:</p>
 				<ul>
-					<li>Refactoring Obese Models - Joey Lorich</li>
 					<li>An Introduction to AngularJS - Nick Thomson</li>
 					<li>Backend-less development with AngularJS - Kalon Hinds</li>
-					<li>Scalable CSS - Chris McLean</li>
-					<li>Instructure Canvas API - Jacob Bates</li>
+					<li>Side Projects - Ian Turgeon</li>
 					<li>Illustrator Basics - Zachary Berry</li>
+					<li>Scalable CSS - Chris McLean</li>
+					<li>Refactoring Obese Models - Joey Lorich</li>
+					<li>Instructure Canvas API - Jacob Bates</li>
 					<li>Google Glass or VIM - Jonathan Warner</li>
+					<li>AstroPhotography - Corey Peterson</li>
 				</ul>
 				<p>Come by for free Lazy Moon Pizza during the talk, and wander over to Lazy Moon for some wrap up drinks with us afterwards. Cloudspace buys the first round!</p>
 				<dl>
