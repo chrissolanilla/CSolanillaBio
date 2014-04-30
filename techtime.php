@@ -24,13 +24,10 @@
 					<p><a href="mailto:techrangers@ucf.edu">Contact us</a> if you are interested at having the Techrangers present for your on-campus event or class.  Stay tuned for future events!</p>
 				</section>
 				<section role="region" class="ttitem">
-					<h1>Upcoming Events</h1>
+					<h1>Past Events</h1>
 						<h2><a href="./techtime_tech_talk_bffs.php">Tech Talk BFFs - <br />A Cloudspace/Techrangers Collaboration</a></h2>
 							<p class="eventdate">April 25<sup>th</sup>, 2014</p>
 							<p>The Techrangers have partnered with Cloudspace to bring you another round of tech talks!</p>
-				</section>
-				<section role="region" class="ttitem">
-					<h1>Past Events</h1>
 						<h2><a href="./techtime_intro-to-css.php">Introduction to CSS</a></h2>
 							<p class="eventdate">October 10<sup>th</sup>, 2013</p> <!-- <time> tag? -->
 							<p>So, you know how to create semantic HTML pages, but are you tired of them being so boring? Join us as we present an introduction to CSS in our offices on Thursday, October 10th, 2013.</p>

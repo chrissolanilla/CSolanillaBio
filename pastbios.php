@@ -31,6 +31,8 @@
             <p class="homep">Note that this is not a complete list.</p>
             
             <div id="photogrid">
+                <div class="trpic"><a href="past_sherry-bauerschmidt.php"><img src="images/thumbnails/sherry.jpg" /><p>Sherry Bauerschmidt Hofmeister</p></a></div>
+                <div class="trpic"><a href="past_elizabeth-williams.php"><img src="images/thumbnails/liz.jpg" /><p>Elizabeth Williams</p></a></div>
                 <div class="trpic"><a href="past_corrinne-schultze.php"><img src="images/thumbnails/corrinne.jpg" /><p>Corrinne Schultze</p></a></div>
                 <div class="trpic"><a href="past_jesse-slavens.php"><img src="images/thumbnails/jesse.jpg" /><p>Jesse Slavens</p></a></div>
                 <div class="trpic"><a href="past_charles-bortz.php"><img src="images/thumbnails/charles.jpg" /><p>Charles Bortz</p></a></div>

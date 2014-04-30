@@ -37,8 +37,6 @@
             <p class="homep"><strong>For technical support</strong>, please contact Online@UCF Support at (407) 823-0407 or <a href="http://learn.ucf.edu/support/get-help/">http://learn.ucf.edu/support/get-help</a>. There are as well many self help online course resources on the <a href="http://learn.ucf.edu/">Learning Online Website</a>.</p>
             
             <div id="photogrid">
-                <div class="trpic"><a href="bio_sherry-bauerschmidt.php"><img src="images/thumbnails/sherry.jpg" /><p>Sherry Bauerschmidt Hofmeister</p></a></div>
-                <div class="trpic"><a href="bio_elizabeth-williams.php"><img src="images/thumbnails/liz.jpg" /><p>Elizabeth Williams</p></a></div>
                 <div class="trpic"><a href="bio_sevena-skeels.php"><img src="images/thumbnails/sevena.jpg" /><p>Sevena Skeels</p></a></div>
                 <div class="trpic"><a href="bio_elise-heron.php"><img src="images/thumbnails/elise.jpg" /><p>Elise Heron</p></a></div>
                 <div class="trpic"><a href="bio_matthew-emond.php"><img src="images/thumbnails/matt.jpg" /><p>Matthew Emond</p></a></div>
