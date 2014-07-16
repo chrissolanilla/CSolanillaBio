@@ -46,6 +46,7 @@
                 <div class="trpic"><a href="bio_eric-colon.php"><img src="images/thumbnails/eric.jpg" /><p>Eric Colon</p></a></div>
                 <div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
                 <div class="trpic"><a href="bio_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
+                <div class="trpic"><a href="bio_ben-paulson.php"><img src="images/thumbnails/ben.jpg" /><p>Ben Paulson</p></a></div>
             </div>
             
             <h2>Past Techrangers</h2>
