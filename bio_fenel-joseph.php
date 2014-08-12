@@ -61,7 +61,6 @@
                 <h2>Biography:</h2>
                     <p>I am a third-year undergraduate student matriculating at the University of Central Florida, in
                      Orlando, Fl. I intend to complete my undergraduate coursework (GRADUATE!) by May 2016.</p> 
-                    <br />
                     <p>With all that I am learning while in school, I hope to contribute to this technology-enabled world.
                      How will I do this? Simple. Learn what it takes to surpass every obstacle as they come along... and
                      then some.</p>
