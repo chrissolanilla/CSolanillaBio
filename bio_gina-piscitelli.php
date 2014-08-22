@@ -35,23 +35,26 @@
                 <h2>Degree:</h2>
                 	<p>Digital Media - Web Design</p>
                 
+                <h2>Website:</h2>
+                    <p><a href="http://www.ginarose.me/" target="_blank">http://www.ginarose.me/</a></p>
+
                 <h2>Expertise:</h2>
                 	<ul>
-                    	<li>Front end design</li>
+                    	<li>Front end development</li>
+                        <li>Multimedia design</li>
                         <li>Adobe Creative Suite</li>
-                        <li>HTML and CSS</li>
                     </ul>
                     
                 <h2>Learning:</h2>
                 	<ul>
                     	<li>Back end development</li>
-                        <li>Javascript and jQuery</li>
+                        <li>Frameworks and compilers</li>
                     </ul>
                 
                 <h2>Biography:</h2>
                 	<p>Born and raised in Southwest Florida, I've known nothing but scorching hot weather my entire life. Although I was brought up in the sunshine state, I often sought shelter inside...where the air conditioning was. Becoming a hermit and having an overactive imagination is what eventually led me into having hobbies such as teaching myself HTML and CSS, Photoshop and the likes. This quickly growing interest has since become my education (and soon to be) career path.</p>
         	
-                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+                <p class="updated">Page last updated August 22<sup>th</sup>, 2014</p>
             </section>
         
         </section>
