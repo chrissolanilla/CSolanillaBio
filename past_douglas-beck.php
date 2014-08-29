@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php include('includes.html'); ?><!-- includes.html -->
 <title>Douglas Beck - Techrangers</title>
-
-<script type="text/javascript" src="http://teach.ucf.edu/wp-content/themes/online/pulldown/online-dropdown.js?2013-12"></script>
-<script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-
 </head>
 
 <body>
