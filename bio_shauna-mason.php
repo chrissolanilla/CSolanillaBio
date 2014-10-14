@@ -43,7 +43,7 @@
                 
                 <h2>Biography:</h2>
                     <p>
-                    	I am a UCF student pursuing my B.S. degree in Information Technology. I was about 22 years old when I recently became interested in programming and web development.CodeAcademy and Google is what I used to learn languages such as HTML, CSS, and Javascript. 
+                    	I am a UCF student pursuing my B.S. degree in Information Technology. I was about 22 years old when I recently became interested in programming and web development.  CodeAcademy and Google is what I used to learn languages such as HTML, CSS, and Javascript. 
                     </p>
             
                 <p class="updated">Page last updated October 14<sup>th</sup>, 2014</p>
