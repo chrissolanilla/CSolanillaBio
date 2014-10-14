@@ -33,6 +33,7 @@
 				<div class="trpic"><a href="bio_eric-colon.php"><img src="images/thumbnails/eric.jpg" /><p>Eric Colon</p></a></div>
 				<div class="trpic"><a href="bio_gina-piscitelli.php"><img src="images/thumbnails/gina.jpg" /><p>Gina Piscitelli</p></a></div>
 				<div class="trpic"><a href="bio_fenel-joseph.php"><img src="images/thumbnails/fenel.jpg" /><p>Fenel Joseph</p></a></div>
+				<div class="trpic"><a href="bio_shauna-mason.php"><img src="images/thumbnails/shauna.jpg" /><p>Shauna Mason</p></a></div>
 				<div class="trpic"><a href="bio_adrian-goetz.php"><img src="images/thumbnails/adrian.jpg" /><p>Adrian Goetz</p></a></div>
 				<div class="trpic"><a href="bio_ben-paulson.php"><img src="images/thumbnails/ben.jpg" /><p>Ben Paulson</p></a></div>
 				<div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
