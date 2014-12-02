@@ -36,7 +36,7 @@
 				<div class="trpic"><a href="bio_shauna-mason.php"><img src="images/thumbnails/shauna.jpg" /><p>Shauna Mason</p></a></div>
 				<div class="trpic"><a href="bio_adrian-goetz.php"><img src="images/thumbnails/adrian.jpg" /><p>Adrian Goetz</p></a></div>
 				<div class="trpic"><a href="bio_ben-paulson.php"><img src="images/thumbnails/ben.jpg" /><p>Ben Paulson</p></a></div>
-                <div class="trpic"><a href="bio_emily-sachs.php"><img src="images/thumbnails/emily.jpg" /><p>Emily Sachs</p></a></div>
+				<div class="trpic"><a href="bio_emily-sachs.php"><img src="images/thumbnails/emily.jpg" /><p>Emily Sachs</p></a></div>
 				<div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
 				<div class="trpic"><a href="bio_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
 			</div>
