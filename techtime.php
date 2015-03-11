@@ -20,6 +20,9 @@
 				</section>
 				<section role="region" class="ttitem">
 					<h1>Past Events</h1>
+						<h2><a href="./techtime_browsing_web_jaws.php">Browsing the Web with JAWS</a></h2>
+							<p class="eventdate">August 4<sup>th</sup>, 2014</p>
+							<p>Learn how to use a screen reading software to browse the Internet!</p>
 						<h2><a href="./techtime_tech_talk_bffs.php">Tech Talk BFFs - <br />A Cloudspace/Techrangers Collaboration</a></h2>
 							<p class="eventdate">April 25<sup>th</sup>, 2014</p>
 							<p>The Techrangers have partnered with Cloudspace to bring you another round of tech talks!</p>
