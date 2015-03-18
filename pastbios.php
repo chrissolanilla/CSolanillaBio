@@ -23,7 +23,8 @@
             <p class="homep">Note that this is not a complete list.</p>
             
             <div id="photogrid">
-                <div class="trpic"><a href="past_ben-paulson.php"><img src="images/thumbnails/eric.jpg" /><p>Ben Paulson</p></a></div>
+                <div class="trpic"><a href="past_munawar-bijani.php"><img src="images/thumbnails/munawar.jpg" /><p>Munawar Bijani</p></a></div>
+                <div class="trpic"><a href="past_ben-paulson.php"><img src="images/thumbnails/ben.jpg" /><p>Ben Paulson</p></a></div>
                 <div class="trpic"><a href="past_bio_eric-colon.php"><img src="images/thumbnails/eric.jpg" /><p>Eric Colon</p></a></div>
                 <div class="trpic"><a href="past_sevena-skeels.php"><img src="images/thumbnails/sevena.jpg" /><p>Sevena Skeels</p></a></div>
                 <div class="trpic"><a href="past_sherry-bauerschmidt.php"><img src="images/thumbnails/sherry.jpg" /><p>Sherry Bauerschmidt Hofmeister</p></a></div>

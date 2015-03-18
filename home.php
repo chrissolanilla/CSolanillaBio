@@ -27,7 +27,6 @@
 
 			<div id="photogrid">
 				<div class="trpic"><a href="bio_dan-brinkman.php"><img src="images/thumbnails/dan.jpg" /><p>Daniel Brinkman</p></a></div>
-				<div class="trpic"><a href="bio_munawar-bijani.php"><img src="images/thumbnails/munawar.jpg" /><p>Munawar Bijani</p></a></div>
 				<div class="trpic"><a href="bio_matthew-emond.php"><img src="images/thumbnails/matt.jpg" /><p>Matthew Emond</p></a></div>
 				<div class="trpic"><a href="bio_elise-heron.php"><img src="images/thumbnails/elise.jpg" /><p>Elise Heron</p></a></div>
 				<div class="trpic"><a href="bio_gina-piscitelli.php"><img src="images/thumbnails/gina.jpg" /><p>Gina Piscitelli</p></a></div>
