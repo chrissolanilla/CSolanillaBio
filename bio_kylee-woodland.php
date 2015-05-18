@@ -2,7 +2,7 @@
 <html>
 <head>
 <?php include('includes.html'); ?><!-- includes.html -->
-<title>Shauna Mason - Techrangers</title>
+<title>Kylee Woodland - Techrangers</title>
 </head>
 
 <body>
@@ -20,33 +20,36 @@
         <section role="region" class="pagecontent" id="biopage">
             
             <section role="region">
-            <h1 class="bioh1">Shauna Mason</h1>
+            <h1 class="bioh1">Kylee Woodland</h1>
         
-                <img src="images/bios/shauna.jpg" alt="Shauna Mason" />
+                <img src="images/bios/shauna.jpg" alt="Kylee Woodland" />
                 
                 <h2>Degree:</h2>
-                    <p>Information Technology</p>
+                    <p>Digital Media - Game Design</p>
                 
                 <h2>Expertise:</h2>
                     <ul>
-                        <li>Coffescript</li>
                         <li>HTML5</li>
-                        <li>SCSS</li>
-                    </ul>
+						<li>CSS</li>
+                        <li>Photoshop</li>
+                    </ul>>
                     
                 <h2>Learning:</h2>
                     <ul>
-                        <li>Angular JS</li>
                         <li>PHP</li>
-                        <li>Javascript</li>
+						<li>Python</li>
+                        <li>Java</li>
                     </ul>
                 
                 <h2>Biography:</h2>
                     <p>
-                    	I am a UCF student pursuing my B.S. degree in Information Technology. I was about 22 years old when I recently became interested in programming and web development.  CodeAcademy and Google is what I used to learn languages such as HTML, CSS, and Javascript. 
-                    </p>
+					I've moved around a few times in my life, but Florida is and always will be my home. I entered UCF in 2011 with plans of fulfilling a lifelong goal of becoming a veterinarian. After two and a half years and several failed chemistry grades, however, I realized that Biomedical Sciences was not the major for me. So I did a 180 into Game Design. I'll always love and care for animals, but I've never been happier than I am now immersed in the world of programming. 
+                    </p>	
+					<p>
+					Over the past few semesters, I've gotten my feet wet in several different languages and applications - Photoshop, Flash, C, Java, Javascript, etc. - but there's still a lot more that I can learn about each one. I'm glad and lucky to have joined the Techrangers so I can continue to sharpen my skills in these fields in addition to learning new ones I've never dealt with before, such as PHP and Python. I can't wait to see where the next few years here and in Game Design take me!
+					</p>
             
-                <p class="updated">Page last updated October 14<sup>th</sup>, 2014</p>
+                <p class="updated">Page last updated May 18<sup>th</sup>, 2015</p>
             </section>
         
         </section>
