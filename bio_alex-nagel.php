@@ -24,7 +24,7 @@
                     <img src="images/bios/alexn.jpg" alt="Alex Nagel" />
                      <h2>Degree:</h2>
 
-                    <p>Computer Programming and Analysis</p>
+                    <p>Information Technologies and Information Securities</p>
                      <h2>Expertise:</h2>
 
                     <ul>
