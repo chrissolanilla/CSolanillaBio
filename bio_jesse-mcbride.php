@@ -33,7 +33,6 @@
 				<h2>Expertise:</h2>
 					<ul>
 						<li>Java</li>
-
 					</ul>
 					
 				<h2>Learning:</h2>
@@ -43,9 +42,10 @@
 					</ul>
 				
 				<h2>Biography:</h2>
-					<p>I am a sophomore IT student at the University of Central Florida. I like all things Internet, and have spent the majority of my adult life trying to make things that make the Internet better. Outside of that, I like reading, playing piano, and my cat.</p>
+					<p>I am a sophomore IT student at the University of Central Florida. I like all things Internet, and I like
+					spending time trying to make things that make the Internet better. Outside of that, I like reading, playing piano, and my cat.</p>
 			
-				<p class="updated">Page last updated May 18<sup>th</sup>, 2015</p>
+				<p class="updated">Page last updated June 11<sup>th</sup>, 2015</p>
 			</section>
 		
 		</section>
