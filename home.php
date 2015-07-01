@@ -29,7 +29,6 @@
 				<div class="trpic"><a href="bio_dan-brinkman.php"><img src="images/thumbnails/dan.jpg" /><p>Daniel Brinkman</p></a></div>
 				<div class="trpic"><a href="bio_matthew-emond.php"><img src="images/thumbnails/matt.jpg" /><p>Matthew Emond</p></a></div>
 				<div class="trpic"><a href="bio_elise-heron.php"><img src="images/thumbnails/elise.jpg" /><p>Elise Heron</p></a></div>
-				<div class="trpic"><a href="bio_gina-piscitelli.php"><img src="images/thumbnails/gina.jpg" /><p>Gina Piscitelli</p></a></div>
 				<div class="trpic"><a href="bio_fenel-joseph.php"><img src="images/thumbnails/fenel.jpg" /><p>Fenel Joseph</p></a></div>
 				<div class="trpic"><a href="bio_shauna-mason.php"><img src="images/thumbnails/shauna.jpg" /><p>Shauna Mason</p></a></div>
 				<div class="trpic"><a href="bio_adrian-goetz.php"><img src="images/thumbnails/adrian.jpg" /><p>Adrian Goetz</p></a></div>
