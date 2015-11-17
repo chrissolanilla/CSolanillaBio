@@ -20,8 +20,7 @@
 				</section>
 				<section role="region" class="ttitem">
 					<h1>Upcoming Events</h1>
-						
-							<p>UCF's Center for Distributed Learning has developed an easy-to-use tool that looks through your online course and finds possible issues that could prevent a student from accessing the content due to a disability.  It's called The Universal Design Online content Inspection Tool, or U<strong>DO</strong>IT (pronounced, "You Do It"), and this workshop will go over the history and give a demonstration of the tool.  After the demonstration, you will have an opportunity to run UDOIT on your own course, and we can show you how to make the most of your results.  Check out <a href="https://online.ucf.edu/udoit">the U<strong>DO</strong>IT page</a> for more information.</p>
+						<p>There are no upcoming events.  Check back soon!</p>
 				</section>
 				<section role="region" class="ttitem">
 					<h1>Past Events</h1>
