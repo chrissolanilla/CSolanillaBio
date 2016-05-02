@@ -42,7 +42,7 @@
                     </ul>
 
                 <h2>Biography:</h2>
-                	<p>I am an Information Technology Major at the University of Central Florida</p>
+                	<p>I am an Information Technology Major at the University of Central Florida.</p>
 
                 <p class="updated">Page last updated April 29<sup>th</sup>, 2016</p>
             </section>
