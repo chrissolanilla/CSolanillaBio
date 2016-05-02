@@ -22,7 +22,7 @@
             <section role="region">
             <h1 class="bioh1">Ryan Eppers</h1>
 
-            	<img src="images/bios/dan.jpg" alt="Ryan Eppers" />
+            	<img src="images/bios/ryan.jpg" alt="Ryan Eppers" />
 
                 <h2>Degree:</h2>
                 	<p>Information Technology</p>
@@ -46,7 +46,7 @@
 
                 <p class="updated">Page last updated April 29<sup>th</sup>, 2016</p>
             </section>
-        
+
         </section>
     </main>
 
