@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <?php include( 'includes.html'); ?>
         <!-- includes.html -->
         <title>Samuel Belcastro - Techrangers</title>
     </head>
-    
+
     <body>
         <?php include( 'header.html'); ?>
         <!-- header.html -->
         <main role="main" id="biomain">
             <!-- main content -->
             <div id="title">
-                 <h1>Meet the Techrangers</h1> 
+                 <h1>Meet the Techrangers</h1>
             </div>
             <?php include( 'sidebar.html'); ?>
             <!-- sidebar.html -->
@@ -21,7 +21,7 @@
                 <section role="region">
                      <h1 class="bioh1">Samuel Belcastro</h1>
 
-                    <img src="images/bios/alexn.jpg" alt="Alex Nagel" />
+                    <img src="images/bios/samb.jpg" alt="Samuel Belcastro" />
                      <h2>Degree:</h2>
 
                     <p>Computer Science</p>
