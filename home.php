@@ -35,9 +35,9 @@
 				<div class="trpic"><a href="bio_emily-sachs.php"><img src="images/thumbnails/emily.jpg" /><p>Emily Sachs</p></a></div>
 				<div class="trpic"><a href="bio_jesse-mcbride.php"><img src="images/thumbnails/jessemcbride.jpg" /><p>Jesse McBride</p></a></div>
 				<div class="trpic"><a href="bio_alex-nagel.php"><img src="images/thumbnails/alexn.jpg" /><p>Alex Nagel</p></a></div>
+				<div class="trpic"><a href="bio_ryan-eppers.php"><img src="images/thumbnails/ryan.jpg" /><p>Ryan Eppers</p></a></div>
 				<div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
 				<div class="trpic"><a href="bio_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
-				<div class="trpic"><a href="bio_ryan-eppers.php"><img src="images/thumbnails/ryan.jpg" /><p>Ryan Eppers</p></a></div>
 			</div>
 
 			<h2>Past Techrangers</h2>
