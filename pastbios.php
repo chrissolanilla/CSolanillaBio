@@ -23,6 +23,7 @@
             <p class="homep">Note that this is not a complete list.</p>
             
             <div id="photogrid">
+                <div class="trpic"><a href="past_matthew-emond.php"><img src="images/thumbnails/matt.jpg" /><p>Matthew Emond</p></a></div>
                 <div class="trpic"><a href="past_gina-piscitelli.php"><img src="images/thumbnails/gina.jpg" /><p>Gina Piscitelli</p></a></div>
                 <div class="trpic"><a href="past_munawar-bijani.php"><img src="images/thumbnails/munawar.jpg" /><p>Munawar Bijani</p></a></div>
                 <div class="trpic"><a href="past_ben-paulson.php"><img src="images/thumbnails/ben.jpg" /><p>Ben Paulson</p></a></div>
