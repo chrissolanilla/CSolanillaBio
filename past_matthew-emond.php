@@ -8,49 +8,49 @@
 <body>
 
 	<?php include('header.html'); ?> <!-- header.html -->
-	
+
 	<main role="main" id="biomain">
 		<!-- main content -->
 		<div id="title">
 			<h1>Meet the Techrangers</h1> 
 		</div>
-		
+
 		<?php include('sidebar.html'); ?> <!-- sidebar.html -->
-		
+
 		<section role="region" class="pagecontent" id="biopage">
-			
+
 			<section role="region">
 			<h1 class="bioh1">Matthew Emond</h1>
-		
+
 				<img src="images/bios/matt.jpg" alt="Matthew Emond" />
-				
+
 				<h2>Degree:</h2>
-					<p>Information Technology</p>
-				
+					<p>Information Technology B.S.</p>
+
 				<h2>Expertise:</h2>
 					<ul>
-						<li>XHTML</li>
+						<li>Python</li>
+						<li>Django</li>
+						<li>HTML</li>
+						<li>Javascript</li>
 						<li>CSS</li>
-						<li>C</li>
-						<li>Photoshop</li>
 					</ul>
-					
+
 				<h2>Learning:</h2>
 					<ul>
-						<li>Javascript</li>
-						<li>Python</li>
 						<li>mySQL</li>
+						<li>PHP</li>
 					</ul>
-				
+
 				<h2>Biography:</h2>
-					<p>Hi, I'm Matt Emond! I am currently a student at UCF majoring in Information Technology and am also an active member of the UCF Robotics Club. Currently I am most familiar with XHTML and CSS, and a fair bit of C from my programming classes. I am also an Adobe Certified Associate in Photoshop CS4 &amp; CS5, Dreamweaver CS4 &amp; CS5, and Flash CS4. My focus for the coming years is putting to use my current skills, and learning new ones! Specifically, I am interested in learning about PHP, MySQL, and JavaScript.</p>
-			
-				<p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+					<p>Hi, I'm Matt Emond! I graduated from UCF with a bachelors in Information Technology. My background is in web development in Python with Django. I now work for UCF full-time as part of the Integrations team here at CDL.</p>
+
+				<p class="updated">Page last updated May 20<sup>th</sup>, 2016</p>
 			</section>
-		
+
 		</section>
 	</main>
-	
+
 	<?php include('footer.html'); ?> <!-- footer.html -->
 
 </body>
