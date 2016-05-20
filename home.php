@@ -24,7 +24,7 @@
 
 			<p class="homep">Feel free to <a href="mailto:techrangers@ucf.edu">contact us</a>, <a href="about.php">read about us</a>, <a href="https://plus.google.com/100247024936649114253/posts" target="_blank">network with us</a>, <a href="techtime.php">learn from us</a> and <a href="joinus.php">possibly join us</a>!</p>
 
-			<p class="homep"><strong>For technical support</strong>, please contact Online@UCF Support at (407) 823-0407 or <a href="https://online.ucf.edu/support">via the support website</a>. There are also many self help online course resources on the <a href="https://online.ucf.edu/learn-online">Learning Online Website</a>.</p>
+			<p class="homep"><strong>For technical support</strong>, please contact Webcourses@UCF Support at (407) 823-0407 or <a href="https://online.ucf.edu/support">via the support website</a>. There are also many self help online course resources on the <a href="https://online.ucf.edu/learn-online">Learning Online Website</a>.</p>
 
 			<div id="photogrid">
 				<div class="trpic"><a href="bio_dan-brinkman.php"><img src="images/thumbnails/dan.jpg" /><p>Daniel Brinkman</p></a></div>
