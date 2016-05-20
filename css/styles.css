@@ -101,6 +101,12 @@ body {
 		}
 			#homepage h2 {
 			}
+		#team-photo {
+			width: 550px;
+			height: 247px;
+			background-image: url("../images/team_photo.jpg");
+			background-repeat: no-repeat;
+		}
 		#photogrid {
 		}
 			.trpic {
