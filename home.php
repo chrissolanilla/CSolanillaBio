@@ -27,19 +27,22 @@
 			<p class="homep"><strong>For technical support</strong>, please contact Webcourses@UCF Support at (407) 823-0407 or <a href="https://online.ucf.edu/support">via the support website</a>. There are also many self help online course resources on the <a href="https://online.ucf.edu/learn-online">Learning Online Website</a>.</p>
 
 			<div id="photogrid">
-				<div class="trpic"><a href="bio_dan-brinkman.php"><img src="images/thumbnails/dan.jpg" /><p>Daniel Brinkman</p></a></div>
-				<div class="trpic"><a href="bio_shauna-mason.php"><img src="images/thumbnails/shauna.jpg" /><p>Shauna Mason</p></a></div>
+				<!-- KEEP THESE SORTED ALPHABETICALLY -->
+				<!-- DON'T USE PROFILE PICTURES WITH OTHER PEOPLE IN THEM -->
 				<div class="trpic"><a href="bio_adrian-goetz.php"><img src="images/thumbnails/adrian.jpg" /><p>Adrian Goetz</p></a></div>
-				<div class="trpic"><a href="bio_emily-sachs.php"><img src="images/thumbnails/emily.jpg" /><p>Emily Sachs</p></a></div>
-				<div class="trpic"><a href="bio_jesse-mcbride.php"><img src="images/thumbnails/jessemcbride.jpg" /><p>Jesse McBride</p></a></div>
 				<div class="trpic"><a href="bio_alex-nagel.php"><img src="images/thumbnails/alexn.jpg" /><p>Alex Nagel</p></a></div>
+				<div class="trpic"><a href="bio_dan-brinkman.php"><img src="images/thumbnails/dan.jpg" /><p>Daniel Brinkman</p></a></div>
+				<div class="trpic"><a href="bio_emily-sachs.php"><img src="images/thumbnails/emily.jpg" /><p>Emily Sachs</p></a></div>
+				<div class="trpic"><a href="bio_ian-turgeon.php"><img src="images/thumbnails/ian.jpg" /><p>Ian Turgeon</p></a></div>
+				<div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
+				<div class="trpic"><a href="bio_jesse-mcbride.php"><img src="images/thumbnails/jessemcbride.jpg" /><p>Jesse McBride</p></a></div>
+				<div class="trpic"><a href="bio_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
 				<div class="trpic"><a href="bio_ryan-eppers.php"><img src="images/thumbnails/ryan.jpg" /><p>Ryan Eppers</p></a></div>
 				<div class="trpic"><a href="bio_samuel-belcastro.php"><img src="images/thumbnails/samb.jpg" /><p>Samuel Belcastro</p></a></div>
-				<div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
-				<div class="trpic"><a href="bio_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
+				<div class="trpic"><a href="bio_shauna-mason.php"><img src="images/thumbnails/shauna.jpg" /><p>Shauna Mason</p></a></div>
 			</div>
 
-			<h2>Past Techrangers</h2>
+			<h2>Past Techrangers&reg;</h2>
 				<p><a href="pastbios.php">Click here to view past Techrangers' biographies</a>.</p>
 		</section>
 	</main>
