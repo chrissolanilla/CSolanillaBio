@@ -8,21 +8,23 @@
 <body>
 
     <?php include('header.html'); ?> <!-- header.html -->
-    
+
     <main role="main" id="homemain">
     	<!-- main content -->
         <div id="title">
-            <h1>Past Techrangers</h1> 
+            <h1>Past Techrangers</h1>
         </div>
-        
+
         <section role="region" class="pagecontent" id="homepage">
-        	
+
             <?php include('sidebar.html'); ?> <!-- sidebar.html -->
-            
-            
+
+
             <p class="homep">Note that this is not a complete list.</p>
-            
+
             <div id="photogrid">
+                <div class="trpic"><a href="past_shauna-mason.php"><img src="images/thumbnails/shauna.jpg" /><p>Shauna Mason</p></a></div>
+                <div class="trpic"><a href="past_william-funk.php"><img src="images/thumbnails/funk.jpg" /><p>William Funk</p></a></div>
                 <div class="trpic"><a href="past_elise-heron.php"><img src="images/thumbnails/elise.jpg" /><p>Elise Heron</p></a></div>
                 <div class="trpic"><a href="past_fenel-joseph.php"><img src="images/thumbnails/fenel.jpg" /><p>Fenel Joseph</p></a></div>
                 <div class="trpic"><a href="past_matthew-emond.php"><img src="images/thumbnails/matt.jpg" /><p>Matthew Emond</p></a></div>
@@ -120,10 +122,10 @@
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Valerie Smith</p></div>
 
             </div>
-            
+
         </section>
     </main>
-    
+
 	<?php include('footer.html'); ?> <!-- footer.html -->
 
 </body>
