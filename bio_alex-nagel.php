@@ -52,7 +52,7 @@
                     <p>Having lived in Florida my whole life, I will be venturing out to Arizona in the fall of 2017 to pursue my passion in security engineering. On top of being a Techranger, I do freelance work on the side including custom websites, security audits, and general IT work for various companies. Adaptability and hard work is the key to success and with my experiences I have what it takes to succeed.</p>
                     <p>I am a very well-rounded person and participate in many hobbies. Most notably I am the president and one of the best players for the UCF Racquetball Team. I also partake in mountain biking with my rescue pup, so we are ecstatic for the challenging terrain of Arizona. Lastly, I enjoy solving puzzles due to the unforeseen challenges in cards, chess, and building things in the garage.</p>
 
-                    <p class="updated">Page last updated March 2017<sup>th</sup>, 2015</p>
+                    <p class="updated">Page last updated March 20<sup>th</sup>, 2017</p>
                 </section>
             </section>
         </main>
