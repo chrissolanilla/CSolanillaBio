@@ -45,7 +45,7 @@
                         I'm a recent graduate of the UCF Digital Media program with an emphasis on game design. Illustration and game development are my primary fields of interest, but I love working with web design and development as well. 
                     </p>
             
-                <p class="updated">Page last updated May 18<sup>th</sup>, 2015</p>
+                <p class="updated">Page last updated April 3<sup>rd</sup>, 2017</p>
             </section>
         
         </section>
