@@ -15,11 +15,26 @@
 			<section role="region" class="pagecontent" id="techtimepage">
 				<section role="region">
 					<h1>What is Tech Time?</h1>
-					<p>Tech Time events are presented by the Techrangers team of the <a href="http://cdl.ucf.edu/" target="_blank">Center for Distributed Learning</a>. They are presented to demonstrate the "nuts and bolts" functions of various computer-related applications. These sessions target intermediate to advanced web designers interested in furthering their web design skills. These are hands-on, in-depth sessions held in the Center for Distributed Learning offices for Students, Faculty, Staff, and Campus Webmasters. Seating is limited so you must RSVP if interested.</p>
+					<p>Tech Time events are presented by the Techrangers team of the <a href="https://online.ucf.edu/about" target="_blank">Center for Distributed Learning</a>. They are presented to demonstrate the "nuts and bolts" functions of various computer-related applications. These sessions target intermediate to advanced web designers interested in furthering their web design skills. These are hands-on, in-depth sessions held in the Center for Distributed Learning offices for Students, Faculty, Staff, and Campus Webmasters. Seating is limited so you must RSVP if interested.</p>
 					<p><a href="mailto:techrangers@ucf.edu">Contact us</a> if you are interested at having the Techrangers present for your on-campus event or class.  Stay tuned for future events!</p>
 				</section>
 				<section role="region" class="ttitem">
+					<h1>Upcoming Events</h1>
+						<p>There are no upcoming events.  Check back soon!</p>
+				</section>
+				<section role="region" class="ttitem">
 					<h1>Past Events</h1>
+						<h2><a href="https://www.eventbrite.com/e/udoit-techtime-workshop-november-16th-2015-tickets-18908968233">U<strong>DO</strong>IT Workshop</a></h2>
+							<p class="eventdate">November 16<sup>th</sup>, 2015</p>
+						<h2><a href="https://www.eventbrite.com/e/udoit-techtime-workshop-november-9th-2015-tickets-18908795717">U<strong>DO</strong>IT Workshop</a></h2>
+							<p class="eventdate">November 9<sup>th</sup>, 2015</p>
+						<h2><a href="https://www.eventbrite.com/e/udoit-techtime-workshop-august-25th-2015-tickets-17837751194">U<strong>DO</strong>IT Workshop</a></h2>
+							<p class="eventdate">August 25<sup>th</sup>, 2015</p>
+						<h2><a href="https://www.eventbrite.com/e/udoit-techtime-workshop-august-19th-2015-tickets-17837350997">U<strong>DO</strong>IT Workshop</a></h2>
+							<p class="eventdate">August 19<sup>th</sup>, 2015</p>
+						<h2><a href="https://www.eventbrite.com/e/udoit-techtime-workshop-august-14th-2015-tickets-17837303856">U<strong>DO</strong>IT Workshop</a></h2>
+							<p class="eventdate">August 14<sup>th</sup>, 2015</p>
+							<p>UCF's Center for Distributed Learning has developed an easy-to-use tool that looks through your online course and finds possible issues that could prevent a student from accessing the content due to a disability.  It's called The Universal Design Online content Inspection Tool, or U<strong>DO</strong>IT (pronounced, "You Do It"), and this workshop will go over the history and give a demonstration of the tool.  After the demonstration, you will have an opportunity to run UDOIT on your own course, and we can show you how to make the most of your results.  Check out <a href="https://online.ucf.edu/udoit">the U<strong>DO</strong>IT page</a> for more information.</p>
 						<h2><a href="./techtime_browsing_web_jaws.php">Browsing the Web with JAWS</a></h2>
 							<p class="eventdate">August 4<sup>th</sup>, 2014</p>
 							<p>Learn how to use a screen reading software to browse the Internet!</p>

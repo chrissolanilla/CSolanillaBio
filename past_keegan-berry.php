@@ -45,7 +45,7 @@
                     </ul>
                 
                 <h2>Biography:</h2>
-                	<p>I'm a graduate from the University of Central Florida who graduated with a BA in Digital Media. I like the idea of the Digital Media program, because it suggests a good mix of design and development. My other hobbies/interests include cooking, doodling, riding my bike around, as well as some other things.</p>
+                	<p>I'm a graduate of the University of Central Florida, with a BA in Digital Media. The idea of the DM program appealed to me because it suggested a good mix of design and development. Not that surprisingly, I enjoy working on projects that incorporate some kind of graphical or visual component. I also like movies, drawing/illustration, cooking, bikes, and I’m trying to get into photography.</p>
                     <p class="rooster"></p>
         	
                 <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>

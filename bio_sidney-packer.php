@@ -2,7 +2,7 @@
 <html>
 <head>
 <?php include('includes.html'); ?><!-- includes.html -->
-<title>Kylee Woodland - Techrangers</title>
+<title>Sidney Packer - Techrangers</title>
 </head>
 
 <body>
@@ -20,32 +20,33 @@
         <section role="region" class="pagecontent" id="biopage">
             
             <section role="region">
-            <h1 class="bioh1">Kylee Woodland</h1>
+            <h1 class="bioh1">Sidney Packer</h1>
         
-                <img src="images/bios/kylee.jpg" alt="Kylee Woodland" />
+                <img src="images/bios/sidney.jpg" alt="Sidney Packer" />
                 
                 <h2>Degree:</h2>
-                    <p>Digital Media - Game Design</p>
+                    <p>Computer Science</p>
                 
                 <h2>Expertise:</h2>
                     <ul>
-                        <li>Graphic Design</li>
-						<li>Javascript</li>
-                        <li>HTML5/CSS3</li>
-                    </ul>
-                    
+                        <li>C</li>
+                        <li>JavaScript/React</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>  
+
                 <h2>Learning:</h2>
                     <ul>
                         <li>Python</li>
-                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>Full-Stack Development</li>
+                        <li>Machine Learning</li>
                     </ul>
                 
                 <h2>Biography:</h2>
-                    <p>
-                        I'm a recent graduate of the UCF Digital Media program with an emphasis on game design. Illustration and game development are my primary fields of interest, but I love working with web design and development as well. 
-                    </p>
-            
-                <p class="updated">Page last updated May 18<sup>th</sup>, 2015</p>
+                    <p>I'm a sophomore Computer Science major at UCF. I tend to spend a lot of my spare time learning new things and creating web applications.</p>
+                    <p>Outside of this, I enjoy cars, finance, and street fashion.</p>
+                <p class="updated">Page last updated November 14<sup>th</sup>, 2016</p>
             </section>
         
         </section>
