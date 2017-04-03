@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
-        <?php include( 'includes.html'); ?>
+        <?php include('includes.html'); ?>
         <!-- includes.html -->
         <title>Devin Singh - Techrangers</title>
     </head>
-    
     <body>
-        <?php include( 'header.html'); ?>
+        <?php include('header.html'); ?>
         <!-- header.html -->
         <main role="main" id="biomain">
         <!-- main content -->
         <div id="title">
             <h1>Meet the Techrangers</h1>
         </div>
-        <?php include( 'sidebar.html'); ?>
+        <?php include('sidebar.html'); ?>
         <!-- sidebar.html -->
         <section role="region" class="pagecontent" id="biopage">
             <section role="region">
@@ -27,8 +25,8 @@
                 <p><a href="http://www.devinops.com" target="_blank">DevinOPs</a></p>
                 <h2>Expertise:</h2>
                 <ul>
-                    <li>Flask/Django</li>
                     <li>Python</li>
+                    <li>Flask/Django</li>
                     <li>Javascript</li>
                     <li>HTML5/CSS3</li>
                     <li>Java</li>
@@ -48,7 +46,7 @@
             </section>
         </section>
         </main>
-        <?php include( 'footer.html'); ?>
+        <?php include('footer.html'); ?>
         <!-- footer.html -->
     </body>
 </html>
