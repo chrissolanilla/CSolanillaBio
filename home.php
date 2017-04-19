@@ -38,6 +38,7 @@
 				<div class="trpic"><a href="bio_samuel-belcastro.php"><img src="images/thumbnails/samb.jpg" /><p>Samuel Belcastro</p></a></div>
 				<div class="trpic"><a href="bio_sidney-packer.php"><img src="images/thumbnails/sidney.jpg" /><p>Sidney Packer</p></a></div>
 				<div class="trpic"><a href="bio_anthony-rodriguez.php"><img src="images/thumbnails/anthony.jpg" /><p>Anthony Rodriguez</p></a></div>
+				<div class="trpic"><a href="bio_nathan_dabu.php"><img src="images/thumbnails/nathan.jpg" /><p>Nathan Dabu</p></a></div>
 				<div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
 				<div class="trpic"><a href="bio_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
 			</div>
