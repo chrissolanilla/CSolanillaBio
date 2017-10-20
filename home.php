@@ -29,9 +29,7 @@
 			<div id="photogrid">
 				<div class="trpic"><a href="bio_dan-brinkman.php"><img src="images/thumbnails/dan.jpg" /><p>Daniel Brinkman</p></a></div>
 				<div class="trpic"><a href="bio_adrian-goetz.php"><img src="images/thumbnails/adrian.jpg" /><p>Adrian Goetz</p></a></div>
-				<div class="trpic"><a href="bio_emily-sachs.php"><img src="images/thumbnails/emily.jpg" /><p>Emily Sachs</p></a></div>
 				<div class="trpic"><a href="bio_jesse-mcbride.php"><img src="images/thumbnails/jessemcbride.jpg" /><p>Jesse McBride</p></a></div>
-				<div class="trpic"><a href="bio_alex-nagel.php"><img src="images/thumbnails/Alex Nagel.jpg" /><p>Alex Nagel</p></a></div>
 				<div class="trpic"><a href="bio_kylee-woodland.php"><img src="images/thumbnails/kylee.jpg" /><p>Kylee Woodland</p></a></div>
 				<div class="trpic"><a href="bio_devin-singh.php"><img src="images/thumbnails/devin.jpg" /><p>Devin Singh</p></a></div>
 				<div class="trpic"><a href="bio_ryan-eppers.php"><img src="images/thumbnails/ryan.jpg" /><p>Ryan Eppers</p></a></div>
@@ -42,7 +40,6 @@
         <div class="trpic"><a href="bio_alexandra-guevara.php"><img src="images/thumbnails/alexandra.jpg" /><p>Alexandra Guevara</p></a></div>
 				<div class="trpic"><a href="bio_tuan-pham.php"><img src="images/thumbnails/tuan.jpg" /><p>Tuan Pham</p></a></div>
 				<div class="trpic"><a href="bio_jacob-bates.php"><img src="images/thumbnails/jacob.jpg" /><p>Jacob Bates</p></a></div>
-				<div class="trpic"><a href="bio_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
 			</div>
 
 			<h2>Past Techrangers</h2>

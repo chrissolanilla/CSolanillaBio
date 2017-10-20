@@ -23,6 +23,9 @@
             <p class="homep">Note that this is not a complete list.</p>
 
             <div id="photogrid">
+                <div class="trpic"><a href="past_philip-carter.php"><img src="images/thumbnails/phil.jpg" /><p>Philip Carter</p></a></div>
+                <div class="trpic"><a href="past_alex-nagel.php"><img src="images/thumbnails/Alex Nagel.jpg" /><p>Alex Nagel</p></a></div>
+                <div class="trpic"><a href="past_emily-sachs.php"><img src="images/thumbnails/emily.jpg" /><p>Emily Sachs</p></a></div>
                 <div class="trpic"><a href="past_shauna-mason.php"><img src="images/thumbnails/shauna.jpg" /><p>Shauna Mason</p></a></div>
                 <div class="trpic"><a href="past_william-funk.php"><img src="images/thumbnails/funk.jpg" /><p>William Funk</p></a></div>
                 <div class="trpic"><a href="past_elise-heron.php"><img src="images/thumbnails/elise.jpg" /><p>Elise Heron</p></a></div>
