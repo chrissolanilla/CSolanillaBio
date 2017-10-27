@@ -34,7 +34,7 @@
                 <div class="trpic"><a href="past_gina-piscitelli.php"><img src="images/thumbnails/gina.jpg" /><p>Gina Piscitelli</p></a></div>
                 <div class="trpic"><a href="past_munawar-bijani.php"><img src="images/thumbnails/munawar.jpg" /><p>Munawar Bijani</p></a></div>
                 <div class="trpic"><a href="past_ben-paulson.php"><img src="images/thumbnails/ben.jpg" /><p>Ben Paulson</p></a></div>
-                <div class="trpic"><a href="past_bio_eric-colon.php"><img src="images/thumbnails/eric.jpg" /><p>Eric Colon</p></a></div>
+                <div class="trpic"><a href="past_bio_eric-colon.php"><img src="images/thumbnails/eric.jpg" /><p>Eric Colón</p></a></div>
                 <div class="trpic"><a href="past_sevena-skeels.php"><img src="images/thumbnails/sevena.jpg" /><p>Sevena Skeels</p></a></div>
                 <div class="trpic"><a href="past_sherry-bauerschmidt.php"><img src="images/thumbnails/sherry.jpg" /><p>Sherry Bauerschmidt Hofmeister</p></a></div>
                 <div class="trpic"><a href="past_elizabeth-williams.php"><img src="images/thumbnails/liz.jpg" /><p>Elizabeth Williams</p></a></div>
@@ -71,30 +71,23 @@
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Charles Parcell</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Chris Conover</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Chris Havreberg</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Corey Maynard</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Corey Maynard</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Corey Reese</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Dan Paulson</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>David Perlaza</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Dennis Henry</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Doug Werly</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Eric Colón</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Francisca Yonekura</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Gabe Galperin</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Geoff Quinby</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Greg Allard</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jacob Bates</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jason Buckner</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jennifer Riley</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jesse Slavens</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jessica Vargas</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jin Lyu</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Joe Moceri</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>JP Peters</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Justin Taylor</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Kathleen Mendez</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Keegan Berry</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Kevin Baugh</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Kevin Hallmark</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Kevin Smith</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Kitzzy Avilez</p></div>
