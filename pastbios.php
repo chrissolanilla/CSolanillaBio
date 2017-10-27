@@ -79,7 +79,6 @@
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Francisca Yonekura</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Gabe Galperin</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Greg Allard</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jacob Bates</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jason Buckner</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jennifer Riley</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Jessica Vargas</p></div>
@@ -104,7 +103,6 @@
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Randy Bihlmayer</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Ray Mendez</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Rebecca Richards</p></div>
-                <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Ryan Seilhamer</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Ryan Seilhamer</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Sarah Carrol</p></div>
                 <div class="trpic"><img src="images/thumbnails/no_photo.jpg" /><p>Scott Rapp</p></div>
