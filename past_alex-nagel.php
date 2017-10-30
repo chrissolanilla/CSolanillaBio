@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <?php include( 'includes.html'); ?>
         <!-- includes.html -->
         <title>Alex Nagel - Techrangers</title>
     </head>
-    
+
     <body>
         <?php include( 'header.html'); ?>
         <!-- header.html -->
@@ -20,7 +20,7 @@
         <section role="region" class="pagecontent" id="biopage">
             <section role="region">
                 <h1 class="bioh1">Alex Nagel</h1>
-                <img src="images/bios/Alex Nagel.jpg" alt="Alex Nagel" />
+                <img src="images/bios/alex_nagel.jpg" alt="Alex Nagel" />
                 <h2>Degree:</h2>
                 <p>Information Technologies and Information Securities</p>
                 <h2>Website:</h2>
