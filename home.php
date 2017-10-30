@@ -155,11 +155,11 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<!-- <a href="bio_ian-turgeon.php"> -->
-						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Zach Berry" />
-						<span itemprop="name" class="name">Zach Berry</span>
+					<a href="bio_zachary-berry.php">
+						<img itemprop="image" src="images/thumbnails/zach.jpg" alt="Photo of Zachary Berry" />
+						<span itemprop="name" class="name">Zachary Berry</span>
 						<span itemprop="jobTitle" class="title"></span>
-					<!-- </a> -->
+					</a>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
