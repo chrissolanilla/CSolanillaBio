@@ -59,7 +59,7 @@
 
 
 				<h2>Biography:</h2>
-					<p>Developer &amp; Designer interested in advancing online education. I love desigining and implementing user interfaces (as well as all things Javascript). In my free time I enjoy building generative artwork systems and attempting to create electronic music.</p>
+					<p>Developer &amp; Designer interested in advancing online education. I love designing and implementing user interfaces (as well as all things Javascript). In my free time I enjoy building generative artwork systems and attempting to create electronic music.</p>
 
 				<p class="updated">Page last updated October 30<sup>th</sup>, 2017</p>
 			</section>
