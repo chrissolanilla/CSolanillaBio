@@ -171,11 +171,11 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<!-- <a href="bio_ian-turgeon.php"> -->
-						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Corey Peterson" />
+					<a href="bio_corey-peterson.php">
+						<img itemprop="image" src="images/thumbnails/newcorey.png" alt="Photo of Corey Peterson" />
 						<span itemprop="name" class="name">Corey Peterson</span>
 						<span itemprop="jobTitle" class="title"></span>
-					<!-- </a> -->
+					</a>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
