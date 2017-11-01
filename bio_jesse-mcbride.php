@@ -22,7 +22,7 @@
 			<section role="region">
 			<h1 class="bioh1">Jesse McBride</h1>
 		
-				<img src="images/bios/jessemcbride.jpg" alt="Jesse McBride" />
+				<img src="images/bios/jesse_mcbride.jpg" alt="Jesse McBride" />
 				
 				<h2>Degree:</h2>
 					<p>Information Technology</p>
