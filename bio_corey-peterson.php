@@ -17,7 +17,7 @@
 			<section role="region">
 			<h1 class="bioh1">Corey Peterson</h1>
 
-				<img src="images/bios/newcorey.png" alt="Corey Peterson" />
+				<img src="images/bios/corey_peterson.png" alt="Corey Peterson" />
 
 				<h2>Degree:</h2>
 					<p>Digital Media B.A.</p>

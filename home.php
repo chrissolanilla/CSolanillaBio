@@ -48,7 +48,7 @@
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="bio_jesse-mcbride.php">
-						<img itemprop="image" src="images/thumbnails/jessemcbride.jpg"  alt="Photo of Jesse McBride" />
+						<img itemprop="image" src="images/thumbnails/jesse_mcbride.jpg"  alt="Photo of Jesse McBride" />
 						<span itemprop="name" class="name">Jesse McBride</span>
 						<span itemprop="title" class="title techranger">Techranger</span>
 					</a>
@@ -172,7 +172,7 @@
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="bio_corey-peterson.php">
-						<img itemprop="image" src="images/thumbnails/newcorey.png" alt="Photo of Corey Peterson" />
+						<img itemprop="image" src="images/thumbnails/corey_peterson.png" alt="Photo of Corey Peterson" />
 						<span itemprop="name" class="name">Corey Peterson</span>
 						<span itemprop="jobTitle" class="title"></span>
 					</a>
