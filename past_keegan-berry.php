@@ -25,7 +25,7 @@
             	<img src="images/bios/keegan.jpg" alt="Keegan Berry" />
 
                 <h2>Degree:</h2>
-                	<p>Digital Media</p>
+                	<p>Digital Media B.A.</p>
 
                 <h2>Website:</h2>
                     <p><a href="http://keeganberry.com/" target="_blank">http://keeganberry.com/</a></p>
@@ -49,7 +49,7 @@
                 	<p>I'm a graduate of the University of Central Florida, with a B.A. in Digital Media. I enjoy working on projects that incorporate some kind of graphical or visual component. I also enjoy movies, design, photography and occasionally cooking.</p>
                     <p class="rooster"></p>
 
-                <p class="updated">Page last updated January 29<sup>th</sup>, 2014</p>
+                <p class="updated">Page last updated November 1<sup>st</sup>, 2017</p>
             </section>
 
         </section>
