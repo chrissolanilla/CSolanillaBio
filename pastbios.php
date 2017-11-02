@@ -232,14 +232,6 @@
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
-                    <a href="past_keegan-berry.php">
-                        <img itemprop="image" src="images/thumbnails/keegan.jpg" alt="Photo of Keegan Berry" />
-                        <span itemprop="name" class="name">Keegan Berry</span>
-                        <span itemprop="title" class="title techranger">Techranger</span>
-                    </a>
-                </div>
-
-                <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="past_kevin-baugh.php">
                         <img itemprop="image" src="images/thumbnails/kevin.jpg" alt="Photo of Kevin Baugh" />
                         <span itemprop="name" class="name">Kevin Baugh</span>
@@ -471,12 +463,6 @@
                         <span itemprop="name" class="name">Jin Lyu</span>
                         <span itemprop="title" class="title  techranger">Techranger</span>
                     </a>
-                </div>
-
-                <div itemscope itemtype="http://schema.org/Person" class="trpic">
-                    <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Joe Moceri" />
-                    <span itemprop="name" class="name">Joe Moceri</span>
-                    <span itemprop="title" class="title  techranger">Techranger</span>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">

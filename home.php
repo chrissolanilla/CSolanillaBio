@@ -203,12 +203,12 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<!-- <a href="bio_ian-turgeon.php"> -->
-						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Keegan Berry" />
-						<span itemprop="name" class="name">Keegan Berry</span>
-						<span itemprop="jobTitle" class="title"></span>
-					<!-- </a> -->
-				</div>
+                    			<a href="bio_keegan-berry.php">
+                        			<img itemprop="image" src="images/thumbnails/keegan.jpg" alt="Photo of Keegan Berry" />
+                        			<span itemprop="name" class="name">Keegan Berry</span>
+                        			<span itemprop="title" class="title techranger">Techranger</span>
+                    			</a>
+                		</div>
 
 			</div>
 
