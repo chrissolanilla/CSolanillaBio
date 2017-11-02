@@ -206,7 +206,7 @@
                     			<a href="bio_keegan-berry.php">
                         			<img itemprop="image" src="images/thumbnails/keegan.jpg" alt="Photo of Keegan Berry" />
                         			<span itemprop="name" class="name">Keegan Berry</span>
-                        			<span itemprop="title" class="title techranger">Techranger</span>
+                        			<span itemprop="title" class="title techranger"></span>
                     			</a>
                 		</div>
 
