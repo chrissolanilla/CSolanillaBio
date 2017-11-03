@@ -249,6 +249,14 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<a href="https://www.linkedin.com/in/brian-mcquay-2160408/">
+						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Brian McQuay" />
+						<span itemprop="name" class="name">Brian McQuay</span>
+						<span itemprop="title" class="title techranger">Techranger</span>
+					</a>
+				</div>
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="https://www.linkedin.com/in/chet-bortz-99201aa7/">
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Chet Bortz" />
 						<span itemprop="name" class="name">Chet Bortz</span>
