@@ -432,6 +432,14 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<a href="https://www.linkedin.com/in/johnaedo/">
+						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of John Aedo" />
+						<span itemprop="name" class="name">John Aedo</span>
+						<span itemprop="title" class="title techranger">Techranger</span>
+					</a>
+				</div>
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="https://www.linkedin.com/in/danpaulson83/">
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Dan Paulson" />
 						<span itemprop="name" class="name">Dan Paulson</span>
