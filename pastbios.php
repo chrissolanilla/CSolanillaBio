@@ -591,6 +591,18 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Adam Ribakoff" />
+					<span itemprop="name" class="name">Adam Ribakoff</span>
+					<span itemprop="title" class="title  techranger">Remote Techranger</span>
+				</div>
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<img itemprop="image" src="https://www.linkedin.com/in/steveedmonds/" alt="Photo of Steve Edmonds" />
+					<span itemprop="name" class="name">Steve Edmonds</span>
+					<span itemprop="title" class="title  techranger">Remote Techranger</span>
+				</div>
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="https://www.linkedin.com/in/luis-estrada-8a25177b/">
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Luis Estrada" />
 						<span itemprop="name" class="name">Luis Estrada</span>
