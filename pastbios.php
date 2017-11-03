@@ -59,7 +59,7 @@
                     <a href="past_william-funk.php">
                         <img itemprop="image" src="images/thumbnails/funk.jpg" alt="Photo of William Funk" />
                         <span itemprop="name" class="name">William Funk</span>
-                        <span itemprop="title" class="title techranger">Techranger</span>
+                        <span itemprop="title" class="title techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -75,14 +75,6 @@
                     <a href="past_fenel-joseph.php">
                         <img itemprop="image" src="images/thumbnails/fenel.jpg" alt="Photo of Fenel Joseph" />
                         <span itemprop="name" class="name">Fenel Joseph</span>
-                        <span itemprop="title" class="title techranger">Techranger</span>
-                    </a>
-                </div>
-
-                <div itemscope itemtype="http://schema.org/Person" class="trpic">
-                    <a href="past_matthew-emond.php">
-                        <img itemprop="image" src="images/thumbnails/matt.jpg" alt="Photo of Matthew Emond" />
-                        <span itemprop="name" class="name">Matthew Emond</span>
                         <span itemprop="title" class="title techranger">Techranger</span>
                     </a>
                 </div>
@@ -111,11 +103,28 @@
                     </a>
                 </div>
 
+
+                <div itemscope itemtype="http://schema.org/Person" class="trpic">
+                    <a href="https://www.linkedin.com/in/tomalancarroll/">
+                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Tom Carroll" />
+                        <span itemprop="name" class="name">Tom Carroll</span>
+                        <span itemprop="title" class="title techranger">Techranger</span>
+                    </a>
+                </div>
+
+                <div itemscope itemtype="http://schema.org/Person" class="trpic">
+                    <a href="https://www.linkedin.com/in/jared-lang/">
+                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Jared Lang" />
+                        <span itemprop="name" class="name">Jared Lang</span>
+                        <span itemprop="title" class="title techranger">Techranger</span>
+                    </a>
+                </div>
+
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="past_bio_eric-colon.php">
                         <img itemprop="image" src="images/thumbnails/eric.jpg" alt="Photo of Eric Colón" />
                         <span itemprop="name" class="name">Eric Colón</span>
-                        <span itemprop="title" class="title techranger">Techranger</span>
+                        <span itemprop="title" class="title techranger">Techranger, New Media Developer</span>
                     </a>
                 </div>
 
@@ -124,6 +133,14 @@
                         <img itemprop="image" src="images/thumbnails/sevena.jpg" alt="Photo of Sevena Skeels" />
                         <span itemprop="name" class="name">Sevena Skeels</span>
                         <span itemprop="title" class="title techranger">Techranger</span>
+                    </a>
+                </div>
+
+                <div itemscope itemtype="http://schema.org/Person" class="trpic">
+                    <a href="https://www.linkedin.com/in/michelle-shelley-cavanaugh-ronning-01b14a20/">
+                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Shelley Cavanaugh" />
+                        <span itemprop="name" class="name">Shelley Cavanaugh</span>
+                        <span itemprop="title" class="title techranger">New Media Copywriter</span>
                     </a>
                 </div>
 
@@ -139,7 +156,7 @@
                     <a href="past_elizabeth-williams.php">
                         <img itemprop="image" src="images/thumbnails/liz.jpg" alt="Photo of Elizabeth Williams" />
                         <span itemprop="name" class="name">Elizabeth Williams</span>
-                        <span itemprop="title" class="title techranger">Techranger</span>
+                        <span itemprop="title" class="title techranger">Techranger, Integrations Developer</span>
                     </a>
                 </div>
 
@@ -155,7 +172,7 @@
                     <a href="past_jesse-slavens.php">
                         <img itemprop="image" src="images/thumbnails/jesse.jpg" alt="Photo of Jesse Slavens" />
                         <span itemprop="name" class="name">Jesse Slavens</span>
-                        <span itemprop="title" class="title techranger">Techranger</span>
+                        <span itemprop="title" class="title techranger">Techranger, New Media Developer</span>
                     </a>
                 </div>
 
@@ -232,10 +249,18 @@
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
+                    <a href="https://www.linkedin.com/in/chet-bortz-99201aa7/">
+                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Chet Bortz" />
+                        <span itemprop="name" class="name">Chet Bortz</span>
+                        <span itemprop="title" class="title techranger">Techranger</span>
+                    </a>
+                </div>
+
+                <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="past_kevin-baugh.php">
                         <img itemprop="image" src="images/thumbnails/kevin.jpg" alt="Photo of Kevin Baugh" />
                         <span itemprop="name" class="name">Kevin Baugh</span>
-                        <span itemprop="title" class="title techranger">Techranger</span>
+                        <span itemprop="title" class="title techranger">Techranger, New Media Developer</span>
                     </a>
                 </div>
 
@@ -280,6 +305,14 @@
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
+                    <a href="https://www.linkedin.com/in/brent-shaw-9a328598/">
+                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Brent Shaw" />
+                        <span itemprop="name" class="name">Brent Shaw</span>
+                        <span itemprop="title" class="title techranger">Techranger Lead Developer</span>
+                    </a>
+                </div>
+
+                <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="past_tatiana-abromitis.php">
                         <img itemprop="image" src="images/thumbnails/tatiana.jpg" alt="Photo of Tatiana Abromitis" />
                         <span itemprop="name" class="name">Tatiana Abromitis</span>
@@ -307,7 +340,7 @@
                     <a href="https://www.linkedin.com/in/alex-horan-54b559130/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Alex Horan" />
                         <span itemprop="name" class="name">Alex Horan</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -315,7 +348,7 @@
                     <a href="https://www.linkedin.com/in/anthonyreyes/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Anthony Reyes" />
                         <span itemprop="name" class="name">Anthony Reyes</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -326,17 +359,19 @@
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
-                    <a href="https://www.linkedin.com/in/billymcclure/">
-                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Billy McClure" />
-                        <span itemprop="name" class="name">Billy McClure</span>
+                    <a href="https://www.linkedin.com/in/austin-flores-b583b611/">
+                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Austin Flores" />
+                        <span itemprop="name" class="name">Austin Flores</span>
                         <span itemprop="title" class="title  techranger">Techranger</span>
                     </a>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
-                    <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Brandon Stull" />
-                    <span itemprop="name" class="name">Brandon Stull</span>
-                    <span itemprop="title" class="title  techranger">Techranger</span>
+                    <a href="https://www.linkedin.com/in/billymcclure/">
+                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Billy McClure" />
+                        <span itemprop="name" class="name">Billy McClure</span>
+                        <span itemprop="title" class="title  techranger">Techranger</span>
+                    </a>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
@@ -351,7 +386,7 @@
                     <a href="https://www.linkedin.com/in/charlesparcell/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Charles Parcell" />
                         <span itemprop="name" class="name">Charles Parcell</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Lead Developer</span>
                     </a>
                 </div>
 
@@ -359,7 +394,7 @@
                     <a href="https://www.linkedin.com/in/christopher-conover-04950ab/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Chris Conover" />
                         <span itemprop="name" class="name">Chris Conover</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, Advanced Systems Lead Developer</span>
                     </a>
                 </div>
 
@@ -375,7 +410,7 @@
                     <a href="https://www.linkedin.com/in/coreyreece/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Corey Reese" />
                         <span itemprop="name" class="name">Corey Reese</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, Advanced Systems Developer</span>
                     </a>
                 </div>
 
@@ -383,7 +418,7 @@
                     <a href="https://www.linkedin.com/in/danpaulson83/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Dan Paulson" />
                         <span itemprop="name" class="name">Dan Paulson</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, Advanced Systems Lead Developer</span>
                     </a>
                 </div>
 
@@ -391,7 +426,7 @@
                     <a href="https://www.linkedin.com/in/david-perlaza-9787b52b/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of David Perlaza" />
                         <span itemprop="name" class="name">David Perlaza</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -412,18 +447,10 @@
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
-                    <a href="https://www.linkedin.com/in/franciscayonekura/">
-                        <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Francisca Yonekura" />
-                        <span itemprop="name" class="name">Francisca Yonekura</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
-                    </a>
-                </div>
-
-                <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="https://www.linkedin.com/in/gabegalperin/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Gabe Galperin" />
                         <span itemprop="name" class="name">Gabe Galperin</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -431,7 +458,7 @@
                     <a href="https://www.linkedin.com/in/gregallard/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Greg Allard" />
                         <span itemprop="name" class="name">Greg Allard</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, Advanced Systems Developer</span>
                     </a>
                 </div>
 
@@ -439,7 +466,7 @@
                     <a href="https://www.linkedin.com/in/jason-buckner-b7a29542/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Jason Buckner" />
                         <span itemprop="name" class="name">Jason Buckner</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, Advanced Systems Developer</span>
                     </a>
                 </div>
 
@@ -461,7 +488,7 @@
                     <a href="https://www.linkedin.com/in/jinlyu/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Jin Lyu" />
                         <span itemprop="name" class="name">Jin Lyu</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, Advanced Systems Developer</span>
                     </a>
                 </div>
 
@@ -500,14 +527,14 @@
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Kevin Smith" />
                     <span itemprop="name" class="name">Kevin Smith</span>
-                    <span itemprop="title" class="title  techranger">Techranger</span>
+                    <span itemprop="title" class="title  techranger">New Media Developer</span>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="https://www.linkedin.com/in/kitzzy-aviles-95478a6b/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Kitzzy Aviles" />
                         <span itemprop="name" class="name">Kitzzy Aviles</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger Team Lead</span>
                     </a>
                 </div>
 
@@ -515,21 +542,21 @@
                     <a href="https://www.linkedin.com/in/wisekris/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Kris Wise" />
                         <span itemprop="name" class="name">Kris Wise</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Larry Deihl" />
                     <span itemprop="name" class="name">Larry Deihl</span>
-                    <span itemprop="title" class="title  techranger">Techranger</span>
+                    <span itemprop="title" class="title  techranger">New Media Developer</span>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="https://www.linkedin.com/in/lauren-haar-53505879/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Lauren Haar" />
                         <span itemprop="name" class="name">Lauren Haar</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Designer</span>
                     </a>
                 </div>
 
@@ -537,7 +564,7 @@
                     <a href="https://www.linkedin.com/in/luis-estrada-8a25177b/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Luis Estrada" />
                         <span itemprop="name" class="name">Luis Estrada</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -545,7 +572,7 @@
                     <a href="https://www.linkedin.com/in/markclemons/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Mark Clemons" />
                         <span itemprop="name" class="name">Mark Clemons</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -569,7 +596,7 @@
                     <a href="https://www.linkedin.com/in/michealparks/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Micheal Parks" />
                         <span itemprop="name" class="name">Micheal Parks</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -577,7 +604,7 @@
                     <a href="https://www.linkedin.com/in/nicholas-birnbaum-6987b586/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Nick Birnbaum" />
                         <span itemprop="name" class="name">Nick Birnbaum</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -585,7 +612,7 @@
                     <a href="https://www.linkedin.com/in/pshipillo/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Pavel Shipillo" />
                         <span itemprop="name" class="name">Pavel Shipillo</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -593,7 +620,7 @@
                     <a href="https://www.linkedin.com/in/randybihlmayer/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Randy Bihlmayer" />
                         <span itemprop="name" class="name">Randy Bihlmayer</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, New Media Developer</span>
                     </a>
                 </div>
 
@@ -609,7 +636,7 @@
                     <a href="https://www.linkedin.com/in/rerichardsld/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Rebecca Richards" />
                         <span itemprop="name" class="name">Rebecca Richards</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -617,7 +644,7 @@
                     <a href="https://www.linkedin.com/in/rseilham/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Ryan Seilhamer" />
                         <span itemprop="name" class="name">Ryan Seilhamer</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger, New Media Developer</span>
                     </a>
                 </div>
 
@@ -631,21 +658,21 @@
                     <a href="https://www.linkedin.com/in/sarah-carroll-a67183127/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Scott Rapp" />
                         <span itemprop="name" class="name">Scott Rapp</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Scott Westcott" />
                     <span itemprop="name" class="name">Scott Westcott</span>
-                    <span itemprop="title" class="title  techranger">Techranger</span>
+                    <span itemprop="title" class="title  techranger">New Media Developer</span>
                 </div>
 
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <a href="https://www.linkedin.com/in/stephanieamiller/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Stephanie Day" />
                         <span itemprop="name" class="name">Stephanie Day</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">New Media Developer</span>
                     </a>
                 </div>
 
@@ -667,7 +694,7 @@
                     <a href="https://www.linkedin.com/in/thomaswelfley/">
                         <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Thomas Welfley" />
                         <span itemprop="name" class="name">Thomas Welfley</span>
-                        <span itemprop="title" class="title  techranger">Techranger</span>
+                        <span itemprop="title" class="title  techranger">Techranger Team Lead</span>
                     </a>
                 </div>
 
@@ -682,7 +709,7 @@
                 <div itemscope itemtype="http://schema.org/Person" class="trpic">
                     <img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Valerie Smith" />
                     <span itemprop="name" class="name">Valerie Smith</span>
-                    <span itemprop="title" class="title  techranger">Techranger</span>
+                    <span itemprop="title" class="title  techranger">New Media Developer</span>
                 </div>
 
             </div>
