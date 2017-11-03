@@ -137,9 +137,9 @@
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="https://www.linkedin.com/in/michelle-shelley-cavanaugh-ronning-01b14a20/">
-						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Shelley Cavanaugh" />
-						<span itemprop="name" class="name">Shelley Cavanaugh</span>
-						<span itemprop="title" class="title techranger">New Media Copywriter</span>
+						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Michelle Cavanaugh-Ronning" />
+						<span itemprop="name" class="name">Michelle Cavanaugh-Ronning</span>
+						<span itemprop="title" class="title techranger">New Media Technical Writer</span>
 					</a>
 				</div>
 
