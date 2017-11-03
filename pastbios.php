@@ -316,7 +316,7 @@
 					<a href="https://www.linkedin.com/in/brent-shaw-9a328598/">
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Brent Shaw" />
 						<span itemprop="name" class="name">Brent Shaw</span>
-						<span itemprop="title" class="title techranger">Techranger Lead Developer</span>
+						<span itemprop="title" class="title techranger">Techranger Team Lead</span>
 					</a>
 				</div>
 
