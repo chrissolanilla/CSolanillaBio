@@ -19,7 +19,7 @@
 
 			<?php include('sidebar.html'); ?> <!-- sidebar.html -->
 
-			<p class="homep">Note that this is not a complete list.</p>
+			<p class="homep">Note that this is not a complete list, currently in no particular order.</p>
 
 			<div id="photogrid">
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
