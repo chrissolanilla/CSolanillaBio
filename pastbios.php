@@ -19,7 +19,6 @@
 
 			<?php include('sidebar.html'); ?> <!-- sidebar.html -->
 
-
 			<p class="homep">Note that this is not a complete list.</p>
 
 			<div id="photogrid">
@@ -170,7 +169,7 @@
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="https://www.linkedin.com/in/mattheweschultz/">
-						<img itemprop="image" src="images/thumbnails/corrinne.jpg" alt="Photo of Matthew Schultz" />
+						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Matthew Schultz" />
 						<span itemprop="name" class="name">Matthew Schultz</span>
 						<span itemprop="title" class="title techranger">Techranger</span>
 					</a>
@@ -311,6 +310,12 @@
 						<span itemprop="name" class="name">Sarah Sheehan</span>
 						<span itemprop="title" class="title techranger">Techranger</span>
 					</a>
+				</div>
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Mike Durso" />
+						<span itemprop="name" class="name">Mike Durso</span>
+						<span itemprop="title" class="title techranger">Techranger</span>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
