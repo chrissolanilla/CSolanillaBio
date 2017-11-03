@@ -315,7 +315,13 @@
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Mike Durso" />
 						<span itemprop="name" class="name">Mike Durso</span>
-						<span itemprop="title" class="title techranger">Techranger</span>
+						<span itemprop="title" class="title techranger">Advanced Systems Team Lead</span>
+				</div>
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Sammy Chan" />
+					<span itemprop="name" class="name">Sammy Chan</span>
+					<span itemprop="title" class="title  techranger">Advanced Systems Developer</span>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
@@ -597,9 +603,11 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<img itemprop="image" src="https://www.linkedin.com/in/steveedmonds/" alt="Photo of Steve Edmonds" />
-					<span itemprop="name" class="name">Steve Edmonds</span>
-					<span itemprop="title" class="title  techranger">Remote Techranger</span>
+					<a href="https://www.linkedin.com/in/steveedmonds/">
+						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Steve Edmonds" />
+						<span itemprop="name" class="name">Steve Edmonds</span>
+						<span itemprop="title" class="title  techranger">Remote Techranger</span>
+					</a>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
