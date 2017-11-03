@@ -169,6 +169,15 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<a href="https://www.linkedin.com/in/mattheweschultz/">
+						<img itemprop="image" src="images/thumbnails/corrinne.jpg" alt="Photo of Matthew Schultz" />
+						<span itemprop="name" class="name">Matthew Schultz</span>
+						<span itemprop="title" class="title techranger">Techranger</span>
+					</a>
+				</div>
+
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="past_jesse-slavens.php">
 						<img itemprop="image" src="images/thumbnails/jesse.jpg" alt="Photo of Jesse Slavens" />
 						<span itemprop="name" class="name">Jesse Slavens</span>
