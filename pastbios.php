@@ -161,8 +161,8 @@
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="past_corrinne-schultze.php">
-						<img itemprop="image" src="images/thumbnails/corrinne.jpg" alt="Photo of Corrinne Schultze" />
-						<span itemprop="name" class="name">Corrinne Schultze</span>
+						<img itemprop="image" src="images/thumbnails/corrinne.jpg" alt="Photo of Corrinne Stull" />
+						<span itemprop="name" class="name">Corrinne Stull</span>
 						<span itemprop="title" class="title techranger">Techranger</span>
 					</a>
 				</div>
