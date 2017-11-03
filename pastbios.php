@@ -234,8 +234,8 @@
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="past_ginan-jobarah.php">
-						<img itemprop="image" src="images/thumbnails/ginan.jpg" alt="Photo of Ginan Jobarah" />
-						<span itemprop="name" class="name">Ginan Jobarah</span>
+						<img itemprop="image" src="images/thumbnails/ginan.jpg" alt="Photo of Ginan Acosta" />
+						<span itemprop="name" class="name">Ginan Acosta</span>
 						<span itemprop="title" class="title techranger">Techranger</span>
 					</a>
 				</div>
