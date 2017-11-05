@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="stylesheet" href="{{ "/assets/reset.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <script type="text/javascript">document.createElement('main');</script>
+  <script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+</head>
+
+
+  <body>
+    <header role="banner">
+        <nav role="navigation">
+            <ul class="navlist">
+                <li><a href="{{ "/index.html" | relative_url }}" id="techrangers">
+                    <span id="char1">T</span>
+                    <span id="char2">E</span>
+                    <span id="char3">C</span>
+                    <span id="char4">H</span>
+                    <span id="char5">R</span>
+                    <span id="char6">A</span>
+                    <span id="char7">N</span>
+                    <span id="char8">G</span>
+                    <span id="char9">E</span>
+                    <span id="char10">R</span>
+                    <span id="char11">S</span>
+                </a></li>
+                <li><a href="{{ "/about.html" | relative_url }}">About</a></li>
+                <li><a href="{{ "/showcase.html" | relative_url }}">Showcase</a></li>
+                <li><a href="{{ "/techtime.html" | relative_url }}">Tech Time</a></li>
+                <li><a href="{{ "/tutorials.html" | relative_url }}">Tutorials</a></li>
+                <li><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+
+        <main role="main" id="biomain" class="clearfix">
+            <!-- main content -->
+            <div id="title">
+                <h1>Meet the Techrangers</h1>
+            </div>
+
+            {% include sidebar.html %}
+
+            <section role="region" class="pagecontent" id="biopage">
+
+                <section role="region">
+                <h1 class="bioh1">{{ page.name }}</h1>
+
+                    <img src="/assets/images/bios/{{ page.thumbnail }}" alt="{{ page.name }}" />
+
+                    {{ content }}
+                </section>
+
+            </section>
+        </main>
+
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+        <p>Copyright &copy; 2014-<?= date("Y") ?>, Techrangers&trade; <a href="https://online.ucf.edu/about" target="_blank">Center for Distributed Learning</a></p>
+
+        <div id="socmed">
+            <ul>
+                <li><a href="https://twitter.com/techrangers" id="twitter" target="_blank"><span>Twitter</span></a></li>
+                <li><a href="https://plus.google.com/u/0/100247024936649114253/posts" id="gplus" target="_blank"><span>Google Plus</span></a></li>
+                <li><a href="https://www.facebook.com/UCFTechrangers" id="facebook" target="_blank"><span>Facebook</span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+  </body>
+
+</html>

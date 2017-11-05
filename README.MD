@@ -1,6 +1,10 @@
+## Techranger Website
+
+Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](https://jekyllrb.com/docs/quickstart/) to install the requirements.
+
 ## Run a local development server
 
-Run `php -S localhost:8080` then open http://localhost:8080/home.php
+`bundle exec jekyll serve`
 
 ## Adding a Bio
 
