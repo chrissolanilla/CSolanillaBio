@@ -7,11 +7,11 @@ strong {
 
 @font-face {
 	font-family: 'League Gothic';
-	src: url('../fonts/leaguegothic-regular-webfont.eot');
-	src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-		url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-		url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+	src: url('../assets/fonts/leaguegothic-regular-webfont.eot');
+	src: url('../assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+		url('../assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+		url('../assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -77,7 +77,7 @@ body {
 
 
 		#title {
-			background: #25548e url(../images/logo_sheet.png) no-repeat;
+			background: #25548e url(../assets/images/logo_sheet.png) no-repeat;
 			background-position: 808px 2px;
 			height: 60px;
 			width: 1000px;
@@ -165,7 +165,7 @@ body {
 
 							/* For Keegan's sriracha easter egg */
 							.rooster {
-								background: url(../images/logo_sheet.png) no-repeat;
+								background: url(../assets/images/logo_sheet.png) no-repeat;
 								height: 29px;
 								width: 12px;
 								background-position: 0px -128px;
@@ -626,7 +626,7 @@ ol {
 /* Footer --------------------------------------------------------------------- */
 
 footer {
-	background: #3A3A3A url(../images/footer-bg.jpg) repeat;
+	background: #3A3A3A url(../assets/images/footer-bg.jpg) repeat;
 	width: 1000px;
 	height: 85px;
 	margin: 0 auto 20px auto;
@@ -665,32 +665,32 @@ footer a:hover {
 	text-decoration: none;
 }
 #facebook {
-	background: url(../images/logo_sheet.png) no-repeat;
+	background: url(../assets/images/logo_sheet.png) no-repeat;
 	background-position: 0px -192px;
 	border-radius: 50%;
 }
 #facebook:hover {
-	background: url(../images/logo_sheet.png) no-repeat;
+	background: url(../assets/images/logo_sheet.png) no-repeat;
 	background-position: -53px -192px;
 	border-radius: 50%;
 }
 #gplus {
-	background: url(../images/logo_sheet.png) no-repeat;
+	background: url(../assets/images/logo_sheet.png) no-repeat;
 	background-position: 0px -252px;
 	border-radius: 50%;
 }
 #gplus:hover {
-	background: url(../images/logo_sheet.png) no-repeat;
+	background: url(../assets/images/logo_sheet.png) no-repeat;
 	background-position: -53px -252px;
 	border-radius: 50%;
 }
 #twitter {
-	background: url(../images/logo_sheet.png) no-repeat;
+	background: url(../assets/images/logo_sheet.png) no-repeat;
 	background-position: 0px -312px;
 	border-radius: 50%;
 }
 #twitter:hover {
-	background: url(../images/logo_sheet.png) no-repeat;
+	background: url(../assets/images/logo_sheet.png) no-repeat;
 	background-position: -53px -312px;
 	border-radius: 50%;
 }
