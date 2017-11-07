@@ -46,7 +46,7 @@
                     </ul>
 
                 <h2>Biography:</h2>
-                	<p>I'm a graduate of the University of Central Florida, with a B.A. in Digital Media. I enjoy working on projects that incorporate some kind of graphical or visual component. I also enjoy movies, design, photography and occasionally cooking.</p>
+                	<p>I'm a graduate of the University of Central Florida, with a B.A. in Digital Media. When not working on websites, I enjoy movies, design, photography and occasionally cooking.</p>
                     <p class="rooster"></p>
 
                 <p class="updated">Page last updated November 1<sup>st</sup>, 2017</p>
