@@ -146,6 +146,15 @@
 
 			<h2>Learning Systems &amp; Technology</h2>
 			<div class="photogrid">
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<a href="https://www.linkedin.com/in/franciscayonekura/">
+						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Francisca Yonekura" />
+						<span itemprop="name" class="name">Francisca Yonekura</span>
+						<span itemprop="title" class="title  techranger">Associate Department Head, LS&amp;T </span>
+					</a>
+				</div>
+
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="bio_ian-turgeon.php">
 						<img itemprop="image" src="images/thumbnails/ian.jpg" alt="Photo of Ian Turgeon" />
@@ -158,15 +167,15 @@
 					<a href="bio_zachary-berry.php">
 						<img itemprop="image" src="images/thumbnails/zach.jpg" alt="Photo of Zachary Berry" />
 						<span itemprop="name" class="name">Zachary Berry</span>
-						<span itemprop="jobTitle" class="title"></span>
+						<span itemprop="jobTitle" class="title">Sr. Web Developer</span>
 					</a>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<!-- <a href="bio_ian-turgeon.php"> -->
+					<!-- <a href=""> -->
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Brandon Stull" />
 						<span itemprop="name" class="name">Brandon Stull</span>
-						<span itemprop="jobTitle" class="title"></span>
+						<span itemprop="jobTitle" class="title">Web Developer</span>
 					<!-- </a> -->
 				</div>
 
@@ -174,12 +183,12 @@
 					<a href="bio_corey-peterson.php">
 						<img itemprop="image" src="images/thumbnails/corey_peterson.png" alt="Photo of Corey Peterson" />
 						<span itemprop="name" class="name">Corey Peterson</span>
-						<span itemprop="jobTitle" class="title"></span>
+						<span itemprop="jobTitle" class="title">Web Developer</span>
 					</a>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<!-- <a href="bio_ian-turgeon.php"> -->
+					<!-- <a href=""> -->
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Shea Silverman" />
 						<span itemprop="name" class="name">Shea Silverman</span>
 						<span itemprop="jobTitle" class="title">Integrations<br/> Team Lead</span>
@@ -187,28 +196,28 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<!-- <a href="bio_ian-turgeon.php"> -->
-						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Matt Emond" />
-						<span itemprop="name" class="name">Matt Emond</span>
-						<span itemprop="jobTitle" class="title"></span>
-					<!-- </a> -->
+					<a href="past_matthew-emond.php">
+						<img itemprop="image" src="images/thumbnails/matt.jpg" alt="Photo of Matthew Emond" />
+						<span itemprop="name" class="name">Matthew Emond</span>
+						<span itemprop="jobTitle" class="title">Web Developer</span>
+					</a>
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-					<!-- <a href="bio_ian-turgeon.php"> -->
+					<!-- <a href=""> -->
 						<img itemprop="image" src="images/thumbnails/no_photo.jpg" alt="Photo of Jawahar Madineni" />
 						<span itemprop="name" class="name">Jawahar Madineni</span>
-						<span itemprop="jobTitle" class="title"></span>
+						<span itemprop="jobTitle" class="title">Data Engineer</span>
 					<!-- </a> -->
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
-                    			<a href="bio_keegan-berry.php">
-                        			<img itemprop="image" src="images/thumbnails/keegan.jpg" alt="Photo of Keegan Berry" />
-                        			<span itemprop="name" class="name">Keegan Berry</span>
-                        			<span itemprop="title" class="title techranger"></span>
-                    			</a>
-                		</div>
+						<a href="bio_keegan-berry.php">
+							<img itemprop="image" src="images/thumbnails/keegan.jpg" alt="Photo of Keegan Berry" />
+							<span itemprop="name" class="name">Keegan Berry</span>
+							<span itemprop="title" class="title techranger">Web Developer</span>
+						</a>
+				</div>
 
 			</div>
 
