@@ -6,6 +6,11 @@ Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](
 
 `bundle exec jekyll serve`
 
+## Build and Deploy
+
+`bundle exec jekyll build`
+`bundle exec rake deploy`
+
 ## Adding a Bio
 
 Follow all existing markup, style, and naming conventions already used.
