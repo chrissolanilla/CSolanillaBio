@@ -127,6 +127,14 @@
 				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<a href="bio_jonathan_guilbe.php">
+						<img itemprop="image" src="images/thumbnails/jonathan.jpg"  alt="Photo of Jonathan Guilbe" />
+						<span itemprop="name" class="name">Jonathan Guilbe</span>
+						<span itemprop="title" class="title techranger">Techranger</span>
+					</a>
+				</div>
+
+				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="bio_jacob-bates.php">
 						<img itemprop="image" src="images/thumbnails/jacob.jpg" alt="Photo of Jacob Bates" />
 						<span itemprop="name" class="name">Jacob Bates</span>
