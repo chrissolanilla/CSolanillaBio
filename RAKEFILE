@@ -1,0 +1,5 @@
+desc 'Publish website to S3'
+task :deploy  do
+  sh "aws s3 sync ./_site/ s3://ucfcdl-website-techrangers/ --acl public-read --delete"
+  puts "Site published"
+end
