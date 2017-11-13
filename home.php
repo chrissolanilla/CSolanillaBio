@@ -133,6 +133,14 @@
 						<span itemprop="title" class="title techranger">Techranger</span>
 					</a>
 				</div>
+                
+                <div itemscope itemtype="http://schema.org/Person" class="trpic">
+					<a href="bio_lawrence-oks.php">
+						<img itemprop="image" src="images/thumbnails/lawrence.jpg"  alt="Photo of Lawrence Oks" />
+						<span itemprop="name" class="name">Lawrence Oks</span>
+						<span itemprop="title" class="title techranger">Techranger</span>
+					</a>
+				</div>
 
 				<div itemscope itemtype="http://schema.org/Person" class="trpic">
 					<a href="bio_jacob-bates.php">
