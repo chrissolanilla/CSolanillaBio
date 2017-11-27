@@ -9,7 +9,9 @@ Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](
 ## Build and Deploy
 
 `bundle exec jekyll build`
+
 `bundle exec rake deploy`
+
 `bundle exec rake invalidate_cache`
 
 ## Adding a Bio
