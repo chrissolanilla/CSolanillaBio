@@ -43,6 +43,10 @@ collections:
   techrangers_past:
     output: true
 
+
+# allow posts/items dated in the future to show up on the site
+future: true
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
