@@ -1,5 +1,29 @@
+cloudfront_distribution_id = 'E1XOBY74UMJI29'
+
 desc 'Publish website to S3'
 task :deploy  do
-  sh "aws s3 sync ./_site/ s3://ucfcdl-website-techrangers/ --acl public-read --delete"
+  # sync files from _site up to s3
+  # deletes files that exist on the target and dont exist locally
+  # sets acl to public read for all files
+  # sets cache control max age to 24 hours
+  sh "aws s3 sync ./_site/ s3://ucfcdl-website-techrangers/ --acl public-read --delete --cache-control max-age=86400"
   puts "Site published"
+end
+
+desc 'Clears cache from cloudfront'
+task :invalidate_cache do
+ # Now we need to invalidate the cloudfront cache for the site
+  # this takes time! don't run this over and over
+  # todo - build a list of the files that changed and only invalidate those
+  sh "aws cloudfront create-invalidation --paths '/*'  --distribution-id #{cloudfront_distribution_id}"
+  puts "Cache invalidation requested"
+end
+
+
+desc 'show cloudfront invalidations'
+task :show_invalidations do
+ # Now we need to invalidate the cloudfront cache for the site
+  # this takes time! don't run this over and over
+  # todo - build a list of the files that changed and only invalidate those
+  sh "aws cloudfront list-invalidations --distribution-id #{cloudfront_distribution_id}"
 end

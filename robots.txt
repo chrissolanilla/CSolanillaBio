@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /canvas_test/
-
-User-Agent: *
-Disallow: /pres/
