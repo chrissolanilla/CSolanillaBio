@@ -21,30 +21,7 @@
 
 
   <body>
-    <header role="banner">
-        <nav role="navigation">
-            <ul class="navlist">
-                <li><a href="{{ "/index.html" | relative_url }}" id="techrangers">
-                    <span id="char1">T</span>
-                    <span id="char2">E</span>
-                    <span id="char3">C</span>
-                    <span id="char4">H</span>
-                    <span id="char5">R</span>
-                    <span id="char6">A</span>
-                    <span id="char7">N</span>
-                    <span id="char8">G</span>
-                    <span id="char9">E</span>
-                    <span id="char10">R</span>
-                    <span id="char11">S</span>
-                </a></li>
-                <li><a href="{{ "/about.html" | relative_url }}">About</a></li>
-                <li><a href="{{ "/showcase.html" | relative_url }}">Showcase</a></li>
-                <li><a href="{{ "/techtime.html" | relative_url }}">Tech Time</a></li>
-                <li><a href="{{ "/tutorials.html" | relative_url }}">Tutorials</a></li>
-                <li><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% include header.html %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -73,18 +50,7 @@
       </div>
     </main>
 
-    <footer role="contentinfo">
-        <p>Copyright &copy; 2014-{{ 'now' | date: "%Y" }}, Techrangers&trade; <a href="https://online.ucf.edu/about" target="_blank">Center for Distributed Learning</a></p>
-
-        <div id="socmed">
-            <ul>
-                <li><a href="https://twitter.com/techrangers" id="twitter" target="_blank"><span>Twitter</span></a></li>
-                <li><a href="https://plus.google.com/u/0/100247024936649114253/posts" id="gplus" target="_blank"><span>Google Plus</span></a></li>
-                <li><a href="https://www.facebook.com/UCFTechrangers" id="facebook" target="_blank"><span>Facebook</span></a></li>
-            </ul>
-        </div>
-    </footer>
-
+    {% include footer.html %}
 
   </body>
 
