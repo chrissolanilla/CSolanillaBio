@@ -148,6 +148,10 @@ body {
 					color: black;
 				}
 
+				.trpic .hiredate{
+					font-size: .7em;
+				}
+
 
 					/* Bio page stuff --------------------------------------- */
 					#biopage {}

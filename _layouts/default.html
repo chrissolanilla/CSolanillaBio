@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
   <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <script type="text/javascript">document.createElement('main');</script>
-  <script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
+  <script>document.createElement('main');</script>
+  <script src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
@@ -31,6 +32,29 @@
 
     {% include footer.html %}
 
+    <script>
+      var custom_local_func = function(number, index, total_sec) {
+        return [
+          ['', ''],
+          ['', ''],
+          ['', ''],
+          ['', ''],
+          ['', ''],
+          ['', ''],
+          ['(1 day)', ''],
+          ['(%s days)', ''],
+          ['(1 week)', ''],
+          ['(%s weeks)', ''],
+          ['(1 month)', ''],
+          ['(%s months)', ''],
+          ['(1 year)', ''],
+          ['(%s years)', ''],
+        ][index];
+      };
+      timeago.register('custom_local', custom_local_func);
+      timeago().render(document.querySelectorAll('.timeago'), 'custom_local');
+      timeago.cancel()
+    </script>
   </body>
 
 </html>
