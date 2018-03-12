@@ -2,6 +2,20 @@
 
 Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](https://jekyllrb.com/docs/quickstart/) to install the requirements.
 
+## Setting up your environment
+
+If you are doing this for the first time run these commands:
+
+`brew install ruby`
+
+`gem install bundle`
+
+`bundle install`
+
+`bundle exec jekyll serve`
+
+You can now view the site at localhost:4000
+
 ## Run a local development server
 
 `bundle exec jekyll serve`
