@@ -38,16 +38,6 @@ font-weight: 400;
 letter-spacing: 1px;
 }
 
-main {
-
-}
-main a { /* 'main a' because 'a' will affect UCF nav bars */
-font-family: 'Poppins', sans-serif;
-color: #4e84d4;
-}
-a:hover {
-color: #395f99;
-}
 
 /*.pagecontent {
 padding: 25px 50px 15px 50px;
@@ -424,9 +414,23 @@ letter-spacing: 2px;
 text-align: center;
 }
 
-main a,
+main a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
 main a:hover {
-color: #ffc904;
+	color: #ffc904;
+	text-decoration: none;
+}
+
+main a.cdl-link  {
+	color: #ffc904!important;
+}
+
+main a.cdl-link:hover {
+	color: #000!important;
 }
 
 .gold {
@@ -445,6 +449,10 @@ position: relative;
 border-top: 2px solid #fff;
 margin-top: 15px;
 margin-bottom: 25px;
+}
+
+button {
+
 }
 
 .btn {
@@ -467,6 +475,7 @@ font-weight: 400;
 
 #splash-page {
 height: 100vh;
+background-color: #f8f8f8;
 }
 
 /*h1 {
