@@ -2,42 +2,258 @@
 layout: default
 ---
 
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<main class="page-content" aria-label="Content">
+<div class="wrapper">
 <main role="main" id="homemain">
-  <!-- main content -->
-  <div id="title">
-    <h1>Meet the Techrangers<span class="registered">&reg;</span></h1>
+
+<!-- Splash page -->
+<section id="splash-page">
+  <nav class="navbar transparent navbar-inverse bg-light">
+    <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
+    <div id="myNav" class="nav-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="/about.html">About</a>
+          <a href="/showcase.html">Showcase</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/techtime.html">Techtimes</a>
+          <a href="/about.html">About</a>
+          <a href="/joinus.html">Join Us</a>
+        </div>
+    </div>
+    <span class="nav-span" onclick="openNav()">&#9776;</span>
+  </nav>
+
+  <div class="row">
+    <div class="container">
+      <div class="col-md-12">
+        <h1><span>Welcome to the Techrangers!</h1>
+      </div>
+    </div>
   </div>
+</section>
 
-  {% include sidebar.html %}
+<!-- About us LP -->
+<section id="about">
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-col">
+      <h2>About The Techrangers</h2>
+      <hr class="gold">
+      <p>The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
+      <button type="button" class="btn btn-dark">Meet the Team</button>
+    </div>
+  </div>
+</section>
 
-  <section role="region" class="pagecontent" id="homepage">
-
-    <img src="assets/images/team_photo.jpg" alt="Team Photo" />
-
-    <p class="homep">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
-
-    <p class="homep">Feel free to <a href="mailto:techrangers@ucf.edu">contact us</a>, <a href="about.html">read about us</a>, <a href="https://plus.google.com/100247024936649114253/posts" target="_blank">network with us</a>, <a href="techtime.html">learn from us</a> and <a href="joinus.html">possibly join us</a>!</p>
-
-    <p class="homep"><strong>For technical support</strong>, please contact Webcourses@UCF Support at (407) 823-0407 or <a href="https://online.ucf.edu/support">via the support website</a>. There are also many self help online course resources on the <a href="https://online.ucf.edu/learn-online">Learning Online Website</a>.</p>
-
-    <h2>The Techrangers<span class="registered">&reg;</span></h2>
-    <div class="photogrid">
-      {% assign tr = site.techrangers_current | where_exp: "item", "item.team != 'lst'" %}
-      {% for item in tr %}
-        {% include person.html %}
-      {% endfor %}
+<!-- Services LP -->
+<section id="services"> 
+  <div class="container">
+    <!-- mess around with WOW options for animations -->
+    <div class="col-sm-12 col-md-12 col-lg-12 services-col wow animated fadeInDown">
+      <h2 class="animated fadeIn">Our Services</h2>
+      <hr class="gold animated zoomIn">
+      <p class="animated fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos.</p>
     </div>
 
-    <h2>Learning Systems &amp; Technology</h2>
-    <div class="photogrid">
-      {% assign lst = site.techrangers_current | where: 'team', 'lst' %}
-      {% for item in lst %}
-        {% include person.html %}
-      {% endfor %}
+    <div class="row services-row wow animated fadeInDown">
+      <div class="col-sm-12 col-md-4 col-lg-4 services-box">
+        <div class="section-boxes">
+          <img src="assets/images/icons/coding.png" class="img-fluid image" alt="">
+          <h3>Learning Tools</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4 services-box">
+        <div class="section-boxes">
+          <img src="assets/images/icons/worker.png" class="img-fluid image" alt="">
+          <h3>Data Engineering</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae soluta ad sint, quisquam maxime!</p>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="section-boxes">
+          <img src="assets/images/icons/blackboard.png" class="img-fluid image" alt="">
+          <h3>Course Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  new WOW().init();
+  </script>
+</section>
+
+<!-- Showcase LP -->
+<section id="showcase"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 showcase-col">
+        <h2>Showcase</h2>
+        <hr class="gold">
+      </div>
     </div>
 
-    <h2>Past Techrangers<span class="registered">&reg;</span></h2>
-    <p><a href="past-techrangers.html">Click here to view past Techrangers' biographies</a>.</p>
+    <div class="row showcase-row">
+      <div class="col-sm-12 col-md-6 col-lg-6 right hover">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="">
+          <div class="overlay">
+            <h2>This tool allows direct access between Materia and Webcourses@UCF</h2>
+            <p><a href="#">Learn More</a></p>
+          </div>
+        </div>
+      </div>
 
-  </section>
+      <div class="col-sm-12 col-md-6 col-lg-6 left hover">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="">
+          <div class="overlay">
+            <h2>This tool allows direct access from the online course to Obojobo</h2>
+            <p><a href="#">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 right hover">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="">
+          <div class="overlay">
+            <h2>This open-source tool enables faculty to identify accessibility issues.</h2>
+            <p><a href="#">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6 left hover">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="">
+          <div class="overlay">
+            <h2 class="last">This tool is designed with idenity authentication and help curb cheating during exams.</h2>
+            <p><a href="#">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-dark">View More</button>
+  </div>
+</section>
+
+<!-- Blog LP -->
+<section id="blog">
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-col">
+      <h2>Latest Posts</h2>
+      <hr class="gold">
+    </div>
+
+    <div class="row blog-row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-container">
+        <div class="blog-item-wrapper ml-2 mr-2">
+          <div class="blog-item-img">
+            <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
+          </div>
+            <div class="blog-item-text">
+              <h5><a href="#">The History of Hack Day</a></h5>
+              <div class="meta-tags">
+                <ul class="meta">
+                  <li><i class="fas fa-clock"></i>April 10th, 2018</li>
+                  <li><i class="fas fa-bookmark"></i>News</li>
+                </ul>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
+            </div>
+            <div class="meta-tags blog-meta">
+              <ul class="meta">
+                <li><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-container">
+        <div class="blog-item-wrapper ml-2 mr-2">
+          <div class="blog-item-img">
+            <a href="#"><img src="assets/images/test-2.jpg" alt="" class="img-fluid"></a>
+          </div>
+            <div class="blog-item-text">
+              <h5><a href="#">Docker Training</a></h5>
+              <div class="meta-tags">
+                <ul class="meta">
+                  <li><i class="fas fa-clock"></i>April 11th, 2018</li>
+                  <li><i class="fas fa-bookmark"></i>News</li>
+                </ul>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
+            </div>
+            <div class="meta-tags blog-meta">
+              <ul class="meta">
+                <li><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-container blog-last">
+        <div class="blog-item-wrapper ml-2 mr-2">
+          <div class="blog-item-img">
+            <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
+          </div>
+          <div class="blog-item-text">
+            <h5><a href="#">Canvas Con Recap</a></h5>
+            <div class="meta-tags">
+              <ul class="meta">
+                <li><i class="fas fa-clock"></i>April 12th, 2018</li>
+                <li><i class="fas fa-bookmark"></i>News</li>
+              </ul>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
+          </div>
+          <div class="meta-tags blog-meta">
+            <ul class="meta">
+              <li><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-dark blog-btn">More Posts</button>
+  </div>
+  <script>
+  var txt = $('.card-text').text();
+  if (txt.length > 130)
+  $('.card-text').text(txt.substring(0, 130) + '....');
+  </script>
+</section>
+
+<!-- Join Us LP -->
+<section id="join-us">
+  <div class="container join-us-container">
+    <div class="row join-us-row justify-content-center">
+      <div class="col-md-8 col-lg-8 join-us-col">
+        <div class="join-us-text">
+          <h2 class="wow zoomIn animated">Join the Techrangers</h2>
+          <hr class="gold wow zoomIn animated">
+          <p class="wow zoomIn animated">If you would like to join the Techrangers' team, fill out the application</p>
+          <button type="button" class="btn btn-dark join-us-btn wow fadeInUp animated">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+</div>
 </main>

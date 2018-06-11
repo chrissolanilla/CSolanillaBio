@@ -2,701 +2,1046 @@
 /* CSS Document */
 
 strong {
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'League Gothic';
-	src: url('../assets/fonts/leaguegothic-regular-webfont.eot');
-	src: url('../assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
-		url('../assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-		url('../assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+font-weight: bold;
 }
 
 * {
-	box-sizing: border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-ms-box-sizing: border-box;
+box-sizing: border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-ms-box-sizing: border-box;
 }
+
+body,
+html {
+height: 100%;
+font-family: 'Poppins', sans-serif;
+}
+
 body {
-	background: #AAA;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	margin: 0;
+background: #fff;
+margin: 0;
+/*overflow: hidden;*/
 }
-	ul {
-		list-style-type: square;
-		margin-left: 25px;
-	}
 
-	main {
-		background: #ebebec;
-		width: 1000px;
-		margin: 30px auto 0 auto;
-		position: relative;
-		padding: 10px 0 30px 0;
-		display: block;
-	}
-		main a { /* 'main a' because 'a' will affect UCF nav bars */
-			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-			color: #4e84d4;
-		}
-			a:hover {
-				color: #395f99;
-			}
+i {
+font-family:'FontAwesome'!important;
+}
 
-			.pagecontent {
-				padding: 25px 50px 15px 50px;
-			}
-				.pagecontent h1 {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 35px;
-					color: #25548e;
-					margin: 25px 0 0 0;;
-					border-top: 2px solid;
-					max-width: 61%;
-				}
-				.pagecontent h2 {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 30px;
-					color: #4371b5;
-					margin: 30px 0 0 0;
-				}
-				.pagecontent h3 {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 26px;
-					color: #555;
-					margin: 30px 0 0 0;
-				}
+ul {
+/*list-style-type: square;*/
+margin-left: 25px;
+}
 
+p {
+font-weight: 400;
+letter-spacing: 1px;
+}
 
-		#title {
-			background: #25548e url(../assets/images/logo_sheet.png) no-repeat;
-			background-position: 808px 2px;
-			height: 60px;
-			width: 1000px;
-			margin-top: 20px;
-			padding: 1px 5px 5px 50px;
-			-webkit-box-shadow: 0 5px 5px -2px #AAA;
-			box-shadow: 0 5px 5px -2px #AAA;
-		}
-			div h1 {
-				font-family: 'League Gothic', sans-serif;
-				font-weight: normal;
-				font-size: 40px;
-				color: #FFF;
-				margin: 0;
-				margin-top: 0.4rem; /* Temporary */
-			}
+main {
+
+}
+main a { /* 'main a' because 'a' will affect UCF nav bars */
+font-family: 'Poppins', sans-serif;
+color: #4e84d4;
+}
+a:hover {
+color: #395f99;
+}
+
+/*.pagecontent {
+padding: 25px 50px 15px 50px;
+}
+.pagecontent h1 {
+font-family: 'League Gothic', sans-serif;
+font-weight: normal;
+font-size: 35px;
+color: #25548e;
+margin: 25px 0 0 0;;
+border-top: 2px solid;
+max-width: 61%;
+}
+.pagecontent h2 {
+font-family: 'League Gothic', sans-serif;
+font-weight: normal;
+font-size: 30px;
+color: #4371b5;
+margin: 30px 0 0 0;
+}
+.pagecontent h3 {
+font-family: 'League Gothic', sans-serif;
+font-weight: normal;
+font-size: 26px;
+color: #555;
+margin: 30px 0 0 0;
+}*/
 
 
-		/* Home stuff --------------------------------------- */
-		#homepage {
-		}
-
-		.registered {
-
-			font-size: .4em;
-			vertical-align: super;
-		}
-
-		.photogrid {
-		}
-			.trpic {
-				width: 130px;
-				vertical-align: top;
-				display: inline-block;
-				overflow: auto;
-				margin: 10px;
-				padding-top: 20px;
-			}
-				.trpic img {
-					height: 100px;
-					width: 100px;
-					display: block;
-					margin: 0 auto;
-					-webkit-box-shadow: 0 5px 5px -2px #AAA;
-					box-shadow: 0 5px 5px -2px #AAA;
-				}
-
-				.trpic a:link,
-				.trpic a:active,
-				.trpic a:visited {
-					text-decoration: none;
-				}
-
-				.trpic .name,
-				.trpic .title {
-					margin:15px 0 0 0;
-					display: block;
-					text-align: center;
-				}
-
-				.trpic a .name {
-					text-decoration: underline;
-				}
-
-				.trpic .title {
-					margin-top:0px;
-					font-size: .8em;
-					color: black;
-				}
-
-				.trpic .hiredate{
-					font-size: .7em;
-				}
+/* #title {
+background: #25548e url(../assets/images/logo_sheet.png) no-repeat;
+background-position: 808px 2px;
+height: 60px;
+width: 1000px;
+margin-top: 20px;
+padding: 1px 5px 5px 50px;
+-webkit-box-shadow: 0 5px 5px -2px #AAA;
+box-shadow: 0 5px 5px -2px #AAA;
+}*/
+/* div h1 {
+font-family: 'League Gothic', sans-serif;
+font-weight: normal;
+font-size: 40px;
+color: #FFF;
+margin: 0;
+margin-top: 0.4rem; 
+}*/
 
 
-					/* Bio page stuff --------------------------------------- */
-					#biopage {}
-						.bioh1 {}
-							#biopage section h2 {}
-							#biopage img {
-								margin: 0 auto;
-								display: block;
-							}
-							.updated {
-								float: right;
-								font-style: italic;
-								margin: 0;
-							}
+/* Home stuff --------------------------------------- */
+#homepage {}
 
-							/* For Keegan's sriracha easter egg */
-							.rooster {
-								background: url(../assets/images/logo_sheet.png) no-repeat;
-								height: 29px;
-								width: 12px;
-								background-position: 0px -128px;
-							}
+.registered {
 
-					/* Past bios stuff -------------------------------------- */
+font-size: .4em;
+vertical-align: super;
+}
 
+.photogrid {
+}
+.trpic {
+width: 130px;
+vertical-align: top;
+display: inline-block;
+overflow: auto;
+margin: 10px;
+padding-top: 20px;
+}
+.trpic img {
+height: 100px;
+width: 100px;
+display: block;
+margin: 0 auto;
+-webkit-box-shadow: 0 5px 5px -2px #AAA;
+box-shadow: 0 5px 5px -2px #AAA;
+}
 
+.trpic a:link,
+.trpic a:active,
+.trpic a:visited {
+text-decoration: none;
+}
 
-		/* About stuff ------------------------------------- */
-		#aboutpage {
-		}
-			#aboutmain h1 {
-			}
-				.aboutitem p {
-				}
-				#aboutpage ul {
-					list-style-type: square;
-					margin-left: 25px;
-				}
+.trpic .name,
+.trpic .title {
+margin:15px 0 0 0;
+display: block;
+text-align: center;
+}
 
-		/* Tech Time stuff ------------------------------------- */
-		#techtimepage {
-		}
-			#techtimepage h1 {
-			}
-				#techtimepage section h2 {
-					margin: 30px 0 -10px 0;
-				}
-				#techtimepage h2 a {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 30px;
-					color: #4371b5;
-				}
-					#techtimepage h2 a:hover {
-						color: #4e84d4;
-					}
-					.eventdate {
-						float: right;
-						font-style: italic;
-						margin-top: -25px;
-					}
-					#techtimepage .ttitem p {
-						margin-left: 30px;
-						margin-right: 30px;
-					}
+.trpic a .name {
+text-decoration: underline;
+}
 
-		/* Join Us stuff ------------------------------------- */
-		#joinusmain section {
-		}
-			#joinusmain h1 {
-			}
-				#joinusmain section h2 {
-				}
-				#joinuspage section p {
-				}
-				#joinuspage ul {
-					list-style-type: square;
-					margin-left: 25px;
-				}
+.trpic .title {
+margin-top:0px;
+font-size: .8em;
+color: black;
+}
+
+.trpic .hiredate{
+font-size: .7em;
+}
 
 
-		/* Showcase stuff ------------------------------------- */
-		#showcasemain section {
-		}
-			#sch1 {
-			}
-			#showcase {
-				margin: 0;
-				padding: 0;
-				/* column-count: 2; */
-			}
-				.scitem {
-					min-width: 400px;
-					max-width: 800px;
-					background: #DDD;
-					display: block;
-					margin: 0 auto 30px auto;
-					padding: 10px 10px 30px 10px;
-				}
-				#showcase .scitem:first-child {
-					background: none;
-				}
-					.scitem h1 {
-						max-width: 100%;
-						border: none;
-						color: #4371b5;
-						display: block;
-						text-align: center;
-						margin-bottom: 10px;
-					}
-					.scitem img {
-						height: 200px;
-						width: 300px;
-						margin: 0 auto;
-						display: block;
-						-webkit-box-shadow: 0 5px 5px -2px #AAA;
-						box-shadow: 0 5px 5px -2px #AAA;
-					}
-					.scintro {
-						margin-top: 10px;
-					}
+/* Bio page stuff --------------------------------------- */
+#biopage {}
+.bioh1 {}
+#biopage section h2 {}
+#biopage img {
+margin: 0 auto;
+display: block;
+}
+.updated {
+float: right;
+font-style: italic;
+margin: 0;
+}
 
-		/* Tutorials stuff ------------------------------------- */
-		#tutorialsmain section {
-		}
-			#tutorials {
-				margin: 0;
-				padding: 0;
-				/* overflow: auto; */
-			}
-				.tutitem {
-					min-width: 400px;
-					max-width: 800px;
-					background: #DDD;
-					display: block;
-					margin: 0 auto 30px auto;
-					padding: 10px 10px 50px 10px;
-				}
-				#tutorials .tutitem:first-child {
-					background: none;
-				}
-					.tutitem h1 {
-						max-width: 100%;
-						border: none;
-						display: block;
-						text-align: center;
-						margin-bottom: 10px;
-					}
-						.tutitem h1 a {
-							font-family: 'League Gothic', sans-serif;
-							color: #4371b5;
-							display: block;
-						}
-						.tutitem h1 a:hover {
-							color: #4e84d4;
-						}
-					.tutitem img {
-						height: 200px;
-						width: 300px;
-						margin: 0 auto;
-						display: block;
-						-webkit-box-shadow: 0 5px 5px -2px #AAA;
-						box-shadow: 0 5px 5px -2px #AAA;
-					}
-					.author {
-						font-style: italic;
-						float: right;
-						margin: -5px 0 15px 0;
-					}
+/* For Keegan's sriracha easter egg */
+.rooster {
+background: url(../assets/images/logo_sheet.png) no-repeat;
+height: 29px;
+width: 12px;
+background-position: 0px -128px;
+}
 
-		/* Tutorial pages (TR training, OAuth, Django) stuff ------------------------------------- */
-		#trtrainingpage {
-		}
-			#trtrainingmain h1 {
-			}
-				#trtrainingpage ul {
-					list-style-type: square;
-					margin-left: 57px;
-				}
-				#trtrainingpage ol {
-					margin-left: 0;
-				}
-				.tutauthor {
-					font-style: italic;
-				}
-				pre {
-					font-family: monospace;
-					background: #DDD;
-					padding: 25px;
-					overflow: auto;
-				}
+/* Past bios stuff -------------------------------------- */
+
+
+
+/* About stuff ------------------------------------- */
+#aboutpage {
+}
+#aboutmain h1 {
+}
+.aboutitem p {
+}
+#aboutpage ul {
+list-style-type: square;
+margin-left: 25px;
+}
+
+/* Tech Time stuff ------------------------------------- */
+/* #techtimepage {
+}
+#techtimepage h1 {
+}
+#techtimepage section h2 {
+margin: 30px 0 -10px 0;
+}
+#techtimepage h2 a {
+font-family: 'League Gothic', sans-serif;
+font-weight: normal;
+font-size: 30px;
+color: #4371b5;
+}
+#techtimepage h2 a:hover {
+color: #4e84d4;
+}
+.eventdate {
+float: right;
+font-style: italic;
+margin-top: -25px;
+}
+#techtimepage .ttitem p {
+margin-left: 30px;
+margin-right: 30px;
+}*/
+
+/* Join Us stuff ------------------------------------- */
+#joinusmain section {
+}
+#joinusmain h1 {
+}
+#joinusmain section h2 {
+}
+#joinuspage section p {
+}
+#joinuspage ul {
+list-style-type: square;
+margin-left: 25px;
+}
+
+
+/* Showcase stuff ------------------------------------- */
+#showcasemain section {
+}
+#sch1 {
+}
+#showcase {
+margin: 0;
+padding: 0;
+/* column-count: 2; */
+}
+.scitem {
+min-width: 400px;
+max-width: 800px;
+background: #DDD;
+display: block;
+margin: 0 auto 30px auto;
+padding: 10px 10px 30px 10px;
+}
+#showcase .scitem:first-child {
+background: none;
+}
+.scitem h1 {
+max-width: 100%;
+border: none;
+color: #4371b5;
+display: block;
+text-align: center;
+margin-bottom: 10px;
+}
+.scitem img {
+height: 200px;
+width: 300px;
+margin: 0 auto;
+display: block;
+-webkit-box-shadow: 0 5px 5px -2px #AAA;
+box-shadow: 0 5px 5px -2px #AAA;
+}
+.scintro {
+margin-top: 10px;
+}
+
+/* Tutorials stuff ------------------------------------- */
+/* #tutorialsmain section {
+}
+#tutorials {
+margin: 0;
+padding: 0;
+}
+.tutitem {
+min-width: 400px;
+max-width: 800px;
+background: #DDD;
+display: block;
+margin: 0 auto 30px auto;
+padding: 10px 10px 50px 10px;
+}
+#tutorials .tutitem:first-child {
+background: none;
+}
+.tutitem h1 {
+max-width: 100%;
+border: none;
+display: block;
+text-align: center;
+margin-bottom: 10px;
+}
+.tutitem h1 a {
+font-family: 'League Gothic', sans-serif;
+color: #4371b5;
+display: block;
+}
+.tutitem h1 a:hover {
+color: #4e84d4;
+}
+.tutitem img {
+height: 200px;
+width: 300px;
+margin: 0 auto;
+display: block;
+-webkit-box-shadow: 0 5px 5px -2px #AAA;
+box-shadow: 0 5px 5px -2px #AAA;
+}
+.author {
+font-style: italic;
+float: right;
+margin: -5px 0 15px 0;
+}*/
+
+/* Tutorial pages (TR training, OAuth, Django) stuff ------------------------------------- */
+/* #trtrainingpage {
+}
+#trtrainingmain h1 {
+}
+#trtrainingpage ul {
+list-style-type: square;
+margin-left: 57px;
+}
+#trtrainingpage ol {
+margin-left: 0;
+}
+.tutauthor {
+font-style: italic;
+}
+pre {
+font-family: monospace;
+background: #DDD;
+padding: 25px;
+overflow: auto;
+}*/
 
 /* Typography ----------------------------------------------------------------- */
 
 dl {
-	margin: 0;
-	margin-bottom: 20px;
+margin: 0;
+margin-bottom: 20px;
 }
 
 dl dt {
-	clear: left;
-	float: left;
-	font-weight: bold;
-	overflow: hidden;
-	text-align: right;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 160px;
+clear: left;
+float: left;
+font-weight: bold;
+overflow: hidden;
+text-align: right;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 160px;
 }
 
 dl dd {
-	margin-left: 180px;
+margin-left: 180px;
 }
 
 /* Tables --------------------------------------------------------------------- */
 
 table {
-	width: 100%;
-	border: 1px solid #999999;
+width: 100%;
+border: 1px solid #999999;
 }
 
 table > caption { font-weight: bold; }
 
 table > caption,
 table > thead > tr > th {
-	border: 1px solid #999999;
-	border-bottom: 2px solid #999999;
-	padding: 8px;
-	vertical-align: bottom;
+border: 1px solid #999999;
+border-bottom: 2px solid #999999;
+padding: 8px;
+vertical-align: bottom;
 }
 
 table > tbody > tr > td {
-	border: 1px solid #999999;
-	border-top: 1px solid #999999;
-	padding: 8px;
-	vertical-align: top;
+border: 1px solid #999999;
+border-top: 1px solid #999999;
+padding: 8px;
+vertical-align: top;
 }
 
 table td p { margin: 0 0 1em; }
 table td p:last-child { margin: 0; }
 
-/* Header --------------------------------------------------------------------- */
+/* Global --------------------------------------------------------------------- */
 
-header {
-	margin: auto;
-	position: relative;
-	background: #25548e;
-	height: 80px;
-}
-nav {
-	margin: 0 auto;
-	width: 1040px;
-}
-.navlist {
-	list-style-type: none;
-	overflow: hidden;
-	padding: 0;
-	margin: 0;
-}
-.navlist li {
-	display: inline-block;
-	list-style-type: none;
-	height: 80px;
-	vertical-align: middle;
-}
-.navlist li a {
-	color: #FFF;
-	text-decoration: none;
-	font-family: 'League Gothic', sans-serif;
-	font-size: 35px;
-	padding: 19px 22px 20px 47px;
-	background: #25548e;
-	position: relative;
-	display: block;
-	height: 80px;
-	margin: 0px;
-	margin-left: -4px; /* overlap size */
-}
-.navlist li a:hover {
-	color: #ffc904;
-}
-.navlist li:last-child a:hover {
-	color: #FFF;
-}
-#techrangers {
-	font-size: 60px;
-	padding: 4px 35px 0px 25px;
-	color: #fff;
-}
-	#techrangers:hover {
-		color: #ffc904;
-	}
-#techrangers span {
-	display: inline-block;
-}
-#char1 {
-	letter-spacing: -9px;
-}
-#char2 {
-	font-size: 53px;
-	left: 0px;
-	letter-spacing: -10px;
-}
-#char3 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(-2deg);
-	transform: rotate(-2deg);
-}
-#char4 {
-	font-size: 53px;
-	left: -1px;
-	letter-spacing: -10px;
-	-webkit-transform: rotate(-1deg);
-	transform: rotate(-1deg);
-}
-#char5 {
-	font-size: 55px;
-	left: -1px;
-	letter-spacing: -8px;
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
-}
-#char6 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -10px;
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
-}
-#char7 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(-2deg);
-	transform: rotate(-2deg);
-}
-#char8 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-#char9 {
-	font-size: 53px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(-1deg);
-	transform: rotate(-1deg);
-}
-#char10 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -10px;
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
-}
-#char11 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -5px;
-	-webkit-transform: rotate(-2deg);
-	transform: rotate(-2deg);
+#about,
+#services,
+#showcase, 
+#blog,
+#join-us,
+#footer {
+padding: 50px 0;
 }
 
-.navlist li a:after {
-	content: " ";
-	display: block;
-	width: 0;
-	height: 0;
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
-	border-left: 25px solid #25548e;
-	position: absolute;
-	top: 50%;
-	margin-top: -40px; /* arrow height */
-	left: 100%;
-	z-index: 2;
-}
-.navlist li:first-child a {
-	padding-left: 10px;
+.about-col h2,
+.showcase-col h2,
+.blog-col h2 {
+color: #000;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: 2px;
 }
 
-.navlist li:nth-child(2) a {
-	background: #395f99;
-}
-.navlist li:nth-child(2) a:after {
-	border-left-color: #395f99;
-}
-
-.navlist li:nth-child(3) a {
-	background: #4371b5;
-}
-.navlist li:nth-child(3) a:after {
-	border-left-color: #4371b5;
+.services-col h2,
+.join-us-col h2,
+.footer-col h2 {
+font-size: 40px;
+font-weight: 700;
+letter-spacing: 2px;
 }
 
-.navlist li:nth-child(4) a {
-	background: #4e84d4;
-}
-.navlist li:nth-child(4) a:after {
-	border-left-color: #4e84d4;
+.col-md-12 {
+text-align: center;
 }
 
-.navlist li:nth-child(5) a {
-	background: #548de3;
-}
-.navlist li:nth-child(5) a:after {
-	border-left-color: #548de3;
+main a,
+main a:hover {
+color: #ffc904;
 }
 
-.navlist li:nth-child(6) a {
-	background: #ffc904;
-	color: #000;
-	padding-right: 25px;
-}
-.navlist li:nth-child(6) a:after {
-	border-left-color: #ffc904;
-}
-
-/* Sidebar -------------------------------------------------------------------- */
-
-p {
-	margin: 1em 0em 1em 0em;
+.gold {
+margin: auto;
+width: 70px;
+position: relative;
+border-top: 2px solid #ffc904;
+margin-top: 15px;
+margin-bottom: 25px;
 }
 
-ol {
-	list-style-type: decimal;
-	margin: 1em 0em 1em 0em;
-	padding-left: 60px;
-	-webkit-padding-start: 60px;
-	-moz-padding-start: 60px;
+.white {
+margin: auto;
+width: 70px;
+position: relative;
+border-top: 2px solid #fff;
+margin-top: 15px;
+margin-bottom: 25px;
 }
 
-#homeaside {
-	background: #CCC;
-	width: 300px;
-	float: right;
-	padding-bottom: 10px;
-	margin: 0px 50px 50px 50px;
-	box-shadow: 0 5px 5px -2px #AAA;
+.btn {
+padding: 15px;
 }
 
-#homeaside p {
-	padding-left: 20px;
-	padding-right: 20px;
+.btn-dark {
+border-color: #000;
+background-color: #000;
 }
 
-#homeaside h2 {
-	text-align: center;
-	height: 60px;
-	margin-top: 30px;
-	font-family: 'League Gothic', sans-serif;
-	font-weight: normal;
-	font-size: 40px;
-	padding: 10px;
-	color: #FFF;
-	background-color: #548de3;
-	box-shadow: 0 5px 5px -2px #818181;
+.btn.btn-dark {
+border-radius: 0;
+letter-spacing: 2px;
+font-weight: 400;
 }
 
-#homeaside a {
-	color: #395f99;
+
+/* Splash Page --------------------------------------------------------------------- */
+
+#splash-page {
+background-image: url(/assets/pattern.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100vh;
 }
 
-#homeaside a:hover {
-	color: #4e84d4;
+h1 {
+color: #fff;
+background-color: #000;
+font-size: 50px;
+font-weight: 700;
+letter-spacing: 2px;
+margin-top: 200px;
+text-align: center;
+padding: 10px 0;
+
 }
 
-#homeaside ol li {
-	margin-top: 25px;
+/* Navigation --------------------------------------------------------------------- */
+
+.bg-light {
+/*background: linear-gradient(rgba(0,0,0,.4), transparent)!important;*/
+background-color: rgb(0, 0, 0, 0.1)!important; 
 }
+
+.navbar-inverse .navbar-brand {
+color: #fff;
+font-size: 25px;
+font-weight: 700;
+letter-spacing: 1px;
+}
+
+.nav-span {
+font-size: 30px;
+cursor: pointer;
+color: #fff;
+}
+
+.nav-overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition: 0.5s;
+}
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+.nav-overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.nav-overlay a:hover, 
+.nav-overlay a:focus {
+color: #f1f1f1;
+}
+
+.nav-overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.nav-overlay a {font-size: 20px}
+.nav-overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
+}
+
+
+/* About LP --------------------------------------------------------------------- */
+
+.about-col p {
+line-height: 50px!important;
+}
+
+
+.about-col button {
+margin-top: 15px;
+}
+
+/* Services LP --------------------------------------------------------------------- */
+
+#services {
+background-color: #2d2d2d;
+}
+
+.services-col h2,
+.services-col p,
+.section-boxes {
+color: #fff;
+}
+
+.services-col h2 {
+animation-duration: 1000ms;
+animation-delay: 0.3s;
+}
+
+.services-col hr {
+animation-delay: 0.3s;
+}
+
+.services-col p {
+padding-top: 10px;
+line-height: 35px;
+
+animation-duration: 1000ms;
+animation-delay: 0.3s;
+}
+
+.services-row {
+padding-top: 50px;
+/*padding-bottom: 60px;*/
+text-align: center;
+}
+
+.section-boxes.animated {
+animation-delay: 0.2s;
+}
+
+.section-boxes i {
+color: #ffc904;
+}
+
+.section-boxes h3 {
+letter-spacing: 2px;
+font-size: 18px;
+font-weight: 400;
+}
+
+.section-boxes p {
+font-weight: 400;
+font-size: 15px;
+line-height: 35px;
+}
+
+.section-boxes h3,
+.section-boxes p {
+margin-top: 10px;
+}
+
+/* Showcase LP --------------------------------------------------------------------- */
+
+#showcase {
+text-align: center;
+}
+
+.showcase-row {
+justify-content: center;
+}
+
+#showcase button.btn.btn-dark {
+margin-top: 25px;
+}
+
+.showcase-row {
+padding-bottom: 10px;
+}
+
+.col-sm-12.col-md-6.col-lg-6.right {
+padding-right: 5px;
+}
+
+.col-sm-12.col-md-6.col-lg-6.left {
+padding-left: 5px;
+}
+
+/* Image hover effect ------------------------------------- */
+
+.hover-effect {
+width: 100%;
+height: 100%;
+float: left;
+overflow: hidden;
+position: relative;
+text-align: center;
+cursor: default;
+}
+
+.hover-effect .overlay {
+position: absolute;
+overflow: hidden;
+width: 80%;
+height: 80%;
+left: 10%;
+top: 10%;
+border-bottom: 1px solid #FFF;
+border-top: 1px solid #FFF;
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+-webkit-transform: scale(0,1);
+-ms-transform: scale(0,1);
+transform: scale(0,1);
+}
+
+.hover-effect:hover .overlay {
+opacity: 1;
+filter: alpha(opacity=100);
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+}
+
+.hover-effect img {
+display: block;
+position: relative;
+-webkit-transition: all 0.35s;
+transition: all 0.35s;
+}
+
+.hover-effect:hover img {
+filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+filter: brightness(0.6);
+-webkit-filter: brightness(0.6);
+}
+
+.hover-effect h2 {
+/*text-transform: uppercase;*/
+text-align: center;
+letter-spacing: 1px;
+font-weight: 400;
+position: relative;
+font-size: 15px;
+background-color: transparent;
+color: #FFF;
+padding: 50px 0;
+/* opacity: 0;
+filter: alpha(opacity=0);
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+-webkit-transform: translate3d(0,-100%,0);
+transform: translate3d(0,-100%,0); */
+}
+
+.hover-effect a, .hovereffect p {
+color: #FFF;
+padding: 1em 0;
+opacity: 0;
+filter: alpha(opacity=0);
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+-webkit-transform: translate3d(0,100%,0);
+transform: translate3d(0,100%,0);
+}
+
+.hover-effect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+opacity: 1;
+filter: alpha(opacity=100);
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+
+/* Blog LP --------------------------------------------------------------------- */
+
+#blog {
+background-color: #f8f8f8;
+text-align: center;
+}
+
+.blog-col h2 {
+color: #000;
+}
+
+.blog-container {
+padding: 0;
+}
+
+.blog-row {
+padding-bottom: 25px;
+}
+
+.blog-item-text {
+text-align: left;
+}
+
+.blog-item-text h5 {
+padding: 5px 0;
+}
+
+.blog-item-text h5 a {
+color: #FFC904;
+font-size: 24px;
+letter-spacing: 1px;
+}
+
+.blog-item-text p {
+line-height: 25px;
+font-size: 14px;
+margin-top: .75rem;
+}
+
+.meta-tags {
+text-align: left;
+}
+
+.meta-tags ul {
+margin-left: 0;
+padding-top: 5px;
+}
+
+.meta-tags.blog-meta li a {
+color: #000;
+text-decoration: none;
+}
+
+.meta-tags li {
+font-size: 12px;
+letter-spacing: 1px;
+margin: 0 10px 0 0;
+}
+
+.meta-tags li i {
+margin-right: 5px;
+}
+
+.meta-tags ul > li{
+display:inline-block;
+}
+
+.read-more i {
+margin-left: 5px;
+}
+
+
+/* Join Us --------------------------------------------------------------------- */
+
+#join-us {
+text-align: center;
+}
+
+.join-us-text p {
+padding-bottom: 25px;
+}
+
+h2.wow.zoomin.animated,
+hr.wow.zoomin.animated,
+p.wow.zoomin.animated {
+visibility: visible;
+-webkit-animation-duration: 1000ms;
+-moz-animation-duration: 1000ms;
+animation-duration: 1000ms;
+-webkit-animation-delay: 100ms;
+-moz-animation-delay: 100ms;
+animation-delay: 100ms;
+}
+
+button.wow.fadeinup.animated {
+visibility: visible;
+-webkit-animation-duration: 1000ms;
+-moz-animation-duration: 1000ms;
+animation-duration: 1000ms;
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+
+
 
 /* Footer --------------------------------------------------------------------- */
 
 footer {
-	background: #3A3A3A url(../assets/images/footer-bg.jpg) repeat;
-	width: 1000px;
-	height: 85px;
-	margin: 0 auto 20px auto;
-	position: relative;
-	padding: 15px 50px 15px 50px;
+text-align: center;
+background-color: #2d2d2d;
 }
-footer p {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	color: #FFF;
-	float: left;
+
+h4 {
+color: #fff;
+font-size: 25px;
+font-weight: 400;
+letter-spacing: 2px;
+padding-top: 15px;
 }
-footer a {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	color: #ffc904;
+
+.footer-col ul {
+color: #fff;
+margin-left: 0;
 }
-footer a:hover {
-	color: #FFF;
+
+.footer-col ul.social>li,
+.footer-col ul.bottom-nav>li {
+display: inline-block;
+padding: 5px;
+letter-spacing: 2px;
 }
-#socmed ul {
-	margin: 0;
-	margin-top: 2px;
+
+.separator {
+color: #ffc904;
 }
-#socmed ul li {
-	list-style-type: none;
-	display: inline;
+
+.footer-col ul.bottom-nav>li {
+padding-bottom: 10px;
 }
-#socmed span {
-	visibility: hidden;
+
+ul.social a,
+ul.bottom-nav a {
+text-decoration: none;
+color: #fff;
 }
-#socmed a {
-	height: 50px;
-	width: 50px;
-	display: inline-block;
-	float: right;
-	margin-left: 15px;
-	text-decoration: none;
+
+ul.social a:hover,
+ul.bottom-nav a:hover {
+color: #ffc904!important;
 }
-#facebook {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: 0px -192px;
-	border-radius: 50%;
+
+.footer-col p.copy {
+color: grey;
+font-size: 10px;
+letter-spacing: 2px;
 }
-#facebook:hover {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: -53px -192px;
-	border-radius: 50%;
+
+/* Go to top btn ------------------------------------- */
+
+
+/* Media Queries --------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+body {
+background-color: #FFBDC8!important;
 }
-#gplus {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: 0px -252px;
-	border-radius: 50%;
+
+/* About LP ------------------------------------- */
+
+.about-col p {
+line-height: 3;
 }
-#gplus:hover {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: -53px -252px;
-	border-radius: 50%;
+
+/* Services LP ------------------------------------- */
+
+#services {
+padding: 80px 0;
 }
-#twitter {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: 0px -312px;
-	border-radius: 50%;
+
+.services-col p,
+.services-row p {
+font-size: 14px;
+line-height: 25px;
 }
-#twitter:hover {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: -53px -312px;
-	border-radius: 50%;
+
+.services-row {
+padding-top: 25px;
+}
+
+.services-row .services-box {
+padding-bottom: 25px;
+}
+
+/* Showcase LP ------------------------------------- */
+
+.col-sm-12.col-md-6.col-lg-6.right, 
+.col-sm-12.col-md-6.col-lg-6.left {
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.col-sm-12.col-md-6.col-lg-6.right {
+padding-bottom: 10px;
+}
+
+.hover-effect h2 {
+font-size: 12px;
+padding: 25px 0;
+line-height: 25px; 
+}
+
+.hover-effect h2.last {
+padding: 15px 0;
+}
+
+/* Blog LP ------------------------------------- */
+
+.blog-container {
+padding-bottom: 15px;
+}
+
+.blog-last {
+padding-bottom: 0;
+}
+
+.blog-item-text h5 {
+padding: 0;
+padding-top: 5px;
+}
+
+.blog-item-text h5 a {
+padding: 0;
+}
+
+.meta-tags ul {
+padding-top: 5px;
+}
+
+.meta-tags li a {
+color: #000;
+letter-spacing: 1px;
+}
+
+}
+
+@media (min-width:640px) and (max-width: 768px) {
+body {
+background-color: #FFD3BD!important;
+}
+
+/* Showcase LP ------------------------------------- */
+
+.col-sm-12.col-md-6.col-lg-6.right {
+padding-right: 0;
+padding-left: 0;
+padding-bottom: 10px;
+}
+
+.col-sm-12.col-md-6.col-lg-6.left {
+padding-left: 0;
+padding-right: 0;
+}
+}
+
+@media (min-width: 768px) and (max-width:992px){
+body {
+background-color: #ECFD96!important;
+}
+
+/* Showcase LP ------------------------------------- */
+
+.hover-effect h2 {
+font-size: 12px;
+padding: 20px 0;
+line-height: 25px;
+}
+
+.hover-effect h2.last {
+padding: 10px 0;
+}
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+body {
+background-color: #CAFD96!important;
+}
+
+/* Showcase LP ------------------------------------- */
+
+.hover-effect h2 {
+padding: 40px 0;
+}
+
+.hover-effect h2.last {
+padding: 35px 0;
+}
+}
+
+@media (min-width: 1200px) {
+body {
+/*background-color: #D3BDFF!important;*/
+}
 }
 
 /* Helper classes for smart developers ;) ------------------------------------- */
@@ -704,8 +1049,8 @@ footer a:hover {
 .center { text-align: center; }
 .clearfix:before,
 .clearfix:after {
-	content: " ";
-	display: table;
+content: " ";
+display: table;
 }
 .clearfix:after { clear: both; }
 .no-margin { margin: 0; }

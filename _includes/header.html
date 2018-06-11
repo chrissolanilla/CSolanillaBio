@@ -1,24 +1,25 @@
-<header role="banner">
-    <nav role="navigation">
-        <ul class="navlist">
-            <li><a href="{{ "/index.html" | relative_url }}" id="techrangers">
-                <span id="char1">T</span>
-                <span id="char2">E</span>
-                <span id="char3">C</span>
-                <span id="char4">H</span>
-                <span id="char5">R</span>
-                <span id="char6">A</span>
-                <span id="char7">N</span>
-                <span id="char8">G</span>
-                <span id="char9">E</span>
-                <span id="char10">R</span>
-                <span id="char11">S</span>
-            </a></li>
-            <li><a href="{{ "/about.html" | relative_url }}">About</a></li>
-            <li><a href="{{ "/showcase.html" | relative_url }}">Showcase</a></li>
-            <li><a href="{{ "/techtime.html" | relative_url }}">Tech Time</a></li>
-            <li><a href="{{ "/tutorials.html" | relative_url }}">Tutorials</a></li>
-            <li><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- <nav class="navbar navbar-light bg-light">
+<a class="navbar-brand" href="{{ "/index.html" | relative_url }}" id="techrangers" class="logo">Techrangers</a>
+<div id="myNav" class="nav-overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+<a href="{{ "/about.html" | relative_url }}">About</a>
+<a href="{{ "/showcase.html" | relative_url }}">Showcase</a>
+<a href="{{ "/blog.html" | relative_url }}">Blog</a>
+<a href="{{ "/techtime.html" | relative_url }}">Techtimes</a>
+<a href="{{ "/about.html" | relative_url }}">About</a>
+<a href="{{ "/joinus.html" | relative_url }}">Join Us</a>
+</div>
+</div>
+<span class="nav-span" onclick="openNav()">&#9776;</span>
+</nav> -->
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
