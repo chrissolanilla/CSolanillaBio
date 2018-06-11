@@ -108,6 +108,7 @@ vertical-align: super;
 
 .photogrid {
 }
+
 .trpic {
 width: 130px;
 vertical-align: top;
@@ -151,7 +152,6 @@ color: black;
 .trpic .hiredate{
 font-size: .7em;
 }
-
 
 /* Bio page stuff --------------------------------------- */
 #biopage {}
@@ -466,14 +466,10 @@ font-weight: 400;
 /* Splash Page --------------------------------------------------------------------- */
 
 #splash-page {
-background-image: url(/assets/pattern.svg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
 height: 100vh;
 }
 
-h1 {
+/*h1 {
 color: #fff;
 background-color: #000;
 font-size: 50px;
@@ -483,7 +479,7 @@ margin-top: 200px;
 text-align: center;
 padding: 10px 0;
 
-}
+}*/
 
 /* Navigation --------------------------------------------------------------------- */
 
@@ -560,7 +556,7 @@ right: 35px;
 /* About LP --------------------------------------------------------------------- */
 
 .about-col p {
-line-height: 50px!important;
+line-height: 40px!important;
 }
 
 
@@ -811,7 +807,7 @@ margin-left: 5px;
 }
 
 
-/* Join Us --------------------------------------------------------------------- */
+/* Join Us LP --------------------------------------------------------------------- */
 
 #join-us {
 text-align: center;
@@ -843,13 +839,14 @@ animation-duration: 1000ms;
 animation-delay: 0.3s;
 }
 
-
-
 /* Footer --------------------------------------------------------------------- */
 
 footer {
 text-align: center;
 background-color: #2d2d2d;
+/*position: fixed;
+bottom: 0px;
+width: 100%;*/
 }
 
 h4 {
@@ -897,8 +894,42 @@ font-size: 10px;
 letter-spacing: 2px;
 }
 
-/* Go to top btn ------------------------------------- */
+/* About Us Page ------------------------------------- */
 
+h1.about {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 50px; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+hr.gold-about {
+	margin-top: 0;
+}
+
+p.mission {
+	font-weight: 400;
+    letter-spacing: 1px;
+	line-height: 30px!important;
+	text-align: center;
+}
+
+h2.lst-header {
+	color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+hr.gold-lst {
+	margin-top: 15px;
+}
 
 /* Media Queries --------------------------------------------------------------------- */
 
@@ -1024,7 +1055,7 @@ padding: 10px 0;
 
 @media (min-width: 992px) and (max-width:1200px) {
 body {
-background-color: #CAFD96!important;
+/*background-color: #CAFD96!important;*/
 }
 
 /* Showcase LP ------------------------------------- */
