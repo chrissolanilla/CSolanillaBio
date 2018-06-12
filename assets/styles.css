@@ -209,17 +209,83 @@ margin-right: 30px;
 }*/
 
 /* Join Us stuff ------------------------------------- */
+
 #joinusmain section {
+
 }
+
 #joinusmain h1 {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 50px; 
+    text-align: center;
+    padding: 10px 0;
 }
-#joinusmain section h2 {
+
+h2.applying {
+	font-size: 30px;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    text-align: center;
 }
-#joinuspage section p {
+
+p.skills-par {
+	text-align: center;
+	padding-bottom: 15px;
 }
-#joinuspage ul {
-list-style-type: square;
-margin-left: 25px;
+
+p.join-par {
+	padding-top: 15px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 40px;
+}
+
+p.email-us {
+	padding-bottom: 20px;
+}
+
+main a.app-link {
+	color: #ffc904;
+}
+
+main a.app-link:hover {
+	color: #000;
+}
+
+.benefits li {
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+.benefits ul {
+	padding-top: 25px;
+}
+
+.benefits li img {
+	height: 15px;
+    padding-right: 15px;
+}
+
+.benefits p,
+.benefits h3 {
+	padding-top: 10px;
+}
+
+.benefits h3 {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.benefits ul.core-ul {
+	padding-top: 15px;
+}
+
+hr.divider {
+	padding-top: 15px;
 }
 
 
@@ -903,9 +969,10 @@ font-size: 10px;
 letter-spacing: 2px;
 }
 
-/* About Us Page ------------------------------------- */
+/* Other Pages ------------------------------------- */
 
-h1.about {
+h1.about,
+h1.past-tr {
 	color: #000;
     background-color: transparent;
     font-size: 50px;
@@ -940,148 +1007,9 @@ hr.gold-lst {
 	margin-top: 15px;
 }
 
-/* Media Queries --------------------------------------------------------------------- */
-
-@media (max-width: 640px) {
-body {
-background-color: #FFBDC8!important;
-}
-
-/* About LP ------------------------------------- */
-
-.about-col p {
-line-height: 3;
-}
-
-/* Services LP ------------------------------------- */
-
-#services {
-padding: 80px 0;
-}
-
-.services-col p,
-.services-row p {
-font-size: 14px;
-line-height: 25px;
-}
-
-.services-row {
-padding-top: 25px;
-}
-
-.services-row .services-box {
-padding-bottom: 25px;
-}
-
-/* Showcase LP ------------------------------------- */
-
-.col-sm-12.col-md-6.col-lg-6.right, 
-.col-sm-12.col-md-6.col-lg-6.left {
-padding-right: 10px;
-padding-left: 10px;
-}
-
-.col-sm-12.col-md-6.col-lg-6.right {
-padding-bottom: 10px;
-}
-
-.hover-effect h2 {
-font-size: 12px;
-padding: 25px 0;
-line-height: 25px; 
-}
-
-.hover-effect h2.last {
-padding: 15px 0;
-}
-
-/* Blog LP ------------------------------------- */
-
-.blog-container {
-padding-bottom: 15px;
-}
-
-.blog-last {
-padding-bottom: 0;
-}
-
-.blog-item-text h5 {
-padding: 0;
-padding-top: 5px;
-}
-
-.blog-item-text h5 a {
-padding: 0;
-}
-
-.meta-tags ul {
-padding-top: 5px;
-}
-
-.meta-tags li a {
-color: #000;
-letter-spacing: 1px;
-}
-
-}
-
-@media (min-width:640px) and (max-width: 768px) {
-body {
-background-color: #FFD3BD!important;
-}
-
-/* Showcase LP ------------------------------------- */
-
-.col-sm-12.col-md-6.col-lg-6.right {
-padding-right: 0;
-padding-left: 0;
-padding-bottom: 10px;
-}
-
-.col-sm-12.col-md-6.col-lg-6.left {
-padding-left: 0;
-padding-right: 0;
-}
-}
-
-@media (min-width: 768px) and (max-width:992px){
-body {
-background-color: #ECFD96!important;
-}
-
-/* Showcase LP ------------------------------------- */
-
-.hover-effect h2 {
-font-size: 12px;
-padding: 20px 0;
-line-height: 25px;
-}
-
-.hover-effect h2.last {
-padding: 10px 0;
-}
-}
-
-@media (min-width: 992px) and (max-width:1200px) {
-body {
-/*background-color: #CAFD96!important;*/
-}
-
-/* Showcase LP ------------------------------------- */
-
-.hover-effect h2 {
-padding: 40px 0;
-}
-
-.hover-effect h2.last {
-padding: 35px 0;
-}
-}
-
-@media (min-width: 1200px) {
-body {
-/*background-color: #D3BDFF!important;*/
-}
+.btn-center {
+	text-align: center;
+	padding-bottom: 50px;
 }
 
 /* Helper classes for smart developers ;) ------------------------------------- */
