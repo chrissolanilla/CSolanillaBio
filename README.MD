@@ -4,6 +4,18 @@ Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](
 
 ## Setting up your environment
 
+### Using Docker
+
+First build and tag the docker image using our dockerfile:
+
+`docker build -t --rm ruby-tr-site-build-container .`
+
+Then run jekyll serve in the container, share our filesystem, and forward port 4000 to the container
+
+`docker run --rm -p 4000:4000 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec jekyll serve --host=0.0.0.0`
+
+### Using OSX
+
 If you are doing this for the first time run these commands:
 
 `brew install ruby`
