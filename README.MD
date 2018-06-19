@@ -6,27 +6,60 @@ Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](
 
 If you are doing this for the first time run these commands:
 
+### Using Docker
+
+`docker build --rm -t ruby-tr-site-build-container .`
+
+Here's a breakdown of that command:
+
+* `--rm`: remove container intermediate containers created when building
+* `-t ruby-tr-site-build-container`: tag the resulting image to make it esier to identify
+* `.`: look in this directory for a dockerfile to use for building the image
+
+### Just MacOS
+
 `brew install ruby`
 
 `gem install bundle`
 
 `bundle install`
 
-`bundle exec jekyll serve`
-
-You can now view the site at localhost:4000
-
 ## Run a local development server
+
+Once you start the jekyll server, you can view the site at [http://localhost:4000](http://localhost:4000) or [http://127.0.0.1:4000](http://127.0.0.1:4000).  It will rebuild every time you make a change.
+
+### Docker
+
+`docker run --rm -p 4000:4000 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec jekyll serve --host=0.0.0.0`
+
+Here's a breakdown of that command:
+
+* `--rm`: remove container after running
+* `-p 4000:4000`: connect this machine's port 4000 to the container's port 4000
+* `-v "$(pwd)":/website`: mount a volume on the container, left side being the current directory `($pwd)`, right side being the place it's mounted in the container `/website`
+* `ruby-tr-site-build-container`: the docker image to use
+* `bundle exec jekyll serve --host=0.0.0.0`: the command being run inside the container
+* `--host=0.0.0.0`: causes jekyll to bind to 0.0.0.0 inside the container to make sure requests from our host are heard by jekyll
+
+### MacOS
 
 `bundle exec jekyll serve`
 
 ## Build and Deploy
 
+### Docker
+
+`docker run --rm -v "$(pwd)":/website ruby-tr-site-build-container bundle exec jekyll build`
+
+### MacOS
+
 `bundle exec jekyll build`
 
-`bundle exec rake deploy`
+## Bonus rake tasks
 
-`bundle exec rake invalidate_cache`
+`bundle exec rake deploy_production`
+
+`bundle exec rake invalidate_cdn_cache`
 
 ## Adding a Bio
 
