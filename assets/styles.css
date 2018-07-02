@@ -24,7 +24,7 @@ margin: 0;
 /*overflow: hidden;*/
 }
 
-i {
+body i {
 font-family:'FontAwesome'!important;
 }
 
@@ -100,7 +100,7 @@ vertical-align: super;
 }
 
 .trpic {
-width: 130px;
+width: 250px;
 vertical-align: top;
 display: inline-block;
 overflow: auto;
@@ -108,8 +108,8 @@ margin: 10px;
 padding-top: 20px;
 }
 .trpic img {
-height: 100px;
-width: 100px;
+height: 250px;
+width: 250px;
 display: block;
 margin: 0 auto;
 -webkit-box-shadow: 0 5px 5px -2px #AAA;
@@ -130,17 +130,21 @@ text-align: center;
 }
 
 .trpic a .name {
-text-decoration: underline;
+color: black;
+}
+
+.trpic a .name:hover {
+	color: #ffc904;
 }
 
 .trpic .title {
 margin-top:0px;
-font-size: .8em;
+font-size: .9em;
 color: black;
 }
 
 .trpic .hiredate{
-font-size: .7em;
+font-size: .8em;
 }
 
 /* Bio page stuff --------------------------------------- */
@@ -286,6 +290,10 @@ main a.app-link:hover {
 
 hr.divider {
 	padding-top: 15px;
+}
+
+.small-bullet img {
+
 }
 
 
@@ -942,6 +950,10 @@ margin-left: 0;
 display: inline-block;
 padding: 5px;
 letter-spacing: 2px;
+}
+
+.footer-col ul img {
+	width: 20px;
 }
 
 .separator {
