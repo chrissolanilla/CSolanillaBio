@@ -214,6 +214,10 @@ hr.divider {
 
 
 /* Showcase stuff ------------------------------------- */
+#title {
+	margin-bottom: 80px;
+}
+
 #showcasemain h1 {
 	color: #000;
     background-color: transparent;
@@ -223,6 +227,21 @@ hr.divider {
     margin-top: 50px; 
     text-align: center;
     padding: 10px 0;
+
+}
+
+.col-lg-8 h2 {
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.col-lg-8 a {
+	color: #ffc904;
+}
+
+.col-lg-8 a:hover {
+	color: #000;
 }
 
 
