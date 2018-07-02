@@ -38,67 +38,7 @@ font-weight: 400;
 letter-spacing: 1px;
 }
 
-
-/*.pagecontent {
-padding: 25px 50px 15px 50px;
-}
-.pagecontent h1 {
-font-family: 'League Gothic', sans-serif;
-font-weight: normal;
-font-size: 35px;
-color: #25548e;
-margin: 25px 0 0 0;;
-border-top: 2px solid;
-max-width: 61%;
-}
-.pagecontent h2 {
-font-family: 'League Gothic', sans-serif;
-font-weight: normal;
-font-size: 30px;
-color: #4371b5;
-margin: 30px 0 0 0;
-}
-.pagecontent h3 {
-font-family: 'League Gothic', sans-serif;
-font-weight: normal;
-font-size: 26px;
-color: #555;
-margin: 30px 0 0 0;
-}*/
-
-
-/* #title {
-background: #25548e url(../assets/images/logo_sheet.png) no-repeat;
-background-position: 808px 2px;
-height: 60px;
-width: 1000px;
-margin-top: 20px;
-padding: 1px 5px 5px 50px;
--webkit-box-shadow: 0 5px 5px -2px #AAA;
-box-shadow: 0 5px 5px -2px #AAA;
-}*/
-/* div h1 {
-font-family: 'League Gothic', sans-serif;
-font-weight: normal;
-font-size: 40px;
-color: #FFF;
-margin: 0;
-margin-top: 0.4rem; 
-}*/
-
-
-/* Home stuff --------------------------------------- */
-#homepage {}
-
-.registered {
-
-font-size: .4em;
-vertical-align: super;
-}
-
-.photogrid {
-}
-
+/* About Us --------------------------------------- */
 .trpic {
 width: 250px;
 vertical-align: top;
@@ -186,31 +126,7 @@ margin-left: 25px;
 }
 
 /* Tech Time stuff ------------------------------------- */
-/* #techtimepage {
-}
-#techtimepage h1 {
-}
-#techtimepage section h2 {
-margin: 30px 0 -10px 0;
-}
-#techtimepage h2 a {
-font-family: 'League Gothic', sans-serif;
-font-weight: normal;
-font-size: 30px;
-color: #4371b5;
-}
-#techtimepage h2 a:hover {
-color: #4e84d4;
-}
-.eventdate {
-float: right;
-font-style: italic;
-margin-top: -25px;
-}
-#techtimepage .ttitem p {
-margin-left: 30px;
-margin-right: 30px;
-}*/
+
 
 /* Join Us stuff ------------------------------------- */
 
@@ -309,74 +225,10 @@ hr.divider {
     padding: 10px 0;
 }
 
-/* Tutorials stuff ------------------------------------- */
-/* #tutorialsmain section {
-}
-#tutorials {
-margin: 0;
-padding: 0;
-}
-.tutitem {
-min-width: 400px;
-max-width: 800px;
-background: #DDD;
-display: block;
-margin: 0 auto 30px auto;
-padding: 10px 10px 50px 10px;
-}
-#tutorials .tutitem:first-child {
-background: none;
-}
-.tutitem h1 {
-max-width: 100%;
-border: none;
-display: block;
-text-align: center;
-margin-bottom: 10px;
-}
-.tutitem h1 a {
-font-family: 'League Gothic', sans-serif;
-color: #4371b5;
-display: block;
-}
-.tutitem h1 a:hover {
-color: #4e84d4;
-}
-.tutitem img {
-height: 200px;
-width: 300px;
-margin: 0 auto;
-display: block;
--webkit-box-shadow: 0 5px 5px -2px #AAA;
-box-shadow: 0 5px 5px -2px #AAA;
-}
-.author {
-font-style: italic;
-float: right;
-margin: -5px 0 15px 0;
-}*/
 
-/* Tutorial pages (TR training, OAuth, Django) stuff ------------------------------------- */
-/* #trtrainingpage {
-}
-#trtrainingmain h1 {
-}
-#trtrainingpage ul {
-list-style-type: square;
-margin-left: 57px;
-}
-#trtrainingpage ol {
-margin-left: 0;
-}
-.tutauthor {
-font-style: italic;
-}
-pre {
-font-family: monospace;
-background: #DDD;
-padding: 25px;
-overflow: auto;
-}*/
+
+/* Tutorials stuff ------------------------------------- */
+
 
 /* Typography ----------------------------------------------------------------- */
 
@@ -522,18 +374,6 @@ font-weight: 400;
 height: 100vh;
 background-color: #f8f8f8;
 }
-
-/*h1 {
-color: #fff;
-background-color: #000;
-font-size: 50px;
-font-weight: 700;
-letter-spacing: 2px;
-margin-top: 200px;
-text-align: center;
-padding: 10px 0;
-
-}*/
 
 /* Navigation --------------------------------------------------------------------- */
 
@@ -862,7 +702,6 @@ margin-left: 5px;
 
 
 /* Join Us LP --------------------------------------------------------------------- */
-
 #join-us {
 text-align: center;
 }
@@ -894,7 +733,6 @@ animation-delay: 0.3s;
 }
 
 /* Footer --------------------------------------------------------------------- */
-
 footer {
 text-align: center;
 background-color: #2d2d2d;
