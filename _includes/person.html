@@ -5,7 +5,7 @@
 
         <div itemscope itemtype="http://schema.org/Person" class="trpic">
           <a href="{% if item.override_url %}{{ item.override_url }}{% else %}{{ item.url }}{% endif %}">
-            <img itemprop="image" src="{{ "assets/images/bios_thumbnails/" | append: thumbnail | relative_url }}"  alt="Photo of {{ item.name }}" />
+            <img itemprop="image" src="{{ "assets/images/bios_thumbnails_new/" | append: thumbnail | relative_url }}"  alt="Photo of {{ item.name }}" />
             <span itemprop="name" class="name">{{ item.name }}</span>
             <span itemprop="title" class="title techranger">{{ item.title }}</span>
             <span class="hiredate title techranger timeago" data-timeago="{{ item.date | date: "%Y-%m-%dT%H:%M:00Z" }}"></span>
