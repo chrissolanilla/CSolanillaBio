@@ -1,57 +1,23 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: default
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link rel="stylesheet" href="{{ "/assets/reset.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
-  <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <script type="text/javascript">document.createElement('main');</script>
-  <script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-</head>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
 
+      <main role="main" id="biomain" class="clearfix">
+          <div id="title">
+              <h1>Meet the Techrangers</h1>
+          </div>
 
-  <body>
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-
-        <main role="main" id="biomain" class="clearfix">
-            <!-- main content -->
-            <div id="title">
-                <h1>Meet the Techrangers</h1>
-            </div>
-
-            {% include sidebar.html %}
-
-            <section role="region" class="pagecontent" id="biopage">
-
-                <section role="region">
+          <section role="region" class="pagecontent" id="biopage">
+              <section role="region">
                 <h1 class="bioh1">{{ page.name }}</h1>
-
                     <img src="/assets/images/bios/{{ page.thumbnail }}" alt="{{ page.name }}" />
-
                     {{ content }}
-                </section>
+              </section>
+          </section>
+      </main>
+    </div>
+  </main>
 
-            </section>
-        </main>
-
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>

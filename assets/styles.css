@@ -148,7 +148,6 @@ margin-left: 25px;
 h2.applying {
 	font-size: 30px;
     letter-spacing: 1px;
-    padding-top: 25px;
     text-align: center;
 }
 
@@ -244,6 +243,19 @@ hr.divider {
 	color: #000;
 }
 
+.col-lg-8 p {
+	line-height: 30px;
+}
+
+
+.showcase-rows {
+	padding-bottom: 20px;
+}
+
+.showcase-container {
+	margin-bottom: 100px;
+}
+
 
 
 /* Tutorials stuff ------------------------------------- */
@@ -251,52 +263,6 @@ hr.divider {
 
 /* Typography ----------------------------------------------------------------- */
 
-dl {
-margin: 0;
-margin-bottom: 20px;
-}
-
-dl dt {
-clear: left;
-float: left;
-font-weight: bold;
-overflow: hidden;
-text-align: right;
-text-overflow: ellipsis;
-white-space: nowrap;
-width: 160px;
-}
-
-dl dd {
-margin-left: 180px;
-}
-
-/* Tables --------------------------------------------------------------------- */
-
-table {
-width: 100%;
-border: 1px solid #999999;
-}
-
-table > caption { font-weight: bold; }
-
-table > caption,
-table > thead > tr > th {
-border: 1px solid #999999;
-border-bottom: 2px solid #999999;
-padding: 8px;
-vertical-align: bottom;
-}
-
-table > tbody > tr > td {
-border: 1px solid #999999;
-border-top: 1px solid #999999;
-padding: 8px;
-vertical-align: top;
-}
-
-table td p { margin: 0 0 1em; }
-table td p:last-child { margin: 0; }
 
 /* Global --------------------------------------------------------------------- */
 
@@ -367,10 +333,6 @@ margin-top: 15px;
 margin-bottom: 25px;
 }
 
-button {
-
-}
-
 .btn {
 padding: 15px;
 }
@@ -438,7 +400,7 @@ margin-top: 30px;
 .nav-overlay a {
 padding: 8px;
 text-decoration: none;
-font-size: 36px;
+font-size: 50px;
 color: #818181;
 display: block;
 transition: 0.3s;
@@ -750,6 +712,16 @@ animation-duration: 1000ms;
 -moz-animation-delay: 0.3s;
 animation-delay: 0.3s;
 }
+
+
+.join-us-col a {
+	color: #fff!important;
+}
+
+.join-us-col a:hover {
+	color: #ffc904!important;
+}
+
 
 /* Footer --------------------------------------------------------------------- */
 footer {
