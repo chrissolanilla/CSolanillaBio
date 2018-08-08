@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_index
 ---
 
 <script>
@@ -16,9 +16,7 @@ document.getElementById("myNav").style.width = "0%";
 <div class="wrapper">
 <main role="main" id="homemain">
 
-<!-- Splash page -->
-<section id="splash-page">
-<!--   <nav class="navbar transparent navbar-inverse bg-light">
+<nav class="navbar transparent navbar-inverse bg-light">
     <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
     <div id="myNav" class="nav-overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -32,7 +30,15 @@ document.getElementById("myNav").style.width = "0%";
         </div>
     </div>
     <span class="nav-span" onclick="openNav()">&#9776;</span>
-  </nav> -->
+  </nav> 
+<!-- Splash page -->
+<section id="splash-page">
+
+  <div id="welcome">
+    <h1>Welcome to the Techrangers!</h1>
+    <h2>A Division of CDL</h2>
+  </div>
+  <img id="robot" src="{{ "assets/images/robot/tr_robot_temp.png/" }}">
 </section>
 
 <!-- About us LP -->
@@ -241,7 +247,7 @@ document.getElementById("myNav").style.width = "0%";
           <h2 class="wow zoomIn animated">Join the Techrangers</h2>
           <hr class="gold wow zoomIn animated">
           <p class="wow zoomIn animated">If you would like to join the Techrangers' team, fill out the application</p>
-          <button type="button" class="btn btn-dark join-us-btn wow fadeInUp animated"><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></button>
+          <a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark join-us-btn wow fadeInUp animated">Join Us</button></a>
         </div>
       </div>
     </div>

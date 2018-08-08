@@ -2,22 +2,19 @@
 layout: default
 ---
 
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
+<div class="container">
 
-      <main role="main" id="biomain" class="clearfix">
-          <div id="title">
-              <h1>Meet the Techrangers</h1>
-          </div>
-
-          <section role="region" class="pagecontent" id="biopage">
-              <section role="region">
-                <h1 class="bioh1">{{ page.name }}</h1>
-                    <img src="/assets/images/bios/{{ page.thumbnail }}" alt="{{ page.name }}" />
-                    {{ content }}
-              </section>
-          </section>
-      </main>
+    <div class="row">
+        <div class="container-lg-12 container-md-12 container-sm-12">
+            <div class="tr_img"> <img src="/assets/images/bios/{{ page.thumbnail }}" alt="{{ page.name }}" /></div>
+            <h1 class="tr_name">{{ page.name }}</h1>
+            <h2 class="tr_title">{{ page.major }}</h2>
+            <p class="tr_desc">{{ content }} </p>
+        </div>
     </div>
-  </main>
+</div>
 
+<div class="container">
+	<p class="updated">Page last updated {{ page.updated }}</p>
+</div>
+<p class="clear"></p>
