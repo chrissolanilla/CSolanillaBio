@@ -24,8 +24,7 @@ document.getElementById("myNav").style.width = "0%";
           <a href="/about.html">About</a>
           <a href="/showcase.html">Showcase</a>
           <a href="/blog.html">Blog</a>
-          <a href="/techtime.html">Techtimes</a>
-          <a href="/about.html">About</a>
+          <a href="/techtime.html">Tech Time</a>
           <a href="/joinus.html">Join Us</a>
         </div>
     </div>
@@ -110,7 +109,7 @@ document.getElementById("myNav").style.width = "0%";
           <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="">
           <div class="overlay">
             <h2>This tool allows direct access between Materia and Webcourses@UCF.</h2>
-            <p><a href="#">Learn More</a></p>
+            <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -120,7 +119,7 @@ document.getElementById("myNav").style.width = "0%";
           <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="">
           <div class="overlay">
             <h2>This tool allows direct access from the online course to Obojobo.</h2>
-            <p><a href="#">Learn More</a></p>
+             <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -132,7 +131,7 @@ document.getElementById("myNav").style.width = "0%";
           <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="">
           <div class="overlay">
             <h2>This open-source tool enables faculty to identify accessibility issues.</h2>
-            <p><a href="#">Learn More</a></p>
+            <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -142,7 +141,7 @@ document.getElementById("myNav").style.width = "0%";
           <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="">
           <div class="overlay">
             <h2 class="last">This tool is designed with idenity authentication and help curb cheating during exams.</h2>
-            <p><a href="#">Learn More</a></p>
+            <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -166,18 +165,18 @@ document.getElementById("myNav").style.width = "0%";
             <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
           </div>
             <div class="blog-item-text">
-              <h5><a href="#">The History of Hack Day</a></h5>
-              <div class="meta-tags">
+              <h5><a href="#">Canvas Con Recap</a></h5>
+<!--               <div class="meta-tags">
                 <ul class="meta">
                   <li><i class="fas fa-clock"></i>April 10th, 2018</li>
                   <li><i class="fas fa-bookmark"></i>News</li>
                 </ul>
-              </div>
+              </div> -->
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
             </div>
             <div class="meta-tags blog-meta">
               <ul class="meta">
-                <li><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></li>
+                <li><a href="{{ "/jekyll/update/2018/08/11/canvas-con-recap.html" | relative_url }}" class="read-more">Read More</a></li>
               </ul>
             </div>
         </div>
@@ -190,17 +189,17 @@ document.getElementById("myNav").style.width = "0%";
           </div>
             <div class="blog-item-text">
               <h5><a href="#">Docker Training</a></h5>
-              <div class="meta-tags">
+<!--               <div class="meta-tags">
                 <ul class="meta">
                   <li><i class="fas fa-clock"></i>April 11th, 2018</li>
                   <li><i class="fas fa-bookmark"></i>News</li>
                 </ul>
-              </div>
+              </div> -->
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
             </div>
             <div class="meta-tags blog-meta">
               <ul class="meta">
-                <li><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></li>
+                <li><a href="{{ "/jekyll/update/2018/08/09/docker-training.html" | relative_url }}" class="read-more">Read More</a></li>
               </ul>
             </div>
         </div>
@@ -212,18 +211,18 @@ document.getElementById("myNav").style.width = "0%";
             <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
           </div>
           <div class="blog-item-text">
-            <h5><a href="#">Canvas Con Recap</a></h5>
-            <div class="meta-tags">
+            <h5><a href="#">The History of Hack Day</a></h5>
+<!--             <div class="meta-tags">
               <ul class="meta">
                 <li><i class="fas fa-clock"></i>April 12th, 2018</li>
                 <li><i class="fas fa-bookmark"></i>News</li>
               </ul>
-            </div>
+            </div> -->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
           </div>
           <div class="meta-tags blog-meta">
             <ul class="meta">
-              <li><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="{{ "/jekyll/update/2018/08/08/hackday-history.html " | relative_url }}" class="read-more">Read More</a></li>
             </ul>
           </div>
         </div>
@@ -247,7 +246,7 @@ document.getElementById("myNav").style.width = "0%";
           <h2 class="wow zoomIn animated">Join the Techrangers</h2>
           <hr class="gold wow zoomIn animated">
           <p class="wow zoomIn animated">If you would like to join the Techrangers' team, fill out the application</p>
-          <a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark join-us-btn wow fadeInUp animated">Join Us</button></a>
+          <button type="button" class="btn btn-dark wow fadeInUp animated"><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></button>
         </div>
       </div>
     </div>
