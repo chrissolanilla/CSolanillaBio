@@ -449,6 +449,16 @@ main a.cdl-link:hover {
 	text-align: center;
 }
 
+#blogMain h1 {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px 0;
+}
+
 .blog-col h2 {
 	color: #000;
 }
@@ -742,6 +752,10 @@ hr.gold-lst {
 	letter-spacing: 1px;
  }
 
+a.post-title { color: #000!important; }
+
+a:hover .post-title { color:  #ffc904!important; }
+
  .blog-container { padding-top: 50px; }
 
  .hr-blog { margin: 50px 0; }
@@ -751,6 +765,7 @@ hr.gold-lst {
 
  .post-date { color: #7a7a7a; }
 
+ ul.pagination { margin-bottom: 50px; }
 
 /* Tech Time stuff ------------------------------------- */
 
