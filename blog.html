@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<main role="main" id="blogmain">
+	<div class="container blog-container">
+		<ul>
+		  {% for post in site.posts %}
+		    <li>
+		      <p class="post-date">{{ post.date | date_to_string }}</p>
+		      <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+    		  <p class="post-excerpt">{{ post.excerpt }}</p>
+		      <hr class="hr-blog">
+		    </li>
+		  {% endfor %}
+		</ul>
+		
+		<!-- pagination -->
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination pagination-lg justify-content-center">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		  </ul>
+		</nav>
+		<!-- /pagination -->
+	</div>
+</main>
