@@ -98,7 +98,11 @@ letter-spacing: 1px;
 .tr_desc {
 	padding: 15px 0px 15px 0px;
 	letter-spacing: 1px;
-	line-height: 40px;
+	line-height: 25px;
+}
+
+.tr_desc p {
+	margin-bottom: 10px;
 }
 
 .tr_img {
@@ -378,7 +382,6 @@ text-align: center;
 
 main a {
 	color: #fff;
-	text-decoration: none;
 }
 
 
@@ -388,11 +391,13 @@ main a:hover {
 }
 
 main a.cdl-link  {
-	color: #ffc904!important;
+	color: black!important;
+	text-decoration: underline;
 }
 
 main a.cdl-link:hover {
-	color: #000!important;
+	color: #ffc904!important;
+	text-decoration: none;
 }
 
 .gold {
