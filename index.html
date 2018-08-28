@@ -16,6 +16,8 @@ document.getElementById("myNav").style.width = "0%";
 <div class="wrapper">
 <main role="main" id="homemain">
 
+  <section id="splash-page">
+
 <nav class="navbar transparent navbar-inverse bg-light">
     <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
     <div id="myNav" class="nav-overlay">
@@ -31,7 +33,6 @@ document.getElementById("myNav").style.width = "0%";
     <span class="nav-span" onclick="openNav()">&#9776;</span>
   </nav> 
 <!-- Splash page -->
-<section id="splash-page">
 
   <div id="welcome">
     <h1>Welcome to the Techrangers!</h1>
@@ -228,7 +229,7 @@ document.getElementById("myNav").style.width = "0%";
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-dark blog-btn"><a href="{{ "/blog.html" | relative_url }}">More Posts</a></button>
+    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark blog-btn">More Posts</button></a>
   </div>
   <script>
   var txt = $('.card-text').text();
