@@ -16,7 +16,7 @@ document.getElementById("myNav").style.width = "0%";
 <div class="wrapper">
 <main role="main" id="homemain">
 
-<nav class="navbar transparent navbar-inverse bg-light">
+<nav class="navbar transparent navbar-inverse bg-light hp-nav">
     <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
     <div id="myNav" class="nav-overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -43,11 +43,11 @@ document.getElementById("myNav").style.width = "0%";
 <!-- About us LP -->
 <section id="about">
   <div class="container">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-col">
+    <div class="col-sm-12 col-md-12 col-lg-12 about-col">
       <h2>About The Techrangers</h2>
       <hr class="gold">
       <p>The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
-      <button type="button" class="btn btn-dark"><a href="{{ "/about.html" | relative_url }}">Meet the Team</a></button>
+      <button type="button" class="btn btn-dark lp-btn"><a href="{{ "/about.html" | relative_url }}">Meet the Team</a></button>
     </div>
   </div>
 </section>
@@ -107,20 +107,12 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-sm-12 col-md-6 col-lg-6 right hover">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="">
-          <div class="overlay">
-            <h2>This tool allows direct access between Materia and Webcourses@UCF.</h2>
-            <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
-          </div>
         </div>
       </div>
 
       <div class="col-sm-12 col-md-6 col-lg-6 left hover">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="">
-          <div class="overlay">
-            <h2>This tool allows direct access from the online course to Obojobo.</h2>
-             <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
-          </div>
         </div>
       </div>
     </div>
@@ -129,24 +121,16 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-sm-12 col-md-6 col-lg-6 right hover">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="">
-          <div class="overlay">
-            <h2>This open-source tool enables faculty to identify accessibility issues.</h2>
-            <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
-          </div>
         </div>
       </div>
 
       <div class="col-sm-12 col-md-6 col-lg-6 left hover">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="">
-          <div class="overlay">
-            <h2 class="last">This tool is designed with idenity authentication and help curb cheating during exams.</h2>
-            <p><a href="{{ "/showcase.html" | relative_url }}">Learn more</a></p>
-          </div>
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-dark"><a href="{{ "/showcase.html" | relative_url }}">View More</a></button>
+    <button type="button" class="btn btn-dark lp-btn"><a href="{{ "/showcase.html" | relative_url }}">View More</a></button>
   </div>
 </section>
 
@@ -165,19 +149,11 @@ document.getElementById("myNav").style.width = "0%";
             <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
           </div>
             <div class="blog-item-text">
-              <h5><a href="#">Canvas Con Recap</a></h5>
-<!--               <div class="meta-tags">
-                <ul class="meta">
-                  <li><i class="fas fa-clock"></i>April 10th, 2018</li>
-                  <li><i class="fas fa-bookmark"></i>News</li>
-                </ul>
-              </div> -->
+              <h5><a href="{{ "/jekyll/update/2018/08/09/post-3.html" | relative_url }}">Post 3</a></h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
             </div>
             <div class="meta-tags blog-meta">
-              <ul class="meta">
-                <li><a href="{{ "/jekyll/update/2018/08/11/canvas-con-recap.html" | relative_url }}" class="read-more">Read More</a></li>
-              </ul>
+              <a href="{{ "/jekyll/update/2018/08/11/post-3.html" | relative_url }}" class="read-more">Read More</a>
             </div>
         </div>
       </div>
@@ -188,19 +164,11 @@ document.getElementById("myNav").style.width = "0%";
             <a href="#"><img src="assets/images/test-2.jpg" alt="" class="img-fluid"></a>
           </div>
             <div class="blog-item-text">
-              <h5><a href="#">Docker Training</a></h5>
-<!--               <div class="meta-tags">
-                <ul class="meta">
-                  <li><i class="fas fa-clock"></i>April 11th, 2018</li>
-                  <li><i class="fas fa-bookmark"></i>News</li>
-                </ul>
-              </div> -->
+              <h5><a href="{{ "/jekyll/update/2018/08/09/post-2.html" | relative_url }}">Post 2</a></h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
             </div>
             <div class="meta-tags blog-meta">
-              <ul class="meta">
-                <li><a href="{{ "/jekyll/update/2018/08/09/docker-training.html" | relative_url }}" class="read-more">Read More</a></li>
-              </ul>
+              <a href="{{ "/jekyll/update/2018/08/09/post-2.html" | relative_url }}" class="read-more">Read More</a>
             </div>
         </div>
       </div>
@@ -211,24 +179,16 @@ document.getElementById("myNav").style.width = "0%";
             <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
           </div>
           <div class="blog-item-text">
-            <h5><a href="#">The History of Hack Day</a></h5>
-<!--             <div class="meta-tags">
-              <ul class="meta">
-                <li><i class="fas fa-clock"></i>April 12th, 2018</li>
-                <li><i class="fas fa-bookmark"></i>News</li>
-              </ul>
-            </div> -->
+            <h5><a href="{{ "/jekyll/update/2018/08/09/post-1.html " | relative_url }}">Post 1</a></h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
           </div>
           <div class="meta-tags blog-meta">
-            <ul class="meta">
-              <li><a href="{{ "/jekyll/update/2018/08/08/hackday-history.html " | relative_url }}" class="read-more">Read More</a></li>
-            </ul>
+            <a href="{{ "/jekyll/update/2018/08/08/post-1.html " | relative_url }}" class="read-more">Read More</a>
           </div>
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-dark blog-btn"><a href="{{ "/blog.html" | relative_url }}">More Posts</a></button>
+    <button type="button" class="btn btn-dark lp-btn"><a href="{{ "/blog.html" | relative_url }}">More Posts</a></button>
   </div>
   <script>
   var txt = $('.card-text').text();
@@ -239,14 +199,14 @@ document.getElementById("myNav").style.width = "0%";
 
 <!-- Join Us LP -->
 <section id="join-us">
-  <div class="container join-us-container">
+  <div class="container join-us-lp-container">
     <div class="row join-us-row justify-content-center">
       <div class="col-md-8 col-lg-8 join-us-col">
-        <div class="join-us-text">
+        <div class="join-us-lp-text">
           <h2 class="wow zoomIn animated">Join the Techrangers</h2>
           <hr class="gold wow zoomIn animated">
           <p class="wow zoomIn animated">If you would like to join the Techrangers' team, fill out the application</p>
-          <button type="button" class="btn btn-dark wow fadeInUp animated"><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></button>
+          <button type="button" class="btn btn-dark wow fadeInUp animated lp-btn"><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></button>
         </div>
       </div>
     </div>
