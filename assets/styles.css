@@ -14,7 +14,6 @@ html {
 	height: 100%;
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
-	position: relative;
 }
 
 body i { font-family:'FontAwesome'!important; }
@@ -82,35 +81,14 @@ p {
     padding: 0;
 }
 
-.tr_title, .past-techtime-header {
+.tr_title {
 	font-size: 2em;
-}
-
-.past-techtime-header {
-	font-size: 1.5em;
-	font-weight: bold; 
-}
-
-.past-techtime-date {
-	font-style: italic;
-}
-
-.past-techtime-desc {
-	padding: 1% 5% 2% 5%;
-}
-
-.clear {
-	clear: both;
 }
 
 .tr_desc {
 	padding: 15px 0px 15px 0px;
 	letter-spacing: 1px;
-	line-height: 25px;
-}
-
-.tr_desc p {
-	margin-bottom: 10px;
+	line-height: 40px;
 }
 
 .tr_img {
@@ -147,12 +125,8 @@ p {
 .clear { clear: both; }
 
 main a {
-<<<<<<< assets/styles.css
-	color: #fff;
-=======
 	color: #000;
 	font-weight: 700;
->>>>>>> assets/styles.css
 }
 
 main a:hover { text-decoration: underline; }
@@ -162,16 +136,7 @@ main a:hover { text-decoration: underline; }
 	font-weight: 400!important;
 }
 
-<<<<<<< assets/styles.css
-main a.cdl-link  {
-	color: black!important;
-	text-decoration: underline;
-}
-
-main a.cdl-link:hover {
-=======
 .lp-btn a:hover { 
->>>>>>> assets/styles.css
 	color: #ffc904!important;
 	text-decoration: none;
 }
@@ -226,7 +191,7 @@ main a.cdl-link:hover {
 /* Navigation --------------------------------------------------------------------- */
 
 .bg-light {
-	background: linear-gradient(rgb(80, 80, 80, 0.5), transparent)!important;
+	background: linear-gradient(rgb(135, 106, 0), #ffc904)!important;
 	background-color: #ffc904;
 	/*background-color: rgb(0, 0, 0, trans)!important; */
 
@@ -235,7 +200,7 @@ main a.cdl-link:hover {
 .navbar-inverse .navbar-brand {
 	color: #fff;
 	font-size: 25px;
-	font-weight: bold;
+	font-weight: 700;
 	letter-spacing: 1px;
 }
 
@@ -243,7 +208,6 @@ main a.cdl-link:hover {
 	font-size: 30px;
 	cursor: pointer;
 	color: #fff;
-	font-weight: bold;
 }
 
 .nav-overlay {
@@ -461,7 +425,6 @@ button.wow.fadeinup.animated {
 }
 
 /* Footer --------------------------------------------------------------------- */
-
 footer {
 	text-align: center;
 	background-color: #2d2d2d;
