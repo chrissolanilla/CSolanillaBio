@@ -17,21 +17,21 @@ document.getElementById("myNav").style.width = "0%";
 <main role="main" id="homemain">
 
 <section id="splash-page">
-<nav class="navbar transparent navbar-inverse bg-light hp-nav">
-    <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
-    <div id="myNav" class="nav-overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="/about.html">About</a>
-          <a href="/showcase.html">Showcase</a>
-          <a href="/blog.html">Blog</a>
-          <a href="/techtime.html">Tech Time</a>
-          <a href="/joinus.html">Join Us</a>
-        </div>
-    </div>
-    <span class="nav-span" onclick="openNav()">&#9776;</span>
-  </nav> 
-<!-- Splash page -->
+  <nav class="navbar transparent navbar-inverse bg-light hp-nav">
+      <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
+      <div id="myNav" class="nav-overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="/about.html">About</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/techtime.html">Tech Time</a>
+            <a href="/joinus.html">Join Us</a>
+          </div>
+      </div>
+      <span class="nav-span" onclick="openNav()">&#9776;</span>
+    </nav> 
+  <!-- Splash page -->
 
   <div id="welcome">
     <h1>Welcome to the Techrangers!</h1>
@@ -43,11 +43,16 @@ document.getElementById("myNav").style.width = "0%";
 <!-- About us LP -->
 <section id="about">
   <div class="container">
-    <div class="col-sm-12 col-md-12 col-lg-12 about-col">
-      <h2>About The Techrangers</h2>
-      <hr class="gold">
-      <p>The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
-      <button type="button" class="btn btn-dark lp-btn"><a href="{{ "/about.html" | relative_url }}">Meet the Team</a></button>
+    <div class="row about-lp-row">
+      <div class="col-sm-12 col-md-12 col-lg-12 about-lp-col">
+        <h2>About The Techrangers</h2>
+        <hr class="gold">
+        <p class="no-about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
+
+        <p class="about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF).</p>
+
+        <a href="{{ "/about.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">Meet the Team</button></a>
+      </div>
     </div>
   </div>
 </section>
@@ -55,35 +60,36 @@ document.getElementById("myNav").style.width = "0%";
 <!-- Services LP -->
 <section id="services"> 
   <div class="container">
-    <!-- mess around with WOW options for animations -->
-    <div class="col-sm-12 col-md-12 col-lg-12 services-col wow animated fadeInDown">
-      <h2 class="animated fadeIn">Our Services</h2>
-      <hr class="gold animated zoomIn">
-      <p class="animated fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos.</p>
-    </div>
-
-    <div class="row services-row wow animated fadeInDown">
-      <div class="col-sm-12 col-md-4 col-lg-4 services-box">
-        <div class="section-boxes">
-          <img src="assets/images/icons/coding.png" class="img-fluid image" alt="">
-          <h3>Learning Tools</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
-        </div>
+    <div class="row services-lp-row">
+      <!-- mess around with WOW options for animations -->
+      <div class="col-sm-12 col-md-12 col-lg-12 services-lp-col wow animated fadeInDown">
+        <h2 class="animated fadeIn">Our Services</h2>
+        <hr class="gold animated zoomIn">
       </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-4 services-box">
-        <div class="section-boxes">
-          <img src="assets/images/icons/worker.png" class="img-fluid image" alt="">
-          <h3>Data Engineering</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae soluta ad sint, quisquam maxime!</p>
+      <div class="row services-lp-row wow animated fadeInDown">
+        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
+          <div class="section-boxes">
+            <img src="assets/images/icons/coding.png" class="img-fluid image" alt="">
+            <h3>Learning Tools</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-4">
-        <div class="section-boxes">
-          <img src="assets/images/icons/blackboard.png" class="img-fluid image" alt="">
-          <h3>Course Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
+        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
+          <div class="section-boxes">
+            <img src="assets/images/icons/worker.png" class="img-fluid image" alt="">
+            <h3>Data Engineering</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae soluta ad sint, quisquam maxime!</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col">
+          <div class="section-boxes">
+            <img src="assets/images/icons/blackboard.png" class="img-fluid image" alt="">
+            <h3>Course Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -96,54 +102,56 @@ document.getElementById("myNav").style.width = "0%";
 <!-- Showcase LP -->
 <section id="showcase"> 
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-12 showcase-col">
+    <div class="row showcase-lp-row">
+      <div class="col-sm-12 col-md-12 col-lg-12 showcase-lp-col">
         <h2>Showcase</h2>
         <hr class="gold">
       </div>
     </div>
 
-    <div class="row showcase-row">
-      <div class="col-sm-12 col-md-6 col-lg-6 right hover">
+    <div class="row showcase-lp-row">
+      <div class="col-lg-6 showcase-col-right">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="">
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-6 left hover">
+      <div class="col-lg-6 showcase-col-left">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="">
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6 right hover">
+    <div class="row showcase-lp-row">
+      <div class="col-lg-6 showcase-col-right">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="">
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-6 left hover">
+      <div class="col-lg-6 showcase-col-left">
         <div class="hover-effect">
           <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="">
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-dark lp-btn"><a href="{{ "/showcase.html" | relative_url }}">View More</a></button>
+    <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View More</button></a>
   </div>
 </section>
 
 <!-- Blog LP -->
 <section id="blog">
   <div class="container">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-col">
-      <h2>Latest Posts</h2>
-      <hr class="gold">
+    <div class="row blog-lp-row">
+      <div class="col-lg-12 blog-lp-col">
+        <h2>Latest Posts</h2>
+        <hr class="gold">
+      </div>
     </div>
 
-    <div class="row blog-row">
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-container">
+    <div class="row blog-lp-row">
+      <div class="col-lg-4 blog-lp-container">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
             <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
@@ -158,7 +166,7 @@ document.getElementById("myNav").style.width = "0%";
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-container">
+      <div class="col-lg-4 blog-lp-container">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
             <a href="#"><img src="assets/images/test-2.jpg" alt="" class="img-fluid"></a>
@@ -173,7 +181,7 @@ document.getElementById("myNav").style.width = "0%";
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-container blog-last">
+      <div class="col-lg-4 blog-lp-container blog-last">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
             <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
@@ -188,7 +196,7 @@ document.getElementById("myNav").style.width = "0%";
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-dark lp-btn"><a href="{{ "/blog.html" | relative_url }}">More Posts</a></button>
+    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
   </div>
   <script>
   var txt = $('.card-text').text();
@@ -200,13 +208,13 @@ document.getElementById("myNav").style.width = "0%";
 <!-- Join Us LP -->
 <section id="join-us">
   <div class="container join-us-lp-container">
-    <div class="row join-us-row justify-content-center">
+    <div class="row join-us-lp-row justify-content-center">
       <div class="col-md-8 col-lg-8 join-us-col">
         <div class="join-us-lp-text">
           <h2 class="wow zoomIn animated">Join the Techrangers</h2>
           <hr class="gold wow zoomIn animated">
           <p class="wow zoomIn animated">If you would like to join the Techrangers' team, fill out the application</p>
-          <button type="button" class="btn btn-dark wow fadeInUp animated lp-btn"><a href="{{ "/joinus.html" | relative_url }}">Join Us</a></button>
+          <a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark wow fadeInUp animated lp-btn">Join Us</button></a>
         </div>
       </div>
     </div>

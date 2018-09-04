@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* Global --------------------------------------------------------------------- */
-
 * {
 	box-sizing: border-box;
 	-moz-box-sizing:border-box;
@@ -18,14 +17,105 @@ html {
 
 body i { font-family:'FontAwesome'!important; }
 
-ul {
-	/*list-style-type: square;*/
-	margin-left: 25px;
-}
+ul { margin-left: 25px; }
 
 p {
 	font-weight: 400;
 	letter-spacing: 1px;
+}
+
+#about,
+#services,
+#showcase, 
+#blog,
+#join-us,
+#footer { padding: 50px 0; }
+
+.about-lp-row,
+.services-lp-row,
+.showcase-lp-row,
+.blog-lp-row,
+.join-us-lp-row { text-align: center; }
+
+.about-lp-col h2,
+.showcase-pg-col h2,
+.blog-lp-col h2,
+.services-lp-col h2,
+.join-us-lp-text h2,
+.footer-col h2 {
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.clear { clear: both; }
+
+main a {
+	color: #000;
+	font-weight: 700;
+}
+
+main a:hover { text-decoration: underline; }
+
+a .lp-btn { color: #fff!important; }
+
+/* gold line below headers */
+.gold {
+	margin: auto;
+	width: 70px;
+	position: relative;
+	border-top: 2px solid #ffc904;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.white {
+	margin: auto;
+	width: 70px;
+	position: relative;
+	border-top: 2px solid #fff;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.btn { padding: 15px; }
+
+.btn a {
+	display: block;
+}
+
+.btn-dark {
+	border-color: #000;
+	background-color: #000;
+}
+
+.btn.btn-dark {
+	border-radius: 0;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+/* what pages are these from? */
+.btn-center {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.btn-center a { 
+	color: #fff;
+	font-weight: 400;
+}
+
+.btn-center a:hover { 
+	color:  #ffc904;
+	text-decoration: none;
+}
+
+/* Splash Page --------------------------------------------------------------------- */
+#splash-page {
+	height: 100vh;
+	background-color: #f8f8f8;
 }
 
 #robot {
@@ -71,143 +161,10 @@ p {
 	font-weight: bold;
 }
 
-.tr_name {
-	color: #000;
-    background-color: transparent;
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-top: 5px; 
-    padding: 0;
-}
-
-.tr_title, .past-techtime-header {
-	font-size: 2em;
-}
-
-.past-techtime-header {
-	font-size: 1.5em;
-	font-weight: bold; 
-}
-
-.past-techtime-date {
-	font-style: italic;
-}
-
-.past-techtime-desc {
-	padding: 1% 5% 2% 5%;
-}
-
-.tr_desc {
-	padding: 15px 0px 15px 0px;
-	letter-spacing: 1px;
-	line-height: 40px;
-}
-
-.tr_img {
-	margin-top: 5%;
-	text-align: center;
-}
-
-.tr_header {
-	font-weight: bold;
-	font-size: 1.2em;
-	letter-spacing: 1px;
-}
-
-#about,
-#services,
-#showcase, 
-#blog,
-#join-us,
-#footer { padding: 50px 0; }
-
-.about-col h2,
-.showcase-col h2,
-.blog-col h2,
-.services-col h2,
-.join-us-col h2,
-.footer-col h2 {
-	font-size: 40px;
-	font-weight: 700;
-	letter-spacing: 2px;
-}
-
-.col-md-12 { text-align: center; }
-
-.clear { clear: both; }
-
-main a {
-	color: #000;
-	font-weight: 700;
-}
-
-main a:hover { text-decoration: underline; }
-
-.lp-btn a { 
-	color: #fff!important;
-	font-weight: 400!important;
-}
-
-.lp-btn a:hover { 
-	color: #ffc904!important;
-	text-decoration: none;
-}
-
-.gold {
-	margin: auto;
-	width: 70px;
-	position: relative;
-	border-top: 2px solid #ffc904;
-	margin-top: 15px;
-	margin-bottom: 25px;
-}
-
-.white {
-	margin: auto;
-	width: 70px;
-	position: relative;
-	border-top: 2px solid #fff;
-	margin-top: 15px;
-	margin-bottom: 25px;
-}
-
-.btn { padding: 15px; }
-
-.btn a {
-	display: block;
-}
-
-.btn-dark {
-	border-color: #000;
-	background-color: #000;
-}
-
-.btn.btn-dark {
-	border-radius: 0;
-	letter-spacing: 2px;
-	font-weight: 400;
-}
-
-.hp-nav .overlay-content a { letter-spacing: 2px; }
-
-.hp-nav .overlay-content a,
-.hp-nav .closebtn { text-decoration: none!important;  }
-
-/* Splash Page --------------------------------------------------------------------- */
-
-#splash-page {
-	height: 100vh;
-	background-color: #f8f8f8;
-}
-
-/* Navigation --------------------------------------------------------------------- */
-
+/* Navigation (homepage) --------------------------------------------------------------------- */
 .bg-light {
 	background: linear-gradient(rgb(80, 80, 80, 0.5), transparent)!important;
 	background-color: #ffc904;
-	/*background-color: rgb(0, 0, 0, trans)!important; */
-
 }
 
 .navbar-inverse .navbar-brand {
@@ -217,6 +174,23 @@ main a:hover { text-decoration: underline; }
 	letter-spacing: 1px;
 }
 
+/* Navigation (other pages) --------------------------------------------------------------------- */
+.bg-dark { background-color: #ffc904!important; }
+
+.bg-dark a.navbar-brand {
+	color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #000;
+}
+
+/* Navigation Overlay --------------------------------------------------------------------- */
+.hp-nav .overlay-content a { letter-spacing: 2px; }
+
+.hp-nav .overlay-content a,
+.hp-nav .closebtn { text-decoration: none!important;  }
+
+/* overlay stylings are for both homepage nav and the bg-dark(other pages) nav */
 .nav-span {
 	font-size: 30px;
 	cursor: pointer;
@@ -251,6 +225,7 @@ main a:hover { text-decoration: underline; }
 	color: #818181;
 	display: block;
 	transition: 0.3s;
+	font-weight: 400!important;
 }
 
 .nav-overlay a:hover, 
@@ -276,48 +251,41 @@ main a:hover { text-decoration: underline; }
 }
 
 /* About LP --------------------------------------------------------------------- */
-.about-col p { line-height: 40px!important; }
+.about-lp-col h2 { margin-bottom: 25px; }
 
-.about-col a.cdl-link {
+.about-lp-col p { line-height: 40px!important; }
+
+.about-lp-col a.cdl-link {
 	color: #000!important;
 	font-weight: 700;
 }
 
-.about-col a.cdl-link:hover {
+.about-lp-col a.cdl-link:hover {
 	color: #000;
 	text-decoration: underline;
 }
 
-.about-col button { margin-top: 15px; }
+.about-lp-col button { margin-top: 15px; }
 
 /* Services LP --------------------------------------------------------------------- */
 #services {
 	background-color: #2d2d2d;
 }
 
-.services-col h2,
-.services-col p,
+.services-lp-col { margin-bottom: 25px; }
+
+.services-lp-col h2,
+.services-lp-col p,
 .section-boxes { color: #fff; }
 
-.services-col h2 {
+.services-lp-col h2 {
 	animation-duration: 1000ms;
 	animation-delay: 0.3s;
 }
 
-.services-col hr { animation-delay: 0.3s; }
+.services-lp-col hr { animation-delay: 0.3s; }
 
-.services-col p {
-	padding-top: 10px;
-	line-height: 35px;
-	animation-duration: 1000ms;
-	animation-delay: 0.3s;
-}
-
-.services-row {
-	padding-top: 50px;
-	/*padding-bottom: 60px;*/
-	text-align: center;
-}
+.services-lp-row { text-align: center; }
 
 .section-boxes.animated { animation-delay: 0.2s; }
 
@@ -347,15 +315,15 @@ main a:hover { text-decoration: underline; }
 	letter-spacing: 2px;
 }
 
-.showcase-row { justify-content: center; }
-
 #showcase button.btn.btn-dark { margin-top: 25px; }
 
-.showcase-row { padding-bottom: 10px; }
+.showcase-lp-row { padding-bottom: 10px; }
 
-.col-sm-12.col-md-6.col-lg-6.right { padding-right: 5px; }
+.showcase-lp-row h2 { margin-bottom: 25px; }
 
-.col-sm-12.col-md-6.col-lg-6.left { padding-left: 5px; }
+.showcase-col-right.right { padding-right: 5px; }
+
+.showcase-col-left.left { padding-left: 5px; }
 
 /* Blog LP --------------------------------------------------------------------- */
 #blog {
@@ -363,21 +331,9 @@ main a:hover { text-decoration: underline; }
 	text-align: center;
 }
 
-#blogMain h1 {
-	color: #000;
-    background-color: transparent;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 10px 0;
-}
+.blog-lp-col { padding-bottom: 25px; }
 
-.blog-col h2 { color: #000; }
-
-.blog-container { padding: 0; }
-
-.blog-row { padding-bottom: 25px; }
+.blog-lp-col h2 { color: #000; }
 
 .blog-item-text { text-align: left; }
 
@@ -409,6 +365,8 @@ main a:hover { text-decoration: underline; }
 	text-align: left;
 	margin-top: .75rem;
 }
+
+.lp-btn { margin-top: 25px; }
 
 /* Join Us LP --------------------------------------------------------------------- */
 #join-us { text-align: center; }
@@ -463,17 +421,11 @@ h4 {
 	letter-spacing: 2px;
 }
 
-.footer-col ul img {
-	width: 20px;
-}
+.footer-col ul img { width: 20px; }
 
-.separator {
-	color: #ffc904;
-}
+.separator { color: #ffc904; }
 
-.footer-col ul.bottom-nav>li {
-	padding-bottom: 10px;
-}
+.footer-col ul.bottom-nav > li { padding-bottom: 10px; }
 
 ul.social a,
 ul.bottom-nav a {
@@ -490,49 +442,6 @@ ul.bottom-nav a:hover {
 	color: grey;
 	font-size: 10px;
 	letter-spacing: 2px;
-}
-
-/* Other Pages ------------------------------------- */
-
-h1.about,
-h1.past-tr {
-	color: #000;
-    background-color: transparent;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-top: 50px; 
-    text-align: center;
-    padding: 10px 0;
-}
-
-hr.gold-about {
-	margin-top: 0;
-}
-
-p.mission {
-	font-weight: 400;
-    letter-spacing: 1px;
-	line-height: 30px!important;
-	text-align: center;
-}
-
-h2.lst-header {
-	color: #000;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-hr.gold-lst {
-	margin-top: 15px;
-}
-
-.btn-center {
-	text-align: center;
-	padding-bottom: 50px;
 }
 
 /* About Us --------------------------------------- */
@@ -584,20 +493,43 @@ hr.gold-lst {
 	font-size: .8em;
 }
 
-.btn-center a { 
-	color: #fff;
-	font-weight: 400;
+h1.about,
+h1.past-tr {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 50px; 
+    text-align: center;
+    padding: 10px 0;
 }
 
-.btn-center a:hover { 
-	color:  #ffc904;
-	text-decoration: none;
+h2.lst-header {
+	color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+hr.gold-about {
+	margin-top: 0;
+}
+
+p.mission {
+	font-weight: 400;
+    letter-spacing: 1px;
+	line-height: 30px!important;
+	text-align: center;
+}
+
+hr.gold-lst {
+	margin-top: 15px;
 }
 
 /* Bio page stuff --------------------------------------- */
-#biopage {}
-.bioh1 {}
-#biopage section h2 {}
 #biopage img {
 	margin: 0 auto;
 	display: block;
@@ -619,59 +551,105 @@ hr.gold-lst {
 /* Past bios stuff -------------------------------------- */
 
 
-
 /* About stuff ------------------------------------- */
-#aboutpage {
-}
-#aboutmain h1 {
-}
-.aboutitem p {
-}
 #aboutpage ul {
 	list-style-type: square;
 	margin-left: 25px;
 }
 
-/* Main Blog Post Template ------------------------------------- */
+/* Blog Post Archive Page ------------------------------------- */
+#blogMain h1 {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px 0;
+}
+
 .post-title { 
 	font-size: 2.5rem;
 	font-weight: 700;
 	letter-spacing: 1px;
  }
 
-.blog-container { padding-top: 50px; }
+.blog-pg-container { padding-top: 50px; }
 
-.blog-container a { color: #000!important; }
+.blog-pg-container a { color: #000!important; }
 
-.blog-container a:hover {
+.blog-pg-container a:hover {
 	color: #000;
 	text-decoration: underline;
 }
 
-.blog-container .hr-blog { margin: 50px 0; }
+.blog-pg-container .hr-blog { margin: 50px 0; }
 
-.blog-container .post-excerpt,
-.blog-container .post-date { margin-bottom: 15px; }
+.blog-pg-container .post-excerpt,
+.blog-pg-container .post-date { margin-bottom: 15px; }
 
-.blog-container .post-date { color: #7a7a7a; }
+.blog-pg-container .post-date { color: #7a7a7a; }
 
 /* Individual Blog Post Template --------------------------------------------------------------------- */
-h1.tr_name { 
+.blog-post-template-col h1 {
 	text-align: center;
-	margin: 50px 0 25px 0;
-	padding: 10px 0;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 25px 0;
 }
 
 .blog-par { margin-bottom: 1rem; }
 
-/* Tech Time stuff ------------------------------------- */
-
-
-/* Join Us stuff ------------------------------------- */
-#joinusmain section {
-
+/* Tech Times Page ------------------------------------- */
+.techtime-pg-col h2 {
+	color: #000;
+    background-color: transparent;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 5px; 
+    padding: 0;
+    text-align: center;
 }
 
+/* Past Tech Times Page ------------------------------------- */
+.tr_title, .past-techtime-header {
+	font-size: 2em;
+}
+
+.past-techtime-header {
+	font-size: 1.5em;
+	font-weight: bold; 
+}
+
+.past-techtime-date {
+	font-style: italic;
+}
+
+.past-techtime-desc {
+	padding: 1% 5% 2% 5%;
+}
+
+/* where do these go? */
+.tr_desc {
+	padding: 15px 0px 15px 0px;
+	letter-spacing: 1px;
+	line-height: 40px;
+}
+
+.tr_img {
+	margin-top: 5%;
+	text-align: center;
+}
+
+.tr_header {
+	font-weight: bold;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+/* Join Us Page ------------------------------------- */
 #joinusmain h1 {
 	color: #000;
     background-color: transparent;
@@ -683,18 +661,19 @@ h1.tr_name {
     padding: 10px 0;
 }
 
-h2.applying {
+.join-us-pg-col h2 {
 	font-size: 30px;
     letter-spacing: 1px;
     text-align: center;
+    padding-top: 15px;
 }
 
-.join-us-container a {
+.join-us-pg-container a {
 	color: #000;
 	font-weight: 700;
 }
 
-.join-us-container a:hover { 
+.join-us-pg-container a:hover { 
 	color: #000!important;
 	text-decoration: underline!important;
 }
@@ -759,10 +738,6 @@ hr.divider {
 	padding-top: 15px;
 }
 
-.small-bullet img {
-
-}
-
 /* Showcase stuff ------------------------------------- */
 #title {
 	margin-bottom: 80px;
@@ -777,36 +752,30 @@ hr.divider {
     margin-top: 50px; 
     text-align: center;
     padding: 10px 0;
-
 }
 
-.showcase-rows {
-	padding-bottom: 20px;
-}
+.showcase-pg-row { padding-bottom: 20px; }
 
-.showcase-col h2 { font-size: 25px; }
+.showcase-pg-col h2 { font-size: 25px; }
 
-.showcase-col a { 
+.showcase-pg-col a { 
 	color: #000;
 	font-weight: 700;
 }
 
-.showcase-col a:hover {
+.showcase-pg-col a:hover {
 	color: #000; 
 	text-decoration: underline;
 }
 
-.showcase-container {
-	margin-bottom: 100px;
-}
-
+.showcase-pg-container { margin-bottom: 50px; }
 
 /* Helper classes for smart developers ;) ------------------------------------- */
 .center { text-align: center; }
 .clearfix:before,
 .clearfix:after {
-content: " ";
-display: table;
+	content: " ";
+	display: table;
 }
 .clearfix:after { clear: both; }
 .no-margin { margin: 0; }

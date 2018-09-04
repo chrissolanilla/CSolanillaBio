@@ -2,39 +2,36 @@
 layout: default
 ---
 <main role="main" id="aboutmain">
-    <div class="container">
+    <div class="container about-us-pg-container">
     	<!-- main content -->
         <div id="title">
             <h1 class="about">The Techrangers</h1>
             <hr class="gold gold-about">
         </div>
 
-        <section role="region" class="pagecontent" id="aboutpage">
+        <div class="row about-us-pg-row">
+          <div class="col-lg-12 about-us-pg-col">
+            <p class="mission">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age.</p>
+          </div>
+        </div>
 
-            <section role="region" class="aboutitem">
-                <p class="mission">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age.</p>
-            </section>
-            
-           <!--  <div class="photogrid"> -->
-                    {% assign tr = site.techrangers_current | where_exp: "item", "item.team != 'lst'" %}
-                    {% for item in tr %}
-                        {% include person.html %}
-                    {% endfor %}
-           <!--  </div> -->
+        {% assign tr = site.techrangers_current | where_exp: "item", "item.team != 'lst'" %}
+        {% for item in tr %}
+          {% include person.html %}
+        {% endfor %}
 
-            <h2 class="lst-header">Learning Systems &amp; Technology</h2>
-            <hr class="gold gold-lst">
+        <h2 class="lst-header">Learning Systems &amp; Technology</h2>
+        <hr class="gold gold-lst">
 
-            <div class="photogrid">
+        <div class="photogrid">
               {% assign lst = site.techrangers_current | where: 'team', 'lst' %}
               {% for item in lst %}
                 {% include person.html %}
               {% endfor %}
-            </div>
+        </div>
 
-            <div class="btn-center">
-              <button type="button" class="btn btn-dark"><a href="{{ "/past-techrangers.html" | relative_url }}">Past Techrangers</a></button>
-            </div>
-         </section>
+        <div class="btn-center">
+          <button type="button" class="btn btn-dark"><a href="{{ "/past-techrangers.html" | relative_url }}">Past Techrangers</a></button>
+        </div>
     </div>
 </main>
