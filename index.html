@@ -31,13 +31,17 @@ document.getElementById("myNav").style.width = "0%";
       </div>
       <span class="nav-span" onclick="openNav()">&#9776;</span>
     </nav> 
-  <!-- Splash page -->
 
+  <!-- Splash page -->
   <div id="welcome">
-    <h1>Welcome to the Techrangers!</h1>
-    <h2>A Division of CDL</h2>
+    <div class="row welcome-row">
+      <div class="col-lg-12 welcome-col">
+        <h1>Welcome to the Techrangers!</h1>
+        <h2>A Division of CDL</h2>
+      </div>
+    </div>
   </div>
-  <img id="robot" src="{{ "assets/images/robot/tr_robot_temp.png/" }}">
+  <img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/tr_robot_temp.png/" }}">
 </section>
 
 <!-- About us LP -->
@@ -70,7 +74,7 @@ document.getElementById("myNav").style.width = "0%";
       <div class="row services-lp-row wow animated fadeInDown">
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
           <div class="section-boxes">
-            <img src="assets/images/icons/coding.png" class="img-fluid image" alt="">
+            <img src="assets/images/icons/coding.png" class="img-fluid image" alt="Learning Tools icon">
             <h3>Learning Tools</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
           </div>
@@ -78,7 +82,7 @@ document.getElementById("myNav").style.width = "0%";
 
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
           <div class="section-boxes">
-            <img src="assets/images/icons/worker.png" class="img-fluid image" alt="">
+            <img src="assets/images/icons/worker.png" class="img-fluid image" alt="Data Engineering icon">
             <h3>Data Engineering</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae soluta ad sint, quisquam maxime!</p>
           </div>
@@ -86,7 +90,7 @@ document.getElementById("myNav").style.width = "0%";
 
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col">
           <div class="section-boxes">
-            <img src="assets/images/icons/blackboard.png" class="img-fluid image" alt="">
+            <img src="assets/images/icons/blackboard.png" class="img-fluid image" alt="Course Development icon">
             <h3>Course Development</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi itaque, odio obcaecati, at non.</p>
           </div>
@@ -110,29 +114,29 @@ document.getElementById("myNav").style.width = "0%";
     </div>
 
     <div class="row showcase-lp-row">
-      <div class="col-lg-6 showcase-col-right">
+      <div class="col-lg-6 showcase-lp-col-right">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="">
+          <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="Materia logo">
         </div>
       </div>
 
-      <div class="col-lg-6 showcase-col-left">
+      <div class="col-lg-6 showcase-lp-col-left">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="">
+          <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="Obojobo icon">
         </div>
       </div>
     </div>
 
     <div class="row showcase-lp-row">
-      <div class="col-lg-6 showcase-col-right">
+      <div class="col-lg-6 showcase-lp-col-right">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="">
+          <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="UDOIT logo">
         </div>
       </div>
 
-      <div class="col-lg-6 showcase-col-left">
+      <div class="col-lg-6 showcase-lp-col-left">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="">
+          <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="Proctor Hub logo">
         </div>
       </div>
     </div>
@@ -154,7 +158,7 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-lg-4 blog-lp-container">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
-            <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
+            <a href="#"><img src="assets/images/blog-imgs/test-1.jpg" alt="sample blog image" class="img-fluid"></a>
           </div>
             <div class="blog-item-text">
               <h5><a href="{{ "/jekyll/update/2018/08/09/post-3.html" | relative_url }}">Post 3</a></h5>
@@ -169,7 +173,7 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-lg-4 blog-lp-container">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
-            <a href="#"><img src="assets/images/test-2.jpg" alt="" class="img-fluid"></a>
+            <a href="#"><img src="assets/images/blog-imgs/test-2.jpg" alt="sample blog image" class="img-fluid"></a>
           </div>
             <div class="blog-item-text">
               <h5><a href="{{ "/jekyll/update/2018/08/09/post-2.html" | relative_url }}">Post 2</a></h5>
@@ -184,7 +188,7 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-lg-4 blog-lp-container blog-last">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
-            <a href="#"><img src="assets/images/test-1.jpg" alt="" class="img-fluid"></a>
+            <a href="#"><img src="assets/images/blog-imgs/test-1.jpg" alt="sample blog image" class="img-fluid"></a>
           </div>
           <div class="blog-item-text">
             <h5><a href="{{ "/jekyll/update/2018/08/09/post-1.html " | relative_url }}">Post 1</a></h5>

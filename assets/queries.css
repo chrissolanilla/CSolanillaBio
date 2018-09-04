@@ -1,5 +1,14 @@
 
 @media (max-width: 575.98px) {
+    /* Splash Page ----------------------- */
+	#splash-page { height: 85vh!important; }
+
+	#splash-page h1 { font-size: 2em!important; }
+
+	#welcome {
+		width: 100%!important;
+	}
+
 	/* Navbar Overlay ----------------------- */
 	.overlay-content {
 		margin: 0;
@@ -11,17 +20,17 @@
 	}
 
 	/* About Us LP ----------------------- */
-	.about-col p.no-about-responsive { display: none; }
+	.about-lp-col p.no-about-responsive { display: none; }
 
 
 	/* Services LP ----------------------- */
-	.services-col-mar { margin-bottom: 25px; }
+	.services-lp-col-mar { margin-bottom: 25px; }
 
 	/* Showcase LP ----------------------- */
-	.showcase-row { padding-bottom: 0!important; }
+	.showcase-lp-row { padding-bottom: 0!important; }
 
-	.showcase-col-right, 
-	.showcase-col-left { padding: 0 15px; }
+	.showcase-lp-col-right, 
+	.showcase-lp-col-left { padding: 0 15px; }
 
 	/* Blog LP ----------------------- */
 	.blog-item-text h5 { 
@@ -33,7 +42,7 @@
 	.blog-meta { display: none!important; }
 
 	/* About Us Page ----------------------- */
-	#title h1 { font-size: 45px!important; }
+	#title h1 { font-size: 40px!important; }
 
 	#title { margin-bottom: 50px!important;}
 
@@ -61,6 +70,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+	/* Splash Page ----------------------- */
+	#splash-page { height: 85vh!important; }
+
+	#welcome {
+		width: 100%!important;
+	}
+
 	/* Showcase LP ----------------------- */ 
 	.showcase-lp-row { padding-bottom: 0!important; }
 
@@ -77,7 +93,7 @@
 
 	.blog-item-text p,
 	.blog-meta { display: none!important; }
-	
+
 	/* About Us Page ----------------------- */
 	#title h1 { font-size: 45px!important; }
 

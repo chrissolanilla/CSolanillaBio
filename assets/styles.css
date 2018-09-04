@@ -128,7 +128,7 @@ a .lp-btn { color: #fff!important; }
 
 #splash-page {
 	position: relative;
-	background-image: url("pattern.svg")
+	background-image: url("background-pattern.svg")
 }
 
 #splash-page h1 {
@@ -529,7 +529,7 @@ hr.gold-lst {
 	margin-top: 15px;
 }
 
-/* Bio page stuff --------------------------------------- */
+/* Bio Page --------------------------------------- */
 #biopage img {
 	margin: 0 auto;
 	display: block;
@@ -538,6 +538,35 @@ hr.gold-lst {
 	float: right;
 	font-style: italic;
 	margin: 0;
+}
+
+.profile-pg-col h1 {
+	color: #000;
+	background-color: transparent;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-top: 5px;
+	padding: 0;
+}
+
+.tr_desc {
+	padding: 15px 0px 15px 0px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+.tr_desc p { padding-bottom: 15px; }
+
+.tr_img {
+	margin-top: 5%;
+	text-align: center;
+}
+
+.tr_header {
+	font-weight: bold;
+	font-size: 1.2em;
+	letter-spacing: 1px;
 }
 
 /* For Keegan's sriracha easter egg */
@@ -629,24 +658,6 @@ hr.gold-lst {
 
 .past-techtime-desc {
 	padding: 1% 5% 2% 5%;
-}
-
-/* where do these go? */
-.tr_desc {
-	padding: 15px 0px 15px 0px;
-	letter-spacing: 1px;
-	line-height: 40px;
-}
-
-.tr_img {
-	margin-top: 5%;
-	text-align: center;
-}
-
-.tr_header {
-	font-weight: bold;
-	font-size: 1.2em;
-	letter-spacing: 1px;
 }
 
 /* Join Us Page ------------------------------------- */
