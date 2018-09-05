@@ -1,12 +1,32 @@
+@media (max-width: 768) {
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: block!important;
+	}
+}
+
 
 @media (max-width: 575.98px) {
     /* Splash Page ----------------------- */
 	#splash-page { height: 85vh!important; }
 
-	#splash-page h1 { font-size: 2em!important; }
+	#splash-page h2 { font-size: 2em!important; }
+	#splash-page h1 { font-size: 3em!important; }
 
 	#welcome {
-		width: 100%!important;
+		width: 90%!important;
+	}
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: inline-block!important;
+		width: 80%!important;
+		padding-bottom: 0;
 	}
 
 	/* Navbar Overlay ----------------------- */
@@ -71,10 +91,34 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 	/* Splash Page ----------------------- */
-	#splash-page { height: 85vh!important; }
+	#splash-page { height: 95vh!important; }
 
 	#welcome {
-		width: 100%!important;
+		width: 90%!important;
+		margin-left: 1px;
+	}
+
+	#welcome h1 {
+		padding-top: 3%!important;
+	}
+
+	#welcome h2 {
+		font-size: 1em;
+		margin-left: 0;
+		width: 80%!important;
+	}
+
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: inline-block!important;
+		width: 40%!important;
+	}
+
+	#robot {
+		width: 25%;
 	}
 
 	/* Showcase LP ----------------------- */ 
