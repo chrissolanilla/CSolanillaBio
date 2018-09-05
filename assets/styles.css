@@ -100,11 +100,11 @@ a .lp-btn { color: #fff!important; }
 }
 
 /* Splash Page --------------------------------------------------------------------- */
-
-
 #splash-page {
 	height: 100vh;
 	background-color: #f8f8f8;
+	position: relative;
+	background-image: url("background-pattern.svg")
 }
 
 #robot {
@@ -118,7 +118,7 @@ a .lp-btn { color: #fff!important; }
 
 #small-robot {
 	display: none;
-	width: 60%;
+	widows: 60%;
 	margin: 0;
 	padding: 0;
 	bottom: 0;
@@ -128,39 +128,28 @@ a .lp-btn { color: #fff!important; }
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	padding: none;
+	padding: 0;
 	text-align: center;
 	bottom: 0;
 	position: absolute;
-}
-
-#splash-page {
-	position: relative;
-	background-image: url("background-pattern.svg")
 }
 
 #splash-page h1 {
 	width: 100%;
 	font-size: 7em;
 	font-weight: 700;
-	margin: none;
+	margin: 0;
 	padding-top: 13%;
-   text-shadow:
-/*     3px 3px 5px #777,
-     -1px -1px 5px #775d00,  
-     1px -1px 5px #775d00,
-     -1px 1px 5px #775d00,
-      1px 1px 5px #775d00;*/
 	letter-spacing: 2px;
-	color: #2d2d2d;
+	color: #000; 
 }
 
 #welcome h2 {
-	color: white;
+	color: #fff;
 	width: 100%;
 	text-align: center;
 	border-radius: 5px;
-	background-color: #2d2d2d;
+	background-color: #000;
 	display: inline-block;
 	padding: 0px 15px 5px 15px;
 	letter-spacing: 1px;
@@ -294,9 +283,6 @@ a .lp-btn { color: #fff!important; }
 }
 
 .about-lp-col button { margin-top: 15px; }
-
-/* this paragraph will only display on smaller screens*/
-.about-lp-col p.about-responsive { display: none; }
 
 /* Services LP --------------------------------------------------------------------- */
 #services {

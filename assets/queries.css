@@ -1,31 +1,15 @@
-@media (max-width: 768) {
-	#robot {
-		display: none;
-	}
-
-	#small-robot {
-		display: block!important;
-	}
-}
-
+/* 
 
 Due to Bootstrap, we do have to add "!important" to some stylings
 in order for the override the main styles.
 
-	#splash-page h2 { font-size: 2em!important; }
-	#splash-page h1 { font-size: 3em!important; }
+*/
 
-	#welcome {
-		width: 90%!important;
-	}
-	#robot {
-		display: none;
-	}
-
-	#small-robot {
-		display: inline-block!important;
-		width: 80%!important;
-		padding-bottom: 0;
+@media (max-width: 575.98px) {
+	/* Navigation LP ----------------------- */
+	.bg-light { 
+		background-color: #ffc904!important;
+		border-bottom: 2px solid #fff;
 	}
 
 	/* Navbar Overlay ----------------------- */
@@ -39,9 +23,24 @@ in order for the override the main styles.
 	/* Splash Page ----------------------- */
 	#splash-page { height: 85vh!important; }
 
-	#splash-page h1 { font-size: 2em!important; }
-
 	#welcome { width: 100%!important; }
+
+	#splash-page h2 { font-size: 2em!important; }
+	#splash-page h1 { font-size: 3em!important; }
+
+	#welcome {
+		width: 90%!important;
+	}
+	
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: inline-block!important;
+		width: 80%!important;
+		padding-bottom: 0;
+	}
 
 	/* About Us LP ----------------------- */
 	.about-lp-col p.no-about-responsive { display: none; }
@@ -127,6 +126,10 @@ in order for the override the main styles.
 		width: 25%;
 	}
 
+	/* About LP ----------------------- */ 
+	/* this paragraph will only display on smaller screens*/
+	.about-lp-col p.about-responsive { display: none; }
+
 	/* Showcase LP ----------------------- */ 
 	.showcase-lp-row { padding-bottom: 0!important; }
 
@@ -165,4 +168,22 @@ in order for the override the main styles.
 
 	/* Tech Time Page ----------------------- */ 
 	.techtime-pg-row { text-align: center; }
+}
+
+@media (max-width: 768px) {
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: block!important;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* About LP ----------------------- */ 
+	/* this paragraph will only display on smaller screens*/
+	.about-lp-col p.about-responsive { display: none; }
+
+	/*body { background-color: red!important }*/
 }
