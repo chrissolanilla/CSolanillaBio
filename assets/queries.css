@@ -9,9 +9,8 @@
 }
 
 
-@media (max-width: 575.98px) {
-    /* Splash Page ----------------------- */
-	#splash-page { height: 85vh!important; }
+Due to Bootstrap, we do have to add "!important" to some stylings
+in order for the override the main styles.
 
 	#splash-page h2 { font-size: 2em!important; }
 	#splash-page h1 { font-size: 3em!important; }
@@ -35,13 +34,17 @@
     	top: 20%!important;
 	}
 
-	.overlay-content a {
-		font-size: 40px!important;
-	}
+	.overlay-content a { font-size: 40px!important; }
+
+	/* Splash Page ----------------------- */
+	#splash-page { height: 85vh!important; }
+
+	#splash-page h1 { font-size: 2em!important; }
+
+	#welcome { width: 100%!important; }
 
 	/* About Us LP ----------------------- */
 	.about-lp-col p.no-about-responsive { display: none; }
-
 
 	/* Services LP ----------------------- */
 	.services-lp-col-mar { margin-bottom: 25px; }
@@ -90,6 +93,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+	/* Navigation LP ----------------------- */
+	.bg-light { background-color: #ffc904!important; }
+
 	/* Splash Page ----------------------- */
 	#splash-page { height: 95vh!important; }
 

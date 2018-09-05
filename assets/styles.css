@@ -13,6 +13,8 @@ html {
 	height: 100%;
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch; /* for iOS devices */
 }
 
 body i { font-family:'FontAwesome'!important; }
@@ -69,6 +71,7 @@ a .lp-btn { color: #fff!important; }
 	margin-bottom: 25px;
 }
 
+/* if needed; white line below headers */
 .white {
 	margin: auto;
 	width: 70px;
@@ -78,6 +81,7 @@ a .lp-btn { color: #fff!important; }
 	margin-bottom: 25px;
 }
 
+/* main button stylings; Tech Time page has different styling (see Tech Time section) */
 .btn { padding: 15px; }
 
 .btn a {
@@ -93,23 +97,6 @@ a .lp-btn { color: #fff!important; }
 	border-radius: 0;
 	letter-spacing: 2px;
 	font-weight: 400;
-}
-
-/* what pages are these from? */
-.btn-center {
-	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 50px;
-}
-
-.btn-center a { 
-	color: #fff;
-	font-weight: 400;
-}
-
-.btn-center a:hover { 
-	color:  #ffc904;
-	text-decoration: none;
 }
 
 /* Splash Page --------------------------------------------------------------------- */
@@ -197,6 +184,8 @@ a .lp-btn { color: #fff!important; }
 }
 
 /* Navigation (homepage) --------------------------------------------------------------------- */
+/* homepage nav stylings ONLY */
+
 .bg-light {
 	background: linear-gradient(rgb(80, 80, 80, 0.5), transparent)!important;
 	background-color: #ffc904;
@@ -210,6 +199,8 @@ a .lp-btn { color: #fff!important; }
 }
 
 /* Navigation (other pages) --------------------------------------------------------------------- */
+/* use these stylings for nav of all other pages (except Homepage) */
+
 .bg-dark { background-color: #ffc904!important; }
 
 .bg-dark a.navbar-brand {
@@ -220,12 +211,14 @@ a .lp-btn { color: #fff!important; }
 }
 
 /* Navigation Overlay --------------------------------------------------------------------- */
+
+/* styles applyed ONLY to homepage overlay */
 .hp-nav .overlay-content a { letter-spacing: 2px; }
 
 .hp-nav .overlay-content a,
 .hp-nav .closebtn { text-decoration: none!important;  }
 
-/* overlay stylings are for both homepage nav and the bg-dark(other pages) nav */
+/* styles for both homepage nav(.hp-nav) and the other pages(.bg-dark) nav */
 .nav-span {
 	font-size: 30px;
 	cursor: pointer;
@@ -301,6 +294,9 @@ a .lp-btn { color: #fff!important; }
 }
 
 .about-lp-col button { margin-top: 15px; }
+
+/* this paragraph will only display on smaller screens*/
+.about-lp-col p.about-responsive { display: none; }
 
 /* Services LP --------------------------------------------------------------------- */
 #services {
@@ -430,56 +426,7 @@ button.wow.fadeinup.animated {
 	animation-delay: 0.3s;
 }
 
-/* Footer --------------------------------------------------------------------- */
-footer {
-	text-align: center;
-	background-color: #2d2d2d;
-}
-
-h4 {
-	color: #fff;
-	font-size: 25px;
-	font-weight: 400;
-	letter-spacing: 2px;
-	padding-top: 15px;
-}
-
-.footer-col ul {
-	color: #fff;
-	margin-left: 0;
-}
-
-.footer-col ul.social>li,
-.footer-col ul.bottom-nav>li {
-	display: inline-block;
-	padding: 5px;
-	letter-spacing: 2px;
-}
-
-.footer-col ul img { width: 20px; }
-
-.separator { color: #ffc904; }
-
-.footer-col ul.bottom-nav > li { padding-bottom: 10px; }
-
-ul.social a,
-ul.bottom-nav a {
-	text-decoration: none;
-	color: #fff;
-}
-
-ul.social a:hover,
-ul.bottom-nav a:hover {
-	color: #ffc904!important;
-}
-
-.footer-col p.copy {
-	color: grey;
-	font-size: 10px;
-	letter-spacing: 2px;
-}
-
-/* About Us --------------------------------------- */
+/* About Us Page --------------------------------------- */
 .trpic {
 	width: 250px;
 	vertical-align: top;
@@ -515,7 +462,8 @@ ul.bottom-nav a:hover {
 }
 
 .trpic a .name:hover {
-	color: #ffc904;
+	color: #000;
+	text-decoration: underline;
 }
 
 .trpic .title {
@@ -564,11 +512,12 @@ hr.gold-lst {
 	margin-top: 15px;
 }
 
-/* Bio Page --------------------------------------- */
+/* Individual Bio Page --------------------------------------- */
 #biopage img {
 	margin: 0 auto;
 	display: block;
 }
+
 .updated {
 	float: right;
 	font-style: italic;
@@ -602,23 +551,6 @@ hr.gold-lst {
 	font-weight: bold;
 	font-size: 1.2em;
 	letter-spacing: 1px;
-}
-
-/* For Keegan's sriracha easter egg */
-.rooster {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	height: 29px;
-	width: 12px;
-	background-position: 0px -128px;
-}
-
-/* Past bios stuff -------------------------------------- */
-
-
-/* About stuff ------------------------------------- */
-#aboutpage ul {
-	list-style-type: square;
-	margin-left: 25px;
 }
 
 /* Blog Post Archive Page ------------------------------------- */
@@ -675,6 +607,27 @@ hr.gold-lst {
     margin-top: 5px; 
     padding: 0;
     text-align: center;
+}
+
+.techtime-pg-col a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.btn-center {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.btn-center a { 
+	color: #fff;
+	font-weight: 400;
+}
+
+.btn-center a:hover { 
+	color:  #ffc904;
+	text-decoration: none;
 }
 
 /* Past Tech Times Page ------------------------------------- */
@@ -815,6 +768,55 @@ hr.divider {
 }
 
 .showcase-pg-container { margin-bottom: 50px; }
+
+/* Footer --------------------------------------------------------------------- */
+footer {
+	text-align: center;
+	background-color: #2d2d2d;
+}
+
+h4 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	padding-top: 15px;
+}
+
+.footer-col ul {
+	color: #fff;
+	margin-left: 0;
+}
+
+.footer-col ul.social>li,
+.footer-col ul.bottom-nav>li {
+	display: inline-block;
+	padding: 5px;
+	letter-spacing: 2px;
+}
+
+.footer-col ul img { width: 20px; }
+
+.separator { color: #ffc904; }
+
+.footer-col ul.bottom-nav > li { padding-bottom: 10px; }
+
+ul.social a,
+ul.bottom-nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul.social a:hover,
+ul.bottom-nav a:hover {
+	color: #ffc904!important;
+}
+
+.footer-col p.copy {
+	color: grey;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
 
 /* Helper classes for smart developers ;) ------------------------------------- */
 .center { text-align: center; }
