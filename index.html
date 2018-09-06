@@ -157,7 +157,26 @@ document.getElementById("myNav").style.width = "0%";
     </div>
 
     <div class="row blog-lp-row">
-      <div class="col-lg-4 blog-lp-container">
+
+
+      {% for post in site.posts limit:3 %}
+  <div class="col-lg-4 blog-lp-container">
+        <div class="blog-item-wrapper ml-2 mr-2">
+          <div class="blog-item-img">
+            <a href="#"><img src="{{ post.image }}" alt="sample blog image" class="img-fluid"></a>
+          </div>
+            <div class="blog-item-text">
+              <h5><a href="{{ "/jekyll/update/2018/08/11/post-3.html" | relative_url }}">Post 3</a></h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
+            </div>
+            <div class="meta-tags blog-meta">
+              <a href="{{ "/jekyll/update/2018/08/11/post-3.html" | relative_url }}" class="read-more">Read More</a>
+            </div>
+        </div>
+  </div>
+      {% endfor %}
+
+<!--       <div class="col-lg-4 blog-lp-container">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
             <a href="#"><img src="assets/images/blog-imgs/test-1.jpg" alt="sample blog image" class="img-fluid"></a>
@@ -172,8 +191,10 @@ document.getElementById("myNav").style.width = "0%";
         </div>
       </div>
 
-      <div class="col-lg-4 blog-lp-container">
-        <div class="blog-item-wrapper ml-2 mr-2">
+      <div class="col-lg-4 blog-lp-container"> -->
+
+
+<!--         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
             <a href="#"><img src="assets/images/blog-imgs/test-2.jpg" alt="sample blog image" class="img-fluid"></a>
           </div>
@@ -190,17 +211,17 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-lg-4 blog-lp-container blog-last">
         <div class="blog-item-wrapper ml-2 mr-2">
           <div class="blog-item-img">
-            <a href="#"><img src="assets/images/blog-imgs/test-1.jpg" alt="sample blog image" class="img-fluid"></a>
+            <a href="#"><img src="assets/images/blog-imgs/jsconf.jpg" alt="sample blog image" class="img-fluid"></a>
           </div>
           <div class="blog-item-text">
-            <h5><a href="{{ "/jekyll/update/2018/08/08/post-1.html" | relative_url }}">Post 1</a></h5>
+            <h5><a href="{{ "/jekyll/update/2018/09/06/post-1.html" | relative_url }}">Highlights from JSConf</a></h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quae, libero. Mollitia eaque quos omnis beatae amet doloremque iste fugit non eum, laudantium dolor deserunt sed, totam neque.</p>
           </div>
           <div class="meta-tags blog-meta">
-            <a href="{{ "/jekyll/update/2018/08/08/post-1.html" | relative_url }}" class="read-more">Read More</a>
+            <a href="{{ "/jekyll/update/2018/09/06/post-1.html" | relative_url }}" class="read-more">Read More</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
   </div>
