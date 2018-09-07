@@ -1,0 +1,32 @@
+---
+layout:     blog-post-template
+title:      "Highlights from JSConf"
+date:       2018-09-06 14:29:01 -0600
+categories: conference jsconf
+image:      2018-09-06-highlights-from-jsconf.jpg
+author:     "Zachary Berry"
+---
+
+I was lucky enough to be given the opportunity to speak at and attend the newly resurrected JSConf US conference. For the uninitiated JSConf is one of the leading conferences all about Javascript (my favorite weird kitchen-sink of a language).
+
+Speaking was anxiety inducing, and it didn't help that my talk was near the end of the conference! Still, it was 100% worth it. I spoke about a [side project I've been working on](https://vidkid.app/) regarding hardware integrations and music visualizations in the browser. If you're interested check out the [project](https://github.com/zachberry/vidkid) (or take a look at some of the [code examples](https://codepen.io/collection/AEmYxw/)).
+
+Still, this post isn't just about me - there were a lot of great talks that I saw while I was attending. There were two tracks and it was just me so I missed half of the conference, but thankfully JSConf will be releasing videos of the talks sometime in the future.
+
+So then, while this in no way covers everything here is a very brief list of highlights for me from JSConf:
+
+
+* [Amir Rustamzadeh](https://twitter.com/amirrustam) showed off a very slick Selenium-killer with [cypress.io](https://www.cypress.io/) - Free for open source projects. Our team stopped selenium testing as it wasn't as consistent and reliable as we had hoped. I'd like to give cypress a try and potentially start end-to-end testing again.
+* [Laurie Voss](https://twitter.com/seldo) from npm had some npm tips. The big one was using 'npm audit', which will check your node_modules for any compromised packages (and 'npm audit fix' can upgrade these packages for you). Their data shows a large number of projects are out there using packages with known critical vulnerabilities.
+* Another tip: Using npm ci instead of npm install when testing a JS app with continuous integration can be twice as fast.
+* urn Rust code into WebAssembly with the [Hello WASM Pack](https://hacks.mozilla.org/2018/04/hello-wasm-pack/)
+* [Kristofer Baxter](https://twitter.com/kristoferbaxter) and [Malte Ubl](https://twitter.com/cramforce) have been working on a wild project which moves DOM manipulation off the main thread and into a web worker. It's called [WorkerDOM](https://github.com/ampproject/worker-dom) and it seems to provide a pretty significant performance boost, however it's still a work in progress.
+* Speaking of web workers, what about offloading a redux store to run in a web worker? Check out [stockroom!](https://github.com/developit/stockroom)
+* What about a simpler way to work with Web Workers? Check out [clooney.](https://github.com/GoogleChromeLabs/clooney)
+* Scrolling on mobile can be janky but if you don't need to call preventDefault you can make it way smoother with the passive parameter: 'addEventListener('touchstart', handler, {passive:true})'. Check out [this comparison](https://www.youtube.com/watch?time_continue=17&v=NPM6172J22g) to see the difference.
+* Something to look for on the horizon: [Feature Policy.](https://developers.google.com/web/updates/2018/06/feature-policy)
+* [Miriam Suzanne](https://twitter.com/mirisuzanne) gave an amazing presentation on what we can do now with CSS variables and grids. Variables allow you to create SASS-like methods like 'darken' as well as generate graphics - [You can see an awesome example of that here.](http://talks.oddbird.net/demos/css-chart/) You can also check out [the whole presentation.](http://talks.oddbird.net/dynamic-css/jsconfus18/)
+* Need to modify the < head > of a React app? Try [react-helmet!](https://github.com/nfl/react-helmet)
+* Matt Claypotch (or simply [potch](https://twitter.com/potch)) from Mozilla gave a cool talk about all the work they've done on cross-browser browser extensions. The tl;dr is that Firefox extensions now work pretty much like Chrome extensions.
+
+Lots of inspiration - if you weren't able to go hopefully some of the notes above could help you in a project or two. With any luck I'll be back again next year!
