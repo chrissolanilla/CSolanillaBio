@@ -597,7 +597,10 @@ hr.gold-lst {
 	padding: 25px 0;
 }
 
-.blog-par { margin-bottom: 1rem; }
+.blog-post-template-container li {
+	list-style-type: square;
+	margin: 1% 0px 1% 0px;
+}
 
 /* Tech Times Page ------------------------------------- */
 .techtime-pg-col h2 {
