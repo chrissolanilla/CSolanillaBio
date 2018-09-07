@@ -19,7 +19,23 @@ html {
 
 body i { font-family:'FontAwesome'!important; }
 
-ul { margin-left: 25px; }
+ul {
+	margin-left: 20px;
+	list-style-type: none;
+}
+
+ul>li {
+	background-image: url('images/icons/bullet-point.svg');
+	background-position: 0 4px;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}
+
+ul>li>ul>li {
+	background-image: url('images/icons/yellow-square.svg');
+	background-size: 10px 10px;
+	background-position: 0 7px;
+}
 
 p {
 	font-weight: 400;
@@ -581,7 +597,10 @@ hr.gold-lst {
 	padding: 25px 0;
 }
 
-.blog-par { margin-bottom: 1rem; }
+.blog-post-template-container li {
+	list-style-type: square;
+	margin: 1% 0px 1% 0px;
+}
 
 /* Tech Times Page ------------------------------------- */
 .techtime-pg-col h2 {
@@ -668,11 +687,11 @@ p.skills-par {
 	padding-bottom: 15px;
 }
 
-p.join-par {
+.join-us-pg-container p {
 	padding-top: 15px;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 1px;
-	line-height: 40px;
+	line-height: 30px;
 }
 
 p.email-us {
@@ -691,32 +710,31 @@ p.email-us {
 	line-height: 30px;
 }
 
-.benefits li {
+.join-us-pg-container li {
 	padding-bottom: 15px;
 	letter-spacing: 2px;
 }
 
-.benefits ul {
+.join-us-pg-container ul {
 	padding-top: 25px;
 }
 
-.benefits li img {
-	height: 15px;
-    padding-right: 15px;
+.join-us-pg-container ul>li>ul {
+	padding-top: 15px;
 }
 
-.benefits p,
-.benefits h3 {
-	padding-top: 10px;
+.join-us-pg-container ul>li>ul>li:last-child {
+	padding-bottom: 0px;
 }
 
-.benefits h3 {
+.join-us-pg-container p,
+.join-us-pg-container h3 {
+	padding-top: 15px;
+}
+
+.join-us-pg-container h3 {
 	font-weight: 700;
 	letter-spacing: 1px;
-}
-
-.benefits ul.core-ul {
-	padding-top: 15px;
 }
 
 hr.divider {
@@ -772,6 +790,12 @@ h4 {
 .footer-col ul {
 	color: #fff;
 	margin-left: 0;
+	list-style-type: none;
+	background: none;
+}
+
+.footer-col ul>li {
+	background: none;
 }
 
 .footer-col ul.social>li,

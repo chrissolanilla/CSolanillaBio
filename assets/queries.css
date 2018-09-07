@@ -42,6 +42,10 @@ in order for the override the main styles.
 		padding-bottom: 0;
 	}
 
+	#small-robot-wrap {
+		padding-left: 19%!important;
+	}
+
 	/* About Us LP ----------------------- */
 	.about-lp-col p.no-about-responsive { display: none; }
 
@@ -180,10 +184,14 @@ in order for the override the main styles.
 	}
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1350px) {
 	/* About LP ----------------------- */ 
 	/* this paragraph will only display on smaller screens*/
 	.about-lp-col p.about-responsive { display: none; }
 
 	/*body { background-color: red!important }*/
+	#robot {
+		width: 75%!important;
+		max-width: 850px!important;
+	}
 }
