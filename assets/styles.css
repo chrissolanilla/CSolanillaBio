@@ -804,11 +804,21 @@ h4 {
 	letter-spacing: 2px;
 }
 
+.footer-col ul.bottom-nav>li {
+	padding: 0px 8px 0px 5px;
+	margin: 5px 0;
+	border-right: 2px solid #ffc904;
+}
+
+.footer-col ul.bottom-nav>li:last-child {
+	border: none;
+}
+
 .footer-col ul img { width: 20px; }
 
 .separator { color: #ffc904; }
 
-.footer-col ul.bottom-nav > li { padding-bottom: 10px; }
+.footer-col ul.bottom-nav { padding-bottom: 10px; }
 
 ul.social a,
 ul.bottom-nav a {
