@@ -1,43 +1,204 @@
 ---
-layout: default
+layout: default_index
 ---
 
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<main class="page-content" aria-label="Content">
+<div class="wrapper">
 <main role="main" id="homemain">
-  <!-- main content -->
-  <div id="title">
-    <h1>Meet the Techrangers<span class="registered">&reg;</span></h1>
+
+<section id="splash-page">
+  <nav class="navbar transparent navbar-inverse bg-light hp-nav">
+      <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
+      <div id="myNav" class="nav-overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="/about.html">About</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/techtime.html">Tech Time</a>
+            <a href="/joinus.html">Join Us</a>
+          </div>
+      </div>
+      <span class="nav-span" onclick="openNav()">&#9776;</span>
+    </nav> 
+
+  <!-- Splash page -->
+  <!--  <div class="speech-bubble"><h1>Welcome to the Techrangers!</h1></div> -->
+ 
+  <div id="welcome">
+    <div class="row welcome-row">
+      <div class="col-lg-12 welcome-col">
+       <h1>WELCOME</h1>
+       <h2>to the Techrangers!</h2>
+      </div>
+    </div>
   </div>
+  <img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/tr_robot_temp.png/" }}">
+  <div id="small-robot-wrap">
+      <img id="small-robot" src="{{ "assets/images/robot/tr_smallscreen.png" }}">
+  </div>
+</section>
 
-  {% include sidebar.html %}
+<!-- About us LP -->
+<section id="about">
+  <div class="container">
+    <div class="row about-lp-row">
+      <div class="col-sm-12 col-md-12 col-lg-12 about-lp-col">
+        <h2>About The Techrangers</h2>
+        <hr class="gold">
+        <p class="no-about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
 
-  <section role="region" class="pagecontent" id="homepage">
+        <p class="about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF).</p>
 
-    <img src="assets/images/team_photo.jpg" width="550" height="247" alt="Team Photo" />
+        <a href="{{ "/about.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">Meet the Team</button></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <p class="homep">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
+<!-- Services LP -->
+<section id="services"> 
+  <div class="container">
+    <div class="row services-lp-row">
+      <!-- mess around with WOW options for animations -->
+      <div class="col-sm-12 col-md-12 col-lg-12 services-lp-col">
+        <h2>Our Services</h2>
+        <hr class="gold">
+      </div>
 
-    <p class="homep">Feel free to <a href="mailto:techrangers@ucf.edu">contact us</a>, <a href="about.html">read about us</a>, <a href="https://plus.google.com/100247024936649114253/posts" target="_blank">network with us</a>, <a href="techtime.html">learn from us</a> and <a href="joinus.html">possibly join us</a>!</p>
+      <div class="row services-lp-row">
+        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
+          <div class="section-boxes">
+            <img src="assets/images/icons/coding.png" class="img-fluid image" alt="Learning Tools icon">
+            <h3>Learning Tools</h3>
+            <p>Custom development of tools and integrations that improve the teaching and learning experience.</p>
+          </div>
+        </div>
 
-    <p class="homep"><strong>For technical support</strong>, please contact Webcourses@UCF Support at (407) 823-0407 or <a href="https://online.ucf.edu/support">via the support website</a>. There are also many self help online course resources on the <a href="https://online.ucf.edu/learn-online">Learning Online Website</a>.</p>
+        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
+          <div class="section-boxes">
+            <img src="assets/images/icons/worker.png" class="img-fluid image" alt="Data Engineering icon">
+            <h3>Data Engineering</h3>
+            <p>Utilizing usage data to improve student performance, retention, and learning outcomes.</p>
+          </div>
+        </div>
 
-    <h2>The Techrangers<span class="registered">&reg;</span></h2>
-    <div class="photogrid">
-      {% assign tr = site.techrangers_current | where_exp: "item", "item.team != 'lst'" %}
-      {% for item in tr %}
-        {% include person.html %}
-      {% endfor %}
+        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col">
+          <div class="section-boxes">
+            <img src="assets/images/icons/blackboard.png" class="img-fluid image" alt="Course Development icon">
+            <h3>Course Development</h3>
+            <p>Creating new online course content, modifying existing content, and evaluating courses for accessibility issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Showcase LP -->
+<section id="showcase"> 
+  <div class="container">
+    <div class="row showcase-lp-row">
+      <div class="col-sm-12 col-md-12 col-lg-12 showcase-lp-col">
+        <h2>Showcase</h2>
+        <hr class="gold">
+      </div>
     </div>
 
-    <h2>Learning Systems &amp; Technology</h2>
-    <div class="photogrid">
-      {% assign lst = site.techrangers_current | where: 'team', 'lst' %}
-      {% for item in lst %}
-        {% include person.html %}
-      {% endfor %}
+    <div class="row showcase-lp-row">
+      <div class="col-lg-6 showcase-lp-col-right">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="Materia logo">
+        </div>
+      </div>
+
+      <div class="col-lg-6 showcase-lp-col-left">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="Obojobo icon">
+        </div>
+      </div>
     </div>
 
-    <h2>Past Techrangers<span class="registered">&reg;</span></h2>
-    <p><a href="past-techrangers.html">Click here to view past Techrangers' biographies</a>.</p>
+    <div class="row showcase-lp-row">
+      <div class="col-lg-6 showcase-lp-col-right">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="UDOIT logo">
+        </div>
+      </div>
 
-  </section>
+      <div class="col-lg-6 showcase-lp-col-left">
+        <div class="hover-effect">
+          <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="Proctor Hub logo">
+        </div>
+      </div>
+    </div>
+    <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View More</button></a>
+  </div>
+</section>
+
+<!-- Blog LP -->
+<section id="blog">
+  <div class="container">
+    <div class="row blog-lp-row">
+      <div class="col-lg-12 blog-lp-col">
+        <h2>Latest Posts</h2>
+        <hr class="gold">
+      </div>
+    </div>
+
+    <div class="row blog-lp-row">
+
+      {% for post in site.posts limit:3 %}
+      <div class="col-lg-4 blog-lp-container">
+          <div class="blog-item-wrapper ml-2 mr-2">
+            <div class="blog-item-img">
+                <a href="{{ post.url }}"><img src="/assets/images/blog-imgs/{{ post.image }}" alt="sample blog image" class="img-fluid"></a>
+            </div>
+            <div class="blog-item-text">
+              <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+              <p class="card-text"> {{ post.excerpt }}</p>
+            </div>
+            <div class="meta-tags blog-meta">
+              <a href="{{ post.url }}" class="read-more">Read More</a>
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+
+    </div>
+    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
+  </div>
+  <script>
+  var txt = $('.card-text').text();
+  if (txt.length > 130)
+  $('.card-text').text(txt.substring(0, 130) + '....');
+  </script>
+</section>
+
+<!-- Join Us LP -->
+<section id="join-us">
+  <div class="container join-us-lp-container">
+    <div class="row join-us-lp-row justify-content-center">
+      <div class="col-md-8 col-lg-8 join-us-col">
+        <div class="join-us-lp-text">
+          <h2>Join the Techrangers</h2>
+          <hr class="gold">
+          <p>If you would like to join the Techrangers' team, fill out the application.</p>
+          <a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark">Join Us</button></a>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+</div>
 </main>

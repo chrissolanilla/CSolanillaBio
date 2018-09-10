@@ -1,706 +1,830 @@
 @charset "utf-8";
-/* CSS Document */
 
-strong {
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'League Gothic';
-	src: url('../assets/fonts/leaguegothic-regular-webfont.eot');
-	src: url('../assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
-		url('../assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-		url('../assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
+/* Global --------------------------------------------------------------------- */
 * {
 	box-sizing: border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	-ms-box-sizing: border-box;
 }
-body {
-	background: #AAA;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+body,
+html {
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
-}
-	ul {
-		list-style-type: square;
-		margin-left: 25px;
-	}
-
-	main {
-		background: #ebebec;
-		width: 1000px;
-		margin: 30px auto 0 auto;
-		position: relative;
-		padding: 10px 0 30px 0;
-		display: block;
-	}
-		main a { /* 'main a' because 'a' will affect UCF nav bars */
-			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-			color: #4e84d4;
-		}
-			a:hover {
-				color: #395f99;
-			}
-
-			.pagecontent {
-				padding: 25px 50px 15px 50px;
-			}
-				.pagecontent h1 {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 35px;
-					color: #25548e;
-					margin: 25px 0 0 0;;
-					border-top: 2px solid;
-					max-width: 61%;
-				}
-				.pagecontent h2 {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 30px;
-					color: #4371b5;
-					margin: 30px 0 0 0;
-				}
-				.pagecontent h3 {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 26px;
-					color: #555;
-					margin: 30px 0 0 0;
-				}
-
-
-		#title {
-			background: #25548e url(../assets/images/logo_sheet.png) no-repeat;
-			background-position: 808px 2px;
-			height: 60px;
-			width: 1000px;
-			margin-top: 20px;
-			padding: 1px 5px 5px 50px;
-			-webkit-box-shadow: 0 5px 5px -2px #AAA;
-			box-shadow: 0 5px 5px -2px #AAA;
-		}
-			div h1 {
-				font-family: 'League Gothic', sans-serif;
-				font-weight: normal;
-				font-size: 40px;
-				color: #FFF;
-				margin: 0;
-				margin-top: 0.4rem; /* Temporary */
-			}
-
-
-		/* Home stuff --------------------------------------- */
-		#homepage {
-		}
-
-		.registered {
-
-			font-size: .4em;
-			vertical-align: super;
-		}
-
-		.photogrid {
-		}
-			.trpic {
-				width: 130px;
-				vertical-align: top;
-				display: inline-block;
-				overflow: auto;
-				margin: 10px;
-				padding-top: 20px;
-			}
-				.trpic img {
-					height: 100px;
-					width: 100px;
-					display: block;
-					margin: 0 auto;
-					-webkit-box-shadow: 0 5px 5px -2px #AAA;
-					box-shadow: 0 5px 5px -2px #AAA;
-				}
-
-				.trpic a:link,
-				.trpic a:active,
-				.trpic a:visited {
-					text-decoration: none;
-				}
-
-				.trpic .name,
-				.trpic .title {
-					margin:15px 0 0 0;
-					display: block;
-					text-align: center;
-				}
-
-				.trpic a .name {
-					text-decoration: underline;
-				}
-
-				.trpic .title {
-					margin-top:0px;
-					font-size: .8em;
-					color: black;
-				}
-
-				.trpic .hiredate{
-					font-size: .7em;
-				}
-
-
-					/* Bio page stuff --------------------------------------- */
-					#biopage {}
-						.bioh1 {}
-							#biopage section h2 {}
-							#biopage img {
-								margin: 0 auto;
-								display: block;
-							}
-							.updated {
-								float: right;
-								font-style: italic;
-								margin: 0;
-							}
-
-							/* For Keegan's sriracha easter egg */
-							.rooster {
-								background: url(../assets/images/logo_sheet.png) no-repeat;
-								height: 29px;
-								width: 12px;
-								background-position: 0px -128px;
-							}
-
-					/* Past bios stuff -------------------------------------- */
-
-
-
-		/* About stuff ------------------------------------- */
-		#aboutpage {
-		}
-			#aboutmain h1 {
-			}
-				.aboutitem p {
-				}
-				#aboutpage ul {
-					list-style-type: square;
-					margin-left: 25px;
-				}
-
-		/* Tech Time stuff ------------------------------------- */
-		#techtimepage {
-		}
-			#techtimepage h1 {
-			}
-				#techtimepage section h2 {
-					margin: 30px 0 -10px 0;
-				}
-				#techtimepage h2 a {
-					font-family: 'League Gothic', sans-serif;
-					font-weight: normal;
-					font-size: 30px;
-					color: #4371b5;
-				}
-					#techtimepage h2 a:hover {
-						color: #4e84d4;
-					}
-					.eventdate {
-						float: right;
-						font-style: italic;
-						margin-top: -25px;
-					}
-					#techtimepage .ttitem p {
-						margin-left: 30px;
-						margin-right: 30px;
-					}
-
-		/* Join Us stuff ------------------------------------- */
-		#joinusmain section {
-		}
-			#joinusmain h1 {
-			}
-				#joinusmain section h2 {
-				}
-				#joinuspage section p {
-				}
-				#joinuspage ul {
-					list-style-type: square;
-					margin-left: 25px;
-				}
-
-
-		/* Showcase stuff ------------------------------------- */
-		#showcasemain section {
-		}
-			#sch1 {
-			}
-			#showcase {
-				margin: 0;
-				padding: 0;
-				/* column-count: 2; */
-			}
-				.scitem {
-					min-width: 400px;
-					max-width: 800px;
-					background: #DDD;
-					display: block;
-					margin: 0 auto 30px auto;
-					padding: 10px 10px 30px 10px;
-				}
-				#showcase .scitem:first-child {
-					background: none;
-				}
-					.scitem h1 {
-						max-width: 100%;
-						border: none;
-						color: #4371b5;
-						display: block;
-						text-align: center;
-						margin-bottom: 10px;
-					}
-					.scitem img {
-						height: 200px;
-						width: 300px;
-						margin: 0 auto;
-						display: block;
-						-webkit-box-shadow: 0 5px 5px -2px #AAA;
-						box-shadow: 0 5px 5px -2px #AAA;
-					}
-					.scintro {
-						margin-top: 10px;
-					}
-
-		/* Tutorials stuff ------------------------------------- */
-		#tutorialsmain section {
-		}
-			#tutorials {
-				margin: 0;
-				padding: 0;
-				/* overflow: auto; */
-			}
-				.tutitem {
-					min-width: 400px;
-					max-width: 800px;
-					background: #DDD;
-					display: block;
-					margin: 0 auto 30px auto;
-					padding: 10px 10px 50px 10px;
-				}
-				#tutorials .tutitem:first-child {
-					background: none;
-				}
-					.tutitem h1 {
-						max-width: 100%;
-						border: none;
-						display: block;
-						text-align: center;
-						margin-bottom: 10px;
-					}
-						.tutitem h1 a {
-							font-family: 'League Gothic', sans-serif;
-							color: #4371b5;
-							display: block;
-						}
-						.tutitem h1 a:hover {
-							color: #4e84d4;
-						}
-					.tutitem img {
-						height: 200px;
-						width: 300px;
-						margin: 0 auto;
-						display: block;
-						-webkit-box-shadow: 0 5px 5px -2px #AAA;
-						box-shadow: 0 5px 5px -2px #AAA;
-					}
-					.author {
-						font-style: italic;
-						float: right;
-						margin: -5px 0 15px 0;
-					}
-
-		/* Tutorial pages (TR training, OAuth, Django) stuff ------------------------------------- */
-		#trtrainingpage {
-		}
-			#trtrainingmain h1 {
-			}
-				#trtrainingpage ul {
-					list-style-type: square;
-					margin-left: 57px;
-				}
-				#trtrainingpage ol {
-					margin-left: 0;
-				}
-				.tutauthor {
-					font-style: italic;
-				}
-				pre {
-					font-family: monospace;
-					background: #DDD;
-					padding: 25px;
-					overflow: auto;
-				}
-
-/* Typography ----------------------------------------------------------------- */
-
-dl {
-	margin: 0;
-	margin-bottom: 20px;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch; /* for iOS devices */
 }
 
-dl dt {
-	clear: left;
-	float: left;
-	font-weight: bold;
-	overflow: hidden;
-	text-align: right;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 160px;
-}
+body i { font-family:'FontAwesome'!important; }
 
-dl dd {
-	margin-left: 180px;
-}
-
-/* Tables --------------------------------------------------------------------- */
-
-table {
-	width: 100%;
-	border: 1px solid #999999;
-}
-
-table > caption { font-weight: bold; }
-
-table > caption,
-table > thead > tr > th {
-	border: 1px solid #999999;
-	border-bottom: 2px solid #999999;
-	padding: 8px;
-	vertical-align: bottom;
-}
-
-table > tbody > tr > td {
-	border: 1px solid #999999;
-	border-top: 1px solid #999999;
-	padding: 8px;
-	vertical-align: top;
-}
-
-table td p { margin: 0 0 1em; }
-table td p:last-child { margin: 0; }
-
-/* Header --------------------------------------------------------------------- */
-
-header {
-	margin: auto;
-	position: relative;
-	background: #25548e;
-	height: 80px;
-}
-nav {
-	margin: 0 auto;
-	width: 1040px;
-}
-.navlist {
+ul {
+	margin-left: 20px;
 	list-style-type: none;
-	overflow: hidden;
-	padding: 0;
-	margin: 0;
-}
-.navlist li {
-	display: inline-block;
-	list-style-type: none;
-	height: 80px;
-	vertical-align: middle;
-}
-.navlist li a {
-	color: #FFF;
-	text-decoration: none;
-	font-family: 'League Gothic', sans-serif;
-	font-size: 35px;
-	padding: 19px 22px 20px 47px;
-	background: #25548e;
-	position: relative;
-	display: block;
-	height: 80px;
-	margin: 0px;
-	margin-left: -4px; /* overlap size */
-}
-.navlist li a:hover {
-	color: #ffc904;
-}
-.navlist li:last-child a:hover {
-	color: #FFF;
-}
-#techrangers {
-	font-size: 60px;
-	padding: 4px 35px 0px 25px;
-	color: #fff;
-}
-	#techrangers:hover {
-		color: #ffc904;
-	}
-#techrangers span {
-	display: inline-block;
-}
-#char1 {
-	letter-spacing: -9px;
-}
-#char2 {
-	font-size: 53px;
-	left: 0px;
-	letter-spacing: -10px;
-}
-#char3 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(-2deg);
-	transform: rotate(-2deg);
-}
-#char4 {
-	font-size: 53px;
-	left: -1px;
-	letter-spacing: -10px;
-	-webkit-transform: rotate(-1deg);
-	transform: rotate(-1deg);
-}
-#char5 {
-	font-size: 55px;
-	left: -1px;
-	letter-spacing: -8px;
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
-}
-#char6 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -10px;
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
-}
-#char7 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(-2deg);
-	transform: rotate(-2deg);
-}
-#char8 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-#char9 {
-	font-size: 53px;
-	left: -1px;
-	letter-spacing: -9px;
-	-webkit-transform: rotate(-1deg);
-	transform: rotate(-1deg);
-}
-#char10 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -10px;
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
-}
-#char11 {
-	font-size: 54px;
-	left: -1px;
-	letter-spacing: -5px;
-	-webkit-transform: rotate(-2deg);
-	transform: rotate(-2deg);
 }
 
-.navlist li a:after {
-	content: " ";
-	display: block;
-	width: 0;
-	height: 0;
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
-	border-left: 25px solid #25548e;
-	position: absolute;
-	top: 50%;
-	margin-top: -40px; /* arrow height */
-	left: 100%;
-	z-index: 2;
-}
-.navlist li:first-child a {
-	padding-left: 10px;
+ul>li {
+	background-image: url('images/icons/bullet-point.svg');
+	background-position: 0 4px;
+	background-repeat: no-repeat;
+	padding-left: 25px;
 }
 
-.navlist li:nth-child(2) a {
-	background: #395f99;
+ul>li>ul>li {
+	background-image: url('images/icons/yellow-square.svg');
+	background-size: 10px 10px;
+	background-position: 0 7px;
 }
-.navlist li:nth-child(2) a:after {
-	border-left-color: #395f99;
-}
-
-.navlist li:nth-child(3) a {
-	background: #4371b5;
-}
-.navlist li:nth-child(3) a:after {
-	border-left-color: #4371b5;
-}
-
-.navlist li:nth-child(4) a {
-	background: #4e84d4;
-}
-.navlist li:nth-child(4) a:after {
-	border-left-color: #4e84d4;
-}
-
-.navlist li:nth-child(5) a {
-	background: #548de3;
-}
-.navlist li:nth-child(5) a:after {
-	border-left-color: #548de3;
-}
-
-.navlist li:nth-child(6) a {
-	background: #ffc904;
-	color: #000;
-	padding-right: 25px;
-}
-.navlist li:nth-child(6) a:after {
-	border-left-color: #ffc904;
-}
-
-/* Sidebar -------------------------------------------------------------------- */
 
 p {
-	margin: 1em 0em 1em 0em;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
-ol {
-	list-style-type: decimal;
-	margin: 1em 0em 1em 0em;
-	padding-left: 60px;
-	-webkit-padding-start: 60px;
-	-moz-padding-start: 60px;
+#about,
+#services,
+#showcase, 
+#blog,
+#join-us,
+#footer { padding: 50px 0; }
+
+.about-lp-row,
+.services-lp-row,
+.showcase-lp-row,
+.blog-lp-row,
+.join-us-lp-row { text-align: center; }
+
+.about-lp-col h2,
+.showcase-pg-col h2,
+.blog-lp-col h2,
+.services-lp-col h2,
+.join-us-lp-text h2,
+.footer-col h2 {
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
 }
 
-#homeaside {
-	background: #CCC;
-	width: 300px;
+.clear { clear: both; }
+
+main a {
+	color: #000;
+	font-weight: 700;
+}
+
+main a:hover { text-decoration: underline; }
+
+a .lp-btn { color: #fff!important; }
+
+/* gold line below headers */
+.gold {
+	margin: auto;
+	width: 70px;
+	position: relative;
+	border-top: 2px solid #ffc904;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+/* if needed; white line below headers */
+.white {
+	margin: auto;
+	width: 70px;
+	position: relative;
+	border-top: 2px solid #fff;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+/* main button stylings; Tech Time page has different styling (see Tech Time section) */
+.btn { padding: 15px; }
+
+.btn a {
+	display: block;
+}
+
+.btn-dark {
+	border-color: #000;
+	background-color: #000;
+}
+
+.btn.btn-dark {
+	border-radius: 0;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+/* Splash Page --------------------------------------------------------------------- */
+#splash-page {
+	height: 100vh;
+	background-color: #f8f8f8;
+	position: relative;
+	background-image: url("background-pattern.svg")
+}
+
+#robot {
+	width: 55%;
+	max-width: 600px;
 	float: right;
-	padding-bottom: 10px;
-	margin: 0px 50px 50px 50px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#small-robot {
+	display: none;
+	widows: 60%;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+
+#small-robot-wrap {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+}
+
+#splash-page h1 {
+	width: 100%;
+	font-size: 7em;
+	font-weight: 700;
+	margin: 0;
+	padding-top: 13%;
+	letter-spacing: 2px;
+	color: #000; 
+}
+
+#welcome h2 {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #000;
+	display: inline-block;
+	padding: 0px 15px 5px 15px;
+	letter-spacing: 1px;
+	font-size: 3em;
+	margin-top: 0;
+	margin-left: 3%;
+}
+
+#welcome h3 {
+	font-size: 2.5em;
+	color: black;
+	letter-spacing: 1px;
+	margin-top: 4%;
+}
+
+#welcome {
+	width: 42%;
+	margin-left: 3%;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Navigation (homepage) --------------------------------------------------------------------- */
+/* homepage nav stylings ONLY */
+
+.bg-light {
+	background: linear-gradient(rgb(80, 80, 80, 0.5), transparent)!important;
+	background-color: #ffc904;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/* Navigation (other pages) --------------------------------------------------------------------- */
+/* use these stylings for nav of all other pages (except Homepage) */
+
+.bg-dark { background-color: #ffc904!important; }
+
+.bg-dark a.navbar-brand {
+	color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #000;
+}
+
+/* Navigation Overlay --------------------------------------------------------------------- */
+
+/* styles applyed ONLY to homepage overlay */
+.hp-nav .overlay-content a { letter-spacing: 2px; }
+
+.hp-nav .overlay-content a,
+.hp-nav .closebtn { text-decoration: none!important;  }
+
+/* styles for both homepage nav(.hp-nav) and the other pages(.bg-dark) nav */
+.nav-span {
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.nav-overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.nav-overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 50px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	font-weight: 400!important;
+}
+
+.nav-overlay a:hover, 
+.nav-overlay a:focus {
+	color: #f1f1f1;
+}
+
+.nav-overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 5px;
+	font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+	.nav-overlay a { font-size: 20px; }
+
+	.nav-overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+
+/* About LP --------------------------------------------------------------------- */
+.about-lp-col h2 { margin-bottom: 25px; }
+
+.about-lp-col p { line-height: 40px!important; }
+
+.about-lp-col a.cdl-link {
+	color: #000!important;
+	font-weight: 700;
+}
+
+.about-lp-col a.cdl-link:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.about-lp-col button { margin-top: 15px; }
+
+/* Services LP --------------------------------------------------------------------- */
+#services {
+	background-color: #2d2d2d;
+}
+
+.services-lp-col { margin-bottom: 25px; }
+
+.services-lp-col h2,
+.services-lp-col p,
+.section-boxes { color: #fff; }
+
+.services-lp-col h2 {
+	animation-duration: 1000ms;
+	animation-delay: 0.3s;
+}
+
+.services-lp-col hr { animation-delay: 0.3s; }
+
+.services-lp-row { text-align: center; }
+
+.section-boxes.animated { animation-delay: 0.2s; }
+
+.section-boxes i { color: #ffc904; }
+
+.section-boxes h3 {
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.section-boxes p {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 35px;
+}
+
+.section-boxes h3,
+.section-boxes p { margin-top: 10px; }
+
+/* Showcase LP --------------------------------------------------------------------- */
+#showcase { text-align: center; }
+
+#showcase h2 {
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+#showcase button.btn.btn-dark { margin-top: 25px; }
+
+.showcase-lp-row { padding-bottom: 10px; }
+
+.showcase-lp-row h2 { margin-bottom: 25px; }
+
+.showcase-col-right.right { padding-right: 5px; }
+
+.showcase-col-left.left { padding-left: 5px; }
+
+/* Blog LP --------------------------------------------------------------------- */
+#blog {
+	background-color: #f8f8f8;
+	text-align: center;
+}
+
+.blog-lp-col { padding-bottom: 25px; }
+
+.blog-lp-col h2 { color: #000; }
+
+.blog-item-text { text-align: left; }
+
+.blog-item-text h5 { padding: 5px 0; }
+
+.blog-item-text h5 a {
+	color: #000;
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.blog-item-text h5 a:hover { color: #000!important; }
+
+.blog-item-text p {
+	line-height: 25px;
+	font-size: 14px;
+	margin-top: .75rem;
+}
+
+.blog-meta a { font-weight: 700; }
+
+.blog-meta a:hover { 
+	color: #000!important;
+	text-decoration: underline;
+}
+
+.meta-tags {
+	text-align: left;
+	margin-top: .75rem;
+}
+
+.lp-btn { margin-top: 25px; }
+
+/* Join Us LP --------------------------------------------------------------------- */
+#join-us { text-align: center; }
+
+.join-us-lp-text p { padding-bottom: 25px; }
+
+h2.wow.zoomin.animated,
+hr.wow.zoomin.animated,
+p.wow.zoomin.animated {
+	visibility: visible;
+	-webkit-animation-duration: 1000ms;
+	-moz-animation-duration: 1000ms;
+	animation-duration: 1000ms;
+	-webkit-animation-delay: 100ms;
+	-moz-animation-delay: 100ms;
+	animation-delay: 100ms;
+}
+
+button.wow.fadeinup.animated {
+	visibility: visible;
+	-webkit-animation-duration: 1000ms;
+	-moz-animation-duration: 1000ms;
+	animation-duration: 1000ms;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+/* About Us Page --------------------------------------- */
+.trpic {
+	width: 250px;
+	vertical-align: top;
+	display: inline-block;
+	overflow: auto;
+	margin: 10px;
+	padding-top: 20px;
+}
+.trpic img {
+	height: 250px;
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 5px 5px -2px #AAA;
 	box-shadow: 0 5px 5px -2px #AAA;
 }
 
-#homeaside p {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#homeaside h2 {
-	text-align: center;
-	height: 60px;
-	margin-top: 30px;
-	font-family: 'League Gothic', sans-serif;
-	font-weight: normal;
-	font-size: 40px;
-	padding: 10px;
-	color: #FFF;
-	background-color: #548de3;
-	box-shadow: 0 5px 5px -2px #818181;
-}
-
-#homeaside a {
-	color: #395f99;
-}
-
-#homeaside a:hover {
-	color: #4e84d4;
-}
-
-#homeaside ol li {
-	margin-top: 25px;
-}
-
-/* Footer --------------------------------------------------------------------- */
-
-footer {
-	background: #3A3A3A url(../assets/images/footer-bg.jpg) repeat;
-	width: 1000px;
-	height: 85px;
-	margin: 0 auto 20px auto;
-	position: relative;
-	padding: 15px 50px 15px 50px;
-}
-footer p {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	color: #FFF;
-	float: left;
-}
-footer a {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	color: #ffc904;
-}
-footer a:hover {
-	color: #FFF;
-}
-#socmed ul {
-	margin: 0;
-	margin-top: 2px;
-}
-#socmed ul li {
-	list-style-type: none;
-	display: inline;
-}
-#socmed span {
-	visibility: hidden;
-}
-#socmed a {
-	height: 50px;
-	width: 50px;
-	display: inline-block;
-	float: right;
-	margin-left: 15px;
+.trpic a:link,
+.trpic a:active,
+.trpic a:visited {
 	text-decoration: none;
 }
-#facebook {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: 0px -192px;
-	border-radius: 50%;
+
+.trpic .name,
+.trpic .title {
+	margin:15px 0 0 0;
+	display: block;
+	text-align: center;
 }
-#facebook:hover {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: -53px -192px;
-	border-radius: 50%;
+
+.trpic a .name {
+	color: #000;
 }
-#gplus {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: 0px -252px;
-	border-radius: 50%;
+
+.trpic a .name:hover {
+	color: #000;
+	text-decoration: underline;
 }
-#gplus:hover {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: -53px -252px;
-	border-radius: 50%;
+
+.trpic .title {
+	margin-top:0px;
+	font-size: .9em;
+	color: #000;
 }
-#twitter {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: 0px -312px;
-	border-radius: 50%;
+
+.trpic .hiredate{
+	font-size: .8em;
 }
-#twitter:hover {
-	background: url(../assets/images/logo_sheet.png) no-repeat;
-	background-position: -53px -312px;
-	border-radius: 50%;
+
+h1.about,
+h1.past-tr {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 50px; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+h2.lst-header {
+	color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+hr.gold-about {
+	margin-top: 0;
+}
+
+p.mission {
+	font-weight: 400;
+    letter-spacing: 1px;
+	line-height: 30px!important;
+	text-align: center;
+}
+
+hr.gold-lst {
+	margin-top: 15px;
+}
+
+/* Individual Bio Page --------------------------------------- */
+#biopage img {
+	margin: 0 auto;
+	display: block;
+}
+
+.updated {
+	float: right;
+	font-style: italic;
+	margin: 0;
+}
+
+.profile-pg-col h1 {
+	color: #000;
+	background-color: transparent;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-top: 5px;
+	padding: 0;
+}
+
+.tr_desc {
+	padding: 15px 0px 15px 0px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+.tr_desc p { padding-bottom: 15px; }
+
+.tr_img {
+	margin-top: 5%;
+	text-align: center;
+}
+
+.tr_header {
+	font-weight: bold;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+/* Blog Post Archive Page ------------------------------------- */
+#blogMain h1 {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.post-title { 
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+ }
+
+.blog-pg-container { padding-top: 50px; }
+
+.blog-pg-container a { color: #000!important; }
+
+.blog-pg-container a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.blog-pg-container .hr-blog { margin: 50px 0; }
+
+.blog-pg-container .post-excerpt,
+.blog-pg-container .post-date { margin-bottom: 15px; }
+
+.blog-pg-container .post-date { color: #7a7a7a; }
+
+/* Individual Blog Post Template --------------------------------------------------------------------- */
+.blog-post-template-col h1 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 25px 0;
+}
+
+.blog-post-template-container li {
+	margin: 1% 0px 1% 0px;
+}
+
+/* Tech Times Page ------------------------------------- */
+.techtime-pg-col h2 {
+	color: #000;
+    background-color: transparent;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 5px; 
+    padding: 0;
+    text-align: center;
+}
+
+.techtime-pg-col a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.btn-center {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.btn-center a { 
+	color: #fff;
+	font-weight: 400;
+}
+
+.btn-center a:hover { 
+	color:  #ffc904;
+	text-decoration: none;
+}
+
+/* Past Tech Times Page ------------------------------------- */
+.tr_title, .past-techtime-header {
+	font-size: 2em;
+}
+
+.past-techtime-header {
+	font-size: 1.5em;
+	font-weight: bold; 
+}
+
+.past-techtime-date {
+	font-style: italic;
+}
+
+.past-techtime-desc {
+	padding: 1% 5% 2% 5%;
+}
+
+/* Join Us Page ------------------------------------- */
+#joinusmain h1 {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 50px; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+.join-us-pg-col h2 {
+	font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.join-us-pg-container a {
+	color: #000;
+	font-weight: 700;
+}
+
+.join-us-pg-container a:hover { 
+	color: #000!important;
+	text-decoration: underline!important;
+}
+
+p.skills-par {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.join-us-pg-container p {
+	padding-top: 15px;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+p.email-us {
+	padding-bottom: 20px;
+}
+
+.join-us-text a {
+	color: #ffc904;
+}
+
+.join-us-text a:hover {
+	color: #000;
+}
+
+.join-us-text p {
+	line-height: 30px;
+}
+
+.join-us-pg-container li {
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+.join-us-pg-container ul {
+	padding-top: 25px;
+}
+
+.join-us-pg-container ul>li>ul {
+	padding-top: 15px;
+}
+
+.join-us-pg-container ul>li>ul>li:last-child {
+	padding-bottom: 0px;
+}
+
+.join-us-pg-container p,
+.join-us-pg-container h3 {
+	padding-top: 15px;
+}
+
+.join-us-pg-container h3 {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+hr.divider {
+	padding-top: 15px;
+}
+
+/* Showcase stuff ------------------------------------- */
+#title {
+	margin-bottom: 80px;
+}
+
+#showcasemain h1 {
+	color: #000;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 50px; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+.showcase-pg-row { padding-bottom: 20px; }
+
+.showcase-pg-col h2 { font-size: 25px; }
+
+.showcase-pg-col a { 
+	color: #000;
+	font-weight: 700;
+}
+
+.showcase-pg-col a:hover {
+	color: #000; 
+	text-decoration: underline;
+}
+
+.showcase-pg-container { margin-bottom: 50px; }
+
+/* Footer --------------------------------------------------------------------- */
+footer {
+	text-align: center;
+	background-color: #2d2d2d;
+}
+
+h4 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	padding-top: 15px;
+}
+
+.footer-col ul {
+	color: #fff;
+	margin-left: 0;
+	list-style-type: none;
+	background: none;
+}
+
+.footer-col ul>li {
+	background: none;
+}
+
+.footer-col ul.social>li,
+.footer-col ul.bottom-nav>li {
+	display: inline-block;
+	padding: 5px;
+	letter-spacing: 2px;
+}
+
+.footer-col ul img { width: 20px; }
+
+.separator { color: #ffc904; }
+
+.footer-col ul.bottom-nav > li { padding-bottom: 10px; }
+
+ul.social a,
+ul.bottom-nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul.bottom-nav a:hover { color: #ffc904!important; }
+
+.footer-col p.copy {
+	color: grey;
+	font-size: 10px;
+	letter-spacing: 2px;
 }
 
 /* Helper classes for smart developers ;) ------------------------------------- */
-
 .center { text-align: center; }
 .clearfix:before,
 .clearfix:after {

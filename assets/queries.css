@@ -1,0 +1,197 @@
+/* 
+
+Due to Bootstrap, we do have to add "!important" to some stylings
+in order for the override the main styles.
+
+*/
+
+@media (max-width: 575.98px) {
+	/* Navigation LP ----------------------- */
+	.bg-light { 
+		background-color: #ffc904!important;
+		border-bottom: 2px solid #fff;
+	}
+
+	/* Navbar Overlay ----------------------- */
+	.overlay-content {
+		margin: 0;
+    	top: 20%!important;
+	}
+
+	.overlay-content a { font-size: 40px!important; }
+
+	/* Splash Page ----------------------- */
+	#splash-page { height: 85vh!important; }
+
+	#welcome { width: 100%!important; }
+
+	#splash-page h2 { font-size: 2em!important; }
+	#splash-page h1 { font-size: 3em!important; }
+
+	#welcome {
+		width: 90%!important;
+	}
+	
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: inline-block!important;
+		width: 80%!important;
+		padding-bottom: 0;
+	}
+
+	#small-robot-wrap {
+		padding-left: 19%!important;
+	}
+
+	/* About Us LP ----------------------- */
+	.about-lp-col p.no-about-responsive { display: none; }
+
+	/* Services LP ----------------------- */
+	.services-lp-col-mar { margin-bottom: 25px; }
+
+	/* Showcase LP ----------------------- */
+	.showcase-lp-row { padding-bottom: 0!important; }
+
+	.showcase-lp-col-right, 
+	.showcase-lp-col-left { padding: 0 15px; }
+
+	/* Blog LP ----------------------- */
+	.blog-item-text h5 { 
+		text-align: center!important;
+		padding: 10px;
+	}
+
+	.blog-item-text p,
+	.blog-meta { display: none!important; }
+
+	/* About Us Page ----------------------- */
+	#title h1 { font-size: 40px!important; }
+
+	#title { margin-bottom: 50px!important;}
+
+	.trpic {
+		width: auto!important;
+		display: inherit!important;
+	}
+
+	/* Showcase Page ----------------------- */ 
+	.showcase-pg-col:nth-child(2) { text-align: center; }
+
+	.showcase-pg-col h2 { padding: 10px; }
+
+	.showcase-pg-row { padding-bottom: 20px!important; }
+
+	/* Tech Time Page ----------------------- */ 
+	.techtime-pg-row { text-align: center; }
+
+	/* Join Us Page ----------------------- */
+	.join-us-pg-col h2.bottom,
+	.join-us-pg-col p.bottom { padding-top: 10px }
+
+	.benefits h3,
+	.benefits p { text-align: center; }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* Navigation LP ----------------------- */
+	.bg-light { background-color: #ffc904!important; }
+
+	/* Splash Page ----------------------- */
+	#splash-page { height: 95vh!important; }
+
+	#welcome {
+		width: 90%!important;
+		margin-left: 1px;
+	}
+
+	#welcome h1 {
+		padding-top: 3%!important;
+	}
+
+	#welcome h2 {
+		font-size: 1em;
+		margin-left: 0;
+		width: 80%!important;
+	}
+
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: inline-block!important;
+		width: 40%!important;
+	}
+
+	#robot {
+		width: 25%;
+	}
+
+	/* About LP ----------------------- */ 
+	/* this paragraph will only display on smaller screens*/
+	.about-lp-col p.about-responsive { display: none; }
+
+	/* Showcase LP ----------------------- */ 
+	.showcase-lp-row { padding-bottom: 0!important; }
+
+	.showcase-col-right,
+	.showcase-col-left { padding: 0; }
+
+	/* Blog LP ----------------------- */
+	.blog-item-text h5 { text-align: center!important; }
+
+	.blog-item-text h5 a { 
+		font-size: 30px!important;
+		padding: 15px;
+	}
+
+	.blog-item-text p,
+	.blog-meta { display: none!important; }
+
+	/* About Us Page ----------------------- */
+	#title h1 { font-size: 45px!important; }
+
+	#title { margin-bottom: 50px!important;}
+
+	.trpic {
+		width: auto!important;
+		display: inherit!important;
+	}
+
+	/* Showcase Page ----------------------- */ 
+	.showcase-pg-col:nth-child(2) { text-align: center; }
+
+	.showcase-pg-col h2 { padding: 10px; }
+
+	.showcase-pg-col p { line-height: 2; }
+
+	.showcase-pg-row { padding-bottom: 20px!important; }
+
+	/* Tech Time Page ----------------------- */ 
+	.techtime-pg-row { text-align: center; }
+}
+
+@media (max-width: 768px) {
+	#robot {
+		display: none;
+	}
+
+	#small-robot {
+		display: block!important;
+	}
+}
+
+@media only screen and (min-width: 1350px) {
+	/* About LP ----------------------- */ 
+	/* this paragraph will only display on smaller screens*/
+	.about-lp-col p.about-responsive { display: none; }
+
+	/*body { background-color: red!important }*/
+	#robot {
+		width: 75%!important;
+		max-width: 850px!important;
+	}
+}
