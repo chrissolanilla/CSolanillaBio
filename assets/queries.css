@@ -6,6 +6,7 @@ in order for the override the main styles.
 */
 
 @media (max-width: 575.98px) {
+	
 	/* Navigation LP ----------------------- */
 	.bg-light { 
 		background-color: #ffc904!important;
@@ -95,7 +96,37 @@ in order for the override the main styles.
 	.benefits p { text-align: center; }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/*body { background-color: yellow!important; }*/
+
+	/* Splash Page ----------------------- */
+	#splash-page { height: 95vh!important; }
+
+	#welcome {
+		width: 90%!important;
+		margin-left: 1px;
+	}
+
+	#welcome h1 { padding-top: 3%!important; }
+
+	#welcome h2 {
+		font-size: 1em;
+		margin-left: 0;
+		width: 80%!important;
+	}
+
+	#robot { display: none; }
+
+	#small-robot {
+		display: inline-block!important;
+		width: 40%!important;
+	}
+
+	#robot { width: 25%; }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
+
 	/* Navigation LP ----------------------- */
 	.bg-light { background-color: #ffc904!important; }
 
@@ -107,9 +138,7 @@ in order for the override the main styles.
 		margin-left: 1px;
 	}
 
-	#welcome h1 {
-		padding-top: 3%!important;
-	}
+	#welcome h1 { padding-top: 3%!important; }
 
 	#welcome h2 {
 		font-size: 1em;
@@ -117,18 +146,14 @@ in order for the override the main styles.
 		width: 80%!important;
 	}
 
-	#robot {
-		display: none;
-	}
+	#robot { display: none; }
 
 	#small-robot {
 		display: inline-block!important;
 		width: 40%!important;
 	}
 
-	#robot {
-		width: 25%;
-	}
+	#robot { width: 25%; }
 
 	/* About LP ----------------------- */ 
 	/* this paragraph will only display on smaller screens*/
@@ -175,21 +200,28 @@ in order for the override the main styles.
 }
 
 @media (max-width: 768px) {
-	#robot {
-		display: none;
-	}
+	
+	#robot { display: none; }
 
-	#small-robot {
-		display: block!important;
-	}
+	#small-robot { display: block!important; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/* About LP ----------------------- */ 
+	.about-lp-col p.about-responsive { display: none; }
+}
+
+@media (min-width: 1200px) {
+
+/*	body { background-color: red!important; }*/
+	
+	/* About LP ----------------------- */ 
+	.about-lp-col p.about-responsive { display: none; }
 }
 
 @media only screen and (min-width: 1350px) {
-	/* About LP ----------------------- */ 
-	/* this paragraph will only display on smaller screens*/
-	.about-lp-col p.about-responsive { display: none; }
-
-	/*body { background-color: red!important }*/
+	
 	#robot {
 		width: 75%!important;
 		max-width: 850px!important;
