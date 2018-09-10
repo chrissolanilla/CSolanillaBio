@@ -816,10 +816,7 @@ ul.bottom-nav a {
 	color: #fff;
 }
 
-ul.social a:hover,
-ul.bottom-nav a:hover {
-	color: #ffc904!important;
-}
+ul.bottom-nav a:hover { color: #ffc904!important; }
 
 .footer-col p.copy {
 	color: grey;
