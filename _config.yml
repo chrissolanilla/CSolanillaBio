@@ -44,7 +44,7 @@ collections:
   techrangers_past:
     output: true
 
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:title/
 
 # allow posts/items dated in the future to show up on the site
 future: true

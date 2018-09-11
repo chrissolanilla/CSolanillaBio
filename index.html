@@ -22,11 +22,11 @@ document.getElementById("myNav").style.width = "0%";
       <div id="myNav" class="nav-overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <a href="/about.html">About</a>
-            <a href="/showcase.html">Showcase</a>
-            <a href="/blog.html">Blog</a>
-            <a href="/techtime.html">Tech Time</a>
-            <a href="/joinus.html">Join Us</a>
+            <a href="{{ "/about" | relative_url }}">About</a>
+            <a href="{{ "/showcase" | relative_url }}">Showcase</a>
+            <a href="{{ "/blog" | relative_url }}">Blog</a>
+            <a href="{{ "/techtime" | relative_url }}">Tech Time</a>
+            <a href="{{ "/joinus" | relative_url }}">Join Us</a>
           </div>
       </div>
       <span class="nav-span" onclick="openNav()">&#9776;</span>
@@ -43,9 +43,9 @@ document.getElementById("myNav").style.width = "0%";
       </div>
     </div>
   </div>
-  <img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/tr_robot_temp.png" }}">
+  <img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/tr_robot_temp.png" | relative_url }}">
   <div id="small-robot-wrap">
-      <img id="small-robot" src="{{ "assets/images/robot/tr_smallscreen.png" }}">
+      <img id="small-robot" src="{{ "assets/images/robot/tr_smallscreen.png" | relative_url }}">
   </div>
 </section>
 
@@ -56,11 +56,11 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-sm-12 col-md-12 col-lg-12 about-lp-col">
         <h2>About The Techrangers</h2>
         <hr class="gold">
-        <p class="no-about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
+        <p class="no-about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conventions. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
 
-        <p class="about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://online.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF).</p>
+        <p class="about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF).</p>
 
-        <a href="{{ "/about.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">Meet the Team</button></a>
+        <a href="{{ "/about" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">Meet the Team</button></a>
       </div>
     </div>
   </div>
@@ -79,7 +79,7 @@ document.getElementById("myNav").style.width = "0%";
       <div class="row services-lp-row">
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
           <div class="section-boxes">
-            <img src="assets/images/icons/coding.png" class="img-fluid image" alt="Learning Tools icon">
+            <img src="{{ "assets/images/icons/coding.png"  | relative_url }}" class="img-fluid image" alt="Learning Tools icon">
             <h3>Learning Tools</h3>
             <p>Custom development of tools and integrations that improve the teaching and learning experience.</p>
           </div>
@@ -87,7 +87,7 @@ document.getElementById("myNav").style.width = "0%";
 
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
           <div class="section-boxes">
-            <img src="assets/images/icons/worker.png" class="img-fluid image" alt="Data Engineering icon">
+            <img src="{{ "assets/images/icons/worker.png"  | relative_url }}" class="img-fluid image" alt="Data Engineering icon">
             <h3>Data Engineering</h3>
             <p>Utilizing usage data to improve student performance, retention, and learning outcomes.</p>
           </div>
@@ -95,7 +95,7 @@ document.getElementById("myNav").style.width = "0%";
 
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col">
           <div class="section-boxes">
-            <img src="assets/images/icons/blackboard.png" class="img-fluid image" alt="Course Development icon">
+            <img src="{{ "assets/images/icons/blackboard.png"  | relative_url }}" class="img-fluid image" alt="Course Development icon">
             <h3>Course Development</h3>
             <p>Creating new online course content, modifying existing content, and evaluating courses for accessibility issues.</p>
           </div>
@@ -118,13 +118,13 @@ document.getElementById("myNav").style.width = "0%";
     <div class="row showcase-lp-row">
       <div class="col-lg-6 showcase-lp-col-right">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/materia.svg" class="img-fluid image" alt="Materia logo">
+          <img src="{{ "assets/images/showcase-logos/materia.svg" | relative_url }}" class="img-fluid image" alt="Materia logo">
         </div>
       </div>
 
       <div class="col-lg-6 showcase-lp-col-left">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/obojobo.svg" class="img-fluid image" alt="Obojobo icon">
+          <img src="{{ "assets/images/showcase-logos/obojobo.svg" | relative_url }}" class="img-fluid image" alt="Obojobo icon">
         </div>
       </div>
     </div>
@@ -132,17 +132,17 @@ document.getElementById("myNav").style.width = "0%";
     <div class="row showcase-lp-row">
       <div class="col-lg-6 showcase-lp-col-right">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/udoit.svg" class="img-fluid image" alt="UDOIT logo">
+          <img src="{{ "assets/images/showcase-logos/udoit.svg" | relative_url }}" class="img-fluid image" alt="UDOIT logo">
         </div>
       </div>
 
       <div class="col-lg-6 showcase-lp-col-left">
         <div class="hover-effect">
-          <img src="assets/images/showcase-logos/proctor-hub.svg" class="img-fluid image" alt="Proctor Hub logo">
+          <img src="{{ "assets/images/showcase-logos/proctor-hub.svg" | relative_url }}" class="img-fluid image" alt="Proctor Hub logo">
         </div>
       </div>
     </div>
-    <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View More</button></a>
+    <a href="{{ "/showcase" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View More</button></a>
   </div>
 </section>
 
@@ -162,7 +162,7 @@ document.getElementById("myNav").style.width = "0%";
       <div class="col-lg-6 blog-lp-container">
           <div class="blog-item-wrapper ml-2 mr-2">
             <div class="blog-item-img">
-                <a href="{{ post.url }}"><img src="/assets/images/blog-imgs/{{ post.image }}" alt="sample blog image" class="img-fluid"></a>
+                <a href="{{ post.url }}"><img src="{{ "assets/images/blog-imgs/" | append: post.image | relative_url }}" alt="" class="img-fluid"></a>
             </div>
             <div class="blog-item-text">
               <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
@@ -176,7 +176,7 @@ document.getElementById("myNav").style.width = "0%";
       {% endfor %}
 
     </div>
-    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
+    <a href="{{ "/blog" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
   </div>
   <script>
   var txt = $('.card-text').text();
@@ -194,7 +194,7 @@ document.getElementById("myNav").style.width = "0%";
           <h2>Join the Techrangers</h2>
           <hr class="gold">
           <p>If you would like to join the Techrangers' team, fill out the application.</p>
-          <a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark">Join Us</button></a>
+          <a href="{{ "/joinus" | relative_url }}"><button type="button" class="btn btn-dark">Join Us</button></a>
         </div>
       </div>
     </div>
