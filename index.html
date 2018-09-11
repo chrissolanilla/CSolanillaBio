@@ -18,15 +18,15 @@ document.getElementById("myNav").style.width = "0%";
 
 <section id="splash-page">
   <nav class="navbar transparent navbar-inverse bg-light hp-nav">
-      <a class="navbar-brand" href="/index.html" id="techrangers" class="logo">Techrangers</a>
+      <a class="navbar-brand" href="{{ "/" | relative_url }}" id="techrangers" class="logo">Techrangers</a>
       <div id="myNav" class="nav-overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <a href="{{ "/about" | relative_url }}">About</a>
-            <a href="{{ "/showcase" | relative_url }}">Showcase</a>
-            <a href="{{ "/blog" | relative_url }}">Blog</a>
-            <a href="{{ "/techtime" | relative_url }}">Tech Time</a>
-            <a href="{{ "/joinus" | relative_url }}">Join Us</a>
+            <a href="{{ "/about.html" | relative_url }}">About</a>
+            <a href="{{ "/showcase.html" | relative_url }}">Showcase</a>
+            <a href="{{ "/blog.html" | relative_url }}">Blog</a>
+            <a href="{{ "/techtime.html" | relative_url }}">Tech Time</a>
+            <a href="{{ "/joinus.html" | relative_url }}">Join Us</a>
           </div>
       </div>
       <span class="nav-span" onclick="openNav()">&#9776;</span>
@@ -60,7 +60,7 @@ document.getElementById("myNav").style.width = "0%";
 
         <p class="about-responsive">The Techrangers<span class="registered">&reg;</span> is a team of students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF).</p>
 
-        <a href="{{ "/about" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">Meet the Team</button></a>
+        <a href="{{ "/about.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">Meet the Team</button></a>
       </div>
     </div>
   </div>
@@ -142,7 +142,7 @@ document.getElementById("myNav").style.width = "0%";
         </div>
       </div>
     </div>
-    <a href="{{ "/showcase" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View More</button></a>
+    <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View More</button></a>
   </div>
 </section>
 
@@ -176,7 +176,7 @@ document.getElementById("myNav").style.width = "0%";
       {% endfor %}
 
     </div>
-    <a href="{{ "/blog" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
+    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
   </div>
   <script>
   var txt = $('.card-text').text();
@@ -194,7 +194,7 @@ document.getElementById("myNav").style.width = "0%";
           <h2>Join the Techrangers</h2>
           <hr class="gold">
           <p>If you would like to join the Techrangers' team, fill out the application.</p>
-          <a href="{{ "/joinus" | relative_url }}"><button type="button" class="btn btn-dark">Join Us</button></a>
+          <a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark">Join Us</button></a>
         </div>
       </div>
     </div>
