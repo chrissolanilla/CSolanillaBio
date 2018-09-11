@@ -6,7 +6,7 @@ layout: default
 
     <div class="row">
         <div class="col-lg-12 profile-pg-col">
-            <div class="tr_img"> <img src="/assets/images/bios/{{ page.thumbnail }}" alt="{{ page.name }}" /></div>
+            <div class="tr_img"> <img src="{{ "assets/images/bios/" | append: page.thumbnail | relative_url }}" alt="{{ page.name }}" /></div>
             <h1 class="tr_name_header">{{ page.name }}</h1>
             <h2 class="tr_title">{{ page.major }}</h2>
             <div class="tr_desc">{{ content }} </div>
