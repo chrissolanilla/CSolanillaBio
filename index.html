@@ -30,11 +30,11 @@ document.getElementById("myNav").style.width = "0%";
           </div>
       </div>
       <span class="nav-span" onclick="openNav()">&#9776;</span>
-    </nav> 
+    </nav>
 
   <!-- Splash page -->
   <!--  <div class="speech-bubble"><h1>Welcome to the Techrangers!</h1></div> -->
- 
+
   <div id="welcome">
     <div class="row welcome-row">
       <div class="col-lg-12 welcome-col">
@@ -67,7 +67,7 @@ document.getElementById("myNav").style.width = "0%";
 </section>
 
 <!-- Services LP -->
-<section id="services"> 
+<section id="services">
   <div class="container">
     <div class="row services-lp-row">
       <!-- mess around with WOW options for animations -->
@@ -106,7 +106,7 @@ document.getElementById("myNav").style.width = "0%";
 </section>
 
 <!-- Showcase LP -->
-<section id="showcase"> 
+<section id="showcase">
   <div class="container">
     <div class="row showcase-lp-row">
       <div class="col-sm-12 col-md-12 col-lg-12 showcase-lp-col">
@@ -159,7 +159,7 @@ document.getElementById("myNav").style.width = "0%";
     <div class="row blog-lp-row">
 
       {% for post in site.posts limit:3 %}
-      <div class="col-lg-6 blog-lp-container">
+      <div class="col-lg-4 col-md-4 blog-lp-container">
           <div class="blog-item-wrapper ml-2 mr-2">
             <div class="blog-item-img">
                 <a href="{{ post.url }}"><img src="{{ "assets/images/blog-imgs/" | append: post.image | relative_url }}" alt="" class="img-fluid"></a>
@@ -198,7 +198,7 @@ document.getElementById("myNav").style.width = "0%";
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </section>
 </div>
 </main>

@@ -1,0 +1,12 @@
+.blog-post-template-container .tr_desc img.specificity-cascading-order {
+  width: 400px;
+}
+
+.blog-post-template-container .tr_desc img.specificity-css-guy,
+.blog-post-template-container .tr_desc img.specificity-chart {
+  width: 600px;
+}
+
+.blog-post-template-container .tr_desc img.specificity-sigh {
+  width: 140px;
+}

@@ -44,7 +44,7 @@ p {
 
 #about,
 #services,
-#showcase, 
+#showcase,
 #blog,
 #join-us,
 #footer { padding: 50px 0; }
@@ -157,7 +157,7 @@ a .lp-btn { color: #fff!important; }
 	margin: 0;
 	padding-top: 13%;
 	letter-spacing: 2px;
-	color: #000; 
+	color: #000;
 }
 
 #welcome h2 {
@@ -261,7 +261,7 @@ a .lp-btn { color: #fff!important; }
 	font-weight: 400!important;
 }
 
-.nav-overlay a:hover, 
+.nav-overlay a:hover,
 .nav-overlay a:focus {
 	color: #f1f1f1;
 }
@@ -370,7 +370,7 @@ a .lp-btn { color: #fff!important; }
 
 .blog-item-text { text-align: left; }
 
-.blog-item-text h5 { 
+.blog-item-text h5 {
 	font-size: 1.5rem;
 	padding: 5px 0;
 }
@@ -389,7 +389,7 @@ a .lp-btn { color: #fff!important; }
 
 .blog-meta a { font-weight: 700; }
 
-.blog-meta a:hover { 
+.blog-meta a:hover {
 	color: #000!important;
 	text-decoration: underline;
 }
@@ -485,7 +485,7 @@ h1.past-tr {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-top: 50px; 
+    margin-top: 50px;
     text-align: center;
     padding: 10px 0;
 }
@@ -571,7 +571,7 @@ hr.gold-lst {
 	padding-left: 0px;
 }
 
-.post-title { 
+.post-title {
 	font-size: 2.5rem;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -606,6 +606,48 @@ hr.gold-lst {
 	margin: 1% 0px 1% 0px;
 }
 
+.blog-post-template-container h2 {
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+.blog-post-template-container img {
+	margin: 0 auto;
+	height: auto;
+	display:block;
+	max-width: 100%;
+}
+
+.blog-post-template-container strong {
+	font-weight: bold;
+}
+
+.blog-post-template-container pre {
+	margin-bottom: 0;
+}
+
+.blog-post-template-container .code-sample {
+	padding: 6px 0;
+	line-height: 19px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blog-post-template-container .code-sample .code-sample-title {
+	color: #8c8c8c;
+	display: block;
+	font-size: 90%;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+
 /* Tech Times Page ------------------------------------- */
 .techtime-pg-col h2 {
 	color: #000;
@@ -613,7 +655,7 @@ hr.gold-lst {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-top: 5px; 
+    margin-top: 5px;
     padding: 0;
     text-align: center;
 }
@@ -629,12 +671,12 @@ hr.gold-lst {
 	padding-bottom: 50px;
 }
 
-.btn-center a { 
+.btn-center a {
 	color: #fff;
 	font-weight: 400;
 }
 
-.btn-center a:hover { 
+.btn-center a:hover {
 	color:  #ffc904;
 	text-decoration: none;
 }
@@ -646,7 +688,7 @@ hr.gold-lst {
 
 .past-techtime-header {
 	font-size: 1.5em;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 .past-techtime-date {
@@ -664,7 +706,7 @@ hr.gold-lst {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-top: 50px; 
+    margin-top: 50px;
     text-align: center;
     padding: 10px 0;
 }
@@ -681,7 +723,7 @@ hr.gold-lst {
 	font-weight: 700;
 }
 
-.join-us-pg-container a:hover { 
+.join-us-pg-container a:hover {
 	color: #000!important;
 	text-decoration: underline!important;
 }
@@ -756,7 +798,7 @@ hr.divider {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-top: 50px; 
+    margin-top: 50px;
     text-align: center;
     padding: 10px 0;
 }
@@ -765,13 +807,13 @@ hr.divider {
 
 .showcase-pg-col h2 { font-size: 25px; }
 
-.showcase-pg-col a { 
+.showcase-pg-col a {
 	color: #000;
 	font-weight: 700;
 }
 
 .showcase-pg-col a:hover {
-	color: #000; 
+	color: #000;
 	text-decoration: underline;
 }
 
