@@ -167,7 +167,7 @@ Let's break that down a little bit:
 
 <img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specificity-calc-1-1.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
 
-Using the Specificity formula, we can see that the first selector is <strong>0, 2, 0</strong> and the second selector is <strong>0, 1, 0</strong>. We can see the first selector clearly has a higher selector than the second, which is why the selector takes precedence.
+Using the Specificity formula, we can see that the first selector is <strong>(0, 2, 0)</strong> and the second selector is <strong>(0, 1, 0)</strong>. We can see the first selector clearly has a higher selector than the second, which is why the selector takes precedence.
 
 Ok, so how can we make the intro selector override the <code>.home p</code> selector? What if we add an element to the selector? We really only want <code>intro</code> to apply to paragraphs, anyway:
 
@@ -186,7 +186,7 @@ p.intro {
 
 <img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specificity-calc-1-2.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
 
-Now when we look at the the specificity values, we’ll see they BOTH have <strong>0, 2, 0</strong>. So what happens now? In this case, the <strong>Cascading Order</strong> tells us that the <code>p.intro</code> selector will take precedence, because it occurs after the <code>.home p</code> selector. _It’s all coming together._
+Now when we look at the the specificity values, we’ll see they BOTH have <strong>(0, 2, 0)</strong>. So what happens now? In this case, the <strong>Cascading Order</strong> tells us that the <code>p.intro</code> selector will take precedence, because it occurs after the <code>.home p</code> selector. _It’s all coming together._
 
 let's take a look at another example:
 
@@ -225,11 +225,11 @@ As you can see, the text is not italic, even though we have gotten pretty specif
 
 **#top p:**
 
-One id selector (#top), and one element selector (p). That gives us: <strong>1, 0, 1</strong>
+One id selector (#top), and one element selector (p). That gives us: <strong>(1, 0, 1)</strong>
 
 **.container p.quote:**
 
-Two class selectors and one element selector. That gives us: <strong>0, 2, 1</strong>
+Two class selectors and one element selector. That gives us: <strong>(0, 2, 1)</strong>
 
 So, as you can see, the id on the first selector overrides the second. That’s because, as we established, ids ALWAYS override classes. If there’s one nugget I’d like for you to take away from this post, it’s that using id selectors in your css usually leads to complications down the line. If you stick with classes instead, things will go a lot smoother.
 
@@ -290,7 +290,7 @@ When rendered in the browser, this looks like the following:
 
 ![We don't make mistakes. We just have happy accidents. There's nothing wrong with having a tree as a friend.](/assets/images/blog-imgs/2018-09-10-css-specificity/test-2-2.png "We don't make mistakes. We just have happy accidents. There's nothing wrong with having a tree as a friend.")
 
-As you can see, the color of the text is green. The <code>p</code> selector in <code>quotes.css</code> attempts to select all p tags and set them to orange (0, 0, 1), but the id of the <code>#top p</code> selector (1, 0, 1) takes precedence. What we could do technically is add <code>!important</code> to the <code>quotes.css p</code> selector. let's see what happens:
+As you can see, the color of the text is green. The <code>p</code> selector in <code>quotes.css</code> attempts to select all p tags and set them to orange <strong>(0, 0, 1)</strong>, but the id of the <code>#top p</code> selector <strong>(1, 0, 1)</strong> takes precedence. What we could do technically is add <code>!important</code> to the <code>quotes.css p</code> selector. let's see what happens:
 
 <div class="code-sample">
 <span class="code-sample-title">quote.css</span>
@@ -352,7 +352,7 @@ Still orange. Maybe if we get more specific on our cyan p selector?
 </code></pre>
 </div>
 
-Nope. Even though the cyan selector now has a specificity of (1, 3, 2), the orange selector (0, 0, 1) with <strong>!important</strong> takes precedence. Imagine being a developer thrown onto this project, and you’re trying to figure out why the text is cyan. Sure, this one would be a simple because there’s only a few documents to sort through, but on a larger project, it could easily be very frustrating to find out why.
+Nope. Even though the cyan selector now has a specificity of <strong>(1, 3, 2)</strong>, the orange selector <strong>(0, 0, 1)</strong> with <strong>!important</strong> takes precedence. Imagine being a developer thrown onto this project, and you’re trying to figure out why the text is cyan. Sure, this one would be a simple because there’s only a few documents to sort through, but on a larger project, it could easily be very frustrating to find out why.
 
 ## Conclusion
 
