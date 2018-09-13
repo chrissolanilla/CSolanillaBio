@@ -1,4 +1,5 @@
-.blog-post-template-container .tr_desc img.specificity-cascading-order {
+.blog-post-template-container .tr_desc img.specificity-cascading-order,
+.blog-post-template-container .tr_desc img.specificity-calculation {
   width: 400px;
 }
 

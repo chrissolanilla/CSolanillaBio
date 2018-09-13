@@ -11,14 +11,14 @@ author:     "Keegan Berry"
 CSS is frustrating to many. I think other than poor organization, a lot of the frustration has to do with not knowing how styles override other styles. It leads to confusion, messy and unorganized CSS, and a lot of hacks and convoluted CSS selectors. CSS Specificity helps us determine how styles interact with other conflicting styles.
 
 ## Cascading order
-CSS Specificity allows us to determine which style selectors in our CSS take precedence. The first thing we need to take into account is the Cascading Order. It sounds more complicated than it actually is, but essentially the Cascading Order has to do with how styles are overridden depending on their placement. To override a previously declared style, we simply have to declare it farther down in the document. But what if we have multiple documents, or styles placed in an external document as well as in the header of the HTML file? The Cascading Order helps us determine how styles will be overridden depending on their location. The order is as follows:
+CSS Specificity allows us to determine which style selectors in our CSS take precedence. The first thing we need to take into account, however, is the Cascading Order. It sounds more complicated than it actually is, but essentially the Cascading Order has to do with how styles are overridden depending on their placement. To override a previously declared style, we simply have to declare it farther down in the document. But what if we have multiple documents, or styles placed in an external document and styles in the header of the HTML file? The Cascading Order helps us determine how styles will be overridden depending on their location. The order is as follows:
 
 * Browser Default Styles
 * External CSS Files (Linked or @import-ed)
 * Internal CSS (in the <head>)
 * Inline Styles (styles directly applied to elements)
 
-One way to think about it is like layers. The "closer the style is to the element, the higher precedence it has. An inline style has the highest precedence because it’s literally written on the element. On the other hand, browser default styles (think Times New Roman, 16pt) are easily overwritten because they are farthest "away" from the element.
+It works kind of counter-intuitively, so just to explain further: inline styles override internal CSS, and internal css overrides external CSS files, and external CSS files override browser defaults. One way to think about it is like layers. The "closer" the style is to the element, the higher precedence it has. An inline style has the highest precedence because it’s literally written on the element. On the other hand, browser default styles (think Times New Roman, 16pt) are easily overwritten because they are farthest "away" from the element.
 
 <img src="/assets/images/blog-imgs/2018-09-10-css-specificity/cascading-order.png" class="specificity-cascading-order" alt="CSS Cascading Order" title="CSS Cascading Order">
 
@@ -81,7 +81,7 @@ While not the most exciting example, you can see how the external CSS was overri
 
 With the Cascading Order, we were able to know how styles are overridden based on their location, in relation to the element. But what happens if we have multiple style selectors that both target the same element? Specificity allows us to determine which style takes precedence.
 
-let's go back to our paragraph example, but let's remove the inline style (since inline styles are generally not a good idea). While we’re at it, let's go ahead and remove all the CSS declarations from the <code><head></code> as well as <code>content.css</code>. For the sake of this example, I’m also going to throw in another paragraph:
+Let's go back to our paragraph example, but this time let's remove the inline style (since inline styles are generally not a good idea). While we're at it, let's go ahead and remove all the CSS declarations from the <code><head></code> as well as <code>content.css</code>. For the sake of this example, I'm also going to throw in another paragraph:
 
 <div class="code-sample">
 <pre><code data-language="html">&lt;body class=&quot;home&quot;&gt;
@@ -92,7 +92,7 @@ let's go back to our paragraph example, but let's remove the inline style (since
 </code></pre>
 </div>
 
-let's add a style to the now empty <code>content.css</code>:
+Let's add a style to the now empty <code>content.css</code>:
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
@@ -140,7 +140,11 @@ Now if we refresh the page, we’ll see this:
 
 ![Whoever is careless with the truth in small matters cannot be trusted with important matters. Excerpt from Albert Einstein's last statement, April, 1955, translated here into English from German.](/assets/images/blog-imgs/2018-09-10-css-specificity/test-2-2.png "Whoever is careless with the truth in small matters cannot be trusted with important matters. Excerpt from Albert Einstein's last statement, April, 1955, translated here into English from German.")
 
-You see what happened here? Both selectors are targeting the same element, but the 18px in the first p selector is overriding the intro selector. It defies the Cascade Order (we would expect the second to override the first), which can make it a little confusing. This is where knowing how Specificity works comes in handy. CSS Specificity can be calculated by looking at the selectors and counting the various components. Here’s a handy chart:
+You see what happened here? Both selectors are targeting the same element, but the 18px in the first p selector is overriding the intro selector. It defies the Cascade Order (we would expect the second to override the first), which can make it a little confusing. This is where knowing how Specificity works comes in handy.
+
+### Calculating CSS Specificity
+
+The CSS Specificity of a selector can be calculated by looking at what makes up the selector and counting the various components. Here’s a handy chart:
 
 <img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specificity-chart.png" class="specificity-chart" alt="How to calculate Specificity" title="CSS Cascading Order">
 
@@ -159,7 +163,11 @@ The Specificity is written as <code>a, b, c</code>. Why the comma-separated nota
 </code></pre>
 </div>
 
-Using the Specificity formula, we can see that the first selector is 0, 2, 0 and the second selector is 0, 1, 0. We can see the first selector clearly has a higher selector than the second, which is why the selector takes precedence.
+Let's break that down a little bit:
+
+<img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specificity-calc-1-1.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
+
+Using the Specificity formula, we can see that the first selector is <strong>0, 2, 0</strong> and the second selector is <strong>0, 1, 0</strong>. We can see the first selector clearly has a higher selector than the second, which is why the selector takes precedence.
 
 Ok, so how can we make the intro selector override the <code>.home p</code> selector? What if we add an element to the selector? We really only want <code>intro</code> to apply to paragraphs, anyway:
 
@@ -176,7 +184,9 @@ p.intro {
 </code></pre>
 </div>
 
-Now when we look at the the specificity values, we’ll see they BOTH have 0, 2, 0. So what happens now? In this case, the Cascading Order tells us that the <code>p.intro</code> selector will take precedence, because it occurs after the <code>.home p</code> selector. _It’s all coming together._
+<img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specificity-calc-1-2.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
+
+Now when we look at the the specificity values, we’ll see they BOTH have <strong>0, 2, 0</strong>. So what happens now? In this case, the <strong>Cascading Order</strong> tells us that the <code>p.intro</code> selector will take precedence, because it occurs after the <code>.home p</code> selector. _It’s all coming together._
 
 let's take a look at another example:
 
@@ -215,11 +225,11 @@ As you can see, the text is not italic, even though we have gotten pretty specif
 
 **#top p:**
 
-One id selector (#top), and one element selector (p). That gives us: <code>1, 0, 1</code>
+One id selector (#top), and one element selector (p). That gives us: <strong>1, 0, 1</strong>
 
 **.container p.quote:**
 
-Two class selectors and one element selector. That gives us: <code>0, 2, 1</code>
+Two class selectors and one element selector. That gives us: <strong>0, 2, 1</strong>
 
 So, as you can see, the id on the first selector overrides the second. That’s because, as we established, ids ALWAYS override classes. If there’s one nugget I’d like for you to take away from this post, it’s that using id selectors in your css usually leads to complications down the line. If you stick with classes instead, things will go a lot smoother.
 

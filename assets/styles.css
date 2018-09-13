@@ -614,6 +614,14 @@ hr.gold-lst {
 	margin-top: 25px;
 }
 
+.blog-post-template-container h3 {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
 .blog-post-template-container img {
 	margin: 0 auto;
 	height: auto;
@@ -623,6 +631,10 @@ hr.gold-lst {
 
 .blog-post-template-container strong {
 	font-weight: bold;
+}
+
+.blog-post-template-container em {
+	font-style: italic;
 }
 
 .blog-post-template-container pre {
