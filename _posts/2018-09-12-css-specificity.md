@@ -237,7 +237,7 @@ So, as you can see, the id on the first selector overrides the second. That’s 
 
 <hr class="gold">
 
-Now that we understand how CSS Specificity and the Cascade Order work, let's throw a wrench into the situation with the !important rule. You can add <code>!important</code> onto the end of any css rule to give it special precedence. Any rule with <code>!important</code> added will override all other conflicting rules. let's take a look:
+Now that we understand how CSS Specificity and the Cascade Order work, let's throw a wrench into the situation with the !important rule. You can add <code>!important</code> onto the end of any css rule to give it special precedence. Any rule with <code>!important</code> added will override all other conflicting rules. Let's take a look:
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.html</span>
@@ -308,7 +308,7 @@ Ignoring the specificity and Cascade Order, the text is now orange. As you can s
 
 <img src="/assets/images/blog-imgs/2018-09-10-css-specificity/cascading-order-important.png" class="specificity-cascading-order" alt="CSS Cascading Order when !important is involved" title="CSS Cascading Order when !important is involved">
 
-It skips over all the other style and directly influences its target element. It doesn’t follow the normal convention, which leads to confusing and frustrating CSS. <code>!important</code> gets even more complicated when more and more <code>!important</code>s are thrown on top of previous <code>!important</code>s. At that point, Chrome's Developer Tools have a hard time showing you what's going on. And then you have to start digging into the source files to try to make sense of it, during which time you've lost your mind and thrown the computer out the window.
+It skips over all the other style and directly influences its target element. It doesn’t follow the normal convention, which leads to confusing and frustrating CSS. <code>!important</code> gets even more complicated when more and more <code>!important</code>s are thrown on top of previous <code>!important</code>s. At that point, Chrome's Developer Tools will have a hard time showing you what's going on. And then you have to start digging into the source files to try to make sense of it, during which time you've lost your mind and thrown the computer out the window.
 
 <img src="/assets/images/blog-imgs/2018-09-10-css-specificity/sigh.png" class="specificity-sigh" alt="Sigh..." title="Sigh...">
 
