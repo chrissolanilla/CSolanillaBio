@@ -352,7 +352,11 @@ Still orange. Maybe if we get more specific on our cyan p selector?
 </code></pre>
 </div>
 
-Nope. Even though the cyan selector now has a specificity of <strong>(1, 3, 2)</strong>, the orange selector <strong>(0, 0, 1)</strong> with <strong>!important</strong> takes precedence. Imagine being a developer thrown onto this project, and you’re trying to figure out why the text is cyan. Sure, this one would be a simple because there’s only a few documents to sort through, but on a larger project, it could easily be very frustrating to find out why.
+Nope. Take a look at the Specificity calculation:
+
+<img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specif-calc-1-3.png" class="specificity-calculation-wide" alt="Visualization of the specificity" title="Visualization of the specificity">
+
+Even though the cyan selector now has a specificity of <strong>(1, 3, 2)</strong>, the orange selector <strong>(0, 0, 1)</strong> with <strong>!important</strong> takes precedence. Imagine being a developer thrown onto this project, and you’re trying to figure out why the text is cyan. Sure, this one would be a simple because there’s only a few documents to sort through, but on a larger project, it could easily be very frustrating to find out why.
 
 ## Conclusion
 

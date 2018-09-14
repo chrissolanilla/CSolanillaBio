@@ -4,7 +4,8 @@
 }
 
 .blog-post-template-container .tr_desc img.specificity-css-guy,
-.blog-post-template-container .tr_desc img.specificity-chart {
+.blog-post-template-container .tr_desc img.specificity-chart,
+.blog-post-template-container .tr_desc img.specificity-calculation-wide {
   width: 600px;
 }
 
