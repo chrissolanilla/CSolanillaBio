@@ -367,5 +367,4 @@ To wrap up, I don’t think you necessarily need to calculate the specificity of
 * [CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 * [W3C: Calculating a selector's specificity](https://www.w3.org/TR/selectors-3/#specificity)
 * [CSS Tutorial #5: Cascading Order and Inheritance](https://www.mrc-productivity.com/techblog/?p=769)
-* [Quote Investigator: Albert Einstein](https://quoteinvestigator.com/tag/albert-einstein/page/3/)
 * This post was partially adapted from a presentation I gave on CSS Specificity.
