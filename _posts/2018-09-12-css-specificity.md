@@ -2,7 +2,7 @@
 layout:     blog-post-template
 title:      "CSS Specificity and why you shouldn't use !important."
 date:       2018-09-10 10:00:00 -0400
-categories: tech tutorial css
+categories: tech tutorial introduction css
 image:      2018-09-10-css-specificity.jpg
 css:        2018-09-10-css-specificity.css
 author:     "Keegan Berry"
@@ -18,7 +18,7 @@ CSS Specificity allows us to determine which style selectors in our CSS take pre
 * Internal CSS (in the <head>)
 * Inline Styles (styles directly applied to elements)
 
-It works kind of counter-intuitively, so just to explain further: inline styles override internal CSS, and internal css overrides external CSS files, and external CSS files override browser defaults. One way to think about it is like layers. The "closer" the style is to the element, the higher precedence it has. An inline style has the highest precedence because it’s literally written on the element. On the other hand, browser default styles (think Times New Roman, 16pt) are easily overwritten because they are farthest "away" from the element.
+It works kind of counter-intuitively, so just to explain further: inline styles override internal CSS, and internal CSS overrides external CSS files, and external CSS files override browser defaults. One way to think about it is like layers. The "closer" the style is to the element, the higher precedence it has. An inline style has the highest precedence because it’s literally written on the element. On the other hand, browser default styles (think Times New Roman, 16pt) are easily overwritten because they are farthest "away" from the element.
 
 <img src="/assets/images/blog-imgs/2018-09-10-css-specificity/cascading-order.png" class="specificity-cascading-order" alt="CSS Cascading Order" title="CSS Cascading Order">
 
@@ -121,7 +121,7 @@ So now, all paragraphs in our document will be displayed using the font Helvetic
 
 ![Whoever is careless with the truth in small matters cannot be trusted with important matters. Excerpt from Albert Einstein's last statement, April, 1955, translated here into English from German.](/assets/images/blog-imgs/2018-09-10-css-specificity/test-2-1.png "Whoever is careless with the truth in small matters cannot be trusted with important matters. Excerpt from Albert Einstein's last statement, April, 1955, translated here into English from German.")
 
-Now, let's say someone took a look at our css and wanted to make the first selector a little more specific to the page.
+Now, let's say someone took a look at our CSS and wanted to make the first selector a little more specific to the page.
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
@@ -188,7 +188,7 @@ p.intro {
 
 Now when we look at the the specificity values, we’ll see they BOTH have <strong>(0, 1, 1)</strong>. So what happens now? In this case, the <strong>Cascading Order</strong> tells us that the <code>p.intro</code> selector will take precedence, because it occurs after the <code>.home p</code> selector. _It’s all coming together._
 
-let's take a look at another example:
+Let's take a look at another example:
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.html</span>
@@ -231,13 +231,13 @@ One id selector (#top), and one element selector (p). That gives us: <strong>(1,
 
 Two class selectors and one element selector. That gives us: <strong>(0, 2, 1)</strong>
 
-So, as you can see, the id on the first selector overrides the second. That’s because, as we established, ids ALWAYS override classes. If there’s one nugget I’d like for you to take away from this post, it’s that using id selectors in your css usually leads to complications down the line. If you stick with classes instead, things will go a lot smoother.
+So, as you can see, the id on the first selector overrides the second. That’s because, as we established, ids ALWAYS override classes. If there’s one nugget I’d like for you to take away from this post, it’s that using id selectors in your CSS usually leads to complications down the line. If you stick with classes instead, things will go a lot smoother.
 
 ## !important, and why you shouldn’t use it
 
 <hr class="gold">
 
-Now that we understand how CSS Specificity and the Cascade Order work, let's throw a wrench into the situation with the !important rule. You can add <code>!important</code> onto the end of any css rule to give it special precedence. Any rule with <code>!important</code> added will override all other conflicting rules. Let's take a look:
+Now that we understand how CSS Specificity and the Cascade Order work, let's throw a wrench into the situation with the !important rule. You can add <code>!important</code> onto the end of any CSS rule to give it special precedence. Any rule with <code>!important</code> added will override all other conflicting rules. Let's take a look:
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.html</span>
