@@ -165,9 +165,9 @@ The Specificity is written as <code>a, b, c</code>. Why the comma-separated nota
 
 Let's break that down a little bit:
 
-<img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specificity-calc-1-1.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
+<img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specif-calc-1-1.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
 
-Using the Specificity formula, we can see that the first selector is <strong>(0, 2, 0)</strong> and the second selector is <strong>(0, 1, 0)</strong>. We can see the first selector clearly has a higher selector than the second, which is why the selector takes precedence.
+Using the Specificity formula, we can see that the first selector is <strong>(0, 1, 1)</strong> and the second selector is <strong>(0, 1, 0)</strong>. We can see the first selector clearly has a higher selector than the second, which is why the selector takes precedence.
 
 Ok, so how can we make the intro selector override the <code>.home p</code> selector? What if we add an element to the selector? We really only want <code>intro</code> to apply to paragraphs, anyway:
 
@@ -184,9 +184,9 @@ p.intro {
 </code></pre>
 </div>
 
-<img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specificity-calc-1-2.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
+<img src="/assets/images/blog-imgs/2018-09-10-css-specificity/specif-calc-1-2.png" class="specificity-calculation" alt="Visualization of the specificity" title="Visualization of the specificity">
 
-Now when we look at the the specificity values, we’ll see they BOTH have <strong>(0, 2, 0)</strong>. So what happens now? In this case, the <strong>Cascading Order</strong> tells us that the <code>p.intro</code> selector will take precedence, because it occurs after the <code>.home p</code> selector. _It’s all coming together._
+Now when we look at the the specificity values, we’ll see they BOTH have <strong>(0, 1, 1)</strong>. So what happens now? In this case, the <strong>Cascading Order</strong> tells us that the <code>p.intro</code> selector will take precedence, because it occurs after the <code>.home p</code> selector. _It’s all coming together._
 
 let's take a look at another example:
 
