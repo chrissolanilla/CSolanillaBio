@@ -243,8 +243,8 @@ Now that we understand how CSS Specificity and the Cascade Order work, let's thr
 <span class="code-sample-title">quotes.html</span>
 <pre><code data-language="html">&lt;head&gt;
   &lt;style&gt;
-    &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;quote.css&rdquo;&gt;
     &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;styles.css&rdquo;&gt;
+    &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;quotes.css&rdquo;&gt;
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -286,14 +286,14 @@ Now that we understand how CSS Specificity and the Cascade Order work, let's thr
 </code></pre>
 </div>
 
-When rendered in the browser, this looks like the following:
+Notice in this example that I've included <strong>styles.css</strong> and <strong>quotes.css</strong> in the <code><head></code> of <strong>quotes.html</strong>. When rendered in the browser, this looks like the following:
 
 ![We don't make mistakes. We just have happy accidents. There's nothing wrong with having a tree as a friend.](/assets/images/blog-imgs/2018-09-10-css-specificity/test-2-2.png "We don't make mistakes. We just have happy accidents. There's nothing wrong with having a tree as a friend.")
 
 As you can see, the color of the text is green. The <code>p</code> selector in <code>quotes.css</code> attempts to select all p tags and set them to orange <strong>(0, 0, 1)</strong>, but the id of the <code>#top p</code> selector <strong>(1, 0, 1)</strong> takes precedence. What we could do technically is add <code>!important</code> to the <code>quotes.css p</code> selector. let's see what happens:
 
 <div class="code-sample">
-<span class="code-sample-title">quote.css</span>
+<span class="code-sample-title">quotes.css</span>
 <pre><code data-language="css">p {
   color: orange !important;
 }
@@ -317,8 +317,8 @@ Anyway, back to our example. let's imagine we're a new developer on the project 
 <div class="code-sample">
 <span class="code-sample-title">quotes.html</span>
 <pre><code data-language="html">&lt;head&gt;
-  &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;quote.css&rdquo;&gt;
   &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;styles.css&rdquo;&gt;
+  &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;quotes.css&rdquo;&gt;
   &lt;style&gt;
     p {
       color: cyan;
@@ -363,12 +363,13 @@ Even though the cyan selector now has a specificity of <strong>(1, 3, 2)</strong
 To wrap up, I don’t think you necessarily need to calculate the specificity of all your selectors. But it helps to keep it in mind when you’re writing your CSS. Personally I try to avoid using id selectors when I can. The fact that they can override any class selector can make your CSS difficult to figure out pretty quickly. And once that starts, it’s only a matter of time before you or someone else may resort to using <code>!important</code> just to get something to work. Which, you know, is a pretty horrifying prospect. To summarize:
 
 * Remember that id selectors always take priority over class selectors
-* <code>!important</code> should never be used, but when you absolutely have to, use them sparingly (but don't use them!).
+* <code>!important</code> should never be used, but when you absolutely have to, use them sparingly (but don't use them!)
 * Bonus tip: avoid using inline styles if you can
+* Don't use <code>!important</code>
 
 ## Links & Notes
 
 * [CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 * [W3C: Calculating a selector's specificity](https://www.w3.org/TR/selectors-3/#specificity)
 * [CSS Tutorial #5: Cascading Order and Inheritance](https://www.mrc-productivity.com/techblog/?p=769)
-* This post was partially adapted from a presentation I gave on CSS Specificity.
+* Note: This post was partially adapted from a presentation I gave on CSS Specificity
