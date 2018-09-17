@@ -34,9 +34,11 @@
 <!-- Time Ago Plugin -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
 
+{% if page.date %}
 <!-- Rainbow (Syntax Highlighting) -->
 <link rel="stylesheet" href="{{ "/assets/vendor/rainbow/github.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "/assets/vendor/rainbow/rainbow-overrides.css" | relative_url }}">
+{% endif %}
 
 {% if page.css %}
 {% assign page_css = page.css | prepend: "/assets/css/" %}
@@ -84,8 +86,11 @@ timeago().render(document.querySelectorAll('.timeago'), 'custom_local');
 timeago.cancel()
 </script>
 
+{% if page.date %}
 <!-- Rainbow (Syntax Highlighting) -->
 <script src="{{ "/assets/vendor/rainbow/rainbow-custom.min.js" | relative_url }}"></script>
+{% endif %}
+
 </body>
 
 </html>
