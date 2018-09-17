@@ -35,9 +35,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
 
 {% if page.date %}
-<!-- Rainbow (Syntax Highlighting) -->
-<link rel="stylesheet" href="{{ "/assets/vendor/rainbow/github.css" | relative_url }}">
-<link rel="stylesheet" href="{{ "/assets/vendor/rainbow/rainbow-overrides.css" | relative_url }}">
+<!-- Prism -->
+<link rel="stylesheet" href="{{ "/assets/vendor/prism/prism.css" | relative_url }}">
 {% endif %}
 
 {% if page.css %}
@@ -87,8 +86,8 @@ timeago.cancel()
 </script>
 
 {% if page.date %}
-<!-- Rainbow (Syntax Highlighting) -->
-<script src="{{ "/assets/vendor/rainbow/rainbow-custom.min.js" | relative_url }}"></script>
+<!-- Prism -->
+<script src="{{ "/assets/vendor/prism/prism.js" | relative_url }}"></script>
 {% endif %}
 
 </body>

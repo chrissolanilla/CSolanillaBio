@@ -26,7 +26,7 @@ As an example let's say we had an HTML document with say, one paragraph tag, wit
 
 <div class="code-sample">
 <span class="code-sample-title">home.html</span>
-<pre><code data-language="html">&lt;p class=&quot;intro&quot;&gt;
+<pre><code class="language-markup">&lt;p class=&quot;intro&quot;&gt;
   Whoever is careless with the truth in small matters cannot be trusted with important matters.
 &lt;/p&gt;
 </code></pre>
@@ -36,7 +36,7 @@ In our CSS file, <code>content.css</code>, we have the following style definitio
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
-<pre><code data-language="css">.intro {
+<pre><code class="language-css">.intro {
   font-family: ‘Helvetica Neue’;
   color: green;
 }
@@ -51,7 +51,7 @@ Now, let's say we decided to add the following CSS into the <code><head></code> 
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
-<pre><code data-language="css">.intro {
+<pre><code class="language-css">.intro {
   color: navy;
 }
 </code></pre>
@@ -65,7 +65,7 @@ Now, as a final addition, let's add an inline style to the paragraph:
 
 <div class="code-sample">
 <span class="code-sample-title">home.html</span>
-<pre><code data-language="html">&lt;p class=&quot;intro&quot; style=&quot;color: brown;&quot;&gt;
+<pre><code class="language-markup">&lt;p class=&quot;intro&quot; style=&quot;color: brown;&quot;&gt;
   Whoever is careless with the truth in small matters cannot be trusted with important matters.
 &lt;/p&gt;
 </code></pre>
@@ -84,7 +84,7 @@ With the Cascading Order, we were able to know how styles are overridden based o
 Let's go back to our paragraph example, but this time let's remove the inline style (since inline styles are generally not a good idea). While we're at it, let's go ahead and remove all the CSS declarations from the <code><head></code> as well as <code>content.css</code>. For the sake of this example, I'm also going to throw in another paragraph:
 
 <div class="code-sample">
-<pre><code data-language="html">&lt;body class=&quot;home&quot;&gt;
+<pre><code class="language-markup">&lt;body class=&quot;home&quot;&gt;
   &lt;p class=&quot;intro&quot;&gt;Whoever is careless with the truth in small matters cannot be trusted with important matters.&lt;/p&gt;
 
   &lt;p&gt;Excerpt from Albert Einstein's last statement, April, 1955, translated here into English from German.&lt;/p&gt;
@@ -96,7 +96,7 @@ Let's add a style to the now empty <code>content.css</code>:
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
-<pre><code data-language="css">p {
+<pre><code class="language-css">p {
   font-family: ‘Helvetica Neue’;
 }
 </code></pre>
@@ -106,7 +106,7 @@ This will style all p tags with the font Helvetica Neue. For paragraph tags with
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
-<pre><code data-language="css">p {
+<pre><code class="language-css">p {
   font-family: 'Helvetica Neue';
   font-size: 18px;
 }
@@ -125,7 +125,7 @@ Now, let's say someone took a look at our CSS and wanted to make the first selec
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
-<pre><code data-language="css">.home p {
+<pre><code class="language-css">.home p {
   font-family: ‘Helvetica Neue’;
   font-size: 18px;
 }
@@ -152,7 +152,7 @@ The Specificity is written as <code>a, b, c</code>. Why the comma-separated nota
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
-<pre><code data-language="css">.home p {
+<pre><code class="language-css">.home p {
   font-family: ‘Helvetica Neue’;
   font-size: 18px;
 }
@@ -173,7 +173,7 @@ Ok, so how can we make the intro selector override the <code>.home p</code> sele
 
 <div class="code-sample">
 <span class="code-sample-title">content.css</span>
-<pre><code data-language="css">.home p {
+<pre><code class="language-css">.home p {
   font-family: ‘Helvetica Neue’;
   font-size: 18px;
 }
@@ -192,7 +192,7 @@ Let's take a look at another example:
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.html</span>
-<pre><code data-language="html">&lt;body&gt;
+<pre><code class="language-markup">&lt;body&gt;
   &lt;div class=&rdquo;container&rdquo; id=&rdquo;top&rdquo;&gt;
     &lt;p class=&rdquo;quote&rdquo;&gt;We don't make mistakes. We just have happy accidents.&lt;/p&gt;
   &lt;/div&gt;
@@ -202,7 +202,7 @@ Let's take a look at another example:
 
 <div class="code-sample">
 <span class="code-sample-title">styles.css</span>
-<pre><code data-language="css">body {
+<pre><code class="language-css">body {
   font-family: 'Helvetica Neue';
   font-size: 18px;
 }
@@ -241,7 +241,7 @@ Now that we understand how CSS Specificity and the Cascade Order work, let's thr
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.html</span>
-<pre><code data-language="html">&lt;head&gt;
+<pre><code class="language-markup">&lt;head&gt;
   &lt;style&gt;
     &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;styles.css&rdquo;&gt;
     &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;quotes.css&rdquo;&gt;
@@ -262,7 +262,7 @@ Now that we understand how CSS Specificity and the Cascade Order work, let's thr
 
 <div class="code-sample">
 <span class="code-sample-title">styles.css</span>
-<pre><code data-language="css">body {
+<pre><code class="language-css">body {
   font-family: 'Helvetica Neue';
   font-size: 18px;
 }
@@ -280,7 +280,7 @@ Now that we understand how CSS Specificity and the Cascade Order work, let's thr
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.css</span>
-<pre><code data-language="css">p {
+<pre><code class="language-css">p {
   color: orange;
 }
 </code></pre>
@@ -294,7 +294,7 @@ As you can see, the color of the text is green. The <code>p</code> selector in <
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.css</span>
-<pre><code data-language="css">p {
+<pre><code class="language-css">p {
   color: orange !important;
 }
 </code></pre>
@@ -316,7 +316,7 @@ Anyway, back to our example. let's imagine we're a new developer on the project 
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.html</span>
-<pre><code data-language="html">&lt;head&gt;
+<pre><code class="language-markup">&lt;head&gt;
   &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;styles.css&rdquo;&gt;
   &lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;quotes.css&rdquo;&gt;
   &lt;style&gt;
@@ -346,7 +346,7 @@ Still orange. Maybe if we get more specific on our cyan p selector?
 
 <div class="code-sample">
 <span class="code-sample-title">quotes.css</span>
-<pre><code data-language="css">body #top.container .top-container .quote-container p {
+<pre><code class="language-css">body #top.container .top-container .quote-container p {
   color: cyan;
 }
 </code></pre>
