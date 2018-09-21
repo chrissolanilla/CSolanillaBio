@@ -2,6 +2,6 @@
 .ruby-version
 .DS_Store
 */.DS_Store
-vendor
+/vendor
 _site/
 node_modules
