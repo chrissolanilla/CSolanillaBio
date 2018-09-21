@@ -5,19 +5,19 @@ layout: default
 <main role="main" id="blogMain">
 	<div class="container blog-pg-container">
 		<div id="title">
-    		<h1>Blog</h1>
-    		<hr class="gold gold-about">
-	    </div>
+			<h1>Blog</h1>
+			<hr class="gold gold-about">
+		</div>
 
 		<ul>
-		  {% for post in site.posts %}
-		    <li>
-		      <p class="post-date">{{ post.date | date_to_string }}</p>
-		      <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-    		  <p class="post-excerpt">{{ post.excerpt }}</p>
-		      <hr class="hr-blog">
-		    </li>
-		  {% endfor %}
+			{% for post in site.posts %}
+			<li>
+				<p class="post-date">{{ post.date | date_to_string }}</p>
+				<a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+				<p class="post-excerpt">{{ post.excerpt }}</p>
+				<hr class="hr-blog">
+			</li>
+			{% endfor %}
 		</ul>
 	</div>
 </main>

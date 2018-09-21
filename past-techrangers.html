@@ -11,14 +11,12 @@ title: Past Techrangers
 		</div>
 
 		<section role="region" class="pagecontent" id="homepage">
-			
 			<div class="photogrid">
 				{% assign sorted = site.techrangers_past | sort: 'name' %}
 				{% for item in sorted %}
 					{% include person.html %}
 				{% endfor %}
 			</div>
-
 		</section>
 	</div>
 </main>
