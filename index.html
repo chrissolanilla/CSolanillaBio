@@ -115,20 +115,21 @@ document.getElementById("myNav").style.width = "0%";
       </div>
     </div>
 
-    <div class="row showcase-lp-row">
-      {% assign sorted = site.showcase | sort: 'name' %}
-      {% for item in sorted limit: 4 %}
+    {% assign sorted = site.showcase | sort: 'name' %}
+    {% for item in sorted limit: 4 %}
+    {% cycle '<div class="row showcase-lp-row">', '' %}
 
-        <div class="col-lg-6 showcase-lp-col-{% cycle 'right', 'left' %}">
-          <div class="hover-effect">
-            {% assign hash = item.name | slugify %}
-            <a href="{{ "/showcase.html#showcase-" | append: hash | relative_url }}">
-              <img src="{{ "/assets/images/showcase-logos/" | append: item.image | relative_url }}" class="img-fluid image" alt="{{ item.name }} Logo">
-            </a>
-          </div>
+      <div class="col-lg-6 showcase-lp-col-{% cycle 'right', 'left' %}">
+        <div class="hover-effect">
+          {% assign hash = item.name | slugify %}
+          <a href="{{ "/showcase.html#showcase-" | append: hash | relative_url }}">
+            <img src="{{ "/assets/images/showcase-logos/" | append: item.image | relative_url }}" class="img-fluid image" alt="{{ item.name }} Logo">
+          </a>
         </div>
-      {% endfor %}
-    </div>
+      </div>
+
+    {% cycle '', '</div>' %}
+    {% endfor %}
 
     <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View All Showcase Items</button></a>
   </div>
