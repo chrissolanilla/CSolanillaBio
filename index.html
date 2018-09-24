@@ -115,34 +115,23 @@ document.getElementById("myNav").style.width = "0%";
       </div>
     </div>
 
-    <div class="row showcase-lp-row">
-      <div class="col-lg-6 showcase-lp-col-right">
+    {% assign sorted = site.showcase | sort: 'name' %}
+    {% for item in sorted limit: 4 %}
+    {% cycle '<div class="row showcase-lp-row">', '' %}
+
+      <div class="col-lg-6 showcase-lp-col-{% cycle 'right', 'left' %}">
         <div class="hover-effect">
-          <img src="{{ "assets/images/showcase-logos/materia.svg" | relative_url }}" class="img-fluid image" alt="Materia logo">
+          {% assign hash = item.name | slugify %}
+          <a href="{{ "/showcase.html#showcase-" | append: hash | relative_url }}">
+            <img src="{{ "/assets/images/showcase-logos/" | append: item.image | relative_url }}" class="img-fluid image" alt="{{ item.name }} Logo">
+          </a>
         </div>
       </div>
 
-      <div class="col-lg-6 showcase-lp-col-left">
-        <div class="hover-effect">
-          <img src="{{ "assets/images/showcase-logos/obojobo.svg" | relative_url }}" class="img-fluid image" alt="Obojobo icon">
-        </div>
-      </div>
-    </div>
+    {% cycle '', '</div>' %}
+    {% endfor %}
 
-    <div class="row showcase-lp-row">
-      <div class="col-lg-6 showcase-lp-col-right">
-        <div class="hover-effect">
-          <img src="{{ "assets/images/showcase-logos/udoit.svg" | relative_url }}" class="img-fluid image" alt="UDOIT logo">
-        </div>
-      </div>
-
-      <div class="col-lg-6 showcase-lp-col-left">
-        <div class="hover-effect">
-          <img src="{{ "assets/images/showcase-logos/proctor-hub.svg" | relative_url }}" class="img-fluid image" alt="Proctor Hub logo">
-        </div>
-      </div>
-    </div>
-    <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View More</button></a>
+    <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View All Showcase Items</button></a>
   </div>
 </section>
 
@@ -176,7 +165,7 @@ document.getElementById("myNav").style.width = "0%";
       {% endfor %}
 
     </div>
-    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">More Posts</button></a>
+    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View All Posts</button></a>
   </div>
   <script>
   var txt = $('.card-text').text();

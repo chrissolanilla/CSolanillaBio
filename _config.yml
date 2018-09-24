@@ -43,6 +43,8 @@ collections:
     output: true
   techrangers_past:
     output: true
+  showcase:
+    output: false
 
 permalink: /:year/:month/:day/:title:output_ext
 
