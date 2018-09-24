@@ -4,23 +4,33 @@ Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](
 
 ## Setting up your environment
 
-If you are doing this for the first time run these commands:
+If you are doing this for the first time run these commands.
+
+Running Jekyll natively on your machine is preferred, so try that option first.
+
+If your file permissions are being a pain, or you want to use the same environment that jenkins uses to deploy - we've included a dockerfile you can use to build a reliable Docker container that has ruby and all the gems you need.
 
 ### Using Docker
+
+In the top directory of this project, run:
 
 `docker build --rm -t ruby-tr-site-build-container .`
 
 Here's a breakdown of that command:
 
 * `--rm`: remove container intermediate containers created when building
-* `-t ruby-tr-site-build-container`: tag the resulting image to make it esier to identify
+* `-t ruby-tr-site-build-container`: tag the resulting image to make it easier to identify
 * `.`: look in this directory for a dockerfile to use for building the image
 
 ### Just MacOS
 
+Use homebrew to install ruby, though you may not need to depending on the version included in OSX.
+
 `brew install ruby`
 
 `gem install bundle`
+
+... And finally in the root of this git project, run:
 
 `bundle install`
 
@@ -28,38 +38,52 @@ Here's a breakdown of that command:
 
 Once you start the jekyll server, you can view the site at [http://localhost:4000](http://localhost:4000) or [http://127.0.0.1:4000](http://127.0.0.1:4000).  It will rebuild every time you make a change.
 
+Depending on your setup, the following instructions should get your dev server running.
+
 ### Docker
 
-`docker run --rm -p 4000:4000 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec jekyll serve --host=0.0.0.0`
+`docker run --rm -p 4000:4000 -p 35729:35729 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake dev_docker`
 
 Here's a breakdown of that command:
 
+* `docker`: well, we're using the docker engine to do stuff
+* `run`: this will start a container and execute a command we provide
 * `--rm`: remove container after running
-* `-p 4000:4000`: connect this machine's port 4000 to the container's port 4000
+* `-p 4000:4000`: connect this machine's port 4000 to the container's port 4000 (we'll use for the website)
+* `-p 35729:35729`: port used for the livereload server
 * `-v "$(pwd)":/website`: mount a volume on the container, left side being the current directory `($pwd)`, right side being the place it's mounted in the container `/website`
-* `ruby-tr-site-build-container`: the docker image to use
-* `bundle exec jekyll serve --host=0.0.0.0`: the command being run inside the container
-* `--host=0.0.0.0`: causes jekyll to bind to 0.0.0.0 inside the container to make sure requests from our host are heard by jekyll
+* `ruby-tr-site-build-container`: the docker image to execute our command in
+* `bundle exec rake dev_docker`: the command being run inside the container (in this case our rake command)
 
 ### MacOS
 
-`bundle exec jekyll serve`
+Just `bundle exec rake dev`
 
 ## Build and Deploy
 
+### Rake tasks
+
+We've built a handful of rake tasks that are easy to use.  Note that these are used on Jenkins to deploy the website, so adding post-processing to the build_for_deploy script is an option.
+
+Run `rake -T` to list all available tasks
+
+```bash
+$ bundle exec rake -T
+
+rake build_for_deploy                                  # Build for deploy
+rake deploy_production[bucket]                         # Publish website to S3
+rake dev                                               # build and watch for dev
+rake invalidate_cdn_cache[cloudfront_distribution_id]  # Clears cache from cloudfront
+rake show_invalidations[cloudfront_distribution_id]    # show cloudfront invalidations
+```
+
 ### Docker
 
-`docker run --rm -v "$(pwd)":/website ruby-tr-site-build-container bundle exec jekyll build`
+`docker run --rm -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake build_for_deploy`
 
 ### MacOS
 
-`bundle exec jekyll build`
-
-## Bonus rake tasks
-
-`bundle exec rake deploy_production`
-
-`bundle exec rake invalidate_cdn_cache`
+`bundle exec rake build_for_deploy`
 
 ## Adding a Bio
 

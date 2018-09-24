@@ -16,11 +16,11 @@
 title: Techrangers
 email: techranges@ucf.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  The Techrangers® is a team of students at the Center for Distributed Learning, 
-  who provide course development for faculty and web/application development for 
+  The Techrangers® is a team of students at the Center for Distributed Learning,
+  who provide course development for faculty and web/application development for
   the University of Central Florida (UCF).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://techrangers.cdl.ucf.edu" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://techrangers.cdl.ucf.edu" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-36116523-10
 
 # Build settings
@@ -52,11 +52,10 @@ future: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - RAKEFILE
+  - Gemfile
+  - Gemfile.lock
+  - README.MD
+  - dockerfile
+  - vendor
