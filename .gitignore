@@ -1,5 +1,8 @@
 ._*
+.ruby-version
 .DS_Store
 */.DS_Store
+/vendor
 _site/
+node_modules
 vendor
