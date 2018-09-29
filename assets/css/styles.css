@@ -25,14 +25,14 @@ ul {
 }
 
 ul>li {
-	background-image: url('images/icons/bullet-point.svg');
+	background-image: url('../images/icons/bullet-point.svg');
 	background-position: 0 4px;
 	background-repeat: no-repeat;
 	padding-left: 25px;
 }
 
 ul>li>ul>li {
-	background-image: url('images/icons/yellow-square.svg');
+	background-image: url('../images/icons/yellow-square.svg');
 	background-size: 10px 10px;
 	background-position: 0 7px;
 }
@@ -120,21 +120,26 @@ a .lp-btn { color: #fff!important; }
 	height: 100vh;
 	background-color: #f8f8f8;
 	position: relative;
-	background-image: url("background-pattern.svg")
+	background-image: url("../images/background-pattern.svg")
 }
 
-#robot {
+#splash-page .navbar {
+	z-index: 20;
+}
+
+#robot-wrap {
 	width: 55%;
 	max-width: 600px;
 	float: right;
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	overflow: hidden;
+	z-index: 5;
 }
 
 #small-robot {
 	display: none;
-	widows: 60%;
 	margin: 0;
 	padding: 0;
 	bottom: 0;
@@ -148,6 +153,7 @@ a .lp-btn { color: #fff!important; }
 	text-align: center;
 	bottom: 0;
 	position: absolute;
+	z-index: 5;
 }
 
 #splash-page h1 {
@@ -158,6 +164,15 @@ a .lp-btn { color: #fff!important; }
 	padding-top: 13%;
 	letter-spacing: 2px;
 	color: #000;
+}
+
+#welcome {
+	width: 42%;
+	margin-left: 3%;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	z-index: 10;
 }
 
 #welcome h2 {
@@ -179,13 +194,6 @@ a .lp-btn { color: #fff!important; }
 	color: black;
 	letter-spacing: 1px;
 	margin-top: 4%;
-}
-
-#welcome {
-	width: 42%;
-	margin-left: 3%;
-	text-align: center;
-	font-weight: bold;
 }
 
 /* Navigation (homepage) --------------------------------------------------------------------- */
@@ -338,6 +346,11 @@ a .lp-btn { color: #fff!important; }
 
 .section-boxes h3,
 .section-boxes p { margin-top: 10px; }
+
+.section-boxes .image {
+	max-height: 64px;
+	max-width: : 64px;
+}
 
 /* Showcase LP --------------------------------------------------------------------- */
 #showcase { text-align: center; }
@@ -873,7 +886,7 @@ h4 {
 	border: none;
 }
 
-.footer-col ul img { width: 20px; }
+.footer-col ul img { width: 30px; }
 
 .separator { color: #ffc904; }
 
