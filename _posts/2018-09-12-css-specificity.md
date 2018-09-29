@@ -1,5 +1,4 @@
 ---
-layout:     blog-post-template
 title:      "CSS Specificity and why you shouldn't use !important."
 date:       2018-09-10 10:00:00 -0400
 categories: tech tutorial introduction css

@@ -31,11 +31,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-<!-- Time Ago Plugin -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
-
 {% if page.date %}
-<!-- Prism -->
+<!-- add Prism on pages with a date like blog posts -->
 <link rel="stylesheet" href="{{ "/assets/vendor/prismjs/prism.css" | relative_url }}">
 {% endif %}
 
@@ -51,7 +48,9 @@
 
 
 <body>
-{% include header.html %}
+{% if page.hide_header != true %}
+	{% include header.html %}
+{% endif %}
 
 <main class="page-content" aria-label="Content">
 <div class="wrapper">
@@ -61,32 +60,8 @@
 
 {% include footer.html %}
 
-<script>
-var custom_local_func = function(number, index, total_sec) {
-return [
-['', ''],
-['', ''],
-['', ''],
-['', ''],
-['', ''],
-['', ''],
-['(1 day)', ''],
-['(%s days)', ''],
-['(1 week)', ''],
-['(%s weeks)', ''],
-['(1 month)', ''],
-['(%s+ months)', ''],
-['(1+ year)', ''],
-['(%s+ years)', ''],
-][index];
-};
-timeago.register('custom_local', custom_local_func);
-timeago().render(document.querySelectorAll('.timeago'), 'custom_local');
-timeago.cancel()
-</script>
-
 {% if page.date %}
-<!-- Prism -->
+<!-- add Prism on pages with a date like blog posts -->
 <script src="{{ "/assets/vendor/prismjs/prism.js" | relative_url }}"></script>
 {% endif %}
 
