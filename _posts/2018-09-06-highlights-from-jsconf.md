@@ -4,6 +4,7 @@ title:      "Highlights from JSConf"
 date:       2018-09-06 14:29:01 -0600
 categories: conference jsconf
 image:      2018-09-06-highlights-from-jsconf.jpg
+youtube: https://www.youtube-nocookie.com/embed/8hYf-r-chFo
 author:     "Zachary Berry"
 ---
 
