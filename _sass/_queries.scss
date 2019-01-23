@@ -22,7 +22,7 @@ in order for the override the main styles.
 	.overlay-content a { font-size: 40px!important; }
 
 	/* Splash Page ----------------------- */
-	#splash-page { height: 85vh!important; }
+	#splash-page { height: 95vh!important; }
 
 	#welcome { width: 100%!important; }
 
@@ -33,7 +33,7 @@ in order for the override the main styles.
 		width: 90%!important;
 	}
 
-	#robot {
+	#robot-wrap {
 		display: none;
 	}
 
@@ -41,10 +41,6 @@ in order for the override the main styles.
 		display: inline-block!important;
 		width: 80%!important;
 		padding-bottom: 0;
-	}
-
-	#small-robot-wrap {
-		padding-left: 19%!important;
 	}
 
 	/* About Us LP ----------------------- */
@@ -115,14 +111,15 @@ in order for the override the main styles.
 		width: 80%!important;
 	}
 
-	#robot { display: none; }
+	#robot-wrap {
+		display: none;
+	}
 
 	#small-robot {
 		display: inline-block!important;
 		width: 40%!important;
 	}
 
-	#robot { width: 25%; }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -146,14 +143,14 @@ in order for the override the main styles.
 		width: 80%!important;
 	}
 
-	#robot { display: none; }
-
 	#small-robot {
 		display: inline-block!important;
 		width: 40%!important;
 	}
 
-	#robot { width: 25%; }
+	#robot-wrap {
+		display: none;
+	}
 
 	/* About LP ----------------------- */
 	/* this paragraph will only display on smaller screens*/
@@ -199,13 +196,6 @@ in order for the override the main styles.
 	.techtime-pg-row { text-align: center; }
 }
 
-@media (max-width: 768px) {
-
-	#robot { display: none; }
-
-	#small-robot { display: block!important; }
-}
-
 @media (min-width: 992px) and (max-width: 1199px) {
 
 	/* About LP ----------------------- */
@@ -214,16 +204,17 @@ in order for the override the main styles.
 
 @media (min-width: 1200px) {
 
-/*	body { background-color: red!important; }*/
-
-	/* About LP ----------------------- */
 	.about-lp-col p.about-responsive { display: none; }
 }
 
 @media only screen and (min-width: 1350px) {
 
-	#robot {
+	#robot-wrap {
 		width: 75%!important;
 		max-width: 850px!important;
+	}
+
+	#robot-wrap #robot {
+		transform: translate(141px, 140px) rotate(-22deg);
 	}
 }

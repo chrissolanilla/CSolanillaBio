@@ -27,13 +27,13 @@ ul {
 	list-style-type: none;
 
 	>li{
-		background-image: url('images/icons/bullet-point.svg');
+		background-image: url('../images/icons/bullet-point.svg');
 		background-position: 0 4px;
 		background-repeat: no-repeat;
 		padding-left: 25px;
 
 		>ul>li{
-			background-image: url('images/icons/yellow-square.svg');
+			background-image: url('../images/icons/yellow-square.svg');
 			background-size: 10px 10px;
 			background-position: 0 7px;
 		}
@@ -138,21 +138,39 @@ a .lp-btn { color: #fff!important; }
 	height: 100vh;
 	background-color: #f8f8f8;
 	position: relative;
-	background-image: url("background-pattern.svg");
+	background-image: url("../images/background-pattern.svg");
+
+	.navbar {
+		background: linear-gradient(rgba(80, 80, 80, 0.5), transparent)!important;
+		background-color: #ffc904;
+		min-height: 80px;
+
+		z-index: 20;
+		.navbar-brand{
+			color: rgba(0,0,0,0);
+		}
+	}
 }
 
-#robot {
+#robot-wrap {
 	width: 55%;
 	max-width: 600px;
 	float: right;
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#robot {
+	// graphic is over-sized so it isn't too small when angled
+	// to compensate, need to move it down when it's not at an angle
+	transform: translate(0, 80px);
 }
 
 #small-robot {
 	display: none;
-	widows: 60%;
 	margin: 0;
 	padding: 0;
 	bottom: 0;
@@ -166,6 +184,7 @@ a .lp-btn { color: #fff!important; }
 	text-align: center;
 	bottom: 0;
 	position: absolute;
+	z-index: 5;
 }
 
 #splash-page h1 {
@@ -183,6 +202,8 @@ a .lp-btn { color: #fff!important; }
 	margin-left: 3%;
 	text-align: center;
 	font-weight: bold;
+	position: relative;
+	z-index: 10;
 
 	h2 {
 		color: #fff;
@@ -208,11 +229,6 @@ a .lp-btn { color: #fff!important; }
 
 /* Navigation (homepage) --------------------------------------------------------------------- */
 /* homepage nav stylings ONLY */
-
-.bg-light {
-	background: linear-gradient(rgba(80, 80, 80, 0.5), transparent)!important;
-	background-color: #ffc904;
-}
 
 .navbar-inverse .navbar-brand {
 	color: #fff;
@@ -249,6 +265,9 @@ a .lp-btn { color: #fff!important; }
 	font-size: 30px;
 	cursor: pointer;
 	color: #fff;
+	position: absolute;
+	right: 20px;
+	top: 10px;
 }
 
 .nav-overlay {
@@ -324,28 +343,14 @@ a .lp-btn { color: #fff!important; }
 /* Services LP --------------------------------------------------------------------- */
 #services {
 	background-color: #2d2d2d;
+	color: #fff;
 	.services-lp-col {
 		margin-bottom: 25px;
-		h2,
-		p,
-		.section-boxes {
-			color: #fff;
-		}
-
-		h2{
-			animation-duration: 1000ms;
-			animation-delay: 0.3s;
-		}
-
-		hr { animation-delay: 0.3s; }
 	}
 
 	.services-lp-row { text-align: center; }
 
 	.section-boxes {
-		.animated {
-			animation-delay: 0.2s;
-		}
 		i {
 			color: #ffc904;
 		}
@@ -360,6 +365,11 @@ a .lp-btn { color: #fff!important; }
 			font-weight: 400;
 			font-size: 15px;
 			line-height: 35px;
+		}
+
+		.image {
+			max-height: 64px;
+			max-width: 64px;
 		}
 	}
 }
@@ -937,7 +947,7 @@ footer {
 			}
 
 			img {
-				width: 20px;
+				width: 30px;
 			}
 
 		}
