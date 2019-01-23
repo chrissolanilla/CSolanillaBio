@@ -1,5 +1,5 @@
 ---
-
+hide_header: true
 ---
 
 <script>
@@ -33,7 +33,6 @@ document.getElementById("myNav").style.width = "0%";
     </nav>
 
   <!-- Splash page -->
-  <!--  <div class="speech-bubble"><h1>Welcome to the Techrangers!</h1></div> -->
 
   <div id="welcome">
     <div class="row welcome-row">
@@ -43,9 +42,11 @@ document.getElementById("myNav").style.width = "0%";
       </div>
     </div>
   </div>
-  <img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/tr_robot_temp.png" | relative_url }}">
+  <div id="robot-wrap">
+    <img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/techrangers-robot-wave-vector.svg" | relative_url }}">
+  </div>
   <div id="small-robot-wrap">
-      <img id="small-robot" src="{{ "assets/images/robot/tr_smallscreen.png" | relative_url }}">
+      <img id="small-robot" src="{{ "assets/images/robot/techrangers-robot-vector.svg" | relative_url }}">
   </div>
 </section>
 
@@ -79,7 +80,7 @@ document.getElementById("myNav").style.width = "0%";
       <div class="row services-lp-row">
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
           <div class="section-boxes">
-            <img src="{{ "assets/images/icons/coding.png"  | relative_url }}" class="img-fluid image" alt="Learning Tools icon">
+            <img src="{{ "assets/images/icons/coding.svg"  | relative_url }}" class="img-fluid image" alt="Learning Tools icon">
             <h3>Learning Tools</h3>
             <p>Custom development of tools and integrations that improve the teaching and learning experience.</p>
           </div>
@@ -87,7 +88,7 @@ document.getElementById("myNav").style.width = "0%";
 
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
           <div class="section-boxes">
-            <img src="{{ "assets/images/icons/worker.png"  | relative_url }}" class="img-fluid image" alt="Data Engineering icon">
+            <img src="{{ "assets/images/icons/worker.svg"  | relative_url }}" class="img-fluid image" alt="Data Engineering icon">
             <h3>Data Engineering</h3>
             <p>Utilizing usage data to improve student performance, retention, and learning outcomes.</p>
           </div>
@@ -95,7 +96,7 @@ document.getElementById("myNav").style.width = "0%";
 
         <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col">
           <div class="section-boxes">
-            <img src="{{ "assets/images/icons/blackboard.png"  | relative_url }}" class="img-fluid image" alt="Course Development icon">
+            <img src="{{ "assets/images/icons/blackboard.svg"  | relative_url }}" class="img-fluid image" alt="Course Development icon">
             <h3>Course Development</h3>
             <p>Creating new online course content, modifying existing content, and evaluating courses for accessibility issues.</p>
           </div>

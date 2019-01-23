@@ -1,4 +1,4 @@
-/* 
+/*
 
 Due to Bootstrap, we do have to add "!important" to some stylings
 in order for the override the main styles.
@@ -6,9 +6,9 @@ in order for the override the main styles.
 */
 
 @media (max-width: 575.98px) {
-	
+
 	/* Navigation LP ----------------------- */
-	.bg-light { 
+	.bg-light {
 		background-color: #ffc904!important;
 		border-bottom: 2px solid #fff;
 	}
@@ -16,13 +16,13 @@ in order for the override the main styles.
 	/* Navbar Overlay ----------------------- */
 	.overlay-content {
 		margin: 0;
-    	top: 20%!important;
+		top: 20%!important;
 	}
 
 	.overlay-content a { font-size: 40px!important; }
 
 	/* Splash Page ----------------------- */
-	#splash-page { height: 85vh!important; }
+	#splash-page { height: 95vh!important; }
 
 	#welcome { width: 100%!important; }
 
@@ -32,8 +32,8 @@ in order for the override the main styles.
 	#welcome {
 		width: 90%!important;
 	}
-	
-	#robot {
+
+	#robot-wrap {
 		display: none;
 	}
 
@@ -43,9 +43,6 @@ in order for the override the main styles.
 		padding-bottom: 0;
 	}
 
-	#small-robot-wrap {
-		padding-left: 19%!important;
-	}
 
 	/* About Us LP ----------------------- */
 	.about-lp-col p.no-about-responsive { display: none; }
@@ -56,11 +53,11 @@ in order for the override the main styles.
 	/* Showcase LP ----------------------- */
 	.showcase-lp-row { padding-bottom: 0!important; }
 
-	.showcase-lp-col-right, 
+	.showcase-lp-col-right,
 	.showcase-lp-col-left { padding: 0 15px; }
 
 	/* Blog LP ----------------------- */
-	.blog-item-text h5 { 
+	.blog-item-text h5 {
 		text-align: center!important;
 		padding: 10px;
 	}
@@ -78,14 +75,14 @@ in order for the override the main styles.
 		display: inherit!important;
 	}
 
-	/* Showcase Page ----------------------- */ 
+	/* Showcase Page ----------------------- */
 	.showcase-pg-col:nth-child(2) { text-align: center; }
 
 	.showcase-pg-col h2 { padding: 10px; }
 
 	.showcase-pg-row { padding-bottom: 20px!important; }
 
-	/* Tech Time Page ----------------------- */ 
+	/* Tech Time Page ----------------------- */
 	.techtime-pg-row { text-align: center; }
 
 	/* Join Us Page ----------------------- */
@@ -115,14 +112,14 @@ in order for the override the main styles.
 		width: 80%!important;
 	}
 
-	#robot { display: none; }
+	#robot-wrap {
+		display: none;
+	}
 
 	#small-robot {
 		display: inline-block!important;
 		width: 40%!important;
 	}
-
-	#robot { width: 25%; }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -146,20 +143,20 @@ in order for the override the main styles.
 		width: 80%!important;
 	}
 
-	#robot { display: none; }
-
 	#small-robot {
 		display: inline-block!important;
 		width: 40%!important;
 	}
 
-	#robot { width: 25%; }
+	#robot-wrap {
+		display: none;
+	}
 
-	/* About LP ----------------------- */ 
+	/* About LP ----------------------- */
 	/* this paragraph will only display on smaller screens*/
 	.about-lp-col p.about-responsive { display: none; }
 
-	/* Showcase LP ----------------------- */ 
+	/* Showcase LP ----------------------- */
 	.showcase-lp-row { padding-bottom: 0!important; }
 
 	.showcase-col-right,
@@ -168,7 +165,7 @@ in order for the override the main styles.
 	/* Blog LP ----------------------- */
 	.blog-item-text h5 { text-align: center!important; }
 
-	.blog-item-text h5 a { 
+	.blog-item-text h5 a {
 		font-size: 30px!important;
 		padding: 15px;
 	}
@@ -186,7 +183,7 @@ in order for the override the main styles.
 		display: inherit!important;
 	}
 
-	/* Showcase Page ----------------------- */ 
+	/* Showcase Page ----------------------- */
 	.showcase-pg-col:nth-child(2) { text-align: center; }
 
 	.showcase-pg-col h2 { padding: 10px; }
@@ -195,35 +192,35 @@ in order for the override the main styles.
 
 	.showcase-pg-row { padding-bottom: 20px!important; }
 
-	/* Tech Time Page ----------------------- */ 
+	/* Tech Time Page ----------------------- */
 	.techtime-pg-row { text-align: center; }
-}
-
-@media (max-width: 768px) {
-	
-	#robot { display: none; }
-
-	#small-robot { display: block!important; }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
-	/* About LP ----------------------- */ 
+	/* About LP ----------------------- */
 	.about-lp-col p.about-responsive { display: none; }
+	#robot-wrap #robot{
+		transform: translate(70px, 30px) rotate(-22deg);
+	}
 }
 
 @media (min-width: 1200px) {
 
-/*	body { background-color: red!important; }*/
-	
-	/* About LP ----------------------- */ 
+	/* About LP ----------------------- */
 	.about-lp-col p.about-responsive { display: none; }
+	#robot-wrap #robot{
+		transform: translate(70px, 30px) rotate(-22deg);
+	}
 }
 
 @media only screen and (min-width: 1350px) {
-	
-	#robot {
+
+	#robot-wrap {
 		width: 75%!important;
 		max-width: 850px!important;
+	}
+	#robot-wrap #robot{
+		transform: translate(141px, 50px) rotate(-22deg);
 	}
 }
