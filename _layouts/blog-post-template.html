@@ -6,7 +6,14 @@ layout: default
 	<div class="row blog-post-template-row">
 		<div class="col-lg-12 blog-post-template-col">
 			<h1>{{ page.title }}</h1>
-			<img src="{{ "assets/images/blog-imgs/" | append: page.image | relative_url }}" class="img-fluid blog-img" alt="">
+			{% if page.youtube %}
+				<div class="youtube">
+					<iframe src="{{ page.youtube }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			{% else if page.image %}
+				<img src="{{ "assets/images/blog-imgs/" | append: page.image | relative_url }}" class="img-fluid blog-img" alt="{{ page.title }}">
+			{% endif %}
 			<div class="tr_desc">{{ content }}</div>
 			<p class="updated">This post was written by {{ page.author }}</p>
 		</div>

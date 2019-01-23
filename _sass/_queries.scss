@@ -43,7 +43,6 @@ in order for the override the main styles.
 		padding-bottom: 0;
 	}
 
-
 	/* About Us LP ----------------------- */
 	.about-lp-col p.no-about-responsive { display: none; }
 
@@ -120,6 +119,7 @@ in order for the override the main styles.
 		display: inline-block!important;
 		width: 40%!important;
 	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -200,18 +200,11 @@ in order for the override the main styles.
 
 	/* About LP ----------------------- */
 	.about-lp-col p.about-responsive { display: none; }
-	#robot-wrap #robot{
-		transform: translate(70px, 30px) rotate(-22deg);
-	}
 }
 
 @media (min-width: 1200px) {
 
-	/* About LP ----------------------- */
 	.about-lp-col p.about-responsive { display: none; }
-	#robot-wrap #robot{
-		transform: translate(70px, 30px) rotate(-22deg);
-	}
 }
 
 @media only screen and (min-width: 1350px) {
@@ -220,7 +213,8 @@ in order for the override the main styles.
 		width: 75%!important;
 		max-width: 850px!important;
 	}
-	#robot-wrap #robot{
-		transform: translate(141px, 50px) rotate(-22deg);
+
+	#robot-wrap #robot {
+		transform: translate(141px, 140px) rotate(-22deg);
 	}
 }

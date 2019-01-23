@@ -1,0 +1,968 @@
+---
+---
+@import "_reset";
+@import "_queries";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch /* for iOS devices */
+}
+
+body i {
+	font-family:'FontAwesome'!important
+}
+
+ul {
+	margin-left: 20px;
+	list-style-type: none;
+
+	>li{
+		background-image: url('../images/icons/bullet-point.svg');
+		background-position: 0 4px;
+		background-repeat: no-repeat;
+		padding-left: 25px;
+
+		>ul>li{
+			background-image: url('../images/icons/yellow-square.svg');
+			background-size: 10px 10px;
+			background-position: 0 7px;
+		}
+	}
+}
+
+
+p {
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+#about,
+#services,
+#showcase,
+#blog,
+#join-us,
+#footer {
+	padding: 50px 0;
+}
+
+.about-lp-row,
+.services-lp-row,
+.showcase-lp-row,
+.blog-lp-row,
+.join-us-lp-row {
+	text-align: center;
+}
+
+.about-lp-col,
+.showcase-pg-col,
+.blog-lp-col,
+.services-lp-col,
+.join-us-lp-text,
+.footer-col{
+	h2 {
+		font-size: 40px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+main a {
+	color: #000;
+	font-weight: 700;
+
+	a:hover{
+		text-decoration: underline;
+	}
+}
+
+
+a .lp-btn { color: #fff!important; }
+
+/* gold line below headers */
+.gold {
+	margin: auto;
+	width: 70px;
+	position: relative;
+	border-top: 2px solid #ffc904;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+/* if needed white line below headers */
+.white {
+	margin: auto;
+	width: 70px;
+	position: relative;
+	border-top: 2px solid #fff;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+/* main button stylings Tech Time page has different styling (see Tech Time section) */
+.btn {
+	padding: 15px;
+
+	a {
+		display: block;
+	}
+}
+
+
+.btn-dark {
+	border-color: #000;
+	background-color: #000;
+}
+
+.btn.btn-dark {
+	border-radius: 0;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+/* Splash Page --------------------------------------------------------------------- */
+#splash-page {
+	height: 100vh;
+	background-color: #f8f8f8;
+	position: relative;
+	background-image: url("../images/background-pattern.svg");
+
+	.navbar {
+		background: linear-gradient(rgba(80, 80, 80, 0.5), transparent)!important;
+		background-color: #ffc904;
+		min-height: 80px;
+
+		z-index: 20;
+		.navbar-brand{
+			color: rgba(0,0,0,0);
+		}
+	}
+}
+
+#robot-wrap {
+	width: 55%;
+	max-width: 600px;
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#robot {
+	// graphic is over-sized so it isn't too small when angled
+	// to compensate, need to move it down when it's not at an angle
+	transform: translate(0, 80px);
+}
+
+#small-robot {
+	display: none;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+
+#small-robot-wrap {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+	z-index: 5;
+}
+
+#splash-page h1 {
+	width: 100%;
+	font-size: 7em;
+	font-weight: 700;
+	margin: 0;
+	padding-top: 13%;
+	letter-spacing: 2px;
+	color: #000;
+}
+
+#welcome{
+	width: 42%;
+	margin-left: 3%;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	z-index: 10;
+
+	h2 {
+		color: #fff;
+		width: 100%;
+		text-align: center;
+		border-radius: 5px;
+		background-color: #000;
+		display: inline-block;
+		padding: 0px 15px 5px 15px;
+		letter-spacing: 1px;
+		font-size: 3em;
+		margin-top: 0;
+		margin-left: 3%;
+	}
+
+	h3 {
+		font-size: 2.5em;
+		color: black;
+		letter-spacing: 1px;
+		margin-top: 4%;
+	}
+}
+
+/* Navigation (homepage) --------------------------------------------------------------------- */
+/* homepage nav stylings ONLY */
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/* Navigation (other pages) --------------------------------------------------------------------- */
+/* use these stylings for nav of all other pages (except Homepage) */
+
+.bg-dark {
+	background-color: #ffc904!important;
+
+	a.navbar-brand {
+		color: #fff;
+		font-size: 25px;
+		letter-spacing: 1px;
+		text-shadow: 1px 1px #000;
+	}
+}
+
+
+/* Navigation Overlay --------------------------------------------------------------------- */
+
+/* styles applyed ONLY to homepage overlay */
+.hp-nav .overlay-content a { letter-spacing: 2px; }
+
+.hp-nav .overlay-content a,
+.hp-nav .closebtn { text-decoration: none!important;  }
+
+/* styles for both homepage nav(.hp-nav) and the other pages(.bg-dark) nav */
+.nav-span {
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+.nav-overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+
+	a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 50px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		font-weight: 400!important;
+
+		@media screen and (max-height: 450px){
+			font-size: 20px;
+		}
+
+		&:hover,
+		&:focus {
+			color: #f1f1f1;
+		}
+	}
+
+	.closebtn {
+		position: absolute;
+		top: 20px;
+		right: 5px;
+		font-size: 60px;
+
+		@media screen and (max-height: 450px){
+			font-size: 40px;
+			top: 15px;
+			right: 35px;
+		}
+	}
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+/* About LP --------------------------------------------------------------------- */
+.about-lp-col{
+	h2 { margin-bottom: 25px; }
+	p { line-height: 40px!important; }
+	a.cdl-link {
+		color: #000!important;
+		font-weight: 700;
+	}
+	a.cdl-link:hover {
+		color: #000;
+		text-decoration: underline;
+	}
+	button { margin-top: 15px; }
+}
+
+
+/* Services LP --------------------------------------------------------------------- */
+#services {
+	background-color: #2d2d2d;
+	color: #fff;
+	.services-lp-col {
+		margin-bottom: 25px;
+	}
+
+	.services-lp-row { text-align: center; }
+
+	.section-boxes {
+		i {
+			color: #ffc904;
+		}
+		h3 {
+			margin-top: 10px;
+			letter-spacing: 2px;
+			font-size: 18px;
+			font-weight: 400;
+		}
+		p {
+			margin-top: 10px;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 35px;
+		}
+
+		.image {
+			max-height: 64px;
+			max-width: 64px;
+		}
+	}
+}
+
+
+
+/* Showcase LP --------------------------------------------------------------------- */
+#showcase {
+	text-align: center;
+	h2 {
+		font-size: 40px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+	button.btn.btn-dark { margin-top: 25px; }
+	.showcase-lp-row {
+		padding-bottom: 10px;
+		h2 { margin-bottom: 25px; }
+		.right { padding-right: 5px; }
+		.left { padding-left: 5px; }
+	}
+}
+
+
+
+
+/* Blog LP --------------------------------------------------------------------- */
+#blog {
+	background-color: #f8f8f8;
+	text-align: center;
+
+	.blog-lp-col {
+		padding-bottom: 25px;
+		h2 { color: #000; }
+	}
+
+	.blog-item-text {
+		text-align: left;
+		h5 {
+			font-size: 1.5rem;
+			padding: 5px 0;
+			a {
+				color: #000;
+				letter-spacing: 1px;
+				font-weight: 700;
+			}
+		}
+		p {
+			line-height: 25px;
+			font-size: 14px;
+			margin-top: .75rem;
+		}
+	}
+
+	.blog-meta a {
+		font-weight: 700;
+		&:hover{
+			color: #000!important;
+			text-decoration: underline;
+		}
+	}
+
+	.meta-tags {
+		text-align: left;
+		margin-top: .75rem;
+	}
+
+	.lp-btn { margin-top: 25px; }
+}
+
+
+
+/* Join Us LP --------------------------------------------------------------------- */
+#join-us {
+	text-align: center;
+	.join-us-lp-text p { padding-bottom: 25px; }
+
+}
+
+
+/* About Us Page --------------------------------------- */
+#aboutmain{
+
+	#title h1 {
+		color: #000;
+		background-color: transparent;
+		font-size: 50px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		margin-top: 50px;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	h2.lst-header {
+		color: #000;
+		font-size: 40px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	hr.gold-about {
+		margin-top: 0;
+	}
+
+	p.mission {
+		font-weight: 400;
+		letter-spacing: 1px;
+		line-height: 30px!important;
+		text-align: center;
+	}
+
+	hr.gold-lst {
+		margin-top: 15px;
+	}
+
+	.trpic {
+		width: 250px;
+		vertical-align: top;
+		display: inline-block;
+		margin: 10px;
+		padding-top: 20px;
+		text-align: center;
+
+		img {
+			height: 250px;
+			width: 250px;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 15px;
+			box-shadow: 0 5px 5px -2px #AAA;
+			transition: .1s ease-in-out;
+		}
+
+		a{
+			&:link,
+			&:active,
+			&:visited{
+				text-decoration: none;
+			}
+			&:hover{
+				text-decoration: underline;
+
+				img{
+					transform: scale(1.05);
+				}
+			}
+		}
+
+		.name {
+			display: block;
+			color: #000;
+		}
+		.title {
+			display: block;
+			font-size: .9em;
+		}
+
+		.hiredate{
+			font-size: .8em;
+		}
+	}
+
+
+}
+
+
+/* Individual Bio Page --------------------------------------- */
+.profile-pg-container{
+	img {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.updated {
+		float: right;
+		font-style: italic;
+		margin: 0;
+	}
+
+	.profile-pg-col h1 {
+		color: #000;
+		background-color: transparent;
+		font-size: 2em;
+		font-weight: 700;
+		letter-spacing: 2px;
+		margin-top: 5px;
+		padding: 0;
+	}
+
+	.tr_desc {
+		padding: 15px 0px 15px 0px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		p {
+			padding-bottom: 15px;
+		}
+	}
+
+	.tr_img {
+		margin-top: 5%;
+		text-align: center;
+	}
+
+	.tr_header {
+		font-weight: bold;
+		font-size: 1.2em;
+		letter-spacing: 1px;
+	}
+
+}
+/* Blog Post Archive Page ------------------------------------- */
+#blogMain{
+	h1 {
+		color: #000;
+		background-color: transparent;
+		font-size: 50px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	li {
+		background: none;
+		padding-left: 0px;
+	}
+
+	.post-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+	 }
+
+	.blog-pg-container { padding-top: 50px; }
+
+	.blog-pg-container a { color: #000!important; }
+
+	.blog-pg-container a:hover {
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.blog-pg-container .hr-blog { margin: 50px 0; }
+
+	.blog-pg-container .post-excerpt,
+	.blog-pg-container .post-date { margin-bottom: 15px; }
+
+	.blog-pg-container .post-date { color: #7a7a7a; }
+}
+
+
+/* Individual Blog Post Template --------------------------------------------------------------------- */
+.blog-post-template-container{
+
+	padding-left: 25px;
+	padding-right: 25px;
+
+	.blog-post-template-col h1 {
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		padding: 25px 0;
+	}
+
+	.youtube{
+		position: relative;
+		padding-bottom: 56.25%;  /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		margin-bottom: 20px;
+
+		iframe{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+	li {
+		margin: 1% 0px 1% 0px;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+		margin-top: 25px;
+	}
+
+	h3 {
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+		margin-top: 25px;
+	}
+
+	img {
+		margin: 0 auto;
+		margin-bottom: 20px;
+		height: auto;
+		display:block;
+		max-width: 100%;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	pre {
+		margin-bottom: 0;
+	}
+
+	.code-sample {
+		padding: 6px 0;
+		line-height: 19px;
+		border-radius: 3px;
+		margin-bottom: 20px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+
+		.code-sample-title {
+			color: #8c8c8c;
+			display: block;
+			font-size: 90%;
+			font-weight: normal;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+/* Tech Times Page ------------------------------------- */
+.techtime-pg-col h2 {
+	color: #000;
+	background-color: transparent;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-top: 5px;
+	padding: 0;
+	text-align: center;
+}
+
+.techtime-pg-col a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.btn-center {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.btn-center a {
+	color: #fff;
+	font-weight: 400;
+}
+
+.btn-center a:hover {
+	color:  #ffc904;
+	text-decoration: none;
+}
+
+/* Past Tech Times Page ------------------------------------- */
+.tr_title, .past-techtime-header {
+	font-size: 2em;
+}
+
+.past-techtime-header {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.past-techtime-date {
+	font-style: italic;
+}
+
+.past-techtime-desc {
+	padding: 1% 5% 2% 5%;
+}
+
+/* Join Us Page ------------------------------------- */
+#joinusmain h1 {
+	color: #000;
+	background-color: transparent;
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-top: 50px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.join-us-pg-col h2 {
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.join-us-pg-container a {
+	color: #000;
+	font-weight: 700;
+}
+
+.join-us-pg-container a:hover {
+	color: #000!important;
+	text-decoration: underline!important;
+}
+
+p.skills-par {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.join-us-pg-container p {
+	padding-top: 15px;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+p.email-us {
+	padding-bottom: 20px;
+}
+
+.join-us-text a {
+	color: #ffc904;
+}
+
+.join-us-text a:hover {
+	color: #000;
+}
+
+.join-us-text p {
+	line-height: 30px;
+}
+
+.join-us-pg-container li {
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+.join-us-pg-container ul {
+	padding-top: 25px;
+}
+
+.join-us-pg-container ul>li>ul {
+	padding-top: 15px;
+}
+
+.join-us-pg-container ul>li>ul>li:last-child {
+	padding-bottom: 0px;
+}
+
+.join-us-pg-container p,
+.join-us-pg-container h3 {
+	padding-top: 15px;
+}
+
+.join-us-pg-container h3 {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+hr.divider {
+	padding-top: 15px;
+}
+
+/* Showcase stuff ------------------------------------- */
+#title {
+	margin-bottom: 80px;
+}
+
+#showcasemain h1 {
+	color: #000;
+	background-color: transparent;
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-top: 50px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.showcase-pg-row {
+	padding-bottom: 20px;
+}
+
+.showcase-pg-col h2 {
+	font-size: 25px;
+}
+
+.showcase-pg-col a {
+	color: #000;
+	font-weight: 700;
+}
+
+.showcase-pg-col a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.showcase-pg-container {
+	margin-bottom: 50px;
+}
+
+/* Footer --------------------------------------------------------------------- */
+footer {
+	text-align: center;
+	background-color: #2d2d2d;
+	margin-top: 20px;
+
+	h4 {
+		color: #fff;
+		font-size: 25px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		padding-top: 15px;
+	}
+
+	.footer-col {
+		.copy {
+			color: grey;
+			font-size: 10px;
+			letter-spacing: 2px;
+			margin-top: 20px;
+		}
+
+		ul {
+			color: #fff;
+			margin-left: 0;
+			list-style-type: none;
+			background: none;
+
+			a{
+				color: #fff;
+				text-decoration: none;
+
+				&:hover {
+					color: #ffc904;
+					text-decoration: underline;
+				}
+			}
+
+			> li {
+				background: none;
+				display: inline-block;
+				padding: 5px;
+				letter-spacing: 2px;
+			}
+
+			&.bottom-nav > li {
+				padding: 0px 8px 0px 5px;
+				margin: 5px 0;
+				border-right: 2px solid #ffc904;
+
+				&:last-child{
+					border: none;
+				}
+			}
+
+			img {
+				width: 30px;
+			}
+
+		}
+	}
+
+}
+
+
+/* Helper classes for smart developers ) ------------------------------------- */
+.center { text-align: center; }
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after { clear: both; }
+.no-margin { margin: 0; }
+
