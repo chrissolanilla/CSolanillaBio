@@ -29,6 +29,15 @@ markdown: kramdown
 defaults:
   - scope:
       path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: blog-post-template
+  - scope:
+      path: ""
       type: techrangers_current
     values:
       layout: profile
