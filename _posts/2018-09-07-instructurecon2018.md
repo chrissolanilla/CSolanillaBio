@@ -1,5 +1,4 @@
 ---
-layout:     blog-post-template
 title:      "InstructureCon 2018 Review"
 date:       2018-09-07 10:00:00 -0400
 categories: conference instructurecon presentation udoit

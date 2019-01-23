@@ -1,5 +1,4 @@
 ---
-layout:     blog-post-template
 title:      "Highlights from JSConf"
 date:       2018-09-06 14:29:01 -0600
 categories: conference jsconf
