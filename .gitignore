@@ -1,6 +1,7 @@
 ._*
 .ruby-version
 .DS_Store
+.sass-cache
 */.DS_Store
 /vendor
 _site/
