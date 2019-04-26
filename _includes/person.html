@@ -1,10 +1,10 @@
-{% assign thumbnail = "no_photo.jpg" %}
+{% assign thumbnail = "no_photo.png" %}
 {% if item.thumbnail %}
 	{% assign thumbnail = item.thumbnail %}
 {% endif %}
 
         <div itemscope itemtype="http://schema.org/Person" class="trpic">
-          <a href="{% if item.override_url %}{{ item.override_url }}{% else %}{{ item.url }}{% endif %}">
+            <a href="{{ item.url }}">
             <img itemprop="image" src="{{ "assets/images/bios/" | append: thumbnail | relative_url }}"  alt="Photo of {{ item.name }}" />
             <span itemprop="name" class="name">{{ item.name }}</span>
             <span itemprop="title" class="title techranger">{{ item.title }}</span>
