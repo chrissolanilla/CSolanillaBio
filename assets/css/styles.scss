@@ -449,6 +449,86 @@ a .lp-btn { color: #fff!important; }
 
 }
 
+.container.card{
+	margin: 50px;
+	padding: 20px;
+	// max-width: 800px;
+	margin: 50px auto;
+}
+
+.container.card.stats {
+	background-color: #ffc904;
+}
+
+.container.card .col{
+	text-align: center;
+}
+
+.container.card .row{
+	margin-bottom: 10px;
+}
+
+.container canvas{
+	margin-bottom: 40px;
+}
+
+.container .stats-table{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container .stats-table th{
+	padding-left: 20px;
+}
+
+.container .stats-table tr{
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.container .stats-table td{
+	padding: 20px;
+}
+
+.container .stats-table tr:last-child{
+	border-bottom: 0;
+}
+
+.container .stats-table td.value{
+	text-align: right;
+}
+
+
+.stat-label{
+	display: block;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin-top: -20px;
+}
+
+.stat-fact{
+	display: block;
+	font-weight: 600;
+	font-size: 2em;
+
+}
+
+.stat-fact .digits{
+	font-size: 2em;
+}
+
+
+.hidden {
+	display: none;
+}
+
+.container .stats-table.degrees .hideable th {
+	padding-left: 30px;
+}
+.container .stats-table.degrees .hideable th:before {
+	content: ">";
+	padding-right: 10px;
+}
+
 
 /* About Us Page --------------------------------------- */
 #aboutmain{

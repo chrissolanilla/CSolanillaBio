@@ -1,23 +1,167 @@
 ---
 title: Past Techrangers
 ---
+{% assign sorted = site.techrangers_past | sort: 'name' %}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes@latest/dist/chartjs-plugin-colorschemes.min.js"></script>
+
 <main role="main" id="aboutmain">
 	<div class="container">
-		<!-- main content -->
 		<div id="title">
 			<h1 class="past-tr">Past Techrangers</h1>
 			<hr class="gold gold-about">
 		</div>
+        <div class="row about-us-pg-row">
+          <div class="col-lg-12 about-us-pg-col">
+            <p class="mission">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age. <a href="{{ "/about.html" | relative_url }}">View current Techrangers here.</a></p>
+          </div>
+        </div>
+	</div>
 
+	<div class="container">
 		<section role="region" class="pagecontent" id="homepage">
+
 			<div class="photogrid">
-				{% assign sorted = site.techrangers_past | sort: 'name' %}
 				{% for item in sorted %}
 					{% include person.html %}
 				{% endfor %}
 			</div>
 		</section>
 	</div>
+
+  <div class="container">
+
+      <h2 class="lst-header">Techrangers Stats</h2>
+      <hr class="gold gold-lst">
+
+        <div class="row about-us-pg-row">
+          <div class="col-lg-12 about-us-pg-col">
+            <p class="mission">UCF has been offering online courses since 1996! Over the years, we've changed a lot, so here's a few statistics about the people who've worked here.</a></p>
+          </div>
+        </div>
+
+  </div>
+
+  {% assign current_count = site.techrangers_current | size %}
+  {% assign current_full_timers = site.techrangers_current | where_exp: "item", "item.full_time" %}
+  {% assign current_full_time_count = current_full_timers | size %}
+  {% assign was_part_time = current_full_timers | where_exp: "item", "item.was_part_time" %}
+  {% assign was_part_time_count = was_part_time | size %}
+  <div class="container card stats">
+    <div class="row">
+      <div class="col">
+        <span class="stat-fact"><span class="digits">{{ site.tr.tr_count }}</span> All Time</span>
+        <span class="stat-label">Techrangers</span>
+      </div>
+      <div class="col">
+        <span class="stat-fact"><span class="digits">8</span> months</span>
+        <span class="stat-label">Average Tenure</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span class="stat-fact"><span class="digits">{{ site.tr.total_jobs }}</span></span>
+        <span class="stat-label">Industry jobs held by Techrangers</span>
+      </div>
+      <div class="col">
+        <span class="stat-fact"><span class="digits">{{ was_part_time_count | times: 1.0 | divided_by: current_full_time_count | times: 100 | round }}%</span></span>
+        <span class="stat-label">of full-time staff began part-time</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="row">
+      <div class="col">
+        <canvas id="gender-chart" width="200" height="200"></canvas>
+        <table class="stats-table">
+          <tbody>
+            {% for gender in site.tr.genders %}
+            <tr>
+              <th>{{ gender.title | capitalize }}</th>
+              <td class="value">{{ gender.count }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div class="col">
+        <canvas id="degrees-chart" width="200" height="200"></canvas>
+        <table class="stats-table degrees">
+          <tbody>
+            {% assign top_degrees = site.tr.degrees | combine_some_into: 'people', '>', 1, 'other' %}
+            {% for degree in top_degrees %}
+              <tr>
+                <th>{{ degree.title | capitalize }}</th>
+                <td class="value">{{ degree.people | size }}</td>
+              </tr>
+            {% endfor %}
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 {% include timeago_script.html %}
+
+<script>
+var ctx = document.getElementById('gender-chart').getContext('2d');
+var genderChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: [{% for gender in site.tr.genders %}'{{ gender.title | capitalize }}',{% endfor %}],
+    datasets: [{
+      label: 'Gender',
+      data: [{% for gender in site.tr.genders %}{{ gender.count }},{% endfor %}]
+    }]
+  },
+  options: {
+    legend: {
+      display: false,
+    },
+    title: {
+      display: true,
+      text: "Techranger Gender"
+    },
+    plugins: {
+      colorschemes: {
+      scheme: 'tableau.Tableau10'
+    }
+    }
+   }
+});
+
+{% assign sortedDegrees = site.tr.degrees | sort:"title" %}
+
+var ctx = document.getElementById('degrees-chart').getContext('2d');
+var degreesChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+
+    labels: [{% for degree in top_degrees %}'{{ degree.title }}',{% endfor %}],
+    datasets: [{
+      label: 'Degrees',
+      data: [{% for degree in top_degrees %}{{ degree.people | size }}, {% endfor %}]
+    }]
+  },
+  options: {
+    legend: {
+      display: false
+    },
+    title: {
+      display: true,
+      text: "Techranger Majors"
+    },
+    plugins: {
+      colorschemes: {
+      scheme: 'tableau.Tableau10'
+    }
+    }
+   }
+});
+
+</script>
