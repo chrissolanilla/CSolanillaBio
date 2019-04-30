@@ -13,7 +13,7 @@ layout: default
             {% if page.resigned %}
                 {% if page.date %}
                   <span class="resigndate title techranger">
-                  {{ page.title }}:  {{ page.date | date: "%m/%y" }} - {{ page.resigned | date: "%m/%y" }}
+                  {{ page.title }}:  {{ page.date | date: "%Y" }} - {{ page.resigned | date: "%Y" }}
                   </span>
                 {% endif %}
             {% else %}

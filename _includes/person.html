@@ -11,7 +11,7 @@
             {% if item.resigned %}
                 {% if item.date %}
                   <span class="resigndate title techranger">
-                    {{ item.date | date: "%m/%y" }} - {{ item.resigned | date: "%m/%y" }}
+                    {{ item.date | date: "%Y" }} - {{ item.resigned | date: "%Y" }}
                   </span>
                 {% endif %}
             {% else %}
