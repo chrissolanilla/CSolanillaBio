@@ -22,38 +22,40 @@
   <div class="container card stats">
     <div class="row">
       <div class="col">
-        <span class="stat-fact"><span class="digits">{{  current_count }}</span> Current</span>
-        <span class="stat-label">Techrangers</span>
+        <span class="stat-fact"><span class="digits">{{  current_count }}</span> People</span>
+        <span class="stat-label">Current Team</span>
       </div>
 
       <div class="col">
-        <span class="stat-fact"><span class="digits">{{ site.tr.tr_count }}</span> Total</span>
-        <span class="stat-label">Techrangers</span>
+        <span class="stat-fact"><span class="digits">{{ site.tr.tr_count }}</span> People</span>
+        <span class="stat-label">All Time Alumni</span>
       </div>
 
-    </div>
-    <div class="row">
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ site.tr.total_jobs }}</span></span>
-        <span class="stat-label">Industry jobs held by Techrangers</span>
-      </div>
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ was_part_time_count | times: 1.0 | divided_by: current_full_time_count | times: 100 | round }}%</span></span>
-        <span class="stat-label">of perminant staff began part-time</span>
-      </div>
     </div>
 
     <div class="row">
       <div class="col">
-        <span class="stat-fact"><span class="digits">8</span> months</span>
+        <span class="stat-fact"><span class="digits">{{ site.tr.dates_av_days | divided_by: 365 }}</span> years</span>
         <span class="stat-label">Average Tenure</span>
       </div>
 
       <div class="col">
         <span class="stat-fact"><span class="digits">{{ 'now' | date: "%Y" | minus: 1996 }}</span> years</span>
-        <span class="stat-label">ago the team started</span>
+        <span class="stat-label">We stared in 1996!</span>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col">
+        <span class="stat-fact"><span class="digits">{{ site.tr.total_jobs }}</span></span>
+        <span class="stat-label">Industry Jobs Held by Techrangers</span>
+      </div>
+      <div class="col">
+        <span class="stat-fact"><span class="digits">{{ was_part_time_count | times: 1.0 | divided_by: current_full_time_count | times: 100 | round }}%</span></span>
+        <span class="stat-label">of Staff started as Part-time</span>
+      </div>
+    </div>
+
   </div>
 
   <div class="container about-us-pg-container">
