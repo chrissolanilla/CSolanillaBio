@@ -14,7 +14,7 @@ title: Past Techrangers
 		</div>
         <div class="row about-us-pg-row">
           <div class="col-lg-12 about-us-pg-col">
-            <p class="mission">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age. <a href="{{ "/about.html" | relative_url }}">View current Techrangers here.</a></p>
+            <p class="mission">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age. <a href="{{ "/about.html" | relative_url }}">View current Techrangers.</a></p>
           </div>
         </div>
 	</div>
@@ -101,12 +101,23 @@ title: Past Techrangers
           </tbody>
         </table>
       </div>
+      <div class="col">
+        <table class="stats-table degrees">
+          <tbody>
+            {% for job in site.tr.jobs %}
+              <tr>
+                <th>{{ job.title }}</th>
+                <td class="value">{{ job.people | size }}</td>
+              </tr>
+            {% endfor %}
+
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
 </main>
-
-{% include timeago_script.html %}
 
 <script>
 var ctx = document.getElementById('gender-chart').getContext('2d');

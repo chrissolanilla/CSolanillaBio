@@ -89,6 +89,11 @@ main a {
 	}
 }
 
+main a.text-muted{
+	color: #333;
+	font-weight: 400;
+}
+
 
 a .lp-btn { color: #fff!important; }
 
@@ -449,22 +454,22 @@ a .lp-btn { color: #fff!important; }
 
 }
 
-.container.card{
+.card{
 	margin: 50px;
 	padding: 20px;
 	// max-width: 800px;
 	margin: 50px auto;
 }
 
-.container.card.stats {
+.card.stats {
 	background-color: #ffc904;
 }
 
-.container.card .col{
+.card .col{
 	text-align: center;
 }
 
-.container.card .row{
+.card .row{
 	margin-bottom: 10px;
 }
 
@@ -509,7 +514,10 @@ a .lp-btn { color: #fff!important; }
 	display: block;
 	font-weight: 600;
 	font-size: 2em;
-
+	white-space: nowrap;
+}
+.container.stats a:hover{
+	text-decoration: none;
 }
 
 .stat-fact .digits{
@@ -533,10 +541,9 @@ a .lp-btn { color: #fff!important; }
 /* About Us Page --------------------------------------- */
 #aboutmain{
 
-	#title h1 {
+	h1,h2,h3,h4,h5,h6 {
 		color: #000;
 		background-color: transparent;
-		font-size: 50px;
 		font-weight: 700;
 		letter-spacing: 2px;
 		margin-top: 50px;
@@ -544,29 +551,16 @@ a .lp-btn { color: #fff!important; }
 		padding: 10px 0;
 	}
 
-	h2.lst-header {
-		color: #000;
-		font-size: 40px;
-		font-weight: 700;
-		letter-spacing: 2px;
-		text-align: center;
-		margin-top: 50px;
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 35px;
+	}
+	h3{
+		font-size: 30px;
 	}
 
-	hr.gold-about {
-		margin-top: 0;
-	}
-
-	p.mission {
-		font-weight: 400;
-		letter-spacing: 1px;
-		line-height: 30px!important;
-		text-align: center;
-	}
-
-	hr.gold-lst {
-		margin-top: 15px;
-	}
 
 	.trpic {
 		width: 250px;
@@ -615,6 +609,34 @@ a .lp-btn { color: #fff!important; }
 		}
 	}
 
+	.highlighted-jobs .job{
+		min-height: 100px;
+		min-width: 80px;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.highlighted-jobs .job > span{
+		height: 80px;
+		width: 80px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+
+	.highlighted-jobs .job img{
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+		filter: grayscale(100%);
+		opacity: .6;
+	}
+
+	.highlighted-jobs .job img:hover{
+
+		filter: grayscale(0%);
+		opacity: 1;
+	}
 
 }
 
@@ -1042,6 +1064,13 @@ footer {
 
 }
 
+.padding-bottom-medium{
+	padding-bottom: 40px;
+}
+
+.padding-bottom-large{
+	padding-bottom: 80px;
+}
 
 /* Helper classes for smart developers ) ------------------------------------- */
 .center { text-align: center; }
