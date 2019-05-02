@@ -3,52 +3,52 @@ layout: default
 ---
 
 <div class="container profile-pg-container">
-    <div class="row">
-        <div class="col-lg-12 profile-pg-col">
-            {% if page.thumbnail %}
-            <div class="tr_img"> <img src="{{ "assets/images/bios/" | append: page.thumbnail | relative_url }}" alt="{{ page.name }}" /></div>
-            {% endif %}
-            <h1 class="tr_name_header">{{ page.name }}</h1>
-            <h2 class="tr_title">{{ page.major }}</h2>
-            {% if page.resigned %}
-                {% if page.date %}
-                  <span class="resigndate title techranger">
-                  {{ page.title }}:  {{ page.date | date: "%Y" }} - {{ page.resigned | date: "%Y" }}
-                  </span>
-                {% endif %}
-            {% else %}
-                <span class="hiredate title techranger timeago" data-timeago="{{ page.date | date: "%Y-%m-%dT%H:%M:00Z" }}"></span>
-            {% endif %}
-            <hr/>
-            {% if page.also_employed_by %}
-            <div class="tr_employed_by">
-                {{ page.name | split: " " | first }} has also worked at:
-                <ul>
-                {% for job in page.also_employed_by %}
-                    <li>{{ job }}</li>
-                {% endfor %}
+	<div class="row">
+		<div class="col-lg-12 profile-pg-col">
+			{% if page.thumbnail %}
+				<div class="tr_img"> <img src="{{ "assets/images/bios/" | append: page.thumbnail | relative_url }}" alt="{{ page.name }}" /></div>
+			{% endif %}
+			<h1 class="tr_name_header">{{ page.name }}</h1>
+			<h2 class="tr_title">{{ page.major }}</h2>
+			{% if page.resigned %}
+					{% if page.date %}
+					<span class="resigndate title techranger">
+						{{ page.title }}:  {{ page.date | date: "%Y" }} - {{ page.resigned | date: "%Y" }}
+					</span>
+				{% endif %}
+			{% else %}
+				<span class="hiredate title techranger timeago" data-timeago="{{ page.date | date: "%Y-%m-%dT%H:%M:00Z" }}"></span>
+			{% endif %}
+			<hr/>
+			{% if page.also_employed_by %}
+				<div class="tr_employed_by">
+					{{ page.name | split: " " | first }} has also worked at:
+					<ul>
+						{% for job in page.also_employed_by %}
+							<li>{{ job }}</li>
+						{% endfor %}
 
-                {% if page.linkedin %}
-                    <li>View more on <a href="{{ page.linkedin }}" target="_blank">LinkedIn.</a></li>
-                {% endif %}
-                </ul>
-            </div>
-            {% elsif page.linkedin %}
-            <div class="tr_linkedin"><a href="{{ page.linkedin }}" target="_blank">View LinkedIn profile.</a></div>
-            {% endif %}
+						{% if page.linkedin %}
+							<li>View more on <a href="{{ page.linkedin }}" target="_blank">LinkedIn.</a></li>
+						{% endif %}
+					</ul>
+				</div>
+			{% elsif page.linkedin %}
+				<div class="tr_linkedin"><a href="{{ page.linkedin }}" target="_blank">View LinkedIn profile.</a></div>
+			{% endif %}
 
-            <div class="tr_desc">
-                {{ content }}
-            </div>
+			<div class="tr_desc">
+				{{ content }}
+			</div>
 
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
 {% if page.updated %}
-<div class="container profile-pg-container">
-    <p class="updated">Page last updated {{ page.updated }}</p>
-</div>
+	<div class="container profile-pg-container">
+		<p class="updated">Page last updated {{ page.updated }}</p>
+	</div>
 {% endif %}
 
 <p class="clear"></p>

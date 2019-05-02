@@ -3,26 +3,26 @@ title: Showcase
 ---
 <main role="main" id="showcasemain">
 	<div class="container showcase-pg-container">
-	<!-- main content -->
+		<!-- main content -->
 		<div id="title">
 			<h1>Showcase</h1>
-			<hr class="gold gold-about">
+			<hr class="gold">
 		</div>
 
 
 		{% assign sorted = site.showcase | sort: 'name' %}
 		{% for item in sorted %}
-			<div class="row showcase-pg-row" id="showcase-{{ item.name | slugify }}">
-				<div class="col-lg-4 showcase-pg-col">
-					<img src="{{ "assets/images/showcase-logos/" | append: item.image | relative_url }}" class="img-fluid image" alt="{{ item.name }} Logo">
-				</div>
-				<div class="col-lg-8 showcase-pg-col">
-					<h2>{{ item.name }}</h2>
-					{{ item.content }}
-					<br>
-					<p><a href="{{ item.link }}" target="_blank">Visit the {{ item.name }} site</a> for more information.</p>
-				</div>
+		<div class="row showcase-pg-row" id="showcase-{{ item.name | slugify }}">
+			<div class="col-lg-4 showcase-pg-col">
+				<img src="{{ "assets/images/showcase-logos/" | append: item.image | relative_url }}" class="img-fluid image" alt="{{ item.name }} Logo">
 			</div>
+			<div class="col-lg-8 showcase-pg-col">
+				<h2>{{ item.name }}</h2>
+				{{ item.content }}
+				<br>
+				<p><a href="{{ item.link }}" target="_blank">Visit the {{ item.name }} site</a> for more information.</p>
+			</div>
+		</div>
 		{% endfor %}
 
 	</div>

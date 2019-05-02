@@ -3,19 +3,19 @@
 	{% assign thumbnail = item.thumbnail %}
 {% endif %}
 
-        <div itemscope itemtype="http://schema.org/Person" class="trpic">
-            <a href="{{ item.url }}">
-            <img itemprop="image" src="{{ "assets/images/bios/" | append: thumbnail | relative_url }}"  alt="Photo of {{ item.name }}" />
-            <span itemprop="name" class="name">{{ item.name }}</span>
-            <span itemprop="title" class="title techranger">{{ item.title }}</span>
-            {% if item.resigned %}
-                {% if item.date %}
-                  <span class="resigndate title techranger">
-                    {{ item.date | date: "%Y" }} - {{ item.resigned | date: "%Y" }}
-                  </span>
-                {% endif %}
-            {% else %}
-                <span class="hiredate title techranger timeago" data-timeago="{{ item.date | date: "%Y-%m-%dT%H:%M:00Z" }}"></span>
-            {% endif %}
-          </a>
-        </div>
+<div itemscope itemtype="http://schema.org/Person" class="trpic">
+	<a href="{{ item.url }}">
+		<img itemprop="image" src="{{ "assets/images/bios/" | append: thumbnail | relative_url }}"  alt="Photo of {{ item.name }}" />
+		<span itemprop="name" class="name">{{ item.name }}</span>
+		<span itemprop="title" class="title techranger">{{ item.title }}</span>
+		{% if item.resigned %}
+		{% if item.date %}
+		<span class="resigndate title techranger">
+			{{ item.date | date: "%Y" }} - {{ item.resigned | date: "%Y" }}
+		</span>
+		{% endif %}
+		{% else %}
+		<span class="hiredate title techranger timeago" data-timeago="{{ item.date | date: "%Y-%m-%dT%H:%M:00Z" }}"></span>
+		{% endif %}
+	</a>
+</div>

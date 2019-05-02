@@ -1,132 +1,134 @@
 ---
 ---
 {% assign current_count = site.techrangers_current | size %}
-{% assign current_full_timers = site.techrangers_current | where_exp: "item", "item.full_time" %}
-{% assign current_full_time_count = current_full_timers | size %}
-{% assign was_part_time = current_full_timers | where_exp: "item", "item.was_part_time" %}
+{% assign full_timers = site.tr.everyone | where_exp: "item", "item.full_time" %}
+{% assign full_time_count = full_timers | size %}
+{% assign was_part_time = full_timers | where_exp: "item", "item.was_part_time" %}
 {% assign was_part_time_count = was_part_time | size %}
 
 <main role="main" id="aboutmain">
-    <div class="container about-us-pg-container">
-        <div id="title">
-            <h1 class="about">About Us</h1>
-            <hr class="gold">
-        </div>
-        <div class="row about-us-pg-row">
-          <div class="col-lg-12 about-us-pg-col">
-            <p class="center lead">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age.</p>
-          </div>
-        </div>
-    </div>
+	<div class="container about-us-pg-container">
+		<div id="title">
+			<h1 class="about">About Us</h1>
+			<hr class="gold">
+		</div>
+		<div class="row about-us-pg-row">
+			<div class="col-lg-12">
+				<p class="center lead">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age.</p>
+			</div>
+		</div>
+	</div>
 
-  <div class="container card stats my-5">
-    <div class="row">
-      <div class="col">
-        <a href="#current-techrangers">
-        <span class="stat-fact"><span class="digits">{{ current_count }}</span> People</span>
-        <span class="stat-label">Current Team</span></a>
-      </div>
+	<div class="container card stats my-5">
+		<div class="row">
+			<div class="col">
+				<a href="#current-techrangers">
+					<span class="stat-fact"><span class="digits">{{ current_count }}</span> People</span>
+					<span class="stat-label">Current Team</span></a>
+				</div>
 
-      <div class="col">
-        <a href="{{ "/past-techrangers.html" | relative_url }}">
-        <span class="stat-fact"><span class="digits">{{ site.tr.tr_count }}</span> People</span>
-        <span class="stat-label">All Time Alumni</span>
-        </a>
-      </div>
-    </div>
+				<div class="col">
+					<a href="{{ "/past-techrangers.html" | relative_url }}">
+						<span class="stat-fact"><span class="digits">{{ site.tr.tr_count }}</span> People</span>
+						<span class="stat-label">All Time Alumni</span>
+					</a>
+				</div>
+			</div>
 
-    <div class="row">
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ site.tr.dates_av_days | divided_by: 365 }}</span> years</span>
-        <span class="stat-label">Average Tenure</span>
-      </div>
+			<div class="row">
+				<div class="col">
+					<span class="stat-fact"><span class="digits">{{ site.tr.dates_av_days | divided_by: 365 }}</span> years</span>
+					<span class="stat-label">Average Tenure</span>
+				</div>
 
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ 'now' | date: "%Y" | minus: 1996 }}</span> years</span>
-        <span class="stat-label">We stared in 1996!</span>
-      </div>
-    </div>
+				<div class="col">
+					<span class="stat-fact"><span class="digits">{{ 'now' | date: "%Y" | minus: 1996 }}</span> years</span>
+					<span class="stat-label">We stared in 1996!</span>
+				</div>
+			</div>
 
-    <div class="row">
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ site.tr.total_jobs }}</span></span>
-        <span class="stat-label">Industry Jobs Held by Techrangers</span>
-      </div>
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ was_part_time_count | times: 1.0 | divided_by: current_full_time_count | times: 100 | round }}%</span></span>
-        <span class="stat-label">of Staff started as Part-time</span>
-      </div>
-    </div>
+			<div class="row">
+				<div class="col">
+					<span class="stat-fact"><span class="digits">{{ site.tr.total_jobs }}</span></span>
+					<span class="stat-label">Industry Jobs Held by Techrangers</span>
+				</div>
+				<div class="col">
+					<span class="stat-fact"><span class="digits">{{ was_part_time_count | times: 1.0 | divided_by: full_time_count | times: 100 | round }}%</span></span>
+					<span class="stat-label">of Staff started as Part-time</span>
+				</div>
+			</div>
 
-  </div>
+		</div>
 
-  <div class="container my-5">
-    <h2>Launch A Career</h2>
-    <hr class="gold">
+		<div class="container my-5">
+			<h2>Launch A Career</h2>
+			<hr class="gold">
 
-    <div class="row padding-bottom-medium">
-      <div class="col-lg-12">
-        <p class="lead center">An apprenticeship with the Techrangers is an ideal place to start your career, especially for students. We hire both inexperienced (but hard working) newcomers and up-and-coming experts. The modern technologies that we build give our people the skills to join the worlds most influential companies. Heres a few places that Techranger alumni work:</p>
-      </div>
-    </div>
+			<div class="row padding-bottom-medium">
+				<div class="col-lg-12">
+					<p class="lead center">An apprenticeship with the Techrangers is an ideal place to start your career, especially for students. We hire both inexperienced (but hard working) newcomers and up-and-coming experts. The modern technologies that we build give our people the skills to join the worlds most influential companies. Heres a few places that Techranger alumni work:</p>
+				</div>
+			</div>
 
-    <div class="row align-items-center highlighted-jobs center">
-      {% for jerb in site.data.job_highlights %}
-      <div class="col">
-        <div class="job">
-        <span><img src="//logo.clearbit.com/{{ jerb.domain }}?size=100" alt="{{ jerb.name }}"></span>
-        {{ jerb.name }}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+			<div class="row highlighted-jobs center">
+				{% for jerb in site.data.job_highlights %}
+				<div class="col">
+					<div class="job">
+						<span><img src="//logo.clearbit.com/{{ jerb.domain }}?size=100" alt="{{ jerb.name }}"></span>
+						{{ jerb.name }}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
 
-    <div class="center">
-      <a class="text-muted" href="https://clearbit.com">Company Logos provided by Clearbit</a>
-    </div>
+			<div class="center">
+				<a class="text-muted" href="https://clearbit.com">Company Logos provided by Clearbit</a>
+			</div>
 
-  </div>
+		</div>
 
-  {% assign tr = site.techrangers_current | where_exp: "item", "item.team != 'lst'" %}
-  {% assign lst = site.techrangers_current | where: 'team', 'lst' %}
-  <div class="container my-5" id="current-techrangers">
-        <h2>Meet The Techrangers</h2>
-        <hr class="gold gold-lst">
+		{% assign tr = site.techrangers_current | where_exp: "item", "item.team != 'lst'" %}
+		{% assign lst = site.techrangers_current | where: 'team', 'lst' %}
+		<div class="container my-5" id="current-techrangers">
+			<h2>Meet The Techrangers</h2>
+			<hr class="gold gold-lst">
 
-        <div class="row about-us-pg-row">
-          <div class="col-lg-12 about-us-pg-col">
-            <p class="lead center">The {{ tr | size }} Techrangers currently active on the team. <a href="{{ "/past-techrangers.html" | relative_url }}">View the {{ site.tr.tr_count | minus: current_count }} alumni.</a></p>
-          </div>
-        </div>
+			<div class="row about-us-pg-row">
+				<div class="col-lg-12">
+					<p class="lead center">The {{ tr | size }} Techrangers currently active on the team. <a href="{{ "/past-techrangers.html" | relative_url }}">View the alumni page.</a></p>
+				</div>
+			</div>
 
-        {% for item in tr %}
-          {% include person.html %}
-        {% endfor %}
+			<div class="row center my-5">
+				{% for item in tr %}
+				<div class="col">
+					{% include person.html %}
+				</div>
+				{% endfor %}
+			</div>
 
-        <h2 >Learning Systems &amp; Technology</h2>
-        <hr class="gold gold-lst">
+			<h2 >Learning Systems &amp; Technology</h2>
+			<hr class="gold gold-lst">
 
-        <div class="row about-us-pg-row">
-          <div class="col-lg-12 about-us-pg-col">
-            <p class="lead center">LS&T is the parent team that contains the Techrangers. We're comprised of {{ lst | size }} full-time staff working in several specialized groups.  With the Techrangers, we build projects supporting digital learning at UCF.</p>
-          </div>
-        </div>
-
-        <div class="photogrid">
-              {% for item in lst %}
-                {% include person.html %}
-              {% endfor %}
-        </div>
-
-        <div class="btn-center">
-          <button type="button" class="btn btn-dark"><a href="{{ "/past-techrangers.html" | relative_url }}">View the {{ site.tr.tr_count | minus: current_count }} Past Techrangers</a></button>
-        </div>
-
-    </div>
+			<div class="row about-us-pg-row">
+				<div class="col-lg-12">
+					<p class="lead center">LS&T is the parent team that contains the Techrangers. We're comprised of {{ lst | size }} full-time staff working in several specialized groups.  With the Techrangers, we build projects supporting digital learning at UCF.</p>
+				</div>
+			</div>
 
 
-</main>
+			<div class="row center my-5">
+				{% for item in lst %}
+				<div class="col">
+					{% include person.html %}
+				</div>
+				{% endfor %}
+			</div>
 
+			<div class="btn-center">
+				<button type="button" class="btn btn-dark"><a href="{{ "/past-techrangers.html" | relative_url }}">View {{ site.tr.tr_count | minus: current_count }} Past Techrangers</a></button>
+			</div>
+		</div>
+	</main>
 
-
-{% include timeago_script.html %}
+	{% include timeago_script.html %}

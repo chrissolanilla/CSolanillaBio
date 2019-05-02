@@ -76,11 +76,16 @@ Jekyll::Hooks.register :site, :post_read do |site|
 
   dates_av_days = dates_sum / total_dates
 
-  jobs.sort_by! { |a| a['people'].size }
-  degrees.sort_by! { |a| a['people'].size }
+  # sort jobs by number of people, then by alphabetical order
+  jobs.sort! { |a, b| [a['people'].size * -1, a['title']] <=> [b['people'].size * -1, b['title']] }
+
+  # sort degrees by number of people, then by alphabetical order
+  degrees.sort! { |a, b| [a['people'].size * -1, a['title']] <=> [b['people'].size * -1, b['title']] }
+
+  # sort genders by count
   genders.sort_by! { |a| a['count'] }
 
-  site.config['tr'] = {'dates_av_days' => dates_av_days.to_i, 'tr_count' => techrangers.size, 'jobs' => jobs.reverse!, 'total_jobs' => total_jobs, 'degrees' => degrees.reverse!, 'genders' => genders.reverse}
+  site.config['tr'] = {'dates_av_days' => dates_av_days.to_i, 'everyone' => techrangers, 'tr_count' => techrangers.size, 'jobs' => jobs, 'total_jobs' => total_jobs, 'degrees' => degrees, 'genders' => genders.reverse}
 end
 
 

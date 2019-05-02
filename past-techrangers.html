@@ -7,172 +7,163 @@ title: Past Techrangers
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes@latest/dist/chartjs-plugin-colorschemes.min.js"></script>
 
 <main role="main" id="aboutmain">
-	<div class="container">
+	<div class="container mb-5">
 		<div id="title">
-			<h1 class="past-tr">Past Techrangers</h1>
-			<hr class="gold gold-about">
+			<h1 class="past-tr">Techrangers Alumni</h1>
+			<hr class="gold">
 		</div>
-        <div class="row about-us-pg-row">
-          <div class="col-lg-12 about-us-pg-col">
-            <p class="mission">The Techrangers team mission is to collectively enhance the online learning experience through our own education and to obtain a competitive advantage in this technological age. <a href="{{ "/about.html" | relative_url }}">View current Techrangers.</a></p>
-          </div>
-        </div>
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="center lead">The Techrangers team formed in 1996 when UCF began offering courses online. The teams around the Techrangers have changed several times over the years, so we're including all the software developers in and around the team over the years. You may also be interested in <a class="text-muted" href="{{ "/about.html" | relative_url }}">the current Techrangers team.</a></p>
+			</div>
+		</div>
 	</div>
 
 	<div class="container">
-		<section role="region" class="pagecontent" id="homepage">
-
-			<div class="photogrid">
-				{% for item in sorted %}
-					{% include person.html %}
-				{% endfor %}
+		<div class="row center my-5">
+			{% for item in sorted %}
+			<div class="col">
+				{% include person.html %}
 			</div>
-		</section>
+			{% endfor %}
+		</div>
 	</div>
 
-  <div class="container">
+	<div class="container">
+		<h2 class="lst-header">Techrangers Stats</h2>
+		<hr class="gold gold-lst">
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="center lead">UCF has been offering online courses since 1996! Over the years, we've changed a lot, so here's a few statistics about all the people who've worked here.</a></p>
+			</div>
+		</div>
+	</div>
 
-      <h2 class="lst-header">Techrangers Stats</h2>
-      <hr class="gold gold-lst">
+	{% assign current_count = site.techrangers_current | size %}
+	{% assign current_full_timers = site.techrangers_current | where_exp: "item", "item.full_time" %}
+	{% assign current_full_time_count = current_full_timers | size %}
+	{% assign was_part_time = current_full_timers | where_exp: "item", "item.was_part_time" %}
+	{% assign was_part_time_count = was_part_time | size %}
 
-        <div class="row about-us-pg-row">
-          <div class="col-lg-12 about-us-pg-col">
-            <p class="mission">UCF has been offering online courses since 1996! Over the years, we've changed a lot, so here's a few statistics about the people who've worked here.</a></p>
-          </div>
-        </div>
 
-  </div>
+	<div class="container ">
+		<div class="row">
 
-  {% assign current_count = site.techrangers_current | size %}
-  {% assign current_full_timers = site.techrangers_current | where_exp: "item", "item.full_time" %}
-  {% assign current_full_time_count = current_full_timers | size %}
-  {% assign was_part_time = current_full_timers | where_exp: "item", "item.was_part_time" %}
-  {% assign was_part_time_count = was_part_time | size %}
-  <div class="container card stats">
-    <div class="row">
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ site.tr.tr_count }}</span> All Time</span>
-        <span class="stat-label">Techrangers</span>
-      </div>
-      <div class="col">
-        <span class="stat-fact"><span class="digits">8</span> months</span>
-        <span class="stat-label">Average Tenure</span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ site.tr.total_jobs }}</span></span>
-        <span class="stat-label">Industry jobs held by Techrangers</span>
-      </div>
-      <div class="col">
-        <span class="stat-fact"><span class="digits">{{ was_part_time_count | times: 1.0 | divided_by: current_full_time_count | times: 100 | round }}%</span></span>
-        <span class="stat-label">of full-time staff began part-time</span>
-      </div>
-    </div>
-  </div>
+			<div class="col">
+				<div class="card stats single-stat">
+					<div class="row">
+						<div class="col">
+							<span class="stat-fact"><span class="digits">{{ site.tr.total_jobs }}</span></span>
+							<span class="stat-label">Industry jobs held by Techrangers</span>
+						</div>
+					</div>
+				</div>
 
-  <div class="container ">
-    <div class="row">
-      <div class="col">
-        <canvas id="gender-chart" width="200" height="200"></canvas>
-        <table class="stats-table">
-          <tbody>
-            {% for gender in site.tr.genders %}
-            <tr>
-              <th>{{ gender.title | capitalize }}</th>
-              <td class="value">{{ gender.count }}</td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      <div class="col">
-        <canvas id="degrees-chart" width="200" height="200"></canvas>
-        <table class="stats-table degrees">
-          <tbody>
-            {% assign top_degrees = site.tr.degrees | combine_some_into: 'people', '>', 1, 'other' %}
-            {% for degree in top_degrees %}
-              <tr>
-                <th>{{ degree.title | capitalize }}</th>
-                <td class="value">{{ degree.people | size }}</td>
-              </tr>
-            {% endfor %}
+				<div class="scrollable-stats-table">
+					<table class="stats-table degrees">
+						<tbody>
+							{% for job in site.tr.jobs %}
+							<tr>
+								<th>{{ job.title }}</th>
+								<td class="value">{{ job.people | size }}</td>
+							</tr>
+							{% endfor %}
 
-          </tbody>
-        </table>
-      </div>
-      <div class="col">
-        <table class="stats-table degrees">
-          <tbody>
-            {% for job in site.tr.jobs %}
-              <tr>
-                <th>{{ job.title }}</th>
-                <td class="value">{{ job.people | size }}</td>
-              </tr>
-            {% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</div>
 
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+			<div class="col">
+				<div class="card stats single-stat">
+					<div class="row">
+						<div class="col">
+							<span class="stat-fact"><span class="digits">{{ site.tr.degrees | size }}</span></span>
+							<span class="stat-label">Degree Types Obtained</span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="scrollable-stats-table">
+					<table class="stats-table w-100">
+						<tbody>
+							{% assign top_degrees = site.tr.degrees | combine_some_into: 'people', '>', 1, 'other' %}
+							{% for degree in site.tr.degrees %}
+							<tr>
+								<th>{{ degree.title | capitalize }}</th>
+								<td class="value">{{ degree.people | size }}</td>
+							</tr>
+							{% endfor %}
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card stats single-stat">
+					<div class="row">
+						<div class="col">
+							{% assign males = site.tr.genders | where_exp: "item", "item.title == 'male'" %}
+							<span class="stat-fact"><span class="digits">{{ site.tr.tr_count | minus: males[0].count | times: 1.0 | divided_by: site.tr.tr_count | times: 100 | round }}%</span></span>
+							<span class="stat-label">Not Male</span>
+						</div>
+					</div>
+				</div>
+
+				<canvas id="gender-chart" width="200" height="200"></canvas>
+
+				<table class="stats-table">
+					<tbody>
+						{% for gender in site.tr.genders %}
+						<tr>
+							<th>{{ gender.title | capitalize }}</th>
+							<td class="value">{{ gender.count | times: 1.0 | divided_by: site.tr.tr_count | times: 100 | round }}%</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+
+				<p><a href="https://www.ncwit.org/" target="_blank">Visit the NCWIT for more stats about about women in IT.</a></p>
+			</div>
+
+		</div>
+
+	</div>
+
+			<div class="btn-center">
+				<button type="button" class="btn btn-dark"><a href="{{ "/about.html" | relative_url }}">View Current Techrangers Team</a></button>
+			</div>
 
 </main>
 
 <script>
-var ctx = document.getElementById('gender-chart').getContext('2d');
-var genderChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: [{% for gender in site.tr.genders %}'{{ gender.title | capitalize }}',{% endfor %}],
-    datasets: [{
-      label: 'Gender',
-      data: [{% for gender in site.tr.genders %}{{ gender.count }},{% endfor %}]
-    }]
-  },
-  options: {
-    legend: {
-      display: false,
-    },
-    title: {
-      display: true,
-      text: "Techranger Gender"
-    },
-    plugins: {
-      colorschemes: {
-      scheme: 'tableau.Tableau10'
-    }
-    }
-   }
-});
+	var ctx = document.getElementById('gender-chart').getContext('2d');
+	var genderChart = new Chart(ctx, {
+		type: 'doughnut',
+		data: {
+			labels: [{% for gender in site.tr.genders %}'{{ gender.title | capitalize }}',{% endfor %}],
+			datasets: [{
+				label: 'Gender',
+				data: [{% for gender in site.tr.genders %}{{ gender.count }},{% endfor %}]
+			}]
+		},
+		options: {
+			legend: {
+				display: false,
+			},
+			title: {
+				display: true,
+				text: "Gender Breakdown"
+			},
+			plugins: {
+				colorschemes: {
+					scheme: 'tableau.Tableau10'
+				}
+			}
+		}
+	});
 
-{% assign sortedDegrees = site.tr.degrees | sort:"title" %}
-
-var ctx = document.getElementById('degrees-chart').getContext('2d');
-var degreesChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-
-    labels: [{% for degree in top_degrees %}'{{ degree.title }}',{% endfor %}],
-    datasets: [{
-      label: 'Degrees',
-      data: [{% for degree in top_degrees %}{{ degree.people | size }}, {% endfor %}]
-    }]
-  },
-  options: {
-    legend: {
-      display: false
-    },
-    title: {
-      display: true,
-      text: "Techranger Majors"
-    },
-    plugins: {
-      colorschemes: {
-      scheme: 'tableau.Tableau10'
-    }
-    }
-   }
-});
 
 </script>
