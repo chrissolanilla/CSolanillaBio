@@ -107,7 +107,7 @@ title: Past Techrangers
 						<div class="col">
 							{% assign males = site.tr.genders | where_exp: "item", "item.title == 'male'" %}
 							<span class="stat-fact"><span class="digits">{{ site.tr.tr_count | minus: males[0].count | times: 1.0 | divided_by: site.tr.tr_count | times: 100 | round }}%</span></span>
-							<span class="stat-label">Not Male</span>
+							<span class="stat-label">Underrepresented Genders</span>
 						</div>
 					</div>
 				</div>
