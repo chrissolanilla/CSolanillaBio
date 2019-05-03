@@ -6,7 +6,7 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body,
@@ -87,6 +87,11 @@ main a {
 	a:hover{
 		text-decoration: underline;
 	}
+}
+
+main a.text-muted{
+	color: #333;
+	font-weight: 400;
 }
 
 
@@ -449,14 +454,100 @@ a .lp-btn { color: #fff!important; }
 
 }
 
+.card{
+	margin: 50px;
+	padding: 20px;
+	// max-width: 800px;
+	margin: 50px auto;
+
+	&.stats {
+		background-color: #ffc904;
+
+		&.single-stat{
+			min-height: 200px;
+		}
+	}
+
+	.col{
+		text-align: center;
+	}
+
+	.row{
+		margin-bottom: 10px;
+	}
+}
+
+
+.container canvas{
+	margin-bottom: 40px;
+}
+
+.stats-table{
+	width: 100%;
+	margin: 0 auto;
+
+	th{
+		padding-left: 20px;
+	}
+
+	tr{
+		border-bottom: 1px solid rgba(0, 0, 0, .2);
+	}
+
+	td{
+		padding: 20px;
+	}
+
+	tr:last-child{
+		border-bottom: 0;
+	}
+
+	td.value{
+		text-align: right;
+	}
+}
+
+
+.stat-label{
+	display: block;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin-top: -20px;
+}
+
+.stat-fact{
+	display: block;
+	font-weight: 600;
+	font-size: 2em;
+	white-space: nowrap;
+}
+
+.container.stats a:hover{
+	text-decoration: none;
+}
+
+.stat-fact .digits{
+	font-size: 2em;
+}
+
+.scrollable-stats-table{
+	min-height: 400px;
+	max-height: 70vh;
+	overflow: scroll;
+}
+
+
+.hidden {
+	display: none;
+}
+
 
 /* About Us Page --------------------------------------- */
 #aboutmain{
 
-	#title h1 {
+	h1,h2,h3,h4,h5,h6 {
 		color: #000;
 		background-color: transparent;
-		font-size: 50px;
 		font-weight: 700;
 		letter-spacing: 2px;
 		margin-top: 50px;
@@ -464,36 +555,21 @@ a .lp-btn { color: #fff!important; }
 		padding: 10px 0;
 	}
 
-	h2.lst-header {
-		color: #000;
-		font-size: 40px;
-		font-weight: 700;
-		letter-spacing: 2px;
-		text-align: center;
-		margin-top: 50px;
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 35px;
+	}
+	h3{
+		font-size: 30px;
 	}
 
-	hr.gold-about {
-		margin-top: 0;
-	}
-
-	p.mission {
-		font-weight: 400;
-		letter-spacing: 1px;
-		line-height: 30px!important;
-		text-align: center;
-	}
-
-	hr.gold-lst {
-		margin-top: 15px;
-	}
 
 	.trpic {
 		width: 250px;
-		vertical-align: top;
 		display: inline-block;
-		margin: 10px;
-		padding-top: 20px;
+		margin-bottom: 15px;
 		text-align: center;
 
 		img {
@@ -535,6 +611,34 @@ a .lp-btn { color: #fff!important; }
 		}
 	}
 
+	.highlighted-jobs .job{
+		min-height: 100px;
+		min-width: 80px;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.highlighted-jobs .job > span{
+		height: 80px;
+		width: 80px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+
+	.highlighted-jobs .job img{
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+		filter: grayscale(100%);
+		opacity: .6;
+	}
+
+	.highlighted-jobs .job img:hover{
+
+		filter: grayscale(0%);
+		opacity: 1;
+	}
 
 }
 
@@ -611,7 +715,7 @@ a .lp-btn { color: #fff!important; }
 		font-size: 2.5rem;
 		font-weight: 700;
 		letter-spacing: 1px;
-	 }
+	}
 
 	.blog-pg-container { padding-top: 50px; }
 
@@ -962,6 +1066,13 @@ footer {
 
 }
 
+.padding-bottom-medium{
+	padding-bottom: 40px;
+}
+
+.padding-bottom-large{
+	padding-bottom: 80px;
+}
 
 /* Helper classes for smart developers ) ------------------------------------- */
 .center { text-align: center; }

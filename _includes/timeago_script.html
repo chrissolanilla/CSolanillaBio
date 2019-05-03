@@ -1,25 +1,25 @@
 <!-- Time Ago Plugin -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
 <script>
-var custom_local_func = function(number, index, total_sec) {
-return [
-['', ''],
-['', ''],
-['', ''],
-['', ''],
-['', ''],
-['', ''],
-['(1 day)', ''],
-['(%s days)', ''],
-['(1 week)', ''],
-['(%s weeks)', ''],
-['(1 month)', ''],
-['(%s+ months)', ''],
-['(1+ year)', ''],
-['(%s+ years)', ''],
-][index];
-};
-timeago.register('custom_local', custom_local_func);
-timeago().render(document.querySelectorAll('.timeago'), 'custom_local');
-timeago.cancel()
+	var custom_local_func = function(number, index, total_sec) {
+		return [
+			['', ''],
+			['', ''],
+			['', ''],
+			['', ''],
+			['', ''],
+			['', ''],
+			['(1 day)', ''],
+			['(%s days)', ''],
+			['(1 week)', ''],
+			['(%s weeks)', ''],
+			['(1 month)', ''],
+			['(%s+ months)', ''],
+			['(1+ year)', ''],
+			['(%s+ years)', ''],
+			][index];
+	};
+	timeago.register('custom_local', custom_local_func);
+	timeago().render(document.querySelectorAll('.timeago'), 'custom_local');
+	timeago.cancel()
 </script>

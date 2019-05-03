@@ -3,193 +3,191 @@ hide_header: true
 ---
 
 <script>
-function openNav() {
-document.getElementById("myNav").style.width = "100%";
-}
+	function openNav() {
+		document.getElementById("myNav").style.width = "100%";
+	}
 
-function closeNav() {
-document.getElementById("myNav").style.width = "0%";
-}
+	function closeNav() {
+		document.getElementById("myNav").style.width = "0%";
+	}
 </script>
 
 <main class="page-content" aria-label="Content">
-<div class="wrapper">
-<main role="main" id="homemain">
+	<div class="wrapper">
+		<main role="main" id="homemain">
 
-<section id="splash-page">
-  <nav class="navbar transparent navbar-inverse hp-nav">
-      <div id="myNav" class="nav-overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="{{ "/about.html" | relative_url }}">About</a>
-            <a href="{{ "/showcase.html" | relative_url }}">Showcase</a>
-            <a href="{{ "/blog.html" | relative_url }}">Blog</a>
-            <a href="{{ "/techtime.html" | relative_url }}">Tech Time</a>
-            <a href="{{ "/joinus.html" | relative_url }}">Join Us</a>
-          </div>
-      </div>
-      <span class="nav-span" onclick="openNav()">&#9776;</span>
-    </nav>
+			<section id="splash-page">
+				<nav class="navbar transparent navbar-inverse hp-nav">
+					<div id="myNav" class="nav-overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<div class="overlay-content">
+							<a href="{{ "/about.html" | relative_url }}">About</a>
+							<a href="{{ "/showcase.html" | relative_url }}">Showcase</a>
+							<a href="{{ "/blog.html" | relative_url }}">Blog</a>
+							<a href="{{ "/techtime.html" | relative_url }}">Tech Time</a>
+							<a href="{{ "/joinus.html" | relative_url }}">Join Us</a>
+						</div>
+					</div>
+					<span class="nav-span" onclick="openNav()">&#9776;</span>
+				</nav>
 
-  <!-- Splash page -->
+				<!-- Splash page -->
 
-  <div id="welcome">
-    <div class="row welcome-row">
-      <div class="col-lg-12 welcome-col">
-       <h1>WELCOME</h1>
-       <h2>to the Techrangers!</h2>
-      </div>
-    </div>
-  </div>
-  <div id="robot-wrap">
-    <img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/techrangers-robot-wave-vector.svg" | relative_url }}">
-  </div>
-  <div id="small-robot-wrap">
-      <img id="small-robot" src="{{ "assets/images/robot/techrangers-robot-vector.svg" | relative_url }}">
-  </div>
-</section>
+				<div id="welcome">
+					<div class="row welcome-row">
+						<div class="col-lg-12 welcome-col">
+							<h1>WELCOME</h1>
+							<h2>to the Techrangers!</h2>
+						</div>
+					</div>
+				</div>
+				<div id="robot-wrap">
+					<img id="robot" alt="Techrangers robot graphic" src="{{ "assets/images/robot/techrangers-robot-wave-vector.svg" | relative_url }}">
+				</div>
+				<div id="small-robot-wrap">
+					<img id="small-robot" src="{{ "assets/images/robot/techrangers-robot-vector.svg" | relative_url }}">
+				</div>
+			</section>
 
-<!-- About us LP -->
-<section id="about">
-  <div class="container">
-    <div class="row about-lp-row">
-      <div class="col-sm-12 col-md-12 col-lg-12 about-lp-col">
-        <h2>About The Techrangers</h2>
-        <hr class="gold">
-        <p class="no-about-responsive">The Techrangers<span class="registered">&reg;</span> team is comprised of talented students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conferences. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
+			<!-- About us LP -->
+			<section id="about">
+				<div class="container">
+					<div class="row about-lp-row">
+						<div class="col-sm-12 col-md-12 col-lg-12 about-lp-col">
+							<h2>About The Techrangers</h2>
+							<hr class="gold">
+							<p class="no-about-responsive">The Techrangers<span class="registered">&reg;</span> team is comprised of talented students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF). The Techrangers<span class="registered">&reg;</span> act as student advocates and leaders by holding community workshops, participating in panels and presenting at conferences. Additionally, the team provides support, troubleshooting, and consulting for various groups within the University on a variety of areas including but not limited to universal design, accessibility compliance, website design, dynamic website development requiring databases and handling of business transactions among other areas of expertise.</p>
 
-        <p class="about-responsive">The Techrangers<span class="registered">&reg;</span> team is comprised of talented students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF).</p>
+							<p class="about-responsive">The Techrangers<span class="registered">&reg;</span> team is comprised of talented students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a>, who provide course development for faculty and web/application development for the University of Central Florida (UCF).</p>
 
-        <a href="{{ "/about.html" | relative_url }}">
-          <button type="button" class="btn btn-dark lp-btn">Meet the Team</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+							<a href="{{ "/about.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">Meet the Team</button></a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<!-- Services LP -->
-<section id="services">
-  <div class="container">
-    <div class="row services-lp-row">
-      <!-- mess around with WOW options for animations -->
-      <div class="col-sm-12 col-md-12 col-lg-12 services-lp-col">
-        <h2>Our Services</h2>
-        <hr class="gold">
-      </div>
+			<!-- Services LP -->
+			<section id="services">
+				<div class="container">
+					<div class="row services-lp-row">
+						<!-- mess around with WOW options for animations -->
+						<div class="col-sm-12 col-md-12 col-lg-12 services-lp-col">
+							<h2>Our Services</h2>
+							<hr class="gold">
+						</div>
 
-      <div class="row services-lp-row">
-        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
-          <div class="section-boxes">
-            <img src="{{ "assets/images/icons/coding.svg"  | relative_url }}" class="img-fluid image" alt="Learning Tools icon">
-            <h3>Learning Tools</h3>
-            <p>Custom development of tools and integrations that improve the teaching and learning experience.</p>
-          </div>
-        </div>
+						<div class="row services-lp-row">
+							<div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
+								<div class="section-boxes">
+									<img src="{{ "assets/images/icons/coding.svg"  | relative_url }}" class="img-fluid image" alt="Learning Tools icon">
+									<h3>Learning Tools</h3>
+									<p>Custom development of tools and integrations that improve the teaching and learning experience.</p>
+								</div>
+							</div>
 
-        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
-          <div class="section-boxes">
-            <img src="{{ "assets/images/icons/worker.svg"  | relative_url }}" class="img-fluid image" alt="Data Engineering icon">
-            <h3>Data Engineering</h3>
-            <p>Utilizing usage data to improve student performance, retention, and learning outcomes.</p>
-          </div>
-        </div>
+							<div class="col-sm-12 col-md-4 col-lg-4 services-lp-col-mar">
+								<div class="section-boxes">
+									<img src="{{ "assets/images/icons/worker.svg"  | relative_url }}" class="img-fluid image" alt="Data Engineering icon">
+									<h3>Data Engineering</h3>
+									<p>Utilizing usage data to improve student performance, retention, and learning outcomes.</p>
+								</div>
+							</div>
 
-        <div class="col-sm-12 col-md-4 col-lg-4 services-lp-col">
-          <div class="section-boxes">
-            <img src="{{ "assets/images/icons/blackboard.svg"  | relative_url }}" class="img-fluid image" alt="Course Development icon">
-            <h3>Course Development</h3>
-            <p>Creating new online course content, modifying existing content, and evaluating courses for accessibility issues.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+							<div class="col-sm-12 col-md-4 col-lg-4 services-lp-col">
+								<div class="section-boxes">
+									<img src="{{ "assets/images/icons/blackboard.svg"  | relative_url }}" class="img-fluid image" alt="Course Development icon">
+									<h3>Course Development</h3>
+									<p>Creating new online course content, modifying existing content, and evaluating courses for accessibility issues.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<!-- Showcase LP -->
-<section id="showcase">
-  <div class="container">
-    <div class="row showcase-lp-row">
-      <div class="col-sm-12 col-md-12 col-lg-12 showcase-lp-col">
-        <h2>Showcase</h2>
-        <hr class="gold">
-      </div>
-    </div>
+			<!-- Showcase LP -->
+			<section id="showcase">
+				<div class="container">
+					<div class="row showcase-lp-row">
+						<div class="col-sm-12 col-md-12 col-lg-12 showcase-lp-col">
+							<h2>Showcase</h2>
+							<hr class="gold">
+						</div>
+					</div>
 
-    {% assign sorted = site.showcase | sort: 'name' %}
-    {% for item in sorted limit: 4 %}
-    {% cycle '<div class="row showcase-lp-row">', '' %}
+					{% assign sorted = site.showcase | sort: 'name' %}
+					{% for item in sorted limit: 4 %}
+					{% cycle '<div class="row showcase-lp-row">', '' %}
 
-      <div class="col-lg-6 showcase-lp-col-{% cycle 'right', 'left' %}">
-        <div class="hover-effect">
-          {% assign hash = item.name | slugify %}
-          <a href="{{ "/showcase.html#showcase-" | append: hash | relative_url }}">
-            <img src="{{ "/assets/images/showcase-logos/" | append: item.image | relative_url }}" class="img-fluid image" alt="{{ item.name }} Logo">
-          </a>
-        </div>
-      </div>
+						<div class="col-lg-6 showcase-lp-col-{% cycle 'right', 'left' %}">
+							<div class="hover-effect">
+								{% assign hash = item.name | slugify %}
+								<a href="{{ "/showcase.html#showcase-" | append: hash | relative_url }}">
+									<img src="{{ "/assets/images/showcase-logos/" | append: item.image | relative_url }}" class="img-fluid image" alt="{{ item.name }} Logo">
+								</a>
+							</div>
+						</div>
 
-    {% cycle '', '</div>' %}
-    {% endfor %}
+					{% cycle '', '</div>' %}
+					{% endfor %}
 
-    <a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View All Showcase Items</button></a>
-  </div>
-</section>
+					<a href="{{ "/showcase.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View All Showcase Items</button></a>
+				</div>
+			</section>
 
-<!-- Blog LP -->
-<section id="blog">
-  <div class="container">
-    <div class="row blog-lp-row">
-      <div class="col-lg-12 blog-lp-col">
-        <h2>Latest Posts</h2>
-        <hr class="gold">
-      </div>
-    </div>
+			<!-- Blog LP -->
+			<section id="blog">
+				<div class="container">
+					<div class="row blog-lp-row">
+						<div class="col-lg-12 blog-lp-col">
+							<h2>Latest Posts</h2>
+							<hr class="gold">
+						</div>
+					</div>
 
-    <div class="row blog-lp-row">
+					<div class="row blog-lp-row">
 
-      {% for post in site.posts limit:3 %}
-      <div class="col-lg-4 col-md-4 blog-lp-container">
-          <div class="blog-item-wrapper ml-2 mr-2">
-            <div class="blog-item-img">
-                <a href="{{ post.url }}"><img src="{{ "assets/images/blog-imgs/" | append: post.image | relative_url }}" alt="" class="img-fluid"></a>
-            </div>
-            <div class="blog-item-text">
-              <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
-              <p class="card-text"> {{ post.excerpt }}</p>
-            </div>
-            <div class="meta-tags blog-meta">
-              <a href="{{ post.url }}" class="read-more">Read More</a>
-            </div>
-          </div>
-      </div>
-      {% endfor %}
+						{% for post in site.posts limit:3 %}
+						<div class="col-lg-4 col-md-4 blog-lp-container">
+							<div class="blog-item-wrapper ml-2 mr-2">
+								<div class="blog-item-img">
+									<a href="{{ post.url }}"><img src="{{ "assets/images/blog-imgs/" | append: post.image | relative_url }}" alt="" class="img-fluid"></a>
+								</div>
+								<div class="blog-item-text">
+									<a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+									<p class="card-text"> {{ post.excerpt }}</p>
+								</div>
+								<div class="meta-tags blog-meta">
+									<a href="{{ post.url }}" class="read-more">Read More</a>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
 
-    </div>
-    <a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View All Posts</button></a>
-  </div>
-  <script>
-  var txt = $('.card-text').text();
-  if (txt.length > 130)
-  $('.card-text').text(txt.substring(0, 130) + '....');
-  </script>
-</section>
+					</div>
+					<a href="{{ "/blog.html" | relative_url }}"><button type="button" class="btn btn-dark lp-btn">View All Posts</button></a>
+				</div>
+				<script>
+					var txt = $('.card-text').text();
+					if (txt.length > 130)
+						$('.card-text').text(txt.substring(0, 130) + '....');
+				</script>
+			</section>
 
-<!-- Join Us LP -->
-<section id="join-us">
-  <div class="container join-us-lp-container">
-    <div class="row join-us-lp-row justify-content-center">
-      <div class="col-md-8 col-lg-8 join-us-col">
-        <div class="join-us-lp-text">
-          <h2>Join the Techrangers</h2>
-          <hr class="gold">
-          <p>If you would like to join the Techrangers' team, fill out the application.</p>
-          <a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark">Join Us</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-</main>
+			<!-- Join Us LP -->
+			<section id="join-us">
+				<div class="container join-us-lp-container">
+					<div class="row join-us-lp-row justify-content-center">
+						<div class="col-md-8 col-lg-8 join-us-col">
+							<div class="join-us-lp-text">
+								<h2>Join the Techrangers</h2>
+								<hr class="gold">
+								<p>If you would like to join the Techrangers' team, fill out the application.</p>
+								<a href="{{ "/joinus.html" | relative_url }}"><button type="button" class="btn btn-dark">Join Us</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
