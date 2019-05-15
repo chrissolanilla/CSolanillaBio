@@ -70,3 +70,4 @@ exclude:
   - README.MD
   - dockerfile
   - vendor
+  - _techranger_template.html
