@@ -91,7 +91,7 @@ Follow all existing markup, style, and naming conventions already used.
 
 Use [_techranger_template.html](_techranger_template.html) to get started with a complete list of variables.
 
-1. Make a git issue and branch following the typical naming convention
+1. Make an issue on this project and create a branch following the naming convention `issue/###-title-of-issue`, where `###` is the issue number.
 2. Add your bio to the `_techrangers_current` directory (first_last.html)
 3. Add a 250x250 image to `assets/images/bios/first_last.jpg`
 4. Test site locally
