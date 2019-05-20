@@ -89,12 +89,13 @@ rake show_invalidations[cloudfront_distribution_id]    # show cloudfront invalid
 
 Follow all existing markup, style, and naming conventions already used.
 
-1. Make an issue and branch following the typical naming convention
+Use [_techranger_template.html](_techranger_template.html) to get started with a complete list of variables.
+
+1. Make an issue on this project and create a branch following the naming convention `issue/###-title-of-issue`, where `###` is the issue number.
 2. Add your bio to the `_techrangers_current` directory (first_last.html)
-3. Add a 100x100 thumbnail to `assets/images/bios_thumbnails/first_last.jpg`
-4. Add a 300x300 image to `assets/images/bios/first_last.jpg`
-6. Test site locally
-7. Issue a pull request and notify Jacob
+3. Add a 250x250 image to `assets/images/bios/first_last.jpg`
+4. Test site locally
+5. Issue a pull request to master and notify Jacob
 
 ## Adding a job posting
 
