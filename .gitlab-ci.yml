@@ -1,0 +1,50 @@
+# This script tells GitLab to do things whenever an update is pushed to the repository.
+#
+# This particular script builds the Jekyll site and deploys it to the S3 bucket.
+#
+# It requires the following Variables to be defined in the project:
+#   AWS_ACCESS_KEY - From AWS IAM
+#   AWS_SECRET_ACCESS_KEY - From AWS IAM
+#   AWS_DEFAULT_REGION - The region where the S3 bucket lives
+#   CLOUDFRONT_DISTRO_ID - The cloudfront distro for this website
+#   TARGET_BUCKET - The S3 bucket id for this website
+
+stages:
+  - build
+  - deploy
+
+build:
+  image: ruby:2.6
+  stage: build
+  script:
+    - gem install bundler
+    - bundle install --path=vendor/
+    - bundle exec jekyll build
+    - cd _site/
+    - ls
+  artifacts:
+    paths:
+      - _site/
+    expire_in: 1 week
+  cache:
+    key: ${CI_JOB_NAME}
+    paths:
+      - vendor/
+
+deploy_prod:
+  image: python:3.6-alpine
+  stage: deploy
+  dependencies:
+    - build
+  only:
+    - master
+  environment:
+    name: production
+    url: https://techrangers.cdl.ucf.edu/
+  before_script:
+    - pip install awscli
+  script:
+    - ls _site/
+    - aws s3 sync ./_site/ s3://$TARGET_BUCKET/ --acl public-read --delete --cache-control max-age=86400
+    - aws cloudfront create-invalidation --paths '/*'  --distribution-id $CLOUDFRONT_DISTRO_ID
+    - aws cloudfront list-invalidations --distribution-id $CLOUDFRONT_DISTRO_ID
