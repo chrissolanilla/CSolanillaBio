@@ -8,8 +8,10 @@ author:     "Lawrence Oks"
 ---
 
 There's a lot of hype surrounding AI and Machine Learning, and you've probably been inspired by some cool videos that show you what's possible with these tools. But if we go beyond the hype and write some code, what does Machine Learning really look like? 
-<div><br /></div>
-We'll be using [Python](https://www.python.org/about/gettingstarted/) to find out, along with Google's [Tensorflow](https://www.tensorflow.org/install) library for creating Deep Learning models, a category of machine learning that uses multi-layer neural networks
+
+## How We'll Learn
+
+We'll be using [Python](https://www.python.org/about/gettingstarted/) to find out, along with Google's [Tensorflow](https://www.tensorflow.org/install) library for creating Deep Learning models, a category of machine learning that uses multi-layer neural networks.
 
 ## What is Machine Learning
 
