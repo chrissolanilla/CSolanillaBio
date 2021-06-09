@@ -1,36 +1,40 @@
-- name: NASA
-  domain: nasa.gov
-- name: Google
-  domain: google.com
-- name: Microsoft
-  domain: microsoft.com
 - name: Amazon
   domain: aboutamazon.com
-- name: Disney
-  domain: disney.com
-- name: Imgur
-  domain: imgur.com
-- name: Facebook
-  domain: facebook.com
+- name: Apple
+  domain: apple.com
 - name: Boeing
   domain: boeing.com
-- name: Goldman Sachs
-  domain: goldmansachs.com
-- name: Industrial Light & Magic
-  domain: ilm.com
-- name: Under Armour
-  domain: underarmour.com
-- name: FedEx
-  domain: fedex.com
-- name: Lockheed Martin
-  domain: lmco.com
-- name: Northrop Grumman
-  domain: northropgrumman.com
-- name: Golf Channel
-  domain: golfchannel.com
-- name: Wayfair
-  domain: wayfair.com
 - name: Darden
   domain: darden.com
+- name: Disney
+  domain: disney.com
 - name: ESPN
   domain: espn.com
+- name: Facebook
+  domain: facebook.com
+- name: Fandom
+  domain: fandom.com
+- name: FedEx
+  domain: fedex.com
+- name: Goldman Sachs
+  domain: goldmansachs.com
+- name: Golf Channel
+  domain: golfchannel.com
+- name: Google
+  domain: google.com
+- name: Imgur
+  domain: imgur.com
+- name: Industrial Light & Magic
+  domain: ilm.com
+- name: Lockheed Martin
+  domain: lmco.com
+- name: Microsoft
+  domain: microsoft.com
+- name: NASA
+  domain: nasa.gov
+- name: Northrop Grumman
+  domain: northropgrumman.com
+- name: Under Armour
+  domain: underarmour.com
+- name: Wayfair
+  domain: wayfair.com
