@@ -1,50 +1,32 @@
 ## Techranger Website
 
-Built with [Jekyll](https://jekyllrb.com/).  Use the [Jekyll Quick Start Guide](https://jekyllrb.com/docs/quickstart/) to install the requirements.
+Built with [Jekyll](https://jekyllrb.com/).
 
 ## Setting up your environment
 
-If you are doing this for the first time run these commands.
+Before you can start working on this site, you need to set up your local development environment.  We recommend running this site locally using Docker.  If you haven't already, coordinate time with your supervisor or another full-timer to get Docker installed.
 
-Running Jekyll natively on your machine is preferred, so try that option first.
+### First Time Setup: Building the Docker Container
 
-If your file permissions are being a pain, or you want to use the same environment that jenkins uses to deploy - we've included a dockerfile you can use to build a reliable Docker container that has ruby and all the gems you need.
-
-### Using Docker
+The first thing we need to do is build the Docker container for the site.  This only needs to be done the first time you set up the site on a computer.  If you change computers, you'll need to do this again.
 
 In the top directory of this project, run:
 
 `docker build --rm -t ruby-tr-site-build-container .`
 
-Here's a breakdown of that command:
+FYI: Here's a breakdown of that command:
 
 * `--rm`: remove container intermediate containers created when building
 * `-t ruby-tr-site-build-container`: tag the resulting image to make it easier to identify
 * `.`: look in this directory for a dockerfile to use for building the image
 
-### Just MacOS
+### Running the Docker Container
 
-Use homebrew to install ruby, though you may not need to depending on the version included in OSX.
-
-`brew install ruby`
-
-`gem install bundle`
-
-... And finally in the root of this git project, run:
-
-`bundle install`
-
-## Run a local development server
-
-Once you start the jekyll server, you can view the site at [http://localhost:4000](http://localhost:4000) or [http://127.0.0.1:4000](http://127.0.0.1:4000).  It will rebuild every time you make a change.
-
-Depending on your setup, the following instructions should get your dev server running.
-
-### Docker
+Any time you need to run the site locally to test your changes, navigate to the top directory of the project and run:
 
 `docker run --rm -p 4000:4000 -p 35729:35729 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake dev_docker`
 
-Here's a breakdown of that command:
+FYI: Here's a breakdown of that command:
 
 * `docker`: well, we're using the docker engine to do stuff
 * `run`: this will start a container and execute a command we provide
@@ -55,35 +37,7 @@ Here's a breakdown of that command:
 * `ruby-tr-site-build-container`: the docker image to execute our command in
 * `bundle exec rake dev_docker`: the command being run inside the container (in this case our rake command)
 
-### MacOS
-
-Just `bundle exec rake dev`
-
-## Build and Deploy
-
-### Rake tasks
-
-We've built a handful of rake tasks that are easy to use.  Note that these are used on Jenkins to deploy the website, so adding post-processing to the build_for_deploy script is an option.
-
-Run `rake -T` to list all available tasks
-
-```bash
-$ bundle exec rake -T
-
-rake build_for_deploy                                  # Build for deploy
-rake deploy_production[bucket]                         # Publish website to S3
-rake dev                                               # build and watch for dev
-rake invalidate_cdn_cache[cloudfront_distribution_id]  # Clears cache from cloudfront
-rake show_invalidations[cloudfront_distribution_id]    # show cloudfront invalidations
-```
-
-### Docker
-
-`docker run --rm -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake build_for_deploy`
-
-### MacOS
-
-`bundle exec rake build_for_deploy`
+Once you start the Docker container, you can view the site at [http://localhost:4000](http://localhost:4000) or [http://127.0.0.1:4000](http://127.0.0.1:4000).  It will rebuild every time you make a change.
 
 ## Adding a Bio
 
@@ -109,3 +63,44 @@ title: Techranger Lead Developer
 date: 2025-11-28
 ---
 ```
+
+## (Optional) Setting Up Your Local Jekyll Environment
+
+If you'd like to try running the site using Jekyll's built-in webserver, follow these instructions:
+
+1. Use homebrew to [install ruby](https://ucfcdl.github.io/techrangers-handbook/how-to/install-ruby.html).
+2. In the root of this git project, run:
+
+`bundle install`
+
+3. To run the server, run:
+
+`bundle exec rake dev`
+
+4. View the site at [http://localhost:4000](http://localhost:4000) or [http://127.0.0.1:4000](http://127.0.0.1:4000).
+
+## (Optional) Build and Deploy
+
+We've built a handful of rake tasks that are easy to use.  Note that these are used on Jenkins to deploy the website, so adding post-processing to the `build_for_deploy` script is an option.
+
+Run `rake -T` to list all available tasks
+
+```bash
+$ bundle exec rake -T
+
+rake build_for_deploy                                  # Build for deploy
+rake deploy_production[bucket]                         # Publish website to S3
+rake dev                                               # build and watch for dev
+rake invalidate_cdn_cache[cloudfront_distribution_id]  # Clears cache from cloudfront
+rake show_invalidations[cloudfront_distribution_id]    # show cloudfront invalidations
+```
+
+### Examples of running build_for_deploy
+
+If you're using Docker:
+
+`docker run --rm -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake build_for_deploy`
+
+If you're using Jekyll:
+
+`bundle exec rake build_for_deploy`
