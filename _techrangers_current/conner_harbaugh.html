@@ -1,53 +1,42 @@
 ---
+# YAML Configuration
+# Provides configuration settings about who Employee on this page
+# To then help be rendered and processed better by the other parts of site
+
+# Name of Techranger
 name: My Name
 
-
-# this image will be in assets/images/bios/
-# It should be a square 250x250 image, jpg or png (prefer jpg)
-# make sure you resize/crop and maintain the aspect ratio
+# Image of Employee
 thumbnail: my_name.jpg
 
-
-# Gender you identify as
-# adding a new or misspelled value will add it to the graph!
-# options: `non-binary`, `female`,`male`
+# Gender of Employee
 gender: male
 
-
-# if you're part-time, you're probably Techranger
+# Title of Employee, either a Techranger or something else
 title: Techranger
 
-
-# Optional
-# possible values are `techrangers` and `lst`
+# YAML configuration stating the group employee works for, either a techranger or lst
 team: techrangers
 
-
-# This flag is a little redundant
-# it's here if we change how we use jekyll
+# redundant option in case of future updates of Jekyll
+# states if employee is a techranger
 is_current_techranger: yes
 
 
 # If you're now full time && started out as a Techranger
+
+# If employee did not work part time in the past then its no
+# If employee has worked and are now full time then set to yes
 was_part_time: no
 
-
-# Optional
-# We use this to keep tabs on you in your career after Techrangers
-# Consider creating an account if you don't have one
+# LinkedIn of Employee
 linkedin: https://www.linkedin.com/in/iturgeon/
 
-
-# Optional
-# What degrees do you have / are you working towards
-# List minors as their own item. IE: `- Computer Science Minor`
-# Please view other profiles to re-use existing values/spellings
+# Degrees Employee is Working Towards
 degrees:
   - Computer Science
 
-
-# Your Hire Date
-# format: YYYY-MM-DD
+# Data when first hired in the format YYYY-MM-DD
 date: 1996-12-23
 
 
@@ -60,6 +49,8 @@ date: 1996-12-23
 
 # Optional
 # Did you leave LS&T in the past and return?
+
+# Did Employee previous work here and come back? Set to yes if so
 is_boomerang: no
 
 
@@ -88,11 +79,16 @@ is_boomerang: no
 # Last updated date
 # Set this to today's date
 # format: "Month Day, Year"
+
+# last updated on the date below
 updated: "March 12th, 2018"
 ---
 
+<!-- HTML Section of the Page -->
+<!-- Description/Bio Paragrah of Employee -->
 <p>I am a sentient humanoid enrolled in a higher education program.  I enjoy breathing and not being dead.</p>
 
+<!-- Coding Languages that Employee is Expert In -->
 <h3 class="tr_header">Expertise:</h3>
 <ul>
     <li>Java</li>
@@ -102,6 +98,7 @@ updated: "March 12th, 2018"
     <li>PHP</li>
 </ul>
 
+<!-- Coding Languages that Employee is learning about currently -->
 <h3 class="tr_header">Learning:</h3>
 <ul>
     <li>FORTRAN</li>
