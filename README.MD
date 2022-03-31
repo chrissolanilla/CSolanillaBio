@@ -12,19 +12,20 @@ The first thing we need to do is build the Docker container for the site.  This 
 
 In the top directory of this project, run:
 
-`docker build --rm -t ruby-tr-site-build-container .`
+`docker build --rm -t ruby-tr-site-build-container --platform linux/amd64 .`
 
 FYI: Here's a breakdown of that command:
 
 * `--rm`: remove container intermediate containers created when building
 * `-t ruby-tr-site-build-container`: tag the resulting image to make it easier to identify
+* `--platform linux/amd64`: on architectures which are not amd64 (i.e. Mac M1 uses ARM), emulate the intel platform. Because of the emulation, this will run a bit slower on M1 machines.
 * `.`: look in this directory for a dockerfile to use for building the image
 
 ### Running the Docker Container
 
 Any time you need to run the site locally to test your changes, navigate to the top directory of the project and run:
 
-`docker run --rm -p 4000:4000 -p 35729:35729 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake dev_docker`
+`docker run --rm -p 4000:4000 -p 35729:35729 --platform linux/amd64 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake dev_docker`
 
 FYI: Here's a breakdown of that command:
 
@@ -33,6 +34,7 @@ FYI: Here's a breakdown of that command:
 * `--rm`: remove container after running
 * `-p 4000:4000`: connect this machine's port 4000 to the container's port 4000 (we'll use for the website)
 * `-p 35729:35729`: port used for the livereload server
+* `--platform linux/amd64`: emulate the intel architecture if running on a different architecture (such as M1 Mac)
 * `-v "$(pwd)":/website`: mount a volume on the container, left side being the current directory `($pwd)`, right side being the place it's mounted in the container `/website`
 * `ruby-tr-site-build-container`: the docker image to execute our command in
 * `bundle exec rake dev_docker`: the command being run inside the container (in this case our rake command)
@@ -99,7 +101,7 @@ rake show_invalidations[cloudfront_distribution_id]    # show cloudfront invalid
 
 If you're using Docker:
 
-`docker run --rm -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake build_for_deploy`
+`docker run --rm --platform linux/amd64 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake build_for_deploy`
 
 If you're using Jekyll:
 
