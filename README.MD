@@ -10,7 +10,11 @@ Before you can start working on this site, you need to set up your local develop
 
 The first thing we need to do is build the Docker container for the site.  This only needs to be done the first time you set up the site on a computer.  If you change computers, you'll need to do this again.
 
-In the top directory of this project, run:
+In the top directory of this project, run `./docker_build.sh`
+
+#### Explanation:
+
+The script you just ran runs this command:
 
 `docker build --rm -t ruby-tr-site-build-container --platform linux/amd64 .`
 
@@ -23,7 +27,11 @@ FYI: Here's a breakdown of that command:
 
 ### Running the Docker Container
 
-Any time you need to run the site locally to test your changes, navigate to the top directory of the project and run:
+Any time you need to run the site locally to test your changes, navigate to the top directory of the project and run `./docker_run.sh`.
+
+#### Explanation:
+
+The script you just ran runs this command:
 
 `docker run --rm -p 4000:4000 -p 35729:35729 --platform linux/amd64 -v "$(pwd)":/website ruby-tr-site-build-container bundle exec rake dev_docker`
 
