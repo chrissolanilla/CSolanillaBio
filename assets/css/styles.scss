@@ -983,6 +983,28 @@ hr.divider {
 	padding-top: 15px;
 }
 
+.job-post-container a{
+	margin-bottom: 20px;
+}
+.job-post-container h3{
+	margin-top: 10px;
+	padding-top: 0;
+}
+.job-line{
+	width: 300px;
+	border-top: 2px solid #000;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+.job-post{
+	margin-bottom: 20px;
+}
+.job-post-container.btn-dark a:hover {
+	color:  #ffc904;
+	text-decoration: none;
+}
+
 /* Showcase stuff ------------------------------------- */
 #title {
 	margin-bottom: 80px;

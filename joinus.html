@@ -23,26 +23,22 @@
           We are not hiring at this time, but we expect to in the near future.
         </p>
         <h3>Full-Time Positions</h3>
-        <p>
-          We are not hiring at this time, but we expect to in the near future.
-        </p>
-      </div>
-
-      <!-- This is where the jekyll is-->
-      {% assign tr = site.job_current | where_exp: "item", "item.team == 'Now
-      Hiring'" %}
-      <div class="container my-5" id="current-techrangers">
-        <h2>Meet The Techrangers {{tr|size}}</h2>
-        <hr class="gold gold-lst" />
-
-        <div class="row center my-5">
-          {% for item in tr %}
-          <div class="col">{% include hiring.html %}</div>
+        <hr />
+        {% assign job-post = site.job_current | sort: 'title'%}
+        <div class="job-post-container">
+          {% for item in job-post%}
+          <h3>{{ item.title }}</h3>
+          <hr class="job-line" />
+          <p class="job-post">
+            Date posted: {{item.date | date_to_string }}<br />
+            <button type="button" class="btn-dark">
+              <a href="{{item.override_url}}" style="color: #fff">Apply</a>
+            </button>
+          </p>
           {% endfor %}
         </div>
       </div>
     </div>
-    <!--  -->
     <hr class="divider" />
 
     <div class="row join-us-pg-row">

@@ -50,10 +50,12 @@ defaults:
       path: ""
       type: job_current
     values:
-      layout: default
+      layout: job-post
 
 collections:
   techrangers_current:
+    output: true
+  job_current:
     output: true
   techrangers_past:
     output: true
