@@ -997,12 +997,19 @@ hr.divider {
 	margin-bottom: 5px;
 	float: left;
 }
-.job-post{
-	margin-bottom: 20px;
+.apply-button{
+	border-color: #000;
+    background-color: #000;
+	font-size: 13px;
+	line-height: 22px;
 }
-.job-post-container.btn-dark a:hover {
-	color:  #ffc904;
-	text-decoration: none;
+
+.apply-button a{
+	color: #fff;
+}
+.apply-button a:hover{
+	color:#ffc904 !important;
+	text-decoration: none !important;
 }
 
 /* Showcase stuff ------------------------------------- */
