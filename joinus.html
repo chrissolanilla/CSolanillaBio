@@ -27,13 +27,11 @@
         {% assign job-post = site.job_current| sort: 'title' %}
         <div class="job-post-container">
           {% for item in job-post%}
-          <h3>{{ item.title }}</h3>
-          <hr class="job-line" />
+          <h4>
+            <u><a href="{{item.override_url}}">{{ item.title }}</a></u>
+          </h4>
           <p class="job-post">
             Date posted: {{item.date | date_to_string }}<br />
-            <button type="button" class="apply-button">
-              <a href="{{item.override_url}}" class="apply-button">Apply</a>
-            </button>
           </p>
           {% endfor %}
         </div>

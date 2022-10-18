@@ -983,34 +983,11 @@ hr.divider {
 	padding-top: 15px;
 }
 
-.job-post-container a{
-	margin-bottom: 20px;
-}
-.job-post-container h3{
-	margin-top: 10px;
-	padding-top: 0;
-}
-.job-line{
-	width: 300px;
-	border-top: 2px solid #000;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	float: left;
-}
-.apply-button{
-	border-color: #000;
-    background-color: #000;
-	font-size: 13px;
-	line-height: 22px;
+.job-post{
+	padding-top: 0px !important;
+	padding-bottom: 15px;
 }
 
-.apply-button a{
-	color: #fff;
-}
-.apply-button a:hover{
-	color:#ffc904 !important;
-	text-decoration: none !important;
-}
 
 /* Showcase stuff ------------------------------------- */
 #title {
