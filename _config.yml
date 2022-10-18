@@ -46,9 +46,16 @@ defaults:
       type: techrangers_past
     values:
       layout: profile
+  - scope:
+      path: ""
+      type: job_current
+    values:
+      layout: job-post
 
 collections:
   techrangers_current:
+    output: true
+  job_current:
     output: true
   techrangers_past:
     output: true
