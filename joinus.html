@@ -1,102 +1,127 @@
 ---
-
 ---
+
 <main role="main" id="joinusmain">
-	<div class="container join-us-pg-container">
-		<!-- main content -->
-		<div id="title">
-			<h1 class="join-us">Job Description</h1>
-			<hr class="gold">
-		</div>
+  <div class="container join-us-pg-container">
+    <!-- main content -->
+    <div id="title">
+      <h1 class="join-us">Job Description</h1>
+      <hr class="gold" />
+    </div>
 
-		<div class="row join-us-row">
-			<div class="col-lg-12 join-us-pg-col">
-				<h2>How Do I Apply to be a Techranger?</h2>
+    <div class="row join-us-row">
+      <div class="col-lg-12 join-us-pg-col">
+        <h2>How Do I Apply to be a Techranger?</h2>
 
-				<p>We are currently hiring full-time positions on the Learning Systems &amp; Technology team!</p>
+        <p>
+          We are currently hiring full-time positions on the Learning Systems
+          &amp; Technology team!
+        </p>
 
-				<h3>Part-Time Positions</h3>
-				<p>We are not hiring at this time, but we expect to in the near future.</p>
+        <h3>Part-Time Positions</h3>
+        <p>
+          We are not hiring at this time, but we expect to in the near future.
+        </p>
+        <h3>Full-Time Positions</h3>
+        <hr />
+        {% assign job-post = site.job_current| sort: 'title' %}
+        <div class="job-post-container">
+          {% for item in job-post%}
+          <h4>
+            <u><a href="{{item.override_url}}">{{ item.title }}</a></u>
+          </h4>
+          <p class="job-post">
+            Date posted: {{item.date | date_to_string }}<br />
+          </p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <hr class="divider" />
 
-				<h3>Full-Time Positions</h3>
-				<p>We are not hiring at this time, but we expect to in the near future.</p>
-				
-			</div>
-		</div>
+    <div class="row join-us-pg-row">
+      <div class="col-lg-12 join-us-pg-col">
+        <h2>Who are the Techrangers and what do they do?</h2>
+        <p>
+          The Techrangers<span class="registered">&reg;</span> team is comprised
+          of talented students at the
+          <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank"
+            >Center for Distributed Learning</a
+          >
+          who provide course development, web/application development, data
+          engineering, and mobile development for the University of Central
+          Florida (UCF).
+        </p>
+        <h3>What are the benefits of being a Techranger?</h3>
+        <ul>
+          <li>Flexible hours with 60% remote work available after 90 days</li>
+          <li>Research Park location with campus shuttle access</li>
+          <li>Learning environment</li>
+          <li>Real-world experience</li>
+          <li>Opportunity to explore other interest areas</li>
+          <li>Networking</li>
+          <li>
+            Leadership/Management Opportunities
+            <ul>
+              <li>Mentorship</li>
+              <li>Project Management</li>
+              <li>Community Outreach and Professional Networking</li>
+              <li>Team Building Activities</li>
+              <li>Shaping the Future of Digital Learning</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-		<hr class="divider">
+    <hr class="divider" />
 
-		<div class="row join-us-pg-row">
-			<div class=" col-lg-12 join-us-pg-col">
-				<h2>Who are the Techrangers and what do they do?</h2>
-				<p>The Techrangers<span class="registered">&reg;</span> team is comprised of talented students at the <a href="https://cdl.ucf.edu/about" class="cdl-link" target="_blank">Center for Distributed Learning</a> who provide course development, web/application development, data engineering, and mobile development for the University of Central Florida (UCF).</p>
-				<h3>What are the benefits of being a Techranger?</h3>
-				<ul>
-					<li>Flexible hours with 60% remote work available after 90 days</li>
-					<li>Research Park location with campus shuttle access</li>
-					<li>Learning environment</li>
-					<li>Real-world experience</li>
-					<li>Opportunity to explore other interest areas</li>
-					<li>Networking</li>
-					<li>Leadership/Management Opportunities
-						<ul>
-							<li>Mentorship</li>
-							<li>Project Management</li>
-							<li>Community Outreach and Professional Networking</li>
-							<li>Team Building Activities</li>
-							<li>Shaping the Future of Digital Learning</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
+    <div class="row join-us-pg-row">
+      <div class="col-lg-12 join-us-pg-col">
+        <h2>What skills do I need to be a Techranger?</h2>
+        <p class="skills-par">
+          All Techrangers should possess the following qualities and skills:
+        </p>
+        <h3>Core Skills</h3>
+        <ul>
+          <li>Intermediate to advanced HTML5 knowledge</li>
+          <li>Intermediate CSS knowledge</li>
+          <li>Basic programming knowledge</li>
+          <li>Basic JavaScript knowledge</li>
+          <li>Basic web graphics experience</li>
+        </ul>
 
-		<hr class="divider">
+        <h3>Professional Skills</h3>
+        <ul>
+          <li>Team player</li>
+          <li>Oral and written Communication</li>
+          <li>Eagerness to Learn</li>
+          <li>Initiative</li>
+          <li>Time Management</li>
+          <li>Leadership</li>
+          <li>Problem Solving</li>
+          <li>Sense of Humor</li>
+          <li>Creativity</li>
+        </ul>
 
-		<div class="row join-us-pg-row">
-			<div class=" col-lg-12 join-us-pg-col">
-				<h2>What skills do I need to be a Techranger?</h2>
-				<p class="skills-par">All Techrangers should possess the following qualities and skills:</p>
-				<h3>Core Skills</h3>
-				<ul>
-					<li>Intermediate to advanced HTML5 knowledge</li>
-					<li>Intermediate CSS knowledge</li>
-					<li>Basic programming knowledge</li>
-					<li>Basic JavaScript knowledge</li>
-					<li>Basic web graphics experience</li>
-				</ul>
-
-				<h3>Professional Skills</h3>
-				<ul>
-					<li>Team player</li>
-					<li>Oral and written Communication</li>
-					<li>Eagerness to Learn</li>
-					<li>Initiative</li>
-					<li>Time Management</li>
-					<li>Leadership</li>
-					<li>Problem Solving</li>
-					<li>Sense of Humor</li>
-					<li>Creativity</li>
-				</ul>
-
-				<h3>Technical Skills</h3>
-				<p>Knowledge of one or more of the following is a plus:</p>
-				<ul>
-					<li>Git</li>
-					<li>Docker, Ansible, Vagrant</li>
-					<li>JavaScript (Node.js, React.js)</li>
-					<li>Databases (MySQL, PostgreSQL, MongoDB)</li>
-					<li>R</li>
-					<li>PHP</li>
-					<li>Python</li>
-					<li>Mobile-First Design</li>
-					<li>Cloud infrastructure (AWS, Azure)</li>
-					<li>Graphic Design</li>
-					<li>User Experience</li>
-					<li>Universal Design / Accessibility</li>
-					<li>Operating Systems (Mac OS, Linux)</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <h3>Technical Skills</h3>
+        <p>Knowledge of one or more of the following is a plus:</p>
+        <ul>
+          <li>Git</li>
+          <li>Docker, Ansible, Vagrant</li>
+          <li>JavaScript (Node.js, React.js)</li>
+          <li>Databases (MySQL, PostgreSQL, MongoDB)</li>
+          <li>R</li>
+          <li>PHP</li>
+          <li>Python</li>
+          <li>Mobile-First Design</li>
+          <li>Cloud infrastructure (AWS, Azure)</li>
+          <li>Graphic Design</li>
+          <li>User Experience</li>
+          <li>Universal Design / Accessibility</li>
+          <li>Operating Systems (Mac OS, Linux)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </main>
