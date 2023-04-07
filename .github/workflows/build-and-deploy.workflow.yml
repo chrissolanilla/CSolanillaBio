@@ -34,7 +34,7 @@ jobs:
     name: deploy
     needs: [build]
     runs-on: ubuntu-latest
-    # if: github.ref == 'refs/heads/master'    ------ Uncomment to only run deploy on pushes to master
+     if: github.ref == 'refs/heads/master'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -46,19 +46,18 @@ jobs:
 
       - name: List site contents
         run: ls _site/
-#  Ensure artifact is downloaded from build job before moving on to AWS steps
 
-#      - name: Configure AWS Credentials
-#        uses: aws-actions/configure-aws-credentials@v1
-#        with:
-#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#          aws-region: ${{ env.AWS_LOCATION }}
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_LOCATION }}
 
-#      - name: Sync S3 bucket
-#        run: aws s3 sync ./_site/ s3://${{ secrets.TARGET_BUCKET }}/ --delete --cache-control max-age=86400
+      - name: Sync S3 bucket
+        run: aws s3 sync ./_site/ s3://${{ secrets.TARGET_BUCKET }}/ --delete --cache-control max-age=86400
 
-#      - name: Cloudfront invalidation
-#        run: |
-#          aws cloudfront create-invalidation --paths '/*'  --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }}
-#          aws cloudfront list-invalidations --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }}
+      - name: Cloudfront invalidation
+        run: |
+          aws cloudfront create-invalidation --paths '/*'  --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }}
+          aws cloudfront list-invalidations --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }}
