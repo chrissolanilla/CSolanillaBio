@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 515 515" style="enable-background:new 0 0 515 515;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#939598;}
+	.st1{fill:#E0B15E;}
+	.st2{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:#F5CD69;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st5{fill:#F5CD69;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1_00000059294295313439616040000016155973632663435955_">
+	<rect class="st0" width="515" height="515"/>
+</g>
+<g id="Layer_2_00000018220428343978538930000003742065307678232223_">
+	<g>
+		<path class="st1" d="M116.5,238.5v-86.9c0-7.6,6.2-13.8,13.8-13.8h111.4c4.3,0,8.3,2,10.9,5.3l16.2,20.9c0.3,0.4,1.1,0.8,1.6,0.8
+			H386c7.6,0,13.8,6.2,13.8,13.8v59.8"/>
+		<path class="st2" d="M116.5,238.5v-86.9c0-7.6,6.2-13.8,13.8-13.8h111.4c4.3,0,8.3,2,10.9,5.3l16.2,20.9c0.3,0.4,1.1,0.8,1.6,0.8
+			H386c7.6,0,13.8,6.2,13.8,13.8v59.8"/>
+	</g>
+	<g>
+		<polyline class="st3" points="135.8,244 135.8,177.2 383.8,177.2 383.8,244 135.8,244 		"/>
+		<line class="st2" x1="135.8" y1="192.5" x2="158.5" y2="192.5"/>
+		<line class="st2" x1="184.8" y1="192.5" x2="383.8" y2="192.5"/>
+	</g>
+	<g>
+		<path class="st4" d="M131.4,217.8h138.4l28-28c2.8-2.8,6.6-4.4,10.6-4.4h76.5c8.3,0,15,6.7,15,15v161.8c0,8.3-6.7,15-15,15H131.4
+			c-8.3,0-14.9-6.7-14.9-15V232.8C116.5,224.5,123.2,217.8,131.4,217.8z"/>
+	</g>
+	<path class="st5" d="M116.5,145.8"/>
+	<path class="st4" d="M379,375"/>
+	<path class="st1" d="M379,375.2c0.1-31.3,0.2-62.5,0.3-93.8c0.1-31.3,0.2-62.5,0.3-93.8c0.2,0,2.8,0,3,0c2.8,0,3.2,0,3.8,0
+		c0.5,0,2.1,0.2,4,1.1c3.1,1.4,4.8,3.7,5.2,4.4c1.9,2.8,2.2,5.5,2.2,6.7c0.5,89.2,0.4,154.5,0,162.8c-0.1,2.5-0.6,6.2-3.3,9
+		c-3,3.2-6.8,3.7-7.8,3.8C384.1,375.3,381.6,375.2,379,375.2z"/>
+	<path class="st1" d="M442.5,352.2"/>
+</g>
+</svg>
