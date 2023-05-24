@@ -1,48 +1,30 @@
 name: Build and Deploy
 
-on: push
-
-env:
-  BUILD_ARTIFACT: build
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
-  build:
+  deploy:
+    name: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Install Ruby 2.6
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "2.6"
+
       - name: Install Dependencies
         run: |
           gem install bundler
           bundle install --path=vendor/
+
       - name: Build Jekyll
         run: bundle exec jekyll build
-      - name: Archive build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: ${{ env.BUILD_ARTIFACT }}
-          path: _site/
-      - name: List site contents
-        run: |
-          cd _site/
-          ls
-  deploy:
-    name: deploy
-    needs: [build]
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - uses: actions/download-artifact@v3
-        with:
-          name: ${{ env.BUILD_ARTIFACT }}
-          path: _site/
 
       - name: List site contents
         run: ls _site/
@@ -52,12 +34,12 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_LOCATION }}
+          aws-region: ${{ vars.AWS_REGION }}
 
       - name: Sync S3 bucket
-        run: aws s3 sync ./_site/ s3://${{ secrets.TARGET_BUCKET }}/ --delete --cache-control max-age=86400
+        run: aws s3 sync ./_site/ s3://${{ vars.TARGET_BUCKET }}/ --delete --cache-control max-age=86400
 
       - name: Cloudfront invalidation
         run: |
-          aws cloudfront create-invalidation --paths '/*'  --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }}
-          aws cloudfront list-invalidations --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }}
+          aws cloudfront create-invalidation --paths '/*'  --distribution-id ${{ vars.CLOUDFRONT_DISTRO_ID }}
+          aws cloudfront list-invalidations --distribution-id ${{ vars.CLOUDFRONT_DISTRO_ID }}
