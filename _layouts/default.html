@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
+	{% if site.google_analytics %}
+		{% include google-analytics.html %}
+	{% endif %}
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,10 +39,6 @@
 	{% if page.css %}
 		{% assign page_css = page.css | prepend: "/assets/css/" %}
 		<link rel="stylesheet" href="{{ page_css | relative_url }}">
-	{% endif %}
-
-	{% if jekyll.environment == 'production' and site.google_analytics %}
-		{% include google-analytics.html %}
 	{% endif %}
 </head>
 
