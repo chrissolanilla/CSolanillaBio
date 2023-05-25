@@ -37,7 +37,7 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Sync S3 bucket
-        run: aws s3 sync ./_site/ s3://${{ vars.TARGET_BUCKET }}/ --delete --cache-control max-age=86400
+        run: aws s3 sync ./_site/ s3://${{ vars.TARGET_BUCKET }}/ --acl public-read --delete --cache-control max-age=86400
 
       - name: Cloudfront invalidation
         run: |
