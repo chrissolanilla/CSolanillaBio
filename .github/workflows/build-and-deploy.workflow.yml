@@ -1,6 +1,6 @@
 name: Build and Deploy
 
-on: 
+on:
   push:
     branches:
       - master
@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Ruby 2.6
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "2.6"
+          bundler: "2.2.4"
 
       - name: Install Dependencies
         run: |
-          gem install bundler
           bundle install --path=vendor/
 
       - name: Build Jekyll
