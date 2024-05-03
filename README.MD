@@ -59,7 +59,7 @@ Use [\_techranger_template.html](_techranger_template.html) to get started with 
 2. Add your bio to the `_techrangers_current` directory (first_last.html)
 3. Add a 250x250 image to `assets/images/bios/first_last.jpg`
 4. Test site locally
-5. Issue a pull request to master and notify Jacob
+5. Issue a pull request to master and notify Matt
 
 ## Adding a job posting
 
